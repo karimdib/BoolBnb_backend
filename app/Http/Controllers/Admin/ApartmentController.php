@@ -31,7 +31,10 @@ class ApartmentController extends Controller
      */
     public function store(StoreApartmentRequest $request)
     {
-        //
+
+        $data = $request->all();
+        $new_apartment = Apartment::create($data);
+        return redirect()->route('admin.apartments.show', $new_apartment);
     }
 
     /**
