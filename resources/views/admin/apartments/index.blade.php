@@ -8,7 +8,7 @@
 
     <div class="container">
         <a href="{{ route('admin.apartments.create') }}">
-            <div class="">Create Apartment</div>
+            <h4 class="">Create Apartment</h4>
         </a>
     </div>
     
