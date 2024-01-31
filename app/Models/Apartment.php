@@ -22,4 +22,8 @@ class Apartment extends Model
         'longitude',
         'cover_image'
     ];
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
