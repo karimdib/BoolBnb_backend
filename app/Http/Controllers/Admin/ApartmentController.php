@@ -86,6 +86,15 @@ class ApartmentController extends Controller
 
         $data = $request->all();
 
+        if ($request->hasFile('cover_image')) {
+            $path = Storage::put('cover_images',$request->cover_image);
+            $data['cover_image'] = $path;
+
+            if ($apartment->cover_image) {
+                Storage::delete($apartment->cover_image);
+            }
+        }
+
         $apartment->update($data);
 
         return redirect()->route('admin.apartments.show', $apartment);
