@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <img src="{{ $apartment->cover_image }}">
+    <figure><img class="w-50" src="{{ asset('storage/'. $apartment->cover_image) }}"></figure>
 
     <div class="container">
         <div class="m-5">
