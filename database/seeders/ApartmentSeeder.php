@@ -34,7 +34,7 @@ class ApartmentSeeder extends Seeder
                 $new_apartment->square_meters = $faker->numberBetween(121, 200);
             }
 
-            $new_apartment->address = $faker->address();
+            // $new_apartment->address = $faker->address();
             $new_apartment->visible = $faker->boolean();
             $new_apartment->cover_image = $faker->imageUrl(360, 360, true);
 

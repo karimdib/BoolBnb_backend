@@ -18,10 +18,10 @@ return new class extends Migration
             $table->unsignedInteger('beds');
             $table->unsignedInteger('bathrooms');
             $table->unsignedInteger('square_meters');
-            $table->string('street_name');
-            $table->string('street_number');
-            $table->string('city');
-            $table->string('postal_code');
+            $table->string('street_name')->nullable();
+            $table->string('street_number')->nullable();
+            $table->string('city')->nullable();
+            $table->string('postal_code')->nullable();
             $table->decimal('latitude', 9, 6)->nullable();
             $table->decimal('longitude', 9, 6)->nullable();
             $table->boolean('visible')->default(true);
