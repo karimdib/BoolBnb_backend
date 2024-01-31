@@ -65,11 +65,14 @@ class ApartmentController extends Controller
             'rooms' => 'required|numeric',
             'beds' => 'required|numeric',
             'bathrooms' => 'required|numeric',
-            'square_metres' => 'required|numeric',
+            'square_meters' => 'required|numeric',
             'address' => 'required|max:255',
         ]);
+        
         $data = $request->all();
+        
         $apartment->update($data);
+
         return redirect()->route('admin.apartments.show', $apartment);
     }
 
