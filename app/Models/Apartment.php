@@ -16,6 +16,7 @@ class Apartment extends Model
         'square_meters',
         'address',
         'latitude',
-        'longitude'
+        'longitude',
+        'cover_image'
     ];
 }

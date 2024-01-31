@@ -7,6 +7,7 @@ use App\Http\Requests\StoreApartmentRequest;
 use App\Http\Requests\UpdateApartmentRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
 
 class ApartmentController extends Controller
 {
@@ -40,6 +41,11 @@ class ApartmentController extends Controller
         $results = $response->json()["results"];
         $data["latitude"] = $results[0]["position"]["lat"];
         $data["longitude"] = $results[0]["position"]["lon"];
+
+        if ($request->hasFile('cover_image')) {
+            $path = Storage::put('cover_images',$request->cover_image);
+            $data['cover_image'] = $path;
+        }
 
         $new_apartment = Apartment::create($data);
         return redirect()->route('admin.apartments.show', $new_apartment);
@@ -90,6 +96,8 @@ class ApartmentController extends Controller
      */
     public function destroy(Apartment $apartment)
     {
+        Storage::delete($apartment->cover_image);
+
         $apartment->delete();
         return redirect()->route('admin.apartments.index');
     }
