@@ -4,7 +4,7 @@
     <figure><img class="w-50" src="{{ asset('storage/'. $apartment->cover_image) }}"></figure>
 
     <div class="container">
-        <div class="m-5">
+        <div class="m-3">
             <h1 class="display-5 mb-4 text-center">Apartment Info</h1>
             <ul class="list-group shadow mb-4">
                 <li class="list-group-item p-4"><span class="fw-bold">Description: </span>{{ $apartment->description }}</li>
@@ -28,7 +28,6 @@
                         name="{{ $apartment }}">Delete</button>
                 </form>
             </div>
-
         </div>
     </div>
 @endsection

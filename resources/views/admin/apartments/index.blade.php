@@ -1,8 +1,53 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="container">
+        <div class="m-3">
+            <h1 class="display-5 mb-4 text-center">Apartment List</h1>
+            <a class="btn btn-outline-primary mb-4 w-100 shadow" href="{{ route('admin.apartments.create') }}">
+                Create Apartment
+            </a>
+            <div class="card p-4 shadow">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Address</th>
+                            <th>Latitude</th>
+                            <th>Longitude</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @forelse ($apartments as $apartment)
+                            <tr>
+                                <td> <a href="{{ route('admin.apartments.show', $apartment) }}">{{ $apartment->address }}</a>
+                                </td>
+                                <td>{{ $apartment->latitude }}</td>
+                                <td>{{ $apartment->longitude }}</td>
+                                <td><a class="btn btn-sm btn-outline-primary"
+                                        href="{{ route('admin.apartments.edit', $apartment) }}">Edit</a>
+                                </td>
+                                <td>
+                                    <form action="{{ route('admin.apartments.destroy', $apartment) }}" method="POST"
+                                        id="deletionForm">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-sm btn-outline-danger" id="deletion" type="submit"
+                                            name="{{ $apartment }}">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        @empty
+                            <tr>No Apartments</tr>
+                    </tbody>
+                    @endforelse
+                </table>
+            </div>
+        </div>
+    </div>
 
-<div class="container">
+    {{-- <div class="container">
     <h1>Apartments</h1>
 </div>
 
@@ -34,6 +79,5 @@
 
         @endforelse
     </div>
-</div>
-
+</div> --}}
 @endsection
