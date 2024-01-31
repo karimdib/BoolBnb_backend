@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="py-3">
-            <h1 class="display-6 text-center">Edit</h1>
+            <h1 class="display-6 text-center">Edit Apartment Information</h1>
             <form class="mb-4" action="{{ route('admin.apartments.update', $apartment) }}" method="POST"
                 enctype="multipart/form-data">
                 @csrf
