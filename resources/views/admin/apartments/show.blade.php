@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <figure><img class="w-50" src="{{ asset('storage/'. $apartment->cover_image) }}"></figure>
+    @if ($apartment->cover_image)
+        <figure><img class="w-50" src="{{ asset('storage/' . $apartment->cover_image) }}"></figure>
+    @endif
 
     <div class="container">
         <div class="m-3">
@@ -13,7 +15,10 @@
                 <li class="list-group-item p-4"><span class="fw-bold">Bathrooms: </span>{{ $apartment->bathrooms }}</li>
                 <li class="list-group-item p-4"><span class="fw-bold">Square meters: </span>{{ $apartment->square_meters }}
                 </li>
-                <li class="list-group-item p-4"><span class="fw-bold">Address: </span>{{ $apartment->address }}</li>
+                <li class="list-group-item p-4"><span class="fw-bold">Street Name: </span>{{ $apartment->street_name }}</li>
+                <li class="list-group-item p-4"><span class="fw-bold">Street n°: </span>{{ $apartment->street_number }}</li>
+                <li class="list-group-item p-4"><span class="fw-bold">City: </span>{{ $apartment->city }}</li>
+                <li class="list-group-item p-4"><span class="fw-bold">Postal Code: </span>{{ $apartment->postal_code }}</li>
                 <li class="list-group-item p-4"><span class="fw-bold">Latitude: </span>{{ $apartment->latitude }}</li>
                 <li class="list-group-item p-4"><span class="fw-bold">Longitude: </span>{{ $apartment->longitude }}</li>
             </ul>

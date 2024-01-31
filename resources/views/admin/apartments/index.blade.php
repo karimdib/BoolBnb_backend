@@ -21,7 +21,9 @@
                     <tbody>
                         @forelse ($apartments as $apartment)
                             <tr>
-                                <td> <a href="{{ route('admin.apartments.show', $apartment) }}">{{ $apartment->address }}</a>
+                                <td> <a href="{{ route('admin.apartments.show', $apartment) }}">
+                                        {{ $apartment->street_name . ' ' . $apartment->street_number . ' ' . $apartment->city . ' ' . $apartment->postal_code }}
+                                    </a>
                                 </td>
                                 <td>{{ $apartment->latitude }}</td>
                                 <td>{{ $apartment->longitude }}</td>
@@ -39,7 +41,13 @@
                                 </td>
                             </tr>
                         @empty
-                            <tr>No Apartments</tr>
+                            <tr>
+                                <td colspan="5">
+                                    <p class="fs-4 text-center p-4 opacity-75">
+                                        No Apartments...
+                                    </p>
+                                </td>
+                            </tr>
                     </tbody>
                     @endforelse
                 </table>

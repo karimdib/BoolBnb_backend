@@ -14,7 +14,10 @@ class Apartment extends Model
         'beds',
         'bathrooms',
         'square_meters',
-        'address',
+        'street_name',
+        'street_number',
+        'city',
+        'postal_code',
         'latitude',
         'longitude',
         'cover_image'
