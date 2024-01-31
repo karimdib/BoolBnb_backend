@@ -16,4 +16,8 @@ class Apartment extends Model
         'square_meters',
         'address'
     ];
+    public function messages()
+    {
+        return $this->belongsToMany(Message::class);
+    }
 }
