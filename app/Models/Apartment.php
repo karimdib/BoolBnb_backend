@@ -16,4 +16,8 @@ class Apartment extends Model
         'square_meters',
         'address'
     ];
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
