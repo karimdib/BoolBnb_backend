@@ -15,6 +15,11 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    {{-- @push('payment')
+    
+    @endpush --}}
+    
+
     <!-- Usando Vite -->
     @vite(['resources/js/app.js'])
 </head>
@@ -76,6 +81,8 @@
                                         href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
                                     <a class="dropdown-item"
                                         href="{{ route('admin.apartments.index') }}">{{ __('Apartments') }}</a>
+                                    <a class="dropdown-item"
+                                        href="{{ route('admin.token') }}">{{ __('Payment') }}</a>
                                     <a class="dropdown-item" href="{{ url('profile') }}">{{ __('Profile') }}</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
