@@ -14,6 +14,8 @@ class Apartment extends Model
         'beds',
         'bathrooms',
         'square_meters',
-        'address'
+        'address',
+        'latitude',
+        'longitude'
     ];
 }

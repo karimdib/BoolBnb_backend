@@ -6,6 +6,7 @@ use App\Models\Apartment;
 use App\Http\Requests\StoreApartmentRequest;
 use App\Http\Requests\UpdateApartmentRequest;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Http;
 
 class ApartmentController extends Controller
 {
@@ -31,8 +32,15 @@ class ApartmentController extends Controller
      */
     public function store(StoreApartmentRequest $request)
     {
-
         $data = $request->all();
+
+        // Geocode apartment address to latitude and longitude using tomtom api
+        $response = Http::withOptions(['verify' => false])
+            ->get('https://api.tomtom.com/search/2/search/' . $data['address'] . '.json?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c');
+        $results = $response->json()["results"];
+        $data["latitude"] = $results[0]["position"]["lat"];
+        $data["longitude"] = $results[0]["position"]["lon"];
+
         $new_apartment = Apartment::create($data);
         return redirect()->route('admin.apartments.show', $new_apartment);
     }
@@ -68,9 +76,9 @@ class ApartmentController extends Controller
             'square_meters' => 'required|numeric',
             'address' => 'required|max:255',
         ]);
-        
+
         $data = $request->all();
-        
+
         $apartment->update($data);
 
         return redirect()->route('admin.apartments.show', $apartment);
