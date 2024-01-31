@@ -2,6 +2,7 @@
 
 @section('content')
     <ul class="container">
+        <li><img src="{{ $apartment->cover_image }}" alt=""></li>
         <li>{{ $apartment->description }}</li>
         <li>{{ $apartment->rooms }}</li>
         <li>{{ $apartment->beds }}</li>
