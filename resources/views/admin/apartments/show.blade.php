@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    <img src="{{ $apartment->cover_image }}">
+
     <div class="container">
         <div class="m-5">
             <h1 class="display-5 mb-4 text-center">Apartment Info</h1>
@@ -18,8 +20,8 @@
             <div class="d-flex justify-content-center gap-4">
                 <a class="btn btn-outline-secondary flex-grow-1 shadow"
                     href="{{ route('admin.apartments.edit', $apartment) }}">Edit</a>
-                <form class="flex-grow-1 shadow" action="{{ route('admin.apartments.destroy', $apartment) }}" method="POST"
-                    id="deletionForm">
+                <form class="flex-grow-1 shadow" action="{{ route('admin.apartments.destroy', $apartment) }}"
+                    method="POST" id="deletionForm">
                     @csrf
                     @method('DELETE')
                     <button class="btn btn-danger w-100" id="deletion" type="submit"
