@@ -50,7 +50,8 @@ class ApartmentController extends Controller
      */
     public function edit(Apartment $apartment)
     {
-        //
+
+        return view('admin.apartments.edit', compact('apartment'));
     }
 
     /**
@@ -58,7 +59,18 @@ class ApartmentController extends Controller
      */
     public function update(UpdateApartmentRequest $request, Apartment $apartment)
     {
-        //
+
+        $request->validate([
+            'description' => 'required|max:500',
+            'rooms' => 'required|numeric',
+            'beds' => 'required|numeric',
+            'bathrooms' => 'required|numeric',
+            'square_metres' => 'required|numeric',
+            'address' => 'required|max:255',
+        ]);
+        $data = $request->all();
+        $apartment->update($data);
+        return redirect()->route('admin.apartments.show', $apartment);
     }
 
     /**
@@ -66,6 +78,7 @@ class ApartmentController extends Controller
      */
     public function destroy(Apartment $apartment)
     {
-        //
+        $apartment->delete();
+        return redirect()->route('admin.apartments.index');
     }
 }
