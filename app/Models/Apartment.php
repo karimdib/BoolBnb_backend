@@ -42,4 +42,8 @@ class Apartment extends Model
     {
         return $this->hasMany(Image::class);
     }
+    public function visits()
+    {
+        return $this->hasMany(Visit::class);
+    }
 }
