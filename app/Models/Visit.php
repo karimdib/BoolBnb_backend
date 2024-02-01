@@ -13,4 +13,8 @@ class Visit extends Model
         'ip_address',
         'date',
     ];
+    public function apartment()
+    {
+        return $this->belongsTo(Apartment::class);
+    }
 }
