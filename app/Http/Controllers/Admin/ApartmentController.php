@@ -6,6 +6,7 @@ use App\Models\Apartment;
 use App\Http\Requests\StoreApartmentRequest;
 use App\Http\Requests\UpdateApartmentRequest;
 use App\Http\Controllers\Controller;
+use App\Models\Service;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
 
@@ -25,7 +26,9 @@ class ApartmentController extends Controller
      */
     public function create()
     {
-        return view('admin.apartments.create');
+        $services = Service::orderBy('name', 'ASC')->get();
+
+        return view('admin.apartments.create', compact('services'));
     }
 
     /**
@@ -71,6 +74,11 @@ class ApartmentController extends Controller
         }
 
         $new_apartment = Apartment::create($data);
+
+        if ($request->has('services')) {
+            $new_apartment->services()->attach($data['services']);
+        }
+
         return redirect()->route('admin.apartments.show', $new_apartment);
     }
 
@@ -87,8 +95,9 @@ class ApartmentController extends Controller
      */
     public function edit(Apartment $apartment)
     {
+        $services = Service::orderBy('name', 'ASC')->get();
 
-        return view('admin.apartments.edit', compact('apartment'));
+        return view('admin.apartments.edit', compact('apartment', 'services'));
     }
 
     /**
@@ -113,7 +122,7 @@ class ApartmentController extends Controller
         $data = $request->all();
 
         if ($request->hasFile('cover_image')) {
-            $path = Storage::put('cover_images',$request->cover_image);
+            $path = Storage::put('cover_images', $request->cover_image);
             $data['cover_image'] = $path;
 
             if ($apartment->cover_image) {
@@ -122,6 +131,12 @@ class ApartmentController extends Controller
         }
 
         $apartment->update($data);
+
+        if ($request->has('services')) {
+            $apartment->services()->sync($data['services']);
+        } else {
+            $apartment->services()->sync([]);
+        }
 
         return redirect()->route('admin.apartments.show', $apartment);
     }
@@ -134,6 +149,8 @@ class ApartmentController extends Controller
         if ($apartment->cover_image) {
             Storage::delete($apartment->cover_image);
         }
+
+        $apartment->services()->sync([]);
 
         $apartment->delete();
         return redirect()->route('admin.apartments.index');
