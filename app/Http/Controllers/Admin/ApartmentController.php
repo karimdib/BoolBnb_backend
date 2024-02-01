@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateApartmentRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
 
 class ApartmentController extends Controller
 {
@@ -16,7 +17,10 @@ class ApartmentController extends Controller
      */
     public function index()
     {
-        $apartments = Apartment::all();
+        $current_user = Auth::id();
+
+        $apartments = Apartment::where('user_id',$current_user)->get();
+
         return view('admin.apartments.index', compact('apartments'));
     }
 
@@ -44,7 +48,7 @@ class ApartmentController extends Controller
             'street_number' => 'required|max:255',
             'city' => 'required|max:255',
             'postal_code' => 'required|max:255',
-            'cover_image' => 'string'
+            'cover_image' => 'file|max:2048'
         ]);
 
         $data = $request->all();
@@ -70,6 +74,8 @@ class ApartmentController extends Controller
             $data['cover_image'] = $path;
         }
 
+        $data['user_id'] = Auth::id();
+
         $new_apartment = Apartment::create($data);
         return redirect()->route('admin.apartments.show', $new_apartment);
     }
@@ -79,7 +85,14 @@ class ApartmentController extends Controller
      */
     public function show(Apartment $apartment)
     {
-        return view('admin.apartments.show', compact('apartment'));
+        if (Auth::id() == $apartment->user_id) {
+
+            return view('admin.apartments.show', compact('apartment'));
+            
+        } else {
+            return redirect()->route('admin.apartments.index');
+        }
+
     }
 
     /**
@@ -107,7 +120,7 @@ class ApartmentController extends Controller
             'street_number' => 'required|max:255',
             'city' => 'required|max:255',
             'postal_code' => 'required|max:255',
-            'cover_image' => 'string'
+            'cover_image' => 'file|max:2048'
         ]);
 
         $data = $request->all();
