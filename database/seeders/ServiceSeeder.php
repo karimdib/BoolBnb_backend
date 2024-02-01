@@ -15,34 +15,34 @@ class ServiceSeeder extends Seeder
     {
         $services = [
             [
-                'name' => 'wifi'
+                'name' => 'Wifi'
             ],
             [
-                'name' => 'pool'
+                'name' => 'Pool'
             ],
             [
-                'name' => 'parking'
+                'name' => 'Parking'
             ],
             [
-                'name' => 'gym'
+                'name' => 'Gym'
             ],
             [
-                'name' => 'security'
+                'name' => 'Security'
             ],
             [
-                'name' => 'laundry'
+                'name' => 'Laundry'
             ],
             [
-                'name' => 'pets'
+                'name' => 'Pets'
             ],
             [
-                'name' => 'clubhouse'
+                'name' => 'Clubhouse'
             ],
             [
-                'name' => 'maintenance'
+                'name' => 'Maintenance'
             ],
             [
-                'name' => 'concierge'
+                'name' => 'Concierge'
             ]
         ];
 
@@ -54,13 +54,3 @@ class ServiceSeeder extends Seeder
         }
     }
 }
-
-
-
-
-
-
-
-
-
-

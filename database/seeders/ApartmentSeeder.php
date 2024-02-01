@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Apartment;
+use App\Models\Service;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -43,6 +44,8 @@ class ApartmentSeeder extends Seeder
             $new_apartment->user_id = $faker->randomElement($userIds);
 
             $new_apartment->save();
+
+            $new_apartment->services()->attach(Service::all()->random(3));
         }
     }
 }
