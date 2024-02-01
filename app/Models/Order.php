@@ -5,12 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Service extends Model
+class Order extends Model
 {
     use HasFactory;
-
-    public function apartments()
+    public function apartment()
     {
-        return $this->belongsToMany(Apartment::class);
+        return $this->belongsTo(Apartment::class);
     }
 }
