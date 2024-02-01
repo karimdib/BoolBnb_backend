@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Apartment;
+use App\Models\Image;
 use App\Http\Requests\StoreApartmentRequest;
 use App\Http\Requests\UpdateApartmentRequest;
 use App\Http\Controllers\Controller;
@@ -79,10 +80,18 @@ class ApartmentController extends Controller
         $data['user_id'] = Auth::id();
 
         $new_apartment = Apartment::create($data);
-
+        
         if ($request->hasFile('images')) {
-            $new_apartment->images()->attach($data[['images']]);
-            dd($new_apartment);
+            
+            $images = $request->images;
+            
+            foreach ($images as $image) {
+
+                $link = Storage::put('images', $image);
+                $current_image['link'] = $link;
+                $current_image['apartment_id'] = $new_apartment->id;
+                $new_image = Image::create($current_image);               
+            }            
         }
 
         return redirect()->route('admin.apartments.show', $new_apartment);
