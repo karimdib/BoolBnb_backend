@@ -4,32 +4,110 @@
 
 @section('content')
 
-<head>
-    <script src="https://js.braintreegateway.com/web/dropin/1.24.0/js/dropin.min.js"></script>
-</head>
-<div class="py-12">
-    @csrf
-    <div id="dropin-container" style="display: flex;justify-content: center;align-items: center;"></div>
-    <div style="display: flex;justify-content: center;align-items: center; color: white">
-        <a id="submit-button" class="btn btn-sm btn-success">Submit payment</a>
+<div class="bootstrap-basic">
+    <form class="needs-validation" novalidate="">
+  
+      <div class="row">
+        <div class="col-sm-6 mb-3">
+          <label for="cc-name">Cardholder Name</label>
+          <div class="form-control" id="cc-name"></div>
+          <small class="text-muted">Full name as displayed on card</small>
+          <div class="invalid-feedback">
+            Name on card is required
+          </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-sm-6 mb-3">
+          <label for="cc-number">Credit card number</label>
+          <div class="form-control" id="cc-number"></div>
+          <div class="invalid-feedback">
+            Credit card number is required
+          </div>
+        </div>
+        <div class="col-sm-3 mb-3">
+          <label for="cc-expiration">Expiration</label>
+          <div class="form-control" id="cc-expiration"></div>
+          <div class="invalid-feedback">
+            Expiration date required
+          </div>
+        </div>
+        <div class="col-sm-3 mb-3">
+          <label for="cc-expiration">CVV</label>
+          <div class="form-control" id="cc-cvv"></div>
+          <div class="invalid-feedback">
+            Security code required
+          </div>
+        </div>
+      </div>
+  
+      <hr class="mb-4">
+      <div class="text-center">
+      <button class="btn btn-primary btn-lg" type="submit">Pay with <span id="card-brand">Card</span></button>
+      </div>
+    </form>
+  </div>
+  <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+    <div class="toast-header">
+      <strong class="mr-auto">Success!</strong>
+      <small>Just now</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
-    
-</div>
+    <div class="toast-body">
+      Next, submit the payment method nonce to your server.
+    </div>
+  </div>
+  </div>
+
+<script src="https://js.braintreegateway.com/web/dropin/1.31.0/js/dropin.min.js"></script>
+
+<script>
+    var form = document.getElementById('payment-form');
+    var submitButton = document.getElementById('submit-button');
+
+    braintree.dropin.create({
+        authorization: 'YOUR_BRAINTREE_CLIENT_TOKEN',
+        selector: '#card-element',
+        paypal: {
+            flow: 'vault'
+        }
+    }, function (createErr, instance) {
+        if (createErr) {
+            console.log('Errore durante la creazione di Braintree Drop-in:', createErr);
+            return;
+        }
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            instance.requestPaymentMethod(function (err, payload) {
+                if (err) {
+                    console.log('Errore durante la richiesta del metodo di pagamento:', err);
+                    return;
+                }
+
+                // Imposta il valore del payment_method_nonce nel campo nascosto
+                document.getElementById('nonce').value = payload.nonce;
+
+                // Invia il modulo al tuo controller Laravel per elaborare il pagamento
+                form.submit();
+            });
+        });
+
+        submitButton.removeAttribute('disabled');
+    });
+</script>
     
 @endsection
 
-<script>
-    var button = document.querySelector('#submit-button');
-
-    
-    braintree.dropin.create({
-        authorization: '{{$token}}',
-        container: '#dropin-container'
-    }, function (createErr, instance) {
-        button.addEventListener('click', function () {
-            instance.requestPaymentMethod(function (err,payload{
-                // Submit payload.nonce to your server
-            }));
-        });a
-    });
-</script>
