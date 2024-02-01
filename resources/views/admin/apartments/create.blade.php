@@ -57,6 +57,22 @@
                     <input type="number" class="form-control" id="postal_code" placeholder="00144" name="postal_code"
                         value="{{ old('postal_code') }}">
                 </div>
+                <div class="form-group mb-3">
+                    <p>Choose apartment services:</p>
+                    <div class="d-flex flex-wrap gap-4 ">
+                        @foreach ($services as $service)
+                            <div class="form-check">
+                                <input name="services[]" class="form-check-input" type="checkbox"
+                                    value="{{ $service->id }}" id="service-{{ $service->id }}"
+                                    @checked(in_array($service->id, old('services', [])))>
+                                <label class="form-check-label" for="service-{{ $service->id }}">
+                                    {{ $service->name }}
+                                </label>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
 
                 <div class="mb-3">
                     <label for="images" class="form-label">Add more images</label>
