@@ -40,7 +40,6 @@ class ApartmentController extends Controller
      */
     public function store(StoreApartmentRequest $request)
     {
-
         $request->validate([
             'description' => 'required|max:500',
             'rooms' => 'required|numeric',
@@ -80,6 +79,12 @@ class ApartmentController extends Controller
         $data['user_id'] = Auth::id();
 
         $new_apartment = Apartment::create($data);
+
+        if ($request->hasFile('images')) {
+            $new_apartment->images()->attach($data[['images']]);
+            dd($new_apartment);
+        }
+
         return redirect()->route('admin.apartments.show', $new_apartment);
     }
 
