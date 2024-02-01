@@ -18,8 +18,11 @@ class ApartmentController extends Controller
     public function index()
     {
         $current_user = Auth::id();
-
-        $apartments = Apartment::where('user_id',$current_user)->get();
+        if ($current_user == '1') {
+            $apartments = Apartment::all();
+        } else {
+            $apartments = Apartment::where('user_id',$current_user)->get();
+        }
 
         return view('admin.apartments.index', compact('apartments'));
     }
