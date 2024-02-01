@@ -34,4 +34,8 @@ class Apartment extends Model
     {
         return $this->belongsToMany(Service::class);
     }
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
 }
