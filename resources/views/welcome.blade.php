@@ -44,18 +44,17 @@ foreach (array_chunk($apartments, 50) as $chunk) {
         $jsonQuery['batchItems'][$id]['query'] = '/reverseGeocode/' . $apartment->position->lat . ',' . $apartment->position->lon . '.json?limit=1';
     }
 
-    // dump($jsonQuery);
-
     // Axios call to TomTom Api
     $base_url = 'https://api.tomtom.com/search/2/batch/sync';
-    $api_key = '?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c';
+    $api_key = '?key=XT5xzBM08iLmm4Ejz9AOcw37ilcrZqqm';
     $responseFormat = '.json';
     $query_url = $base_url . $responseFormat . $api_key;
     $response = Http::withOptions(['verify' => false])->post($query_url, $jsonQuery);
     $results = $response->json();
     $addresses[] = $results;
 }
-dump($addresses);
+
+File::put('C:\Coding\fp\BoolBnb_backend\database\data\results.json', json_encode($addresses));
 
 // foreach ($apartments as $id => $apartment) {
 //     $jsonQuery[$id] = '/search/' . $apartment->position->lat . ',' . $apartment->position->lon . '.json?limit=1';
