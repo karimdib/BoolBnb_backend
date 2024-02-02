@@ -9,35 +9,30 @@
         @dump($apartment)
         <div class="m-3">
             <h1 class="display-5 mb-4 text-center">Apartment Info</h1>
-            <ul class="list-group shadow mb-4">
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">Description:
+            <ul class="list-group shadow mb-4 text-capitalize">
+
+                <li class="list-group-item p-4 "><span class="fw-bold">Description:
                     </span>{{ $apartment->description }}</li>
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">Rooms: </span>{{ $apartment->rooms }}
+                <li class="list-group-item p-4 "><span class="fw-bold">Rooms: </span>{{ $apartment->rooms }}
                 </li>
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">Beds: </span>{{ $apartment->beds }}
+                <li class="list-group-item p-4 "><span class="fw-bold">Beds: </span>{{ $apartment->beds }}
                 </li>
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">Bathrooms:
+                <li class="list-group-item p-4 "><span class="fw-bold">Bathrooms:
                     </span>{{ $apartment->bathrooms }}</li>
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">Square meters:
+                <li class="list-group-item p-4 "><span class="fw-bold">Square meters:
                     </span>{{ $apartment->square_meters }}
                 </li>
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">Street Name:
-                    </span>{{ $apartment->street_name }}</li>
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">Street n°:
-                    </span>{{ $apartment->street_number }}</li>
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">City: </span>{{ $apartment->city }}
-                </li>
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">Postal Code:
-                    </span>{{ $apartment->postal_code }}</li>
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">Latitude:
+                <li class="list-group-item p-4 "><span class="fw-bold">Address:
+                    </span>{{ $apartment->address }}</li>
+                <li class="list-group-item p-4 "><span class="fw-bold">Latitude:
                     </span>{{ $apartment->latitude }}</li>
-                <li class="list-group-item p-4 text-uppercase"><span class="fw-bold">Longitude:
+                <li class="list-group-item p-4 "><span class="fw-bold">Longitude:
                     </span>{{ $apartment->longitude }}</li>
             </ul>
             <h4 class="display-5 mb-4 text-center">Services</h4>
             <ul class="list-group shadow mb-4">
                 @forelse ($apartment->services as $service)
-                    <li class="list-group-item p-4 text-uppercase">{{ $service->name }}</li>
+                    <li class="list-group-item p-4 ">{{ $service->name }}</li>
                 @empty
                     <li class="list-group-item p-4">Your apartment has no services!</li>
                 @endforelse

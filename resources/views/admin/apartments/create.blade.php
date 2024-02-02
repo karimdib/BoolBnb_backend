@@ -37,7 +37,7 @@
                     <input type="text" class="form-control" id="square_meters" placeholder="Size in square meters"
                         name="square_meters" value="{{ old('square_meters') }}">
                 </div>
-                <div class="mb-3">
+                {{-- <div class="mb-3">
                     <label for="street_name" class="form-label">Street Name</label>
                     <input type="text" class="form-control" id="street_name" placeholder="Via Paolo Rossi"
                         name="street_name" value="{{ old('street_name') }}">
@@ -56,7 +56,10 @@
                     <label for="postal_code" class="form-label">Postal Code</label>
                     <input type="number" class="form-control" id="postal_code" placeholder="00144" name="postal_code"
                         value="{{ old('postal_code') }}">
-                </div>
+                </div> --}}
+
+                <x-address-search />
+
                 <div class="form-group mb-3">
                     <p>Choose apartment services:</p>
                     <div class="d-flex flex-wrap gap-4 ">
