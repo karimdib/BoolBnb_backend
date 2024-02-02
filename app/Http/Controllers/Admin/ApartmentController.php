@@ -195,6 +195,7 @@ class ApartmentController extends Controller
         if ($images) {
             foreach ($images as $image) {
                 Storage::delete($image->link);
+                Image::destroy($images);
             }
         }
 
