@@ -23,7 +23,7 @@ class ApartmentController extends Controller
         if ($current_user == '1') {
             $apartments = Apartment::all();
         } else {
-            $apartments = Apartment::where('user_id',$current_user)->get();
+            $apartments = Apartment::where('user_id', $current_user)->get();
         }
 
         return view('admin.apartments.index', compact('apartments'));
@@ -50,30 +50,24 @@ class ApartmentController extends Controller
             'beds' => 'required|numeric',
             'bathrooms' => 'required|numeric',
             'square_meters' => 'required|numeric',
-            'street_name' => 'required|max:255',
-            'street_number' => 'required|max:255',
-            'city' => 'required|max:255',
-            'postal_code' => 'required|max:255',
+            'address' => 'required|max:255',
             'cover_image' => 'file|max:2048'
         ]);
 
         $data = $request->all();
 
-        $full_address =
-            $data['street_name'] . ', ' .
-            $data['street_number'] . ', ' .
-            $data['city'] . ', ' .
-            $data['postal_code'];
+        if (empty($request->latitude)) {
 
-        $base_url = "https://api.tomtom.com/search/2/search/";
-        $api_key = "?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c";
-        $responseFormat = ".json";
-        $query_url = $base_url . $full_address . $responseFormat . $api_key;
+            $base_url = "https://api.tomtom.com/search/2/search/";
+            $api_key = "?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c";
+            $responseFormat = ".json";
+            $query_url = $base_url . $data['address'] . $responseFormat . $api_key;
 
-        $response = Http::withOptions(['verify' => false])->get($query_url);
-        $results = $response->json()["results"];
-        $data["latitude"] = $results[0]["position"]["lat"];
-        $data["longitude"] = $results[0]["position"]["lon"];
+            $response = Http::withOptions(['verify' => false])->get($query_url);
+            $results = $response->json()["results"];
+            $data["latitude"] = $results[0]["position"]["lat"];
+            $data["longitude"] = $results[0]["position"]["lon"];
+        }
 
         if ($request->hasFile('cover_image')) {
             $path = Storage::put('cover_images', $request->cover_image);
@@ -88,18 +82,18 @@ class ApartmentController extends Controller
             $new_apartment->services()->attach($data['services']);
         }
 
-        
+
         if ($request->hasFile('images')) {
-            
+
             $images = $request->images;
-            
+
             foreach ($images as $image) {
 
                 $link = Storage::put('images', $image);
                 $current_image['link'] = $link;
                 $current_image['apartment_id'] = $new_apartment->id;
-                $new_image = Image::create($current_image);               
-            }            
+                $new_image = Image::create($current_image);
+            }
         }
 
         return redirect()->route('admin.apartments.show', $new_apartment);
@@ -110,14 +104,11 @@ class ApartmentController extends Controller
      */
     public function show(Apartment $apartment)
     {
-        if (Auth::id() == $apartment->user_id) {
-
+        if (Auth::id() == $apartment->user_id || Auth::id() == 1) {
             return view('admin.apartments.show', compact('apartment'));
-            
         } else {
             return redirect()->route('admin.apartments.index');
         }
-
     }
 
     /**

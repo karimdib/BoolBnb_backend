@@ -12,23 +12,17 @@
                     <thead>
                         <tr>
                             <th>User ID</th>
-                            <th>Address</th>
-                            <th>Latitude</th>
-                            <th>Longitude</th>
+                            <th>Apartment ID</th>
                             <th></th>
                             <th></th>
+
                         </tr>
                     </thead>
                     <tbody>
                         @forelse ($apartments as $apartment)
                             <tr>
-                                <td><a href="{{ route('admin.apartments.show', $apartment) }}"> {{ $apartment->user_id }}</a></td>
-                                <td> <a href="{{ route('admin.apartments.show', $apartment) }}">
-                                        {{ $apartment->street_name . ' ' . $apartment->street_number . ' ' . $apartment->city . ' ' . $apartment->postal_code }}
-                                    </a>
-                                </td>
-                                <td>{{ $apartment->latitude }}</td>
-                                <td>{{ $apartment->longitude }}</td>
+                                <td>{{ $apartment->user_id }} </td>
+                                <td><a href="{{ route('admin.apartments.show', $apartment) }}">{{ $apartment->id }}</a></td>
                                 <td><a class="btn btn-sm btn-outline-primary"
                                         href="{{ route('admin.apartments.edit', $apartment) }}">Edit</a>
                                 </td>
