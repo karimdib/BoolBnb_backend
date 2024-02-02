@@ -15,11 +15,12 @@
                         @csrf
                         <div class="mb-3">
                             <label for="cardholder-name" class="form-label">Nome del Titolare della Carta</label>
-                            <input type="text" class="form-control" id="cardholder-name" name="cardholder_name" required>
+                            <input type="text" class="form-control" id="cardholder-name" name="cardholder_name"
+                                required>
                         </div>
                         <div class="mb-3">
-                            <label for="card-element" class="form-label">Dettagli della Carta</label>
-                            <div id="card-element"></div>
+                            <label for="cardholder-name" class="form-label">Numero della Carta</label>
+                            <input type="number" class="form-control" id="cardholder-name" name="cc-card" required>
                         </div>
                         <!-- Aggiungi il tuo campo per il payment_method_nonce di Braintree -->
                         <input type="hidden" id="nonce" name="payment_method_nonce">
@@ -71,6 +72,5 @@
 </script>
 
 
-    
-@endsection
 
+@endsection
