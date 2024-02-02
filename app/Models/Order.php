@@ -12,4 +12,9 @@ class Order extends Model
     {
         return $this->belongsTo(Apartment::class);
     }
+
+    public function sponsorship()
+    {
+        return $this->belongsTo(Sponsorship::class);
+    }
 }

@@ -104,6 +104,8 @@ class ApartmentController extends Controller
      */
     public function show(Apartment $apartment)
     {
+        $images = Image::where('apartment_id', $apartment->id)->get();
+
         if (Auth::id() == $apartment->user_id || Auth::id() == 1) {
             return view('admin.apartments.show', compact('apartment'));
         } else {
@@ -117,6 +119,7 @@ class ApartmentController extends Controller
     public function edit(Apartment $apartment)
     {
         $services = Service::orderBy('name', 'ASC')->get();
+        $images = Image::where('apartment_id', $apartment->id)->get();
 
         return view('admin.apartments.edit', compact('apartment', 'services'));
     }
@@ -153,6 +156,24 @@ class ApartmentController extends Controller
 
         $apartment->update($data);
 
+        if ($request->hasFile('images')) {
+
+            $old_images = Image::where('apartment_id', $apartment->id)->get();
+            if ($old_images) {
+                foreach ($old_images as $old_image) {
+                    Storage::delete($old_image->link);
+                }
+            }
+
+            $images = $request->images;
+            foreach ($images as $image) {
+                $link = Storage::put('images', $image);
+                $current_image['link'] = $link;
+                $current_image['apartment_id'] = $apartment->id;
+                $new_image = Image::create($current_image);
+            }
+        }
+
         if ($request->has('services')) {
             $apartment->services()->sync($data['services']);
         } else {
@@ -169,6 +190,13 @@ class ApartmentController extends Controller
     {
         if ($apartment->cover_image) {
             Storage::delete($apartment->cover_image);
+        }
+
+        $images = Image::where('apartment_id', $apartment->id)->get();
+        if ($images) {
+            foreach ($images as $image) {
+                Storage::delete($image->link);
+            }
         }
 
         $apartment->services()->sync([]);

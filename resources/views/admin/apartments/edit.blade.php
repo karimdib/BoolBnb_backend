@@ -74,6 +74,10 @@
                         @endforeach
                     </div>
                 </div>
+                <div class="mb-3">
+                    <label for="images" class="form-label">Change images</label>
+                    <input class="form-control" type="file" id="images" name="images[]" multiple>
+                </div>
                 <button class="btn btn-outline-primary" type="submit">Edit</button>
             </form>
             @if ($errors->any())
