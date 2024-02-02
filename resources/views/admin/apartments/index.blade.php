@@ -13,16 +13,26 @@
                         <tr>
                             <th>User ID</th>
                             <th>Apartment ID</th>
+                            <th>Name</th>
+                            <th>Slug</th>
                             <th></th>
                             <th></th>
-
                         </tr>
                     </thead>
                     <tbody>
                         @forelse ($apartments as $apartment)
                             <tr>
                                 <td>{{ $apartment->user_id }} </td>
-                                <td><a href="{{ route('admin.apartments.show', $apartment) }}">{{ $apartment->id }}</a></td>
+                                <td>{{ $apartment->id }} </td>
+
+                                <td>
+                                    <a href="{{ route('admin.apartments.show', $apartment) }}">
+                                        {{ $apartment->description }}
+                                    </a>
+                                </td>
+
+                                <td>{{ $apartment->slug }} </td>
+
                                 <td><a class="btn btn-sm btn-outline-primary"
                                         href="{{ route('admin.apartments.edit', $apartment) }}">Edit</a>
                                 </td>

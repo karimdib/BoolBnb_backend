@@ -11,6 +11,7 @@ use App\Models\Service;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class ApartmentController extends Controller
 {
@@ -55,6 +56,8 @@ class ApartmentController extends Controller
         ]);
 
         $data = $request->all();
+
+        $data["slug"] = Str::slug($data["description"]);
 
         if (empty($request->latitude)) {
 
