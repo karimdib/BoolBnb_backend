@@ -6,7 +6,6 @@
     @endif
 
     <div class="container">
-        @dump($apartment)
         <div class="m-3">
             <h1 class="display-5 mb-4 text-center">Apartment Info</h1>
             <ul class="list-group shadow mb-4 text-capitalize">
@@ -37,10 +36,10 @@
                     <li class="list-group-item p-4">Your apartment has no services!</li>
                 @endforelse
             </ul>
-            <ul class="list-group shadow mb-4">
+            <ul class="shadow mb-4 row">
                 @foreach ($images as $image)
-                    <li class="d-flex">
-                        <img class="w-25" src="{{ asset('storage').'/'. $image->link }}" alt="">
+                    <li class="d-flex col-4 p-2">
+                        <img class="w-100" src="{{ asset('storage').'/'. $image->link }}" alt="">
                     </li>
                 @endforeach
             </ul>

@@ -121,7 +121,7 @@ class ApartmentController extends Controller
         $services = Service::orderBy('name', 'ASC')->get();
         $images = Image::where('apartment_id', $apartment->id)->get();
 
-        return view('admin.apartments.edit', compact('apartment', 'services'));
+        return view('admin.apartments.edit', compact('apartment', 'services','images'));
     }
 
     /**
@@ -129,7 +129,6 @@ class ApartmentController extends Controller
      */
     public function update(UpdateApartmentRequest $request, Apartment $apartment)
     {
-
         $request->validate([
             'description' => 'required|max:500',
             'rooms' => 'required|numeric',
@@ -158,12 +157,7 @@ class ApartmentController extends Controller
 
         if ($request->hasFile('images')) {
 
-            $old_images = Image::where('apartment_id', $apartment->id)->get();
-            if ($old_images) {
-                foreach ($old_images as $old_image) {
-                    Storage::delete($old_image->link);
-                }
-            }
+
 
             $images = $request->images;
             foreach ($images as $image) {
@@ -172,8 +166,17 @@ class ApartmentController extends Controller
                 $current_image['apartment_id'] = $apartment->id;
                 $new_image = Image::create($current_image);
             }
-        }
+        }  
 
+        if ($request->has('old_images')) {
+            $old_images = $request->old_images;
+            foreach($old_images as $old_image) {
+                $current_image = json_decode($old_image);
+                Storage::delete($current_image->link);
+                Image::destroy($current_image->id);
+            }
+        }
+          
         if ($request->has('services')) {
             $apartment->services()->sync($data['services']);
         } else {

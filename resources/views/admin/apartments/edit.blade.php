@@ -74,8 +74,22 @@
                         @endforeach
                     </div>
                 </div>
+                <div class="form-group mb-3">
+                    <p>Delete old images:</p>
+                    <div class="d-flex flex-wrap gap-4 ">
+                        @foreach ($images as $image)
+                            <div class="form-check">
+                                <input name="old_images[]" class="form-check-input" type="checkbox"
+                                    value="{{ $image }}" id="old_image-{{ $image->id }}">
+                                <label class="form-check-label" for="old_image-{{ $image }}">
+                                    <img class="w-25" src="{{ asset('storage').'/'. $image->link }}" alt="">
+                                </label>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
                 <div class="mb-3">
-                    <label for="images" class="form-label">Change images</label>
+                    <label for="images" class="form-label">Add more images</label>
                     <input class="form-control" type="file" id="images" name="images[]" multiple>
                 </div>
                 <button class="btn btn-outline-primary" type="submit">Edit</button>
