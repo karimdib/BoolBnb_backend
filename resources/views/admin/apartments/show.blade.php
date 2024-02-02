@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    @if ($apartment->cover_image)
-        <figure><img class="w-50" src="{{ asset('storage/' . $apartment->cover_image) }}"></figure>
-    @endif
+
+    <div class="container">
+        @if ($apartment->cover_image)
+            <figure class="d-flex justify-content-center">
+                <img class="w-50" src="{{ asset('storage/' . $apartment->cover_image) }}">
+            </figure>
+        @endif
+    </div>
 
     <div class="container">
         <div class="m-3">

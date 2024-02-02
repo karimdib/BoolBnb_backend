@@ -107,7 +107,7 @@ class ApartmentController extends Controller
         $images = Image::where('apartment_id', $apartment->id)->get();
 
         if (Auth::id() == $apartment->user_id || Auth::id() == 1) {
-            return view('admin.apartments.show', compact('apartment'));
+            return view('admin.apartments.show', compact('apartment','images'));
         } else {
             return redirect()->route('admin.apartments.index');
         }
@@ -135,10 +135,6 @@ class ApartmentController extends Controller
             'beds' => 'required|numeric',
             'bathrooms' => 'required|numeric',
             'square_meters' => 'required|numeric',
-            'street_name' => 'required|max:255',
-            'street_number' => 'required|max:255',
-            'city' => 'required|max:255',
-            'postal_code' => 'required|max:255',
             'cover_image' => 'file|max:2048'
         ]);
 
