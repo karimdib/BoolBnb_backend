@@ -20,7 +20,8 @@ class Apartment extends Model
         'postal_code',
         'latitude',
         'longitude',
-        'cover_image'
+        'cover_image',
+        'user_id',
     ];
     public function messages()
     {

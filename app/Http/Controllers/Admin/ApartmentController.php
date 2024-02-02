@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Apartment;
+use App\Models\Image;
 use App\Http\Requests\StoreApartmentRequest;
 use App\Http\Requests\UpdateApartmentRequest;
 use App\Http\Controllers\Controller;
 use App\Models\Service;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
 
 class ApartmentController extends Controller
 {
@@ -17,7 +19,13 @@ class ApartmentController extends Controller
      */
     public function index()
     {
-        $apartments = Apartment::all();
+        $current_user = Auth::id();
+        if ($current_user == '1') {
+            $apartments = Apartment::all();
+        } else {
+            $apartments = Apartment::where('user_id',$current_user)->get();
+        }
+
         return view('admin.apartments.index', compact('apartments'));
     }
 
@@ -36,7 +44,6 @@ class ApartmentController extends Controller
      */
     public function store(StoreApartmentRequest $request)
     {
-
         $request->validate([
             'description' => 'required|max:500',
             'rooms' => 'required|numeric',
@@ -47,7 +54,7 @@ class ApartmentController extends Controller
             'street_number' => 'required|max:255',
             'city' => 'required|max:255',
             'postal_code' => 'required|max:255',
-            'cover_image' => 'string'
+            'cover_image' => 'file|max:2048'
         ]);
 
         $data = $request->all();
@@ -73,10 +80,26 @@ class ApartmentController extends Controller
             $data['cover_image'] = $path;
         }
 
+        $data['user_id'] = Auth::id();
+
         $new_apartment = Apartment::create($data);
 
         if ($request->has('services')) {
             $new_apartment->services()->attach($data['services']);
+        }
+
+        
+        if ($request->hasFile('images')) {
+            
+            $images = $request->images;
+            
+            foreach ($images as $image) {
+
+                $link = Storage::put('images', $image);
+                $current_image['link'] = $link;
+                $current_image['apartment_id'] = $new_apartment->id;
+                $new_image = Image::create($current_image);               
+            }            
         }
 
         return redirect()->route('admin.apartments.show', $new_apartment);
@@ -86,8 +109,16 @@ class ApartmentController extends Controller
      * Display the specified resource.
      */
     public function show(Apartment $apartment)
-    {
-        return view('admin.apartments.show', compact('apartment'));
+    {   
+        $images = Image::where('apartment_id',$apartment->id)->get();
+
+        if (Auth::id() == $apartment->user_id) {
+            return view('admin.apartments.show', compact('apartment','images'));
+            
+        } else {
+            return redirect()->route('admin.apartments.index');
+        }
+
     }
 
     /**
@@ -96,6 +127,7 @@ class ApartmentController extends Controller
     public function edit(Apartment $apartment)
     {
         $services = Service::orderBy('name', 'ASC')->get();
+        $images = Image::where('apartment_id',$apartment->id)->get();
 
         return view('admin.apartments.edit', compact('apartment', 'services'));
     }
@@ -116,7 +148,7 @@ class ApartmentController extends Controller
             'street_number' => 'required|max:255',
             'city' => 'required|max:255',
             'postal_code' => 'required|max:255',
-            'cover_image' => 'string'
+            'cover_image' => 'file|max:2048'
         ]);
 
         $data = $request->all();
@@ -131,6 +163,24 @@ class ApartmentController extends Controller
         }
 
         $apartment->update($data);
+
+        if ($request->hasFile('images')) {
+
+            $old_images = Image::where('apartment_id',$apartment->id)->get();
+                if($old_images) {
+                    foreach ($old_images as $old_image) {
+                        Storage::delete($old_image->link);
+                    }
+                }
+
+            $images = $request->images;            
+            foreach ($images as $image) {
+                $link = Storage::put('images', $image);
+                $current_image['link'] = $link;
+                $current_image['apartment_id'] = $apartment->id;
+                $new_image = Image::create($current_image);               
+            }
+        }            
 
         if ($request->has('services')) {
             $apartment->services()->sync($data['services']);
@@ -148,6 +198,13 @@ class ApartmentController extends Controller
     {
         if ($apartment->cover_image) {
             Storage::delete($apartment->cover_image);
+        }
+
+        $images = Image::where('apartment_id',$apartment->id)->get();
+        if($images) {
+            foreach ($images as $image) {
+                Storage::delete($image->link);
+            }
         }
 
         $apartment->services()->sync([]);
