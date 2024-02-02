@@ -110,7 +110,7 @@ class ApartmentController extends Controller
         $images = Image::where('apartment_id', $apartment->id)->get();
 
         if (Auth::id() == $apartment->user_id || Auth::id() == 1) {
-            return view('admin.apartments.show', compact('apartment'));
+            return view('admin.apartments.show', compact('apartment','images'));
         } else {
             return redirect()->route('admin.apartments.index');
         }
@@ -124,7 +124,7 @@ class ApartmentController extends Controller
         $services = Service::orderBy('name', 'ASC')->get();
         $images = Image::where('apartment_id', $apartment->id)->get();
 
-        return view('admin.apartments.edit', compact('apartment', 'services'));
+        return view('admin.apartments.edit', compact('apartment', 'services','images'));
     }
 
     /**
@@ -132,17 +132,12 @@ class ApartmentController extends Controller
      */
     public function update(UpdateApartmentRequest $request, Apartment $apartment)
     {
-
         $request->validate([
             'description' => 'required|max:500',
             'rooms' => 'required|numeric',
             'beds' => 'required|numeric',
             'bathrooms' => 'required|numeric',
             'square_meters' => 'required|numeric',
-            'street_name' => 'required|max:255',
-            'street_number' => 'required|max:255',
-            'city' => 'required|max:255',
-            'postal_code' => 'required|max:255',
             'cover_image' => 'file|max:2048'
         ]);
 
@@ -161,12 +156,7 @@ class ApartmentController extends Controller
 
         if ($request->hasFile('images')) {
 
-            $old_images = Image::where('apartment_id', $apartment->id)->get();
-            if ($old_images) {
-                foreach ($old_images as $old_image) {
-                    Storage::delete($old_image->link);
-                }
-            }
+
 
             $images = $request->images;
             foreach ($images as $image) {
@@ -175,8 +165,17 @@ class ApartmentController extends Controller
                 $current_image['apartment_id'] = $apartment->id;
                 $new_image = Image::create($current_image);
             }
-        }
+        }  
 
+        if ($request->has('old_images')) {
+            $old_images = $request->old_images;
+            foreach($old_images as $old_image) {
+                $current_image = json_decode($old_image);
+                Storage::delete($current_image->link);
+                Image::destroy($current_image->id);
+            }
+        }
+          
         if ($request->has('services')) {
             $apartment->services()->sync($data['services']);
         } else {
@@ -199,6 +198,7 @@ class ApartmentController extends Controller
         if ($images) {
             foreach ($images as $image) {
                 Storage::delete($image->link);
+                Image::destroy($images);
             }
         }
 

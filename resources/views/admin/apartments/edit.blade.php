@@ -39,26 +39,6 @@
                     <input type="text" class="form-control" id="square_meters" name="square_meters"
                         value="{{ old('square_meters', $apartment->square_meters) }}">
                 </div>
-                <div class="mb-3">
-                    <label for="street_name" class="form-label">Street name</label>
-                    <input type="text" class="form-control" id="street_name" name="street_name"
-                        value="{{ old('street_name', $apartment->street_name) }}">
-                </div>
-                <div class="mb-3">
-                    <label for="street_number" class="form-label">Street number</label>
-                    <input type="text" class="form-control" id="street_number" name="street_number"
-                        value="{{ old('street_number', $apartment->street_number) }}">
-                </div>
-                <div class="mb-3">
-                    <label for="city" class="form-label">City</label>
-                    <input type="text" class="form-control" id="city" name="city"
-                        value="{{ old('city', $apartment->city) }}">
-                </div>
-                <div class="mb-4">
-                    <label for="postal_code" class="form-label">Postal Code</label>
-                    <input type="text" class="form-control" id="postal_code" name="postal_code"
-                        value="{{ old('postal_code', $apartment->postal_code) }}">
-                </div>
                 <div class="form-group mb-3">
                     <p>Choose apartment services:</p>
                     <div class="d-flex flex-wrap gap-4 ">
@@ -74,8 +54,22 @@
                         @endforeach
                     </div>
                 </div>
+                <div class="form-group mb-3">
+                    <p>Delete old images:</p>
+                    <div class="d-flex flex-wrap gap-4 ">
+                        @foreach ($images as $image)
+                            <div class="form-check">
+                                <input name="old_images[]" class="form-check-input" type="checkbox"
+                                    value="{{ $image }}" id="old_image-{{ $image->id }}">
+                                <label class="form-check-label" for="old_image-{{ $image }}">
+                                    <img class="w-25" src="{{ asset('storage').'/'. $image->link }}" alt="">
+                                </label>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
                 <div class="mb-3">
-                    <label for="images" class="form-label">Change images</label>
+                    <label for="images" class="form-label">Add more images</label>
                     <input class="form-control" type="file" id="images" name="images[]" multiple>
                 </div>
                 <button class="btn btn-outline-primary" type="submit">Edit</button>
