@@ -6,7 +6,6 @@
     @endif
 
     <div class="container">
-        @dump($apartment)
         <div class="m-3">
             <h1 class="display-5 mb-4 text-center">Apartment Info</h1>
             <ul class="list-group shadow mb-4">
