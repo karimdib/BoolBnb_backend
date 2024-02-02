@@ -24,18 +24,18 @@ class BraintreeController extends Controller
 
     public function processPayment(Request $request)
     {
-        $nonce = $request->input('payment_method_nonce');
+        //$nonce = $request->input('payment_method_nonce');
 
         $gateway = new Gateway([
             'environment' => 'sandbox',
-            'merchantId' => '6f8m48kvhzzdnqjz',
-            'publicKey' => '27h635y22h3kfjhy',
-            'privateKey' => '935dd3c3db771d5dc1a6193708cc60fe'
+            'merchantId' => 'nhtdmv2s7cv4dj65',
+            'publicKey' => 'jpm9jftn4z4cnd8v',
+            'privateKey' => '3d524e3b3d2be04074e32d671c52697f'
         ]);
 
         $result = $gateway->transaction()->sale([
             'amount' => '10.00',
-            'paymentMethodNonce' => 'mastarcard',
+            'paymentMethodNonce' => 'fake-valid-nonce',
             'options' => [
                 'submitForSettlement' => true,
             ],
