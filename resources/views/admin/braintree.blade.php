@@ -22,6 +22,15 @@
                             <label for="cardholder-name" class="form-label">Numero della Carta</label>
                             <input type="number" class="form-control" id="cardholder-name" name="cc-card" required>
                         </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option value="1">Gold</option>
+                                <option value="2">Diamond</option>
+                                <option value="3">Platinum</option>
+                            </select>
+                            <label for="floatingSelect">Scegli la Promozione</label>
+                        </div>
+                        <input type="hidden" id="promotion" name="promotion_hidden">
                         <!-- Aggiungi il tuo campo per il payment_method_nonce di Braintree -->
                         <input type="hidden" id="nonce" name="payment_method_nonce">
                         <button type="submit" class="btn btn-primary" id="submit-button">Effettua Pagamento</button>
@@ -39,7 +48,7 @@
     var submitButton = document.getElementById('submit-button');
 
     braintree.dropin.create({
-        authorization: 'YOUR_BRAINTREE_CLIENT_TOKEN',
+        authorization: '{{$token}}',
         selector: '#card-element',
         paypal: {
             flow: 'vault'
