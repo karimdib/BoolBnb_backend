@@ -13,6 +13,8 @@
 
                 <li class="list-group-item p-4 "><span class="fw-bold">Description:
                     </span>{{ $apartment->description }}</li>
+                <li class="list-group-item p-4 "><span class="fw-bold">Slug:
+                    </span>{{ $apartment->slug }}</li>
                 <li class="list-group-item p-4 "><span class="fw-bold">Rooms: </span>{{ $apartment->rooms }}
                 </li>
                 <li class="list-group-item p-4 "><span class="fw-bold">Beds: </span>{{ $apartment->beds }}
@@ -29,6 +31,9 @@
                 <li class="list-group-item p-4 "><span class="fw-bold">Longitude:
                     </span>{{ $apartment->longitude }}</li>
             </ul>
+
+
+
             <h4 class="display-5 mb-4 text-center">Services</h4>
             <ul class="list-group shadow mb-4">
                 @forelse ($apartment->services as $service)
@@ -40,7 +45,7 @@
             <ul class="list-group shadow mb-4">
                 @foreach ($images as $image)
                     <li class="d-flex">
-                        <img class="w-25" src="{{ asset('storage').'/'. $image->link }}" alt="">
+                        <img class="w-25" src="{{ asset('storage') . '/' . $image->link }}" alt="">
                     </li>
                 @endforeach
             </ul>
