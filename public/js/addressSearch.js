@@ -1,6 +1,8 @@
 const searchBtn = document.getElementById("search-button");
 const searchRes = document.getElementById("search-results");
 const query = document.getElementById("address-search");
+
+const match = document.getElementById("match");
 const latitude = document.getElementById("latitude");
 const longitude = document.getElementById("longitude");
 
@@ -31,9 +33,10 @@ searchBtn.addEventListener("click", (event) => {
 
                 li.addEventListener("click", () => {
                     query.value = li.innerHTML;
-                    ul.remove();
+                    match.value = li.innerHTML;
                     latitude.value = element.position.lat;
                     longitude.value = element.position.lon;
+                    ul.remove();
                 });
             });
         });

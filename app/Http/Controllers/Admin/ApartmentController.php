@@ -8,7 +8,6 @@ use App\Http\Requests\StoreApartmentRequest;
 use App\Http\Requests\UpdateApartmentRequest;
 use App\Http\Controllers\Controller;
 use App\Models\Service;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
@@ -45,32 +44,20 @@ class ApartmentController extends Controller
      */
     public function store(StoreApartmentRequest $request)
     {
+
         $request->validate([
             'description' => 'required|max:500',
             'rooms' => 'required|numeric',
             'beds' => 'required|numeric',
             'bathrooms' => 'required|numeric',
             'square_meters' => 'required|numeric',
-            'address' => 'required|max:255',
+            'address' => 'required|max:255|same:a_searched_address',
             'cover_image' => 'file|max:2048'
         ]);
 
         $data = $request->all();
 
         $data["slug"] = Str::slug($data["description"]);
-
-        if (empty($request->latitude)) {
-
-            $base_url = "https://api.tomtom.com/search/2/search/";
-            $api_key = "?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c";
-            $responseFormat = ".json";
-            $query_url = $base_url . $data['address'] . $responseFormat . $api_key;
-
-            $response = Http::withOptions(['verify' => false])->get($query_url);
-            $results = $response->json()["results"];
-            $data["latitude"] = $results[0]["position"]["lat"];
-            $data["longitude"] = $results[0]["position"]["lon"];
-        }
 
         if ($request->hasFile('cover_image')) {
             $path = Storage::put('cover_images', $request->cover_image);
@@ -84,7 +71,6 @@ class ApartmentController extends Controller
         if ($request->has('services')) {
             $new_apartment->services()->attach($data['services']);
         }
-
 
         if ($request->hasFile('images')) {
 
@@ -110,7 +96,7 @@ class ApartmentController extends Controller
         $images = Image::where('apartment_id', $apartment->id)->get();
 
         if (Auth::id() == $apartment->user_id || Auth::id() == 1) {
-            return view('admin.apartments.show', compact('apartment','images'));
+            return view('admin.apartments.show', compact('apartment', 'images'));
         } else {
             return redirect()->route('admin.apartments.index');
         }
@@ -124,7 +110,7 @@ class ApartmentController extends Controller
         $services = Service::orderBy('name', 'ASC')->get();
         $images = Image::where('apartment_id', $apartment->id)->get();
 
-        return view('admin.apartments.edit', compact('apartment', 'services','images'));
+        return view('admin.apartments.edit', compact('apartment', 'services', 'images'));
     }
 
     /**
@@ -165,17 +151,17 @@ class ApartmentController extends Controller
                 $current_image['apartment_id'] = $apartment->id;
                 $new_image = Image::create($current_image);
             }
-        }  
+        }
 
         if ($request->has('old_images')) {
             $old_images = $request->old_images;
-            foreach($old_images as $old_image) {
+            foreach ($old_images as $old_image) {
                 $current_image = json_decode($old_image);
                 Storage::delete($current_image->link);
                 Image::destroy($current_image->id);
             }
         }
-          
+
         if ($request->has('services')) {
             $apartment->services()->sync($data['services']);
         } else {
