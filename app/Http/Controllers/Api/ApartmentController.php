@@ -18,4 +18,13 @@ class ApartmentController extends Controller
             'success' => true
         ]);
     }
+
+    public function show(Apartment $apartment)
+    {
+        $apartment->load('user', 'services', 'images');
+
+        return response()->json([
+            'apartment' => $apartment
+        ]);
+    }
 }
