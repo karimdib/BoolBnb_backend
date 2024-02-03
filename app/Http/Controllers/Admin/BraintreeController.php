@@ -12,9 +12,9 @@ class BraintreeController extends Controller
     {
         $gateway = new Gateway([
             'environment' => 'sandbox',
-            'merchantId' => '6f8m48kvhzzdnqjz',
-            'publicKey' => '27h635y22h3kfjhy',
-            'privateKey' => '935dd3c3db771d5dc1a6193708cc60fe'
+            'merchantId' => '5b9r528tbqdcg9nx',
+            'publicKey' => 'vr8xdtzqmvtdt8q6',
+            'privateKey' => '708e848bf2e4b30cf13e0990755132d1'
         ]);
 
         $clientToken = $gateway->clientToken()->generate();
@@ -25,16 +25,25 @@ class BraintreeController extends Controller
     public function processPayment(Request $request)
     {
         //$nonce = $request->input('payment_method_nonce');
-
+        $payMethod = $request->input('pay_method');
+        if ($payMethod === '1') {
+            $amount = 2.99;
+        } elseif ($payMethod === '2') {
+            $amount = 5.99;
+        } elseif ($payMethod === '3') {
+            $amount = 9.99;
+        } else {
+            return 'devi scegliere un opzione';
+        }
         $gateway = new Gateway([
             'environment' => 'sandbox',
-            'merchantId' => 'nhtdmv2s7cv4dj65',
-            'publicKey' => 'jpm9jftn4z4cnd8v',
-            'privateKey' => '3d524e3b3d2be04074e32d671c52697f'
+            'merchantId' => '5b9r528tbqdcg9nx',
+            'publicKey' => 'vr8xdtzqmvtdt8q6',
+            'privateKey' => '708e848bf2e4b30cf13e0990755132d1'
         ]);
 
         $result = $gateway->transaction()->sale([
-            'amount' => '10.00',
+            'amount' => $amount,
             'paymentMethodNonce' => 'fake-valid-nonce',
             'options' => [
                 'submitForSettlement' => true,

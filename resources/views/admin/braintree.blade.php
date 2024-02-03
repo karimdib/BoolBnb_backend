@@ -23,10 +23,11 @@
                             <input type="number" class="form-control" id="cardholder-name" name="cc-card" required>
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                <option value="1">Gold</option>
-                                <option value="2">Diamond</option>
-                                <option value="3">Platinum</option>
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
+                                name="pay_method">
+                                <option value="1" name="1">Gold</option>
+                                <option value="2" name="2">Diamond</option>
+                                <option value="3" name="3">Platinum</option>
                             </select>
                             <label for="floatingSelect">Scegli la Promozione</label>
                         </div>
@@ -47,37 +48,42 @@
     var form = document.getElementById('payment-form');
     var submitButton = document.getElementById('submit-button');
 
-    braintree.dropin.create({
-        authorization: '{{$token}}',
-        selector: '#card-element',
-        paypal: {
-            flow: 'vault'
-        }
-    }, function (createErr, instance) {
-        if (createErr) {
-            console.log('Errore durante la creazione di Braintree Drop-in:', createErr);
-            return;
-        }
+braintree.dropin.create({
+    authorization: '{{$token}}',
+    selector: '#card-element',
+    paypal: {
+        flow: 'vault'
+    }
+}, function (createErr, instance) {
+    if (createErr) {
+        console.log('Errore durante la creazione di  Braintree Drop-in:', createErr);
+        return;
+    }
 
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
+    document.getElementById('promotion').value = document.getElementById('floatingSelect').value;
 
-            instance.requestPaymentMethod(function (err, payload) {
-                if (err) {
-                    console.log('Errore durante la richiesta del metodo di pagamento:', err);
-                    return;
-                }
-
-                // Imposta il valore del payment_method_nonce nel campo nascosto
-                document.getElementById('nonce').value = payload.nonce;
-
-                // Invia il modulo al tuo controller Laravel per elaborare il pagamento
-                form.submit();
-            });
-        });
-
-        submitButton.removeAttribute('disabled');
+    document.getElementById('floatingSelect').addEventListener('change', function () {
+        document.getElementById('promotion').value = this.value;
     });
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        instance.requestPaymentMethod(function (err, payload) {
+            if (err) {
+                console.log('Errore durante la richiesta del metodo di pagamento:', err);
+                return;
+            }
+
+            document.getElementById('nonce').value = payload.nonce;
+
+            form.submit();
+        });
+    });
+
+    submitButton.removeAttribute('disabled');
+});
+
 </script>
 
 
