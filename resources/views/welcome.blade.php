@@ -1,4 +1,4 @@
-{{-- @extends('layouts.app')
+@extends('layouts.app')
 @section('content')
     <div class="jumbotron p-5 mb-4 bg-light rounded-3">
         <div class="container py-5">
@@ -28,62 +28,4 @@
                 accusamus dolores!</p>
         </div>
     </div>
-@endsection --}}
-
-<?php
-use Illuminate\Support\Facades\File;
-
-$json = File::get('C:\Coding\fp\BoolBnb_backend\database\data\addressList.json');
-$apartments = json_decode($json);
-$jsonQuery = [];
-$addresses = [];
-
-foreach (array_chunk($apartments, 50) as $chunk) {
-    $jsonQuery = [];
-    foreach ($chunk as $id => $apartment) {
-        $jsonQuery['batchItems'][$id]['query'] = '/reverseGeocode/' . $apartment->position->lat . ',' . $apartment->position->lon . '.json?limit=1';
-    }
-
-    // Axios call to TomTom Api
-    $base_url = 'https://api.tomtom.com/search/2/batch/sync';
-    $api_key = '?key=XT5xzBM08iLmm4Ejz9AOcw37ilcrZqqm';
-    $responseFormat = '.json';
-    $query_url = $base_url . $responseFormat . $api_key;
-    $response = Http::withOptions(['verify' => false])->post($query_url, $jsonQuery);
-    $results = $response->json();
-    $addresses[] = $results;
-}
-
-File::put('C:\Coding\fp\BoolBnb_backend\database\data\results.json', json_encode($addresses));
-
-// foreach ($apartments as $id => $apartment) {
-//     $jsonQuery[$id] = '/search/' . $apartment->position->lat . ',' . $apartment->position->lon . '.json?limit=1';
-// }
-
-// // dd($jsonQuery);
-// $chunks = array_chunk($jsonQuery, 100);
-
-// foreach ($chunks as $id => $chunk) {
-//     dump($chunk);
-// }
-
-// dd($response);
-
-// $results = $response->json()['batchItems'];
-
-// $details = [];
-
-// foreach ($results as $id => $result) {
-//     $details[$id] = $result['response']['results'][0]['address']['freeformAddress'];
-// }
-
-// dd($details);
-
-// dd($results['batchItems']);
-// File::put('C:\Coding\fp\BoolBnb_backend\database\data\test.json', json_encode($results));
-
-// dd($jsonQuery);
-// dd(json_encode($jsonQuery));
-// dd($response);
-
-?>
+@endsection
