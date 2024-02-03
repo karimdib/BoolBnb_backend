@@ -19,7 +19,7 @@ class ApartmentSeeder extends Seeder
      */
     public function run(Faker $faker): void
     {
-        $json = File::get("database/data/addressList.json");
+        $json = File::get("database/data/convertedAddressList.json");
         $apartments = json_decode($json);
         foreach ($apartments as $id => $apartment) {
 
@@ -46,8 +46,9 @@ class ApartmentSeeder extends Seeder
             }
 
             // Get latitude and longitude from json
-            $new_apartment->latitude = $apartment->position->lat;
-            $new_apartment->longitude = $apartment->position->lon;
+            $new_apartment->address = $apartment->address;
+            $new_apartment->latitude = $apartment->latitude;
+            $new_apartment->longitude = $apartment->longitude;
 
             $new_apartment->save();
         }
