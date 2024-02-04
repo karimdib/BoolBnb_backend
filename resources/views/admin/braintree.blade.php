@@ -44,48 +44,4 @@
 
 {{-- <script src="https://js.braintreegateway.com/web/dropin/1.31.0/js/dropin.min.js"></script> --}}
 
-<script>
-    var form = document.getElementById('payment-form');
-    var submitButton = document.getElementById('submit-button');
-
-braintree.dropin.create({
-    authorization: '{{$token}}',
-    selector: '#card-element',
-    paypal: {
-        flow: 'vault'
-    }
-}, function (createErr, instance) {
-    if (createErr) {
-        console.log('Errore durante la creazione di  Braintree Drop-in:', createErr);
-        return;
-    }
-
-    document.getElementById('promotion').value = document.getElementById('floatingSelect').value;
-
-    document.getElementById('floatingSelect').addEventListener('change', function () {
-        document.getElementById('promotion').value = this.value;
-    });
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        instance.requestPaymentMethod(function (err, payload) {
-            if (err) {
-                console.log('Errore durante la richiesta del metodo di pagamento:', err);
-                return;
-            }
-
-            document.getElementById('nonce').value = payload.nonce;
-
-            form.submit();
-        });
-    });
-
-    submitButton.removeAttribute('disabled');
-});
-
-</script>
-
-
-
 @endsection
