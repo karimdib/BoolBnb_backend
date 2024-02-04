@@ -45,7 +45,7 @@ class ApartmentSeeder extends Seeder
                 $new_apartment->square_meters = $faker->numberBetween(121, 200);
             }
 
-            // Get latitude and longitude from json
+            // Get address, latitude and longitude from json
             $new_apartment->address = $apartment->address->freeformAddress;
             $new_apartment->latitude = $apartment->position->lat;
             $new_apartment->longitude = $apartment->position->lon;

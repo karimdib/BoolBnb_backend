@@ -30,7 +30,9 @@
     </div>
 @endsection
 
-@php
+{{-- PHP --}}
+
+{{-- @php
     include '../resources/php/TomTomFunctions.php';
     TomTomLoad();
-@endphp
+@endphp --}}

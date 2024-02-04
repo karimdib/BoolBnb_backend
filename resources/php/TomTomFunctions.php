@@ -8,6 +8,7 @@ function TomTomLoad()
     dump("TomTom Functions Loaded...");
 }
 
+// Perform TomTom Batch search from a list of positions, json with full address details for each position
 function TomTomBatchSearch()
 {
     $jsonQuery = [];
@@ -42,6 +43,7 @@ function TomTomBatchSearch()
     File::put('../database/data/results.json', json_encode($addresses));
 }
 
+// Take data output from TomTomBatchSearch and output a json file for seeding our apartments table
 function TomTomBatchConvert()
 {
     $location_data = [];
