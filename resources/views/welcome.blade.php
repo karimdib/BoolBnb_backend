@@ -29,3 +29,8 @@
         </div>
     </div>
 @endsection
+
+@php
+    include '../resources/php/TomTomFunctions.php';
+    TomTomLoad();
+@endphp

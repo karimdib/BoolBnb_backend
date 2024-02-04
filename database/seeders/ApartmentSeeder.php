@@ -21,7 +21,7 @@ class ApartmentSeeder extends Seeder
     {
         $json = File::get("database/data/convertedAddressList.json");
         $apartments = json_decode($json);
-        foreach ($apartments as $id => $apartment) {
+        foreach ($apartments as $apartment) {
 
             // Create, name and assign to user
             $new_apartment = new Apartment();
@@ -46,9 +46,10 @@ class ApartmentSeeder extends Seeder
             }
 
             // Get latitude and longitude from json
-            $new_apartment->address = $apartment->address;
-            $new_apartment->latitude = $apartment->latitude;
-            $new_apartment->longitude = $apartment->longitude;
+            $new_apartment->address = $apartment->address->freeformAddress;
+            $new_apartment->latitude = $apartment->position->lat;
+            $new_apartment->longitude = $apartment->position->lon;
+
 
             $new_apartment->save();
         }
