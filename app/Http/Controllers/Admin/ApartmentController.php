@@ -46,6 +46,7 @@ class ApartmentController extends Controller
     {
 
         $request->validate([
+            'name' => 'required',
             'description' => 'required|max:500',
             'rooms' => 'required|numeric',
             'beds' => 'required|numeric',
@@ -119,6 +120,7 @@ class ApartmentController extends Controller
     public function update(UpdateApartmentRequest $request, Apartment $apartment)
     {
         $request->validate([
+            'name' => 'required',
             'description' => 'required|max:500',
             'rooms' => 'required|numeric',
             'beds' => 'required|numeric',

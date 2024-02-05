@@ -28,7 +28,7 @@
 
                                 <td>
                                     <a href="{{ route('admin.apartments.show', $apartment) }}">
-                                        {{ $apartment->description }}
+                                        {{ $apartment->name }}
                                     </a>
                                 </td>
 

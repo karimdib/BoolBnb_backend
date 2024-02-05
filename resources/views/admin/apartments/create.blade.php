@@ -13,9 +13,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="description" class="form-label">Description</label>
-                    <input type="text" class="form-control" id="description" placeholder="Description of the apartment"
-                        name="description" value="{{ old('description') }}">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Apartment Name" name="name"
+                        value="{{ old('name') }}">
                 </div>
                 <div class="mb-3">
                     <label for="rooms" class="form-label">Rooms</label>

@@ -11,10 +11,10 @@ class ApartmentController extends Controller
     public function index(Request $request)
     {
         // $results = Apartment::with('services')->limit(20);
-        $results = Apartment::all();
+        $results = Apartment::with('user', 'services')->get();
 
         return response()->json([
-            'results' =>$results,
+            'results' => $results,
             'success' => true
         ]);
     }
