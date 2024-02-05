@@ -37,27 +37,8 @@
                     <input type="text" class="form-control" id="square_meters" placeholder="Size in square meters"
                         name="square_meters" value="{{ old('square_meters') }}">
                 </div>
-                {{-- <div class="mb-3">
-                    <label for="street_name" class="form-label">Street Name</label>
-                    <input type="text" class="form-control" id="street_name" placeholder="Via Paolo Rossi"
-                        name="street_name" value="{{ old('street_name') }}">
-                </div>
-                <div class="mb-3">
-                    <label for="street_number" class="form-label">Street Number</label>
-                    <input type="text" class="form-control" id="street_number" placeholder="10" name="street_number"
-                        value="{{ old('street_number') }}">
-                </div>
-                <div class="mb-3">
-                    <label for="city" class="form-label">City</label>
-                    <input type="text" class="form-control" id="city" placeholder="Roma" name="city"
-                        value="{{ old('city') }}">
-                </div>
-                <div class="mb-4">
-                    <label for="postal_code" class="form-label">Postal Code</label>
-                    <input type="number" class="form-control" id="postal_code" placeholder="00144" name="postal_code"
-                        value="{{ old('postal_code') }}">
-                </div> --}}
 
+                {{-- Address Search component --}}
                 <x-address-search />
 
                 <div class="form-group mb-3">
