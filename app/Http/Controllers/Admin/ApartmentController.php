@@ -53,7 +53,7 @@ class ApartmentController extends Controller
             'bathrooms' => 'required|numeric',
             'square_meters' => 'required|numeric',
             'address' => 'required|max:255|same:a_searched_address',
-            'cover_image' => 'file|max:2048'
+            'cover_image' => 'file|max:2048|extensions:jpg,png'
         ]);
 
         $data = $request->all();

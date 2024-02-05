@@ -20,6 +20,11 @@
                         value="{{ old('name', $apartment->name) }}">
                 </div>
                 <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="description" name="description"
+                        value="{{ old('description', $apartment->name) }}">
+                </div>
+                <div class="mb-3">
                     <label for="rooms" class="form-label">Rooms</label>
                     <input type="text" class="form-control" id="last_name" name="rooms"
                         value="{{ old('rooms', $apartment->rooms) }}">
@@ -62,7 +67,11 @@
                                 <input name="old_images[]" class="form-check-input" type="checkbox"
                                     value="{{ $image }}" id="old_image-{{ $image->id }}">
                                 <label class="form-check-label" for="old_image-{{ $image }}">
-                                    <img class="w-25" src="{{ asset('storage') . '/' . $image->link }}" alt="">
+                                    @if (str_contains($image,'image'))
+                                        <img class="w-25" src="{{ asset('storage') . '/' . $image->link }}" alt="">
+                                    @else
+                                        <img class="w-25" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
+                                    @endif
                                 </label>
                             </div>
                         @endforeach

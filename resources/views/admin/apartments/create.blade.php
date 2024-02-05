@@ -18,6 +18,11 @@
                         value="{{ old('name') }}">
                 </div>
                 <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="description" name="description"
+                        value="{{ old('description') }}">
+                </div>
+                <div class="mb-3">
                     <label for="rooms" class="form-label">Rooms</label>
                     <input type="text" class="form-control" id="last_name" placeholder="Number of rooms" name="rooms"
                         value="{{ old('rooms') }}">

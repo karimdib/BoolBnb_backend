@@ -30,7 +30,9 @@ class ImageController extends Controller
      */
     public function store(StoreImageRequest $request)
     {
-        //
+        $request->validate([
+            'link' => 'file|extensions:jpg,png|max:2048'
+        ]);
     }
 
     /**
