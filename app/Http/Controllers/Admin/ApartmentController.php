@@ -177,13 +177,21 @@ class ApartmentController extends Controller
     public function destroy(Apartment $apartment)
     {
         if ($apartment->cover_image) {
-            Storage::delete($apartment->cover_image);
+            if (str_contains($apartment->cover_image,'cover_images')) {
+                Storage::delete($apartment->cover_image);
+            } else {
+                Storage::delete('cover_images/'. $apartment->cover_image);
+            }
         }
 
         $images = Image::where('apartment_id', $apartment->id)->get();
         if ($images) {
             foreach ($images as $image) {
-                Storage::delete($image->link);
+                if (str_contains($image->link,'images')) {
+                    Storage::delete( $image->link );
+                } else {
+                    Storage::delete('images/'. $image->link);
+                }
                 Image::destroy($images);
             }
         }

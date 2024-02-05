@@ -25,6 +25,7 @@ class ApartmentSeeder extends Seeder
 
             // Create, name and assign to user
             $new_apartment = new Apartment();
+            $new_apartment->cover_image = $faker->file('public\storage\apartment_images','public\storage\cover_images',false);
             $new_apartment->description = $faker->sentence(3);
             $new_apartment->slug = Str::slug($new_apartment->description);
             $new_apartment->user_id = User::all()->random()->id;

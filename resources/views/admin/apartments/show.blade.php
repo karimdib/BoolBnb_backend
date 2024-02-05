@@ -3,9 +3,13 @@
 @section('content')
     <div class="container">
         @if ($apartment->cover_image)
-            <figure class="d-flex justify-content-center">
+        <figure class="d-flex justify-content-center">
+            @if (str_contains($apartment->cover_image,'cover_images'))
                 <img class="w-50" src="{{ asset('storage/' . $apartment->cover_image) }}">
-            </figure>
+            @else
+                <img class="w-50" src="{{ asset('storage/cover_images/' . $apartment->cover_image) }}">                
+            @endif
+        </figure>
         @endif
     </div>
 
@@ -47,9 +51,15 @@
             </ul>
             <ul class="shadow mb-4 row">
                 @foreach ($images as $image)
-                    <li class="d-flex col-4 p-2">
-                        <img class="w-100" src="{{ asset('storage') . '/' . $image->link }}" alt="">
-                    </li>
+                    @if (str_contains($image,'image'))
+                        <li class="d-flex col-4 p-2">
+                            <img class="w-100" src="{{ asset('storage') . '/' . $image->link }}" alt="">
+                        </li>                         
+                    @else
+                        <li class="d-flex col-4 p-2">
+                            <img class="w-100" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
+                        </li>                    
+                    @endif
                 @endforeach
             </ul>
             <div class="d-flex justify-content-center gap-4">
