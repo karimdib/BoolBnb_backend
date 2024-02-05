@@ -50,7 +50,11 @@ class ApartmentSeeder extends Seeder
             $new_apartment->latitude = $apartment->position->lat;
             $new_apartment->longitude = $apartment->position->lon;
 
+            // Save appartment
             $new_apartment->save();
+
+            // Attach 3 random services
+            $new_apartment->services()->attach(Service::all()->random(3));
         }
     }
 }
