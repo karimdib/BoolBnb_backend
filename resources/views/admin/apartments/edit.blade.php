@@ -15,9 +15,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="description" class="form-label">Description</label>
-                    <input type="text" class="form-control" id="description" name="description"
-                        value="{{ old('description', $apartment->description) }}">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name"
+                        value="{{ old('name', $apartment->name) }}">
                 </div>
                 <div class="mb-3">
                     <label for="rooms" class="form-label">Rooms</label>
@@ -62,7 +62,7 @@
                                 <input name="old_images[]" class="form-check-input" type="checkbox"
                                     value="{{ $image }}" id="old_image-{{ $image->id }}">
                                 <label class="form-check-label" for="old_image-{{ $image }}">
-                                    <img class="w-25" src="{{ asset('storage').'/'. $image->link }}" alt="">
+                                    <img class="w-25" src="{{ asset('storage') . '/' . $image->link }}" alt="">
                                 </label>
                             </div>
                         @endforeach

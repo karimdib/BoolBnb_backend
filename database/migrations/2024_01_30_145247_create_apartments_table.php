@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('apartments', function (Blueprint $table) {
             $table->id();
-            $table->text('description')->nullable();
+            $table->text('name')->nullable();
             $table->text('slug')->nullable();
+            $table->text('description')->nullable();
             $table->unsignedInteger('rooms')->nullable();
             $table->unsignedInteger('beds')->nullable();
             $table->unsignedInteger('bathrooms')->nullable();

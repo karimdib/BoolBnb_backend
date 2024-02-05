@@ -13,11 +13,12 @@
         <div class="m-3">
             <h1 class="display-5 mb-4 text-center">Apartment Info</h1>
             <ul class="list-group shadow mb-4 text-capitalize">
-
-                <li class="list-group-item p-4 "><span class="fw-bold">Description:
-                    </span>{{ $apartment->description }}</li>
+                <li class="list-group-item p-4 "><span class="fw-bold">Apartment Name:
+                    </span>{{ $apartment->name }}</li>
                 <li class="list-group-item p-4 "><span class="fw-bold">Slug:
                     </span>{{ $apartment->slug }}</li>
+                <li class="list-group-item p-4 "><span class="fw-bold">Apartment Description:
+                    </span>{{ $apartment->description }}</li>
                 <li class="list-group-item p-4 "><span class="fw-bold">Rooms: </span>{{ $apartment->rooms }}
                 </li>
                 <li class="list-group-item p-4 "><span class="fw-bold">Beds: </span>{{ $apartment->beds }}

@@ -25,8 +25,9 @@ class ApartmentSeeder extends Seeder
 
             // Create, name and assign to user
             $new_apartment = new Apartment();
-            $new_apartment->description = $faker->sentence(3);
-            $new_apartment->slug = Str::slug($new_apartment->description);
+            $new_apartment->name = $faker->sentence(3);
+            $new_apartment->slug = Str::slug($new_apartment->name);
+            $new_apartment->description = $faker->text();
             $new_apartment->user_id = User::all()->random()->id;
 
             // Generate coherent rooms, beds, bathrooms, square meters
