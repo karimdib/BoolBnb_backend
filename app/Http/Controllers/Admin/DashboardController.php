@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Apartment;
 use App\Models\Order;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -13,24 +14,40 @@ class DashboardController extends Controller
     public function index()
     {
         $current_user = Auth::id();
-        $orders = [];
+        $user = User::find($current_user);
+
+        $user_apartments = $user->apartments()->with('orders')->get();
+
+        $apartment_orders = [];
+
+        // dd($user_apartments);
         
         if ($current_user == '1') {
             $apartments = Apartment::all();
-            $orders = Order::all();
+            
         } else {
             $apartments = Apartment::where('user_id', $current_user)->get();
 
-            foreach($apartments as $apartment) {
-                $current_apartment_id = $apartment['id'];
-                $current_orders = Order::where('apartment_id', $current_apartment_id)->get();
-                if($current_orders) {
-                    array_push($orders, $current_orders);
-                }
+            foreach($user_apartments as $user_apartment) {
+
+                $current_apartment_id = $user_apartment['id'];
+
+                // dd($user_apartment->orders);
+                if($user_apartment->orders) {
+                    foreach($user_apartment->orders as $order){
+                        // $order = Order::where('apartment_id', $current_apartment_id)->get();
+                    //  dd($order);
+                     array_push($apartment_orders, $order);
+                    
+                    };
+                } 
+                
             }
-            //  dd($orders);
+             
         }
 
-        return view('admin.dashboard', compact('apartments', 'orders'));
+        return view('admin.dashboard', compact('apartments', 'apartment_orders' ));
     }
 }
+
+?>
