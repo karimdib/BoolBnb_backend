@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Apartment;
+use App\Models\Order;
+use App\Models\Sponsorship;
 use Braintree\Gateway;
 use Illuminate\Http\Request;
 
@@ -24,7 +27,6 @@ class BraintreeController extends Controller
 
     public function processPayment(Request $request)
     {
-        //$nonce = $request->input('payment_method_nonce');
         $payMethod = $request->input('pay_method');
         $cardholder_name = $request->input('cardholder_name');
         if ($payMethod === '1') {
@@ -54,7 +56,24 @@ class BraintreeController extends Controller
             ],
         ]);
         if ($result->success) {
-            return "Pagamento completato con successo!";
+            $apartmentId = $request->input('apartment_id');
+            $sponsorshipId = Sponsorship::where('cost', $amount)->value('id');
+
+            $date_start = now();
+            if ($sponsorshipId === 1) {
+                $date_end = now()->addDay();
+            } elseif ($sponsorshipId === 2) {
+                $date_end = now()->addDay(2);
+            } else {
+                $date_end = now()->addDay(6);
+            }
+            $new_order = Order::create([
+                'sponsorship_id' => $sponsorshipId,
+                'apartment_id' => $apartmentId,
+                'date_start' => $date_start,
+                'date_end' => $date_end,
+            ]);
+            return "Pagamento completato con successo!" . $new_order;
         } else {
             return "Errore durante il pagamento: " . $result->message;
         }

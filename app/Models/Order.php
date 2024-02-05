@@ -17,4 +17,10 @@ class Order extends Model
     {
         return $this->belongsTo(Sponsorship::class);
     }
+    protected $fillable = [
+        'apartment_id',
+        'sponsorship_id',
+        'date_start',
+        'date_end',
+    ];
 }
