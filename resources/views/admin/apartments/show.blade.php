@@ -36,6 +36,14 @@
                     <span class="fw-bold">Address:</span>
                     {{ $apartment->address }}, {{ $apartment->country }}
                 </li>
+                <li class="list-group-item p-4 ">
+                    <span class="fw-bold">Visible: </span>
+                    @if ($apartment->visible)
+                        <span>Yes</span>
+                    @else
+                        <span>No</span>
+                    @endif
+                </li>
             </ul>
 
 

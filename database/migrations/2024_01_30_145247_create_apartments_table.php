@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('country')->nullable();
             $table->decimal('latitude', 9, 6)->nullable();
             $table->decimal('longitude', 9, 6)->nullable();
-            $table->boolean('visible')->default(true);
+            $table->boolean('visible')->nullable();
             $table->string('cover_image')->nullable();
             $table->timestamps();
         });

@@ -59,7 +59,10 @@
                     </tbody>
                     @endforelse
                 </table>
-                
+
+            </div>
+            <div class="mt-4">
+                {{ $apartments->links('pagination::bootstrap-5') }}
             </div>
             <x-delete-modal />
         </div>

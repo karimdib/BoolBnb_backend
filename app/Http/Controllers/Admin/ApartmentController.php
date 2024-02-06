@@ -22,11 +22,10 @@ class ApartmentController extends Controller
     {
         $current_user = Auth::id();
         if ($current_user == '1') {
-            $apartments = Apartment::all();
+            $apartments = Apartment::paginate(16);
         } else {
-            $apartments = Apartment::where('user_id', $current_user)->get();
+            $apartments = Apartment::where('user_id', $current_user)->paginate(16);
         }
-
         return view('admin.apartments.index', compact('apartments'));
     }
 
@@ -49,12 +48,13 @@ class ApartmentController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required|max:500',
-            'rooms' => 'required|numeric',
-            'beds' => 'required|numeric',
-            'bathrooms' => 'required|numeric',
-            'square_meters' => 'required|numeric',
+            'rooms' => 'required|numeric|gt:0',
+            'beds' => 'required|numeric|gt:0',
+            'bathrooms' => 'required|numeric|gt:0',
+            'square_meters' => 'required|numeric|gt:0',
             'address' => 'required|max:255|same:a_searched_address',
-            'cover_image' => 'file|max:2048|extensions:jpg,png'
+            'cover_image' => 'file|max:2048|extensions:jpg,png',
+            'services' => 'required|min:1'
         ]);
 
         $data = $request->all();
@@ -136,11 +136,12 @@ class ApartmentController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required|max:500',
-            'rooms' => 'required|numeric',
-            'beds' => 'required|numeric',
-            'bathrooms' => 'required|numeric',
-            'square_meters' => 'required|numeric',
-            'cover_image' => 'file|max:2048'
+            'rooms' => 'required|numeric|gt:0',
+            'beds' => 'required|numeric|gt:0',
+            'bathrooms' => 'required|numeric|gt:0',
+            'square_meters' => 'required|numeric|gt:0',
+            'cover_image' => 'file|max:2048',
+            'services' => 'required|min:1'
         ]);
 
         $data = $request->all();
