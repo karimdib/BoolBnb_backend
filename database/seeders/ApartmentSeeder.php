@@ -25,7 +25,7 @@ class ApartmentSeeder extends Seeder
 
             // Create, name and assign to user
             $new_apartment = new Apartment();
-            $new_apartment->cover_image = $faker->file('public\storage\apartment_images','public\storage\cover_images',false);
+            $new_apartment->cover_image = $faker->file('public\storage\apartment_images', 'public\storage\cover_images', false);
             $new_apartment->name = $faker->sentence(3);
             $new_apartment->slug = Str::slug($new_apartment->name);
             $new_apartment->description = $faker->text();
@@ -51,6 +51,7 @@ class ApartmentSeeder extends Seeder
 
             // Get address, latitude and longitude from json
             $new_apartment->address = $apartment->address->freeformAddress;
+            $new_apartment->country = $apartment->address->country;
             $new_apartment->latitude = $apartment->position->lat;
             $new_apartment->longitude = $apartment->position->lon;
 

@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Apartment extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
     protected $fillable = [
         'name',
         'description',
@@ -17,6 +19,7 @@ class Apartment extends Model
         'bathrooms',
         'square_meters',
         'address',
+        'country',
         'latitude',
         'longitude',
         'cover_image',

@@ -11,6 +11,7 @@ use App\Models\Service;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Http;
 
 class ApartmentController extends Controller
 {
@@ -58,6 +59,19 @@ class ApartmentController extends Controller
         ]);
 
         $data = $request->all();
+
+        // Chiamata all'API di Tomtom e inserimento country,latitude e longitude in data
+
+        $query = $data['address'];
+        $base_url = "https://api.tomtom.com/search/2/search/";
+        $api_key = "?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c";
+        $responseFormat = ".json";
+        $query_url = $base_url . $query . $responseFormat . $api_key;
+        $response = Http::withOptions(['verify' => false])->get($query_url)->json();
+        $results = $response["results"];
+        $data["country"] = $results[0]['address']['country'];
+        $data["latitude"] = $results[0]['position']['lat'];
+        $data["longitude"] = $results[0]['position']['lon'];
 
         $data["slug"] = Str::slug($data["description"]);
 

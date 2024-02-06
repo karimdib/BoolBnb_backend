@@ -16,12 +16,6 @@
     <input class="form-control mb-3" type="text" name="a_searched_address" id="match"
         value="{{ old('matched_address') }}">
 
-    <label for="latitude">Latitude</label>
-    <input class="form-control mb-3" type="text" name="latitude" id="latitude">
-
-    <label for="latitude">Longitude</label>
-    <input class="form-control mb-3" type="text" name="longitude" id="longitude">
-
 </div>
 
 @push('scripts')
