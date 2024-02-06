@@ -11,6 +11,7 @@ use App\Models\Service;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Http;
 
 class ApartmentController extends Controller
 {
@@ -57,6 +58,19 @@ class ApartmentController extends Controller
         ]);
 
         $data = $request->all();
+
+        // Chiamata all'API di Tomtom e inserimento country,latitude e longitude in data
+
+        $query = $data['address'];
+        $base_url = "https://api.tomtom.com/search/2/search/";
+        $api_key = "?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c";
+        $responseFormat = ".json";
+        $query_url = $base_url . $query . $responseFormat . $api_key;
+        $response = Http::withOptions(['verify' => false])->get($query_url)->json();
+        $results = $response["results"];
+        $data["country"] = $results[0]['address']['country'];
+        $data["latitude"] = $results[0]['position']['lat'];
+        $data["longitude"] = $results[0]['position']['lon'];
 
         $data["slug"] = Str::slug($data["description"]);
 
@@ -179,20 +193,20 @@ class ApartmentController extends Controller
     public function destroy(Apartment $apartment)
     {
         if ($apartment->cover_image) {
-            if (str_contains($apartment->cover_image,'cover_images')) {
+            if (str_contains($apartment->cover_image, 'cover_images')) {
                 Storage::delete($apartment->cover_image);
             } else {
-                Storage::delete('cover_images/'. $apartment->cover_image);
+                Storage::delete('cover_images/' . $apartment->cover_image);
             }
         }
 
         $images = Image::where('apartment_id', $apartment->id)->get();
         if ($images) {
             foreach ($images as $image) {
-                if (str_contains($image->link,'images')) {
-                    Storage::delete( $image->link );
+                if (str_contains($image->link, 'images')) {
+                    Storage::delete($image->link);
                 } else {
-                    Storage::delete('images/'. $image->link);
+                    Storage::delete('images/' . $image->link);
                 }
                 Image::destroy($images);
             }
