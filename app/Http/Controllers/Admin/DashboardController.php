@@ -21,33 +21,27 @@ class DashboardController extends Controller
         $apartment_orders = [];
 
         // dd($user_apartments);
-        
+
         if ($current_user == '1') {
             $apartments = Apartment::all();
-            
         } else {
-            $apartments = Apartment::where('user_id', $current_user)->get();
+            $apartments = Apartment::where('user_id', $current_user)->limit(5)->get();
 
-            foreach($user_apartments as $user_apartment) {
+            foreach ($user_apartments as $user_apartment) {
 
                 $current_apartment_id = $user_apartment['id'];
 
                 // dd($user_apartment->orders);
-                if($user_apartment->orders) {
-                    foreach($user_apartment->orders as $order){
+                if ($user_apartment->orders) {
+                    foreach ($user_apartment->orders as $order) {
                         // $order = Order::where('apartment_id', $current_apartment_id)->get();
-                    //  dd($order);
-                     array_push($apartment_orders, $order);
-                    
+                        //  dd($order);
+                        array_push($apartment_orders, $order);
                     };
-                } 
-                
+                }
             }
-             
         }
 
-        return view('admin.dashboard', compact('apartments', 'apartment_orders' ));
+        return view('admin.dashboard', compact('apartments', 'apartment_orders'));
     }
 }
-
-?>
