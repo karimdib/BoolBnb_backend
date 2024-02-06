@@ -83,7 +83,7 @@
                     <div class="d-flex flex-wrap gap-4 ">
                         <div class="form-check">
                             <input type="checkbox" name="visible" class="form-check-input"
-                            id="visible" value="1" @checked(old('visible'))>Make your apartment available
+                            id="visible" value="1" @checked(old('visible'))>Make your apartment visible
                         </div>
                     </div>
                 </div>
