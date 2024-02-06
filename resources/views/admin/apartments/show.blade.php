@@ -34,7 +34,7 @@
                 </li>
                 <li class="list-group-item p-4 ">
                     <span class="fw-bold">Address:</span>
-                    {{ $apartment->address }} ,{{ $apartment->country }}
+                    {{ $apartment->address }}, {{ $apartment->country }}
                 </li>
             </ul>
 
