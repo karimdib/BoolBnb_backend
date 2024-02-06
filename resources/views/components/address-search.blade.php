@@ -1,9 +1,9 @@
 <div class="mb-3">
     <div id="search-results">
-        <label for="address-search">Address Finder</label>
+        <label for="address-search">Address </label>
         <div class="d-flex gap-3">
-            <input class="form-control" type="search" name="address" id="address-search" value="{{ old('address') }}"
-                placeholder="Search address and select match">
+            <input class="form-control @error('address') red @enderror" type="search" name="address" id="address-search"
+                value="{{ old('address') }}" placeholder="Search address and select match">
             <button class="btn btn-primary" id="search-button">Search</button>
         </div>
     </div>
@@ -24,7 +24,7 @@
 </div>
 
 @push('scripts')
-    <script src="{{ asset('js/addressSearch.js') }}"></script>
+<script src="{{ asset('js/addressSearch.js') }}"></script>
 @endpush
 
 <style>

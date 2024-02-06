@@ -48,12 +48,13 @@ class ApartmentController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required|max:500',
-            'rooms' => 'required|numeric',
-            'beds' => 'required|numeric',
-            'bathrooms' => 'required|numeric',
-            'square_meters' => 'required|numeric',
+            'rooms' => 'required|numeric|gt:0',
+            'beds' => 'required|numeric|gt:0',
+            'bathrooms' => 'required|numeric|gt:0',
+            'square_meters' => 'required|numeric|gt:0',
             'address' => 'required|max:255|same:a_searched_address',
-            'cover_image' => 'file|max:2048|extensions:jpg,png'
+            'cover_image' => 'file|max:2048|extensions:jpg,png',
+            'services' => 'required|min:1'
         ]);
 
         $data = $request->all();
@@ -179,20 +180,20 @@ class ApartmentController extends Controller
     public function destroy(Apartment $apartment)
     {
         if ($apartment->cover_image) {
-            if (str_contains($apartment->cover_image,'cover_images')) {
+            if (str_contains($apartment->cover_image, 'cover_images')) {
                 Storage::delete($apartment->cover_image);
             } else {
-                Storage::delete('cover_images/'. $apartment->cover_image);
+                Storage::delete('cover_images/' . $apartment->cover_image);
             }
         }
 
         $images = Image::where('apartment_id', $apartment->id)->get();
         if ($images) {
             foreach ($images as $image) {
-                if (str_contains($image->link,'images')) {
-                    Storage::delete( $image->link );
+                if (str_contains($image->link, 'images')) {
+                    Storage::delete($image->link);
                 } else {
-                    Storage::delete('images/'. $image->link);
+                    Storage::delete('images/' . $image->link);
                 }
                 Image::destroy($images);
             }
