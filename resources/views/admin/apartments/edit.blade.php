@@ -94,6 +94,16 @@
                 <label for="images" class="form-label">Add more images</label>
                 <input class="form-control" type="file" id="images" name="images[]" multiple>
             </div>
+
+                <div class="mb-3">
+                    <div class="d-flex flex-wrap gap-4 ">
+                        <div class="form-check">
+                            <input type="checkbox" name="visible" class="form-check-input"
+                            id="visible" value="1" @checked(old('visible'))>Make your apartment available
+                        </div>
+                    </div>
+                </div>
+
             <button class="btn btn-outline-primary" type="submit">Edit</button>
         </form>
 
