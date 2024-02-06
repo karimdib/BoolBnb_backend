@@ -59,7 +59,9 @@
                     </tbody>
                     @endforelse
                 </table>
+                
             </div>
+            <x-delete-modal />
         </div>
     </div>
 @endsection
