@@ -29,7 +29,7 @@ class ApartmentSeeder extends Seeder
             $new_apartment->name = $faker->sentence(3);
             $new_apartment->slug = Str::slug($new_apartment->name);
             $new_apartment->description = $faker->text();
-            $new_apartment->description = $faker->sentence(3);
+            $new_apartment->visible = $faker->optional($weight = 0.8, $default = null)->boolean();
             $new_apartment->slug = Str::slug($new_apartment->description);
             $new_apartment->user_id = User::all()->random()->id;
 
