@@ -22,9 +22,9 @@ class ApartmentController extends Controller
     {
         $current_user = Auth::id();
         if ($current_user == '1') {
-            $apartments = Apartment::paginate(20);
+            $apartments = Apartment::paginate(16);
         } else {
-            $apartments = Apartment::where('user_id', $current_user)->paginate(10);
+            $apartments = Apartment::where('user_id', $current_user)->paginate(16);
         }
         return view('admin.apartments.index', compact('apartments'));
     }

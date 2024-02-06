@@ -23,7 +23,7 @@ class DashboardController extends Controller
         // dd($user_apartments);
 
         if ($current_user == '1') {
-            $apartments = Apartment::all();
+            $apartments = Apartment::limit(5)->get();
         } else {
             $apartments = Apartment::where('user_id', $current_user)->limit(5)->get();
 
