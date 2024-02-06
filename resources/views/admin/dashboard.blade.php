@@ -53,26 +53,26 @@
     <table>
     <thead>
         <tr>
-            <th></th>
-            <th></th>
-            <th></th>
+            <th>Name</th>
+            <th>Sponsorship Level</th>
+            <th>Sponsorship ON</th>
             <th></th>
             <th></th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @forelse ($orders as $order)
+        @forelse ($apartment_orders as $order)
         <tr>
             {{-- database fields --}}
-            {{-- <td>{{ $order->date_start }} </td>
+            <td>{{ $order->date_start }} </td>
             <td>{{ $order->date_end }} </td>
     
             <td>
                 
             </td>
     
-            <td>{{ $apartment->address }} </td> --}}
+            <td>{{ $apartment->address }} </td>
         </tr>
         @empty
         <tr>
@@ -86,6 +86,7 @@
         @endforelse
 </table>
 </section>
+
 <section class="container card py-3 mb-3">
     <div class="d-flex justify-content-between">
         <h1 class="card-title">Statistics</h1>
@@ -94,12 +95,10 @@
     </div>
     <table>
     <thead>
-        <tr>
-            
-        </tr>
+        <tr></tr>
     </thead>
     <tbody>
-        @forelse ($orders as $order)
+        {{-- @forelse ($orders as $order)
         <tr>
             
         </tr>
@@ -112,7 +111,7 @@
             </td>
         </tr>
     </tbody>
-        @endforelse
+        @endforelse --}}
 </table>
 </section>
 
