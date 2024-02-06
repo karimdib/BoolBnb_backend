@@ -6,6 +6,7 @@
                 value="{{ old('address') }}" placeholder="Search address and select match">
             <button class="btn btn-primary" id="search-button">Search</button>
         </div>
+        <div class="is-invalid" value="">@error('address') The address field is required @enderror</div>
     </div>
 </div>
 

@@ -123,11 +123,12 @@ class ApartmentController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required|max:500',
-            'rooms' => 'required|numeric',
-            'beds' => 'required|numeric',
-            'bathrooms' => 'required|numeric',
-            'square_meters' => 'required|numeric',
-            'cover_image' => 'file|max:2048'
+            'rooms' => 'required|numeric|gt:0',
+            'beds' => 'required|numeric|gt:0',
+            'bathrooms' => 'required|numeric|gt:0',
+            'square_meters' => 'required|numeric|gt:0',
+            'cover_image' => 'file|max:2048',
+            'services' => 'required|min:1'
         ]);
 
         $data = $request->all();
