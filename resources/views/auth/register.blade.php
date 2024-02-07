@@ -52,7 +52,8 @@
                                 <div class="col-md-6">
                                     <input id="date_of_birth" type="date"
                                         class="form-control @error('date_of_birth') is-invalid @enderror"
-                                        name="date_of_birth" value="{{ old('date_of_birth') }}" required
+                                        name="date_of_birth" max={{date("Y-m-d")}} min={{date("Y-m-d",mktime(0, 0, 0, date("n"), date("j"), date("Y") - 100))}}
+                                        value="{{ old('date_of_birth') }}" required
                                         autocomplete="date_of_birth">
 
                                     @error('date_of_birth')

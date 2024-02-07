@@ -8,6 +8,9 @@ use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 
 class ApartmentSeeder extends Seeder
 {
@@ -16,14 +19,22 @@ class ApartmentSeeder extends Seeder
      */
     public function run(Faker $faker): void
     {
-        $users = User::all();
-        $userIds = $users->pluck('id');
-        for ($i = 0; $i < 50; $i++) {
+        $json = File::get("database/data/convertedAddressList.json");
+        $apartments = json_decode($json);
+        foreach ($apartments as $apartment) {
 
+            // Create, name and assign to user
             $new_apartment = new Apartment();
-            $new_apartment->description = $faker->text(50);
-            $new_apartment->rooms = $faker->numberBetween(1, 12);
+            $new_apartment->cover_image = $faker->file('public\storage\apartment_images', 'public\storage\cover_images', false);
+            $new_apartment->name = $faker->sentence(3);
+            $new_apartment->slug = Str::slug($new_apartment->name);
+            $new_apartment->description = $faker->text();
+            $new_apartment->visible = $faker->optional($weight = 0.8, $default = null)->boolean();
+            $new_apartment->slug = Str::slug($new_apartment->description);
+            $new_apartment->user_id = User::all()->random()->id;
 
+            // Generate coherent rooms, beds, bathrooms, square meters
+            $new_apartment->rooms = $faker->numberBetween(1, 12);
             if ($new_apartment->rooms <= 4) {
                 $new_apartment->beds = $faker->numberBetween(1, 2);
                 $new_apartment->bathrooms = 1;
@@ -38,13 +49,16 @@ class ApartmentSeeder extends Seeder
                 $new_apartment->square_meters = $faker->numberBetween(121, 200);
             }
 
-            // $new_apartment->address = $faker->address();
-            $new_apartment->visible = $faker->boolean();
-            $new_apartment->cover_image = $faker->imageUrl(360, 360, true);
-            $new_apartment->user_id = $faker->randomElement($userIds);
+            // Get address, latitude and longitude from json
+            $new_apartment->address = $apartment->address->freeformAddress;
+            $new_apartment->country = $apartment->address->country;
+            $new_apartment->latitude = $apartment->position->lat;
+            $new_apartment->longitude = $apartment->position->lon;
 
+            // Save appartment
             $new_apartment->save();
 
+            // Attach 3 random services
             $new_apartment->services()->attach(Service::all()->random(3));
         }
     }

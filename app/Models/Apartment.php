@@ -4,23 +4,27 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Apartment extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
     protected $fillable = [
+        'name',
         'description',
+        'slug',
         'rooms',
         'beds',
         'bathrooms',
         'square_meters',
-        'street_name',
-        'street_number',
-        'city',
-        'postal_code',
+        'address',
+        'country',
         'latitude',
         'longitude',
-        'cover_image'
+        'cover_image',
+        'visible',
+        'user_id',
     ];
     public function messages()
     {

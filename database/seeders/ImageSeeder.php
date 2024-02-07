@@ -16,10 +16,15 @@ class ImageSeeder extends Seeder
     public function run(Faker $faker): void
     {
         $apartments = Apartment::all();
-        $apartmentIds = $apartments->pluck('id');
-        $new_image = new Image();
-        $new_image->apartment_id = $faker->randomElement($apartmentIds);
-        $new_image->link = $faker->imageUrl(360, 360, true);
-        $new_image->save();
+        $apartment_ids = $apartments->pluck('id');
+
+        foreach ($apartment_ids as $apartment_id) {
+            
+            $new_image = new Image();
+            $new_image->apartment_id = $faker->randomElement($apartment_ids);
+            $new_image->link = $faker->file('public\storage\apartment_images','public\storage\images',false);
+            $new_image->save();            
+        }
+
     }
 }
