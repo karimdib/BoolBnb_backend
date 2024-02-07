@@ -83,7 +83,7 @@
             </div>
 
             <div class="mb-3">
-                <div class="d-flex flex-wrap gap-4 ">
+                <div id="radio-buttons" class="d-flex flex-wrap gap-4 ">
                     <div class="form-check">
                         <input type="radio" name="visible" class="form-check-input"
                         id="visible" value="1">
@@ -95,6 +95,7 @@
                         <label for="0">Make your apartment invisible</label>
                     </div>
                 </div>
+                <div class="is-invalid"></div>
             </div>
 
             <button class="btn btn-outline-primary" type="submit">Save </button>
@@ -110,9 +111,4 @@
         color: red;
     }
 </style>
-
-@push('scripts')
-<script src="{{ asset('js/apartmentValidation.js') }}"></script>
-@endpush
-
 @endsection

@@ -8,8 +8,9 @@ const bathrooms = document.getElementById('bathrooms');
 const squareMeters = document.getElementById('square_meters');
 const form = document.querySelector('.apartment-form');
 const service = document.querySelectorAll('.service');
-const visible = document.getElementById('.visible');
-const invisible = document.getElementById('.invisible'); 
+const visible = document.getElementById('visible');
+const invisible = document.getElementById('invisible');
+const radioButtons = document.getElementById('radio-buttons'); 
 const isInvalid = document.getElementById('service-error');
 console.log(isInvalid);
 console.log(service);
@@ -44,6 +45,8 @@ form.addEventListener('submit', function (event) {
         visibilityChecked = false;
         visible.classList.add('is-invalid');
         invisible.classList.add('is-invalid');
+        radioButtons.classList.add('is-invalid');
+        radioButtons.nextElementSibling.innerText = 'Seleziona almeno un opzione';
     }
 
     const validateNumber = (inputElement, fieldName) => {
