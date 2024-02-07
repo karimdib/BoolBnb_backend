@@ -34,7 +34,7 @@ for (var i = 0; i < modalTriggers.length; i++) {
         modal.classList.add('d-block');
         apartmentTitle.innerHTML = this.name;
 
-        apartmentAddress.innerHTML = this.getAttribute('paperino');
+        apartmentAddress.innerHTML = this.getAttribute('address');
 
         modalDeleteBtn.addEventListener('click', function(event) {
             index.parentElement.submit()
