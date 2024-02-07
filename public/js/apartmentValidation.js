@@ -8,8 +8,8 @@ const bathrooms = document.getElementById('bathrooms');
 const squareMeters = document.getElementById('square_meters');
 const form = document.querySelector('.apartment-form');
 const service = document.querySelectorAll('.service');
-const visible = document.getElementById('.visible');
-const invisible = document.getElementById('.invisible'); 
+const visible = document.getElementById('visible');
+const invisible = document.getElementById('invisible');
 const isInvalid = document.getElementById('service-error');
 console.log(isInvalid);
 console.log(service);
@@ -34,10 +34,10 @@ form.addEventListener('submit', function (event) {
     } else {
         isInvalid.innerText = '';
     }
-    
+
     if (visible.checked) {
         visibilityChecked = true;
-    } else if (invisible.checked){
+    } else if (invisible.checked) {
         visibilityChecked = true;
     } else {
         isValid = false;
@@ -56,7 +56,10 @@ form.addEventListener('submit', function (event) {
         }
     };
 
-    validateNumber(rooms, 'rooms', beds, 'beds', bathrooms, 'bathrooms', squareMeters, 'square_metres');
+    validateNumber(rooms, 'rooms');
+    validateNumber(beds, 'beds');
+    validateNumber(bathrooms, 'bathrooms');
+    validateNumber(squareMeters, 'square_metres');
 
     if (nameTitle.value.trim() === '') {
         nameTitle.nextElementSibling.innerText = 'Il campo name non può essere vuoto.';
