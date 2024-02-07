@@ -11,6 +11,7 @@ use App\Models\Service;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Http;
 
 class ApartmentController extends Controller
 {
@@ -21,11 +22,10 @@ class ApartmentController extends Controller
     {
         $current_user = Auth::id();
         if ($current_user == '1') {
-            $apartments = Apartment::all();
+            $apartments = Apartment::paginate(16);
         } else {
-            $apartments = Apartment::where('user_id', $current_user)->get();
+            $apartments = Apartment::where('user_id', $current_user)->paginate(16);
         }
-
         return view('admin.apartments.index', compact('apartments'));
     }
 
@@ -48,15 +48,30 @@ class ApartmentController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required|max:500',
-            'rooms' => 'required|numeric',
-            'beds' => 'required|numeric',
-            'bathrooms' => 'required|numeric',
-            'square_meters' => 'required|numeric',
+            'rooms' => 'required|numeric|gt:0',
+            'beds' => 'required|numeric|gt:0',
+            'bathrooms' => 'required|numeric|gt:0',
+            'square_meters' => 'required|numeric|gt:0',
             'address' => 'required|max:255|same:a_searched_address',
-            'cover_image' => 'file|max:2048|extensions:jpg,png'
+            'cover_image' => 'file|max:2048|extensions:jpg,png',
+            'visible' => 'required|boolean',
+            'services' => 'required|min:1'
         ]);
 
         $data = $request->all();
+
+        // Chiamata all'API di Tomtom e inserimento country,latitude e longitude in data
+
+        $query = $data['address'];
+        $base_url = "https://api.tomtom.com/search/2/search/";
+        $api_key = "?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c";
+        $responseFormat = ".json";
+        $query_url = $base_url . $query . $responseFormat . $api_key;
+        $response = Http::withOptions(['verify' => false])->get($query_url)->json();
+        $results = $response["results"];
+        $data["country"] = $results[0]['address']['country'];
+        $data["latitude"] = $results[0]['position']['lat'];
+        $data["longitude"] = $results[0]['position']['lon'];
 
         $data["slug"] = Str::slug($data["description"]);
 
@@ -122,15 +137,16 @@ class ApartmentController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required|max:500',
-            'rooms' => 'required|numeric',
-            'beds' => 'required|numeric',
-            'bathrooms' => 'required|numeric',
-            'square_meters' => 'required|numeric',
-            'cover_image' => 'file|max:2048'
+            'rooms' => 'required|numeric|gt:0',
+            'beds' => 'required|numeric|gt:0',
+            'bathrooms' => 'required|numeric|gt:0',
+            'square_meters' => 'required|numeric|gt:0',
+            'cover_image' => 'file|max:2048',
+            'visible' => 'required|boolean',
+            'services' => 'required|min:1'
         ]);
 
         $data = $request->all();
-
         if ($request->hasFile('cover_image')) {
             $path = Storage::put('cover_images', $request->cover_image);
             $data['cover_image'] = $path;
@@ -179,20 +195,20 @@ class ApartmentController extends Controller
     public function destroy(Apartment $apartment)
     {
         if ($apartment->cover_image) {
-            if (str_contains($apartment->cover_image,'cover_images')) {
+            if (str_contains($apartment->cover_image, 'cover_images')) {
                 Storage::delete($apartment->cover_image);
             } else {
-                Storage::delete('cover_images/'. $apartment->cover_image);
+                Storage::delete('cover_images/' . $apartment->cover_image);
             }
         }
 
         $images = Image::where('apartment_id', $apartment->id)->get();
         if ($images) {
             foreach ($images as $image) {
-                if (str_contains($image->link,'images')) {
-                    Storage::delete( $image->link );
+                if (str_contains($image->link, 'images')) {
+                    Storage::delete($image->link);
                 } else {
-                    Storage::delete('images/'. $image->link);
+                    Storage::delete('images/' . $image->link);
                 }
                 Image::destroy($images);
             }

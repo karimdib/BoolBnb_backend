@@ -3,13 +3,13 @@
 @section('content')
     <div class="container">
         @if ($apartment->cover_image)
-        <figure class="d-flex justify-content-center">
-            @if (str_contains($apartment->cover_image,'cover_images'))
-                <img class="w-50" src="{{ asset('storage/' . $apartment->cover_image) }}">
-            @else
-                <img class="w-50" src="{{ asset('storage/cover_images/' . $apartment->cover_image) }}">                
-            @endif
-        </figure>
+            <figure class="d-flex justify-content-center">
+                @if (str_contains($apartment->cover_image, 'cover_images'))
+                    <img class="w-50" src="{{ asset('storage/' . $apartment->cover_image) }}">
+                @else
+                    <img class="w-50" src="{{ asset('storage/cover_images/' . $apartment->cover_image) }}">
+                @endif
+            </figure>
         @endif
     </div>
 
@@ -32,12 +32,18 @@
                 <li class="list-group-item p-4 "><span class="fw-bold">Square meters:
                     </span>{{ $apartment->square_meters }}
                 </li>
-                <li class="list-group-item p-4 "><span class="fw-bold">Address:
-                    </span>{{ $apartment->address }}</li>
-                <li class="list-group-item p-4 "><span class="fw-bold">Latitude:
-                    </span>{{ $apartment->latitude }}</li>
-                <li class="list-group-item p-4 "><span class="fw-bold">Longitude:
-                    </span>{{ $apartment->longitude }}</li>
+                <li class="list-group-item p-4 ">
+                    <span class="fw-bold">Address:</span>
+                    {{ $apartment->address }}, {{ $apartment->country }}
+                </li>
+                <li class="list-group-item p-4 ">
+                    <span class="fw-bold">Visible: </span>
+                    @if ($apartment->visible)
+                        <span>Yes</span>
+                    @else
+                        <span>No</span>
+                    @endif
+                </li>
             </ul>
 
 
@@ -52,14 +58,14 @@
             </ul>
             <ul class="shadow mb-4 row">
                 @foreach ($images as $image)
-                    @if (str_contains($image,'image'))
+                    @if (str_contains($image, 'image'))
                         <li class="d-flex col-4 p-2">
                             <img class="w-100" src="{{ asset('storage') . '/' . $image->link }}" alt="">
-                        </li>                         
+                        </li>
                     @else
                         <li class="d-flex col-4 p-2">
                             <img class="w-100" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
-                        </li>                    
+                        </li>
                     @endif
                 @endforeach
             </ul>

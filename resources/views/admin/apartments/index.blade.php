@@ -43,8 +43,8 @@
                                         id="deletionForm">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-sm btn-outline-danger" id="deletion" type="submit"
-                                            name="{{ $apartment }}">Delete</button>
+                                        <button class="btn btn-sm btn-outline-danger modal-trigger" id="deletion" type="submit"
+                                            name="{{ $apartment->name }}" address="{{ $apartment->address }}">Delete</button>
                                     </form>
                                 </td>
                             </tr>
@@ -59,7 +59,15 @@
                     </tbody>
                     @endforelse
                 </table>
+
             </div>
+            <div class="mt-4">
+                {{ $apartments->links('pagination::bootstrap-5') }}
+            </div>
+            <x-delete-modal />
         </div>
     </div>
+    @push('scripts')
+        <script src="{{ asset('js/deleteModal.js') }}"></script>
+    @endpush
 @endsection
