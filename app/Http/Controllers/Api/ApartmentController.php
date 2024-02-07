@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Apartment;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class ApartmentController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $results = Apartment::with('user', 'services')->get();
 
@@ -27,18 +27,40 @@ class ApartmentController extends Controller
         ]);
     }
 
+    public function fuzzySearch()
+    {
+        $data = request()->all();
+        $query = $data["query"];
+        $base_url = "https://api.tomtom.com/search/2/search/";
+        $api_key = "?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c";
+        $responseFormat = ".json";
+        $query_url = $base_url . $query . $responseFormat . $api_key;
+        $response = Http::withOptions(['verify' => false])->get($query_url)->json();
+        $results = $response["results"];
+
+        return response()->json([
+            'results' => $results,
+            'success' => true
+        ]);
+    }
+
     public function filter()
     {
         $data = request();
 
         $results = Apartment::with('user', 'services')
-            ->selectRaw('*, ROUND(ST_DISTANCE_SPHERE(POINT(longitude, latitude), POINT(' . $data->longitude . ',  ' . $data->latitude . ')) / 1000, 2) AS distance')
+            ->select("*")
+            ->selectRaw(
+                'ROUND(ST_DISTANCE_SPHERE(POINT(longitude, latitude), POINT(?, ?)) / 1000, 2) AS distance',
+                [$data->longitude, $data->latitude]
+            )
             ->havingRaw('distance <= ' . $data->search_radius)
             ->where([
                 ['rooms', '>=', $data->rooms],
                 ['beds', '>=', $data->beds],
                 ['bathrooms', '>=', $data->bathrooms],
                 ['square_meters', '>=', $data->square_meters],
+                ['visible', 1],
             ])->orderBy('distance')
             ->get();
 
