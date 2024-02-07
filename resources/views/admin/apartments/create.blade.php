@@ -4,7 +4,8 @@
 <div class="container">
     <div class="py-3">
         <h1 class="display-6 text-center">Apartment Information</h1>
-        <form class="mb-4" action="{{ route('admin.apartments.store') }}" method="POST" enctype="multipart/form-data">
+        <form class="mb-4 apartment-form" action="{{ route('admin.apartments.store') }}" method="POST"
+            enctype="multipart/form-data">
             @csrf
 
             <div class="mb-3">
@@ -22,8 +23,8 @@
             </div>
             <div class="mb-3">
                 <label for="rooms" class="form-label">Rooms</label>
-                <input type="text" class="form-control @error('rooms') is-invalid @enderror" id="last_name"
-                    placeholder="6" name="rooms" value="{{ old('rooms') }}">
+                <input type="text" class="form-control @error('rooms') is-invalid @enderror" id="rooms" placeholder="6"
+                    name="rooms" value="{{ old('rooms') }}">
                 <div class="is-invalid" value="">@error('rooms') The rooms field is required and must be greater than 0
                     @enderror</div>
             </div>
@@ -55,19 +56,21 @@
 
             <div class="form-group mb-3">
                 <p>Choose apartment services:</p>
-                <div class="d-flex flex-wrap gap-4 ">
+                <div class="d-flex flex-wrap gap-4  ">
                     @foreach ($services as $service)
-                    <div class="form-check">
-                        <input name="services[]" class="form-check-input @error('services') is-invalid @enderror"
-                            type="checkbox" value="{{ $service->id }}" id="service-{{ $service->id }}"
-                            @checked(in_array($service->id, old('services', [])))>
+                    <div class="form-check ">
+                        <input name="services[]"
+                            class="form-check-input @error('services') is-invalid @enderror service" type="checkbox"
+                            value="{{ $service->id }}" id="service-{{ $service->id }}" @checked(in_array($service->id,
+                        old('services', [])))>
                         <label class="form-check-label" for="service-{{ $service->id }}">
                             {{ $service->name }}
                         </label>
                     </div>
                     @endforeach
                 </div>
-                <div class="is-invalid" value="">@error('services') The services field is required choose at least one
+                <div class="is-invalid" id="service-error" value="">@error('services') The services field is required
+                    choose at least one
                     service @enderror</div>
             </div>
             <div class="mb-3">
@@ -79,18 +82,27 @@
                 <input class="form-control" type="file" id="images" name="images[]" multiple>
             </div>
 
-                <div class="mb-3">
-                    <div class="d-flex flex-wrap gap-4 ">
-                        <div class="form-check">
-                            <input type="checkbox" name="visible" class="form-check-input"
-                            id="visible" value="1" @checked(old('visible'))>Make your apartment visible
-                        </div>
+            <div class="mb-3">
+                <div id="radio-buttons" class="d-flex flex-wrap gap-4 ">
+                    <div class="form-check">
+                        <input type="radio" name="visible" class="form-check-input"
+                        id="visible" value="1">
+                        <label for="1">Make your apartment visible</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="visible" class="form-check-input"
+                        id="invisible" value="0">
+                        <label for="0">Make your apartment invisible</label>
                     </div>
                 </div>
+                <div class="is-invalid"></div>
+            </div>
 
             <button class="btn btn-outline-primary" type="submit">Save </button>
         </form>
-
+        @push('scripts')
+        <script src="{{ asset('js/apartmentValidation.js') }}"></script>
+        @endpush
     </div>
 </div>
 <style>
