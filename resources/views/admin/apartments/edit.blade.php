@@ -96,23 +96,21 @@
                 <label for="images" class="form-label">Add more images</label>
                 <input class="form-control" type="file" id="images" name="images[]" multiple>
             </div>
-            
+
             <div class="mb-3">
                 <div id="radio-buttons" class="d-flex flex-wrap gap-4 ">
                     <div class="form-check">
-                        <input type="radio" name="visible" class="form-check-input"
-                        id="visible" value="1">
+                        <input type="radio" name="visible" class="form-check-input" id="visible" value="1">
                         <label for="1">Make your apartment visible</label>
                     </div>
                     <div class="form-check">
-                        <input type="radio" name="visible" class="form-check-input"
-                        id="invisible" value="0">
+                        <input type="radio" name="visible" class="form-check-input" id="invisible" value="0">
                         <label for="0">Make your apartment invisible</label>
                     </div>
                 </div>
                 <div class="is-invalid"></div>
             </div>
-            
+
             <button class="btn btn-outline-primary" type="submit">Edit</button>
         </form>
         @push('scripts')
@@ -126,4 +124,5 @@
         color: red;
     }
 </style>
+
 @endsection

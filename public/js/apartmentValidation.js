@@ -35,10 +35,10 @@ form.addEventListener('submit', function (event) {
     } else {
         isInvalid.innerText = '';
     }
-    
+
     if (visible.checked) {
         visibilityChecked = true;
-    } else if (invisible.checked){
+    } else if (invisible.checked) {
         visibilityChecked = true;
     } else {
         isValid = false;
@@ -59,7 +59,10 @@ form.addEventListener('submit', function (event) {
         }
     };
 
-    validateNumber(rooms, 'rooms', beds, 'beds', bathrooms, 'bathrooms', squareMeters, 'square_metres');
+    validateNumber(rooms, 'rooms');
+    validateNumber(beds, 'beds');
+    validateNumber(bathrooms, 'bathrooms');
+    validateNumber(squareMeters, 'square_metres');
 
     if (nameTitle.value.trim() === '') {
         nameTitle.nextElementSibling.innerText = 'Il campo name non può essere vuoto.';
