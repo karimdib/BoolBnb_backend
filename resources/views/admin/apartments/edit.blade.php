@@ -4,7 +4,7 @@
 <div class="container">
     <div class="py-3">
         <h1 class="display-6 text-center">Edit Apartment Information</h1>
-        <form class="mb-4" action="{{ route('admin.apartments.update', $apartment) }}" method="POST"
+        <form class="mb-4 apartment-form" action="{{ route('admin.apartments.update', $apartment) }}" method="POST"
             enctype="multipart/form-data">
             @csrf
             @method('PUT')
@@ -22,7 +22,7 @@
             </div>
             <div class="mb-3">
                 <label for="rooms" class="form-label">Rooms</label>
-                <input type="text" class="form-control @error('rooms') is-invalid @enderror" id="last_name" name="rooms"
+                <input type="text" class="form-control @error('rooms') is-invalid @enderror" id="rooms" name="rooms"
                     value="{{ old('rooms', $apartment->rooms) }}">
                 <div class="is-invalid" value="">@error('rooms') The rooms field is required and must be greater than 0
                     @enderror</div>
@@ -55,9 +55,10 @@
                 <div class="d-flex flex-wrap gap-4 ">
                     @foreach ($services as $service)
                     <div class="form-check">
-                        <input name="services[]" class="form-check-input @error('services') is-invalid @enderror"
-                            type="checkbox" value="{{ $service->id }}" id="service-{{ $service->id }}"
-                            @checked(in_array($service->id, old('services',
+                        <input name="services[]"
+                            class="form-check-input @error('services') is-invalid @enderror service" type="checkbox"
+                            value="{{ $service->id }}" id="service-{{ $service->id }}" @checked(in_array($service->id,
+                        old('services',
                         $apartment->services->pluck('id')->all())))>
                         <label class="form-check-label" for="service-{{ $service->id }}">
                             {{ $service->name }}
@@ -65,7 +66,8 @@
                     </div>
                     @endforeach
                 </div>
-                <div class="is-invalid" value="">@error('services') The services field is required choose at least one
+                <div class="is-invalid" id="service-error" value="">@error('services') The services field is required
+                    choose at least one
                     service @enderror</div>
             </div>
             <div class="mb-3">
@@ -112,7 +114,9 @@
             
             <button class="btn btn-outline-primary" type="submit">Edit</button>
         </form>
-
+        @push('scripts')
+        <script src="{{asset('./js/apartmentValidation.js')}}"></script>
+        @endpush
     </div>
 </div>
 <style>
