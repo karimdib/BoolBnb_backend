@@ -54,6 +54,7 @@ class ApartmentController extends Controller
             'square_meters' => 'required|numeric|gt:0',
             'address' => 'required|max:255|same:a_searched_address',
             'cover_image' => 'file|max:2048|extensions:jpg,png',
+            'visible' => 'required|boolean',
             'services' => 'required|min:1'
         ]);
 
@@ -141,11 +142,11 @@ class ApartmentController extends Controller
             'bathrooms' => 'required|numeric|gt:0',
             'square_meters' => 'required|numeric|gt:0',
             'cover_image' => 'file|max:2048',
+            'visible' => 'required|boolean',
             'services' => 'required|min:1'
         ]);
 
         $data = $request->all();
-
         if ($request->hasFile('cover_image')) {
             $path = Storage::put('cover_images', $request->cover_image);
             $data['cover_image'] = $path;
