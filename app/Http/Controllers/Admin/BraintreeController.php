@@ -73,7 +73,7 @@ class BraintreeController extends Controller
                 'date_start' => $date_start,
                 'date_end' => $date_end,
             ]);
-            return "Pagamento completato con successo!" . $new_order;
+            return 'Il pagamento è avvenuto con successo' . $new_order;
         } else {
             return "Errore durante il pagamento: " . $result->message;
         }
