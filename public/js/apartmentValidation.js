@@ -8,6 +8,8 @@ const bathrooms = document.getElementById('bathrooms');
 const squareMeters = document.getElementById('square_meters');
 const form = document.querySelector('.apartment-form');
 const service = document.querySelectorAll('.service');
+const visible = document.getElementById('.visible');
+const invisible = document.getElementById('.invisible'); 
 const isInvalid = document.getElementById('service-error');
 console.log(isInvalid);
 console.log(service);
@@ -15,6 +17,7 @@ console.log(service);
 form.addEventListener('submit', function (event) {
     let isValid = true;
     let serviceChecked = false;
+    let visibilityChecked = false;
 
     service.forEach((input) => {
         if (input.checked) {
@@ -30,6 +33,17 @@ form.addEventListener('submit', function (event) {
         isValid = false;
     } else {
         isInvalid.innerText = '';
+    }
+    
+    if (visible.checked) {
+        visibilityChecked = true;
+    } else if (invisible.checked){
+        visibilityChecked = true;
+    } else {
+        isValid = false;
+        visibilityChecked = false;
+        visible.classList.add('is-invalid');
+        invisible.classList.add('is-invalid');
     }
 
     const validateNumber = (inputElement, fieldName) => {
