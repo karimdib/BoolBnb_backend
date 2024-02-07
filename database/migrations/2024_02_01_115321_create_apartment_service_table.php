@@ -21,6 +21,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
 
             $table->primary(['apartment_id', 'service_id']);
+            $table->softDeletes();
         });
     }
 
