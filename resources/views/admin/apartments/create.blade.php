@@ -22,8 +22,8 @@
             </div>
             <div class="mb-3">
                 <label for="rooms" class="form-label">Rooms</label>
-                <input type="text" class="form-control @error('rooms') is-invalid @enderror" id="last_name"
-                    placeholder="6" name="rooms" value="{{ old('rooms') }}">
+                <input type="text" class="form-control @error('rooms') is-invalid @enderror" id="rooms" placeholder="6"
+                    name="rooms" value="{{ old('rooms') }}">
                 <div class="is-invalid" value="">@error('rooms') The rooms field is required and must be greater than 0
                     @enderror</div>
             </div>
@@ -90,4 +90,5 @@
         color: red;
     }
 </style>
+
 @endsection
