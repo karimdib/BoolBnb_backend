@@ -117,6 +117,8 @@ function capitalizeFirstLetter(inputElement) {
 
 
 const validateDate = (inputElement, fieldName) => {
+
+    const dateFormatRegex = /^\d{4}-\d{2}-\d{2}$/;
     const today = new Date();
     const year = today.getFullYear();
     const month = String(today.getMonth() + 1).padStart(2, '0');
@@ -126,13 +128,18 @@ const validateDate = (inputElement, fieldName) => {
     isStringEmpty(dateOfBirth, 'date of birth')
     if (isValid) {
         isDateOfBirthValid = true;
+
         if (inputElement.value > formattedDateToday) {
             isDateOfBirthValid = false;
             inputElement.nextElementSibling.innerText = `The ${fieldName} cannot be in the future!`;
             inputElement.nextElementSibling.classList.add('is-invalid');
             inputElement.classList.add('is-invalid');
         }
-        
+
+        if (!dateFormatRegex.test(dateOfBirth.value)) {
+            isDateOfBirthValid = false;
+        }
+
     } else {
         isEmailValid = false;
     }
