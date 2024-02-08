@@ -48,4 +48,17 @@ class Apartment extends Model
     {
         return $this->hasMany(Visit::class);
     }
+    public static function booted()
+    {
+        Apartment::deleting(function($apartment) {
+            $apartment->images()->delete();
+            $apartment->visits()->delete();
+            $apartment->orders()->delete();
+            $apartment->messages()->delete();
+
+            
+        });
+
+
+    }
 }
