@@ -1,0 +1,2322 @@
+[
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Università delle Tre Età",
+    "datetime": "2013-01-28T12:34:45Z",
+    "position": {
+      "lon": "7.6824901",
+      "lat": "44.9995813999999"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Accademia Albertina",
+    "datetime": "2013-10-21T13:56:32Z",
+    "position": {
+      "lon": "7.6897297",
+      "lat": "45.0675807"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Accademia di medicina",
+    "datetime": "2015-02-24T20:43:51Z",
+    "position": {
+      "lon": "7.6895223",
+      "lat": "45.0684189999999"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Dipartimento di Scienze della Vita e Biologia de",
+    "datetime": "2013-12-12T13:24:52Z",
+    "position": {
+      "lon": "7.6882857",
+      "lat": "45.0652864999999"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Dipartimento di Scienze della Vita e Biologia de",
+    "datetime": "2014-03-12T14:09:22Z",
+    "position": {
+      "lon": "7.6870107",
+      "lat": "45.0550943"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "DISMA - Dipartimento di Scienze Matematiche \"\"Gi",
+    "datetime": "2014-03-24T12:25:56Z",
+    "position": {
+      "lon": "7.6618159",
+      "lat": "45.0626528"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Facoltà di Architettura",
+    "datetime": "2012-11-12T08:55:24Z",
+    "position": {
+      "lon": "7.6867628",
+      "lat": "45.0540489999999"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "GeoClimAlp",
+    "datetime": "2014-07-14T07:44:47Z",
+    "position": {
+      "lon": "7.6414502",
+      "lat": "45.0173318"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Ingegneria dell'Autoveicolo",
+    "datetime": "2011-10-06T19:49:36Z",
+    "position": {
+      "lon": "7.6675409",
+      "lat": "45.0342752"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Segreteria Studenti MFN",
+    "datetime": "2013-12-12T13:23:48Z",
+    "position": {
+      "lon": "7.6888859",
+      "lat": "45.0656772999999"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Università degli Studi di Torino - Dipartimento",
+    "datetime": "2011-04-14T16:47:01Z",
+    "position": {
+      "lon": "7.6818071",
+      "lat": "45.0520507"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Università  di Torino - Dipartimento di Studi P",
+    "datetime": "2012-11-17T12:55:10Z",
+    "position": {
+      "lon": "7.6899977",
+      "lat": "45.0651023"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Università di Torino - Mineralogia Petrografia",
+    "datetime": "2012-11-17T12:55:10Z",
+    "position": {
+      "lon": "7.6887448",
+      "lat": "45.0636236"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "Università  di Torino - Rettorato",
+    "datetime": "2012-11-26T14:13:17Z",
+    "position": {
+      "lon": "7.6891162",
+      "lat": "45.0693441"
+    }
+  },
+  {
+    "city": "TORINO",
+    "region": "Piemonte",
+    "name": "St. John International University",
+    "datetime": "2015-04-27T17:08:05Z",
+    "position": {
+      "lon": "7.6321335",
+      "lat": "44.9498433999999"
+    }
+  },
+  {
+    "city": "ASTI",
+    "region": "Piemonte",
+    "name": "Polo universitario di Asti",
+    "datetime": "2013-11-26T17:45:04Z",
+    "position": {
+      "lon": "8.210464",
+      "lat": "44.9030165"
+    }
+  },
+  {
+    "city": "ALESSANDRIA",
+    "region": "Piemonte",
+    "name": "Scienze Infermieristiche",
+    "datetime": "2015-06-01T14:04:16Z",
+    "position": {
+      "lon": "8.6257725",
+      "lat": "44.9169867999999"
+    }
+  },
+  {
+    "city": "AOSTA",
+    "region": "Valle d'Aosta",
+    "name": "Politecnico Di Torino - Sede Decentrata Di Verre",
+    "datetime": "2015-02-26T19:58:39Z",
+    "position": {
+      "lon": "7.6898816",
+      "lat": "45.6649976"
+    }
+  },
+  {
+    "city": "GENOVA",
+    "region": "Liguria",
+    "name": "Facoltà di Lingua e Letterature straniere",
+    "datetime": "2015-10-19T21:34:01Z",
+    "position": {
+      "lon": "8.9277123",
+      "lat": "44.4132985"
+    }
+  },
+  {
+    "city": "GENOVA",
+    "region": "Liguria",
+    "name": "Laboratorio di Geodesia, Geomatica e GIS",
+    "datetime": "2015-05-14T13:29:30Z",
+    "position": {
+      "lon": "8.9631028",
+      "lat": "44.4002702"
+    }
+  },
+  {
+    "city": "GENOVA",
+    "region": "Liguria",
+    "name": "Università degli Studi di Genova",
+    "datetime": "2014-01-09T07:10:18Z",
+    "position": {
+      "lon": "8.9266707",
+      "lat": "44.4148860999999"
+    }
+  },
+  {
+    "city": "VARESE",
+    "region": "Lombardia",
+    "name": "Collegio Universitario Carlo Catteneo",
+    "datetime": "2013-11-06T21:31:55Z",
+    "position": {
+      "lon": "8.8506889",
+      "lat": "45.7963749"
+    }
+  },
+  {
+    "city": "VARESE",
+    "region": "Lombardia",
+    "name": "DICOM - Università degli Studi dell'Insubria",
+    "datetime": "2012-01-21T03:48:16Z",
+    "position": {
+      "lon": "8.8286645",
+      "lat": "45.8162517"
+    }
+  },
+  {
+    "city": "VARESE",
+    "region": "Lombardia",
+    "name": "Seminario Arcivescovile di Milano",
+    "datetime": "2010-09-15T15:10:41Z",
+    "position": {
+      "lon": "8.9080719",
+      "lat": "45.7342806999999"
+    }
+  },
+  {
+    "city": "COMO",
+    "region": "Lombardia",
+    "name": "LNESS Laboratory for Epitaxial Nanostructures an",
+    "datetime": "2016-01-18T19:48:50Z",
+    "position": {
+      "lon": "9.09278089999999",
+      "lat": "45.8012159"
+    }
+  },
+  {
+    "city": "MILANO",
+    "region": "Lombardia",
+    "name": "Accademia di belle arti di Brera",
+    "datetime": "2014-12-10T15:52:28Z",
+    "position": {
+      "lon": "9.1878197",
+      "lat": "45.4719418"
+    }
+  },
+  {
+    "city": "MILANO",
+    "region": "Lombardia",
+    "name": "Facoltà di Agraria",
+    "datetime": "2008-05-08T20:43:49Z",
+    "position": {
+      "lon": "9.227541",
+      "lat": "45.4765761999999"
+    }
+  },
+  {
+    "city": "MILANO",
+    "region": "Lombardia",
+    "name": "Facoltà di Medicina Veterinaria",
+    "datetime": "2009-11-01T11:50:41Z",
+    "position": {
+      "lon": "9.2290858",
+      "lat": "45.4765938"
+    }
+  },
+  {
+    "city": "MILANO",
+    "region": "Lombardia",
+    "name": "U9",
+    "datetime": "2014-11-30T22:27:32Z",
+    "position": {
+      "lon": "9.2112608",
+      "lat": "45.5109532999999"
+    }
+  },
+  {
+    "city": "MILANO",
+    "region": "Lombardia",
+    "name": "Università degli Studi di Milano",
+    "datetime": "2009-07-15T09:05:46Z",
+    "position": {
+      "lon": "9.186723",
+      "lat": "45.4611907"
+    }
+  },
+  {
+    "city": "BERGAMO",
+    "region": "Lombardia",
+    "name": "Università degli studi di Bergamo",
+    "datetime": "2015-10-14T14:16:15Z",
+    "position": {
+      "lon": "9.6606925",
+      "lat": "45.7045348999999"
+    }
+  },
+  {
+    "city": "BERGAMO",
+    "region": "Lombardia",
+    "name": "Università degli Studi di Bergamo",
+    "datetime": "2011-01-17T12:27:32Z",
+    "position": {
+      "lon": "9.6717382",
+      "lat": "45.7051537999999"
+    }
+  },
+  {
+    "city": "BRESCIA",
+    "region": "Lombardia",
+    "name": "Università Cattolica del Sacro Cuore",
+    "datetime": "2013-10-19T22:23:25Z",
+    "position": {
+      "lon": "10.2150274",
+      "lat": "45.5351031"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Dipartimento di Scienze Fisiologiche e Farmacolo",
+    "datetime": "2010-04-02T17:00:28Z",
+    "position": {
+      "lon": "9.1501047",
+      "lat": "45.1876013999999"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Divisione programmazione e gestione acquisti di",
+    "datetime": "2010-12-24T22:49:12Z",
+    "position": {
+      "lon": "9.1583966",
+      "lat": "45.1861444"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Facoltà di Economia",
+    "datetime": "2011-12-10T18:49:27Z",
+    "position": {
+      "lon": "9.1522691",
+      "lat": "45.188003"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Facoltà di Filosofia",
+    "datetime": "2011-12-10T18:49:28Z",
+    "position": {
+      "lon": "9.15123919999999",
+      "lat": "45.1883924999999"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Facoltà di Lettere e Filosofia",
+    "datetime": "2013-09-12T21:20:40Z",
+    "position": {
+      "lon": "9.1562119",
+      "lat": "45.1845738"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Facoltà di Scienze Politiche",
+    "datetime": "2010-04-07T07:01:09Z",
+    "position": {
+      "lon": "9.15776739999999",
+      "lat": "45.1869872999999"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Fondazione Eucentre",
+    "datetime": "2015-04-01T14:22:18Z",
+    "position": {
+      "lon": "9.1344913",
+      "lat": "45.2020960999999"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Istituto di Geografia",
+    "datetime": "2014-08-22T22:18:17Z",
+    "position": {
+      "lon": "9.1575608",
+      "lat": "45.1864981"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Istituto di Zoologia Lazzaro Spallanzani",
+    "datetime": "2011-12-10T18:49:29Z",
+    "position": {
+      "lon": "9.1509737",
+      "lat": "45.1885170999999"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Palazzo del Mayno",
+    "datetime": "2010-04-06T11:00:11Z",
+    "position": {
+      "lon": "9.1580279",
+      "lat": "45.1859933"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Polo Scientifico Università di Pavia",
+    "datetime": "2015-12-02T14:39:06Z",
+    "position": {
+      "lon": "9.13762539999999",
+      "lat": "45.202579"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Università di Pavia",
+    "datetime": "2014-04-07T20:12:17Z",
+    "position": {
+      "lon": "9.1568708",
+      "lat": "45.1871122"
+    }
+  },
+  {
+    "city": "PAVIA",
+    "region": "Lombardia",
+    "name": "Università di Pavia - Facoltà di Botanica",
+    "datetime": "2011-06-16T11:33:13Z",
+    "position": {
+      "lon": "9.1635008",
+      "lat": "45.1853594999999"
+    }
+  },
+  {
+    "city": "MANTOVA",
+    "region": "Lombardia",
+    "name": "Politecnico di Milano - Sede di Mantova",
+    "datetime": "2013-09-16T20:10:18Z",
+    "position": {
+      "lon": "10.7874602",
+      "lat": "45.1604158999999"
+    }
+  },
+  {
+    "city": "BOLZANO",
+    "region": "Trentino-Alto Adige",
+    "name": "UniBz Language Center",
+    "datetime": "2015-08-04T19:09:50Z",
+    "position": {
+      "lon": "11.3497188999999",
+      "lat": "46.4964920999999"
+    }
+  },
+  {
+    "city": "TRENTO",
+    "region": "Trentino-Alto Adige",
+    "name": "Fondazione Mach - Centro di Ecologia Alpina",
+    "datetime": "2009-09-21T10:45:25Z",
+    "position": {
+      "lon": "11.0539264",
+      "lat": "46.0144248"
+    }
+  },
+  {
+    "city": "TRENTO",
+    "region": "Trentino-Alto Adige",
+    "name": "Rettorato - Università di Trento",
+    "datetime": "2014-04-07T22:28:25Z",
+    "position": {
+      "lon": "11.1230218999999",
+      "lat": "46.0667722"
+    }
+  },
+  {
+    "city": "VERONA",
+    "region": "Veneto",
+    "name": "Accademia di Belle Arti Cignaroli",
+    "datetime": "2012-01-26T19:43:38Z",
+    "position": {
+      "lon": "10.9928608",
+      "lat": "45.4348389999999"
+    }
+  },
+  {
+    "city": "VERONA",
+    "region": "Veneto",
+    "name": "Facoltà di Giurisprudenza",
+    "datetime": "2012-01-26T19:43:38Z",
+    "position": {
+      "lon": "10.9924436",
+      "lat": "45.4343441999999"
+    }
+  },
+  {
+    "city": "VERONA",
+    "region": "Veneto",
+    "name": "Facoltà di Scienze Motorie",
+    "datetime": "2013-02-15T20:42:44Z",
+    "position": {
+      "lon": "11.0316744999999",
+      "lat": "45.4450075999999"
+    }
+  },
+  {
+    "city": "TREVISO",
+    "region": "Veneto",
+    "name": "H-Farm",
+    "datetime": "2015-08-04T10:11:05Z",
+    "position": {
+      "lon": "12.4277000999999",
+      "lat": "45.5645073"
+    }
+  },
+  {
+    "city": "VENEZIA",
+    "region": "Veneto",
+    "name": "Ca' Foscari",
+    "datetime": "2011-01-26T01:29:03Z",
+    "position": {
+      "lon": "12.1689346999999",
+      "lat": "45.4497597"
+    }
+  },
+  {
+    "city": "VENEZIA",
+    "region": "Veneto",
+    "name": "Ca' Cappello",
+    "datetime": "2014-11-25T22:35:07Z",
+    "position": {
+      "lon": "12.3300248",
+      "lat": "45.4362961"
+    }
+  },
+  {
+    "city": "VENEZIA",
+    "region": "Veneto",
+    "name": "Università Ca' Foscari",
+    "datetime": "2014-11-26T21:05:11Z",
+    "position": {
+      "lon": "12.3264484",
+      "lat": "45.4344956999999"
+    }
+  },
+  {
+    "city": "VENEZIA",
+    "region": "Veneto",
+    "name": "Università Iuav di Venezia",
+    "datetime": "2015-03-21T13:46:03Z",
+    "position": {
+      "lon": "12.2550534",
+      "lat": "45.4796418"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "Accademia Galileiana di Scienze Lettere e Arti",
+    "datetime": "2011-10-25T23:23:40Z",
+    "position": {
+      "lon": "11.8708636999999",
+      "lat": "45.4073579"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "ASU",
+    "datetime": "2014-03-31T14:19:56Z",
+    "position": {
+      "lon": "11.8813400999999",
+      "lat": "45.4050721999999"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "Aula studio \"\"Jappelli\"\"",
+    "datetime": "2012-10-29T11:27:43Z",
+    "position": {
+      "lon": "11.8850352",
+      "lat": "45.4082502999999"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "Centro diritti umani - Università di Padova",
+    "datetime": "2011-10-08T19:23:25Z",
+    "position": {
+      "lon": "11.8759111",
+      "lat": "45.4100179"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "Centro Linguistico di Ateneo",
+    "datetime": "2015-09-30T22:06:30Z",
+    "position": {
+      "lon": "11.8949520999999",
+      "lat": "45.4109072999999"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "Centro Multimediale d'Ateneo",
+    "datetime": "2014-08-09T16:16:28Z",
+    "position": {
+      "lon": "11.8768215",
+      "lat": "45.4036716"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "Cisspat",
+    "datetime": "2015-03-01T16:26:27Z",
+    "position": {
+      "lon": "11.8780804",
+      "lat": "45.4155182"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "Dipartimento di Scienze Statistiche",
+    "datetime": "2016-01-03T20:22:11Z",
+    "position": {
+      "lon": "11.8841912",
+      "lat": "45.4045332"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "Facoltà teologica del Triveneto",
+    "datetime": "2015-02-23T22:29:42Z",
+    "position": {
+      "lon": "11.8732276",
+      "lat": "45.4014718"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "Psicologia",
+    "datetime": "2015-12-03T16:26:23Z",
+    "position": {
+      "lon": "11.893893",
+      "lat": "45.4123341"
+    }
+  },
+  {
+    "city": "PADOVA",
+    "region": "Veneto",
+    "name": "Scuola Galileiana - Segreteria e Direzione",
+    "datetime": "2014-03-03T18:32:13Z",
+    "position": {
+      "lon": "11.8747960999999",
+      "lat": "45.4053912999999"
+    }
+  },
+  {
+    "city": "UDINE",
+    "region": "Friuli-Venezia Giulia",
+    "name": "Dipartimento di Scienze giuridiche",
+    "datetime": "2014-03-21T10:38:43Z",
+    "position": {
+      "lon": "13.2421743",
+      "lat": "46.0651376"
+    }
+  },
+  {
+    "city": "UDINE",
+    "region": "Friuli-Venezia Giulia",
+    "name": "Università di Udine - sede Rettorato",
+    "datetime": "2014-11-27T20:11:05Z",
+    "position": {
+      "lon": "13.2324874",
+      "lat": "46.0661209"
+    }
+  },
+  {
+    "city": "GORIZIA",
+    "region": "Friuli-Venezia Giulia",
+    "name": "Università degli studi di Trieste",
+    "datetime": "2009-06-30T21:54:41Z",
+    "position": {
+      "lon": "13.6309026",
+      "lat": "45.9398036999999"
+    }
+  },
+  {
+    "city": "GORIZIA",
+    "region": "Friuli-Venezia Giulia",
+    "name": "Università degli studi di Udine",
+    "datetime": "2008-09-12T17:54:02Z",
+    "position": {
+      "lon": "13.6184704",
+      "lat": "45.9433168999999"
+    }
+  },
+  {
+    "city": "TRIESTE",
+    "region": "Friuli-Venezia Giulia",
+    "name": "Università degli Studi di Trieste - Facoltà di",
+    "datetime": "2012-02-06T16:08:19Z",
+    "position": {
+      "lon": "13.7747829",
+      "lat": "45.6571136999999"
+    }
+  },
+  {
+    "city": "TRIESTE",
+    "region": "Friuli-Venezia Giulia",
+    "name": "Università degli Studi di Trieste - Scuola Supe",
+    "datetime": "2015-07-03T22:28:33Z",
+    "position": {
+      "lon": "13.7746768",
+      "lat": "45.6547635"
+    }
+  },
+  {
+    "city": "REGGIO EMILIA",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Ingegneria",
+    "datetime": "2013-05-21T11:31:05Z",
+    "position": {
+      "lon": "10.6688056",
+      "lat": "44.6877228999999"
+    }
+  },
+  {
+    "city": "MODENA",
+    "region": "Emilia-Romagna",
+    "name": "UNIMORE Facoltà di Giurisprudenza",
+    "datetime": "2015-02-18T10:09:48Z",
+    "position": {
+      "lon": "10.9277747",
+      "lat": "44.6450301"
+    }
+  },
+  {
+    "city": "MODENA",
+    "region": "Emilia-Romagna",
+    "name": "UNIMORE Università degli Studi di Modena e Regg",
+    "datetime": "2015-02-18T10:09:47Z",
+    "position": {
+      "lon": "10.9434827",
+      "lat": "44.632131"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "",
+    "datetime": "2012-02-18T19:14:16Z",
+    "position": {
+      "lon": "11.3280138",
+      "lat": "44.4870992999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Accademia di Belle Arti",
+    "datetime": "2015-02-01T12:23:52Z",
+    "position": {
+      "lon": "11.3529777",
+      "lat": "44.4977836999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Aula Absidale di Santa Lucia",
+    "datetime": "2009-05-26T15:12:31Z",
+    "position": {
+      "lon": "11.3484441",
+      "lat": "44.4899129"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Aula Magna di Santa Lucia",
+    "datetime": "2015-11-20T09:41:23Z",
+    "position": {
+      "lon": "11.3477367",
+      "lat": "44.489544"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "CUSB - Centro Universitario Sportivo Bologna",
+    "datetime": "2013-03-10T16:36:19Z",
+    "position": {
+      "lon": "11.3554382",
+      "lat": "44.4962153"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Dipartimento di Matematica per le Scienze Econom",
+    "datetime": "2016-01-31T11:09:55Z",
+    "position": {
+      "lon": "11.3565308999999",
+      "lat": "44.4956044999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Dipartimento di Scienze Giurdiche Antonio Cicu",
+    "datetime": "2016-01-31T11:09:55Z",
+    "position": {
+      "lon": "11.3565979",
+      "lat": "44.4950975"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Ex Chiesa di Santa Lucia",
+    "datetime": "2015-11-20T09:41:33Z",
+    "position": {
+      "lon": "11.3480152",
+      "lat": "44.4897021"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Scienze Politiche",
+    "datetime": "2014-04-13T13:07:44Z",
+    "position": {
+      "lon": "11.3538014999999",
+      "lat": "44.490997"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Instituto di Cancerologia",
+    "datetime": "2016-01-31T11:09:54Z",
+    "position": {
+      "lon": "11.3575339999999",
+      "lat": "44.4950716999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Instituto Zoni",
+    "datetime": "2016-01-31T11:09:55Z",
+    "position": {
+      "lon": "11.3565416",
+      "lat": "44.4960177999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Johns Hopkins University",
+    "datetime": "2015-06-22T19:50:09Z",
+    "position": {
+      "lon": "11.3558967",
+      "lat": "44.4947701999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Opera Universitaria - Collegio Forni",
+    "datetime": "2016-01-31T11:09:55Z",
+    "position": {
+      "lon": "11.3566997999999",
+      "lat": "44.4946162999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Scuola di Ingegneria e Architettura",
+    "datetime": "2015-11-18T11:01:07Z",
+    "position": {
+      "lon": "11.3295096",
+      "lat": "44.4876721999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Sistema Bibliotecario d'ateneo",
+    "datetime": "2016-01-31T11:09:55Z",
+    "position": {
+      "lon": "11.3565334999999",
+      "lat": "44.4953577"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Aule Ercolani",
+    "datetime": "2016-02-01T15:39:10Z",
+    "position": {
+      "lon": "11.3564536",
+      "lat": "44.4972337999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Arti Vi",
+    "datetime": "2013-09-25T13:41:06Z",
+    "position": {
+      "lon": "11.3552933",
+      "lat": "44.4883444"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Chimica",
+    "datetime": "2012-02-10T21:06:52Z",
+    "position": {
+      "lon": "11.3559037",
+      "lat": "44.4961229"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Chimica",
+    "datetime": "2015-01-15T18:58:46Z",
+    "position": {
+      "lon": "11.3539308",
+      "lat": "44.4962446999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Fisica",
+    "datetime": "2014-05-01T12:11:26Z",
+    "position": {
+      "lon": "11.3572886",
+      "lat": "44.5012978"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Geologi",
+    "datetime": "2015-01-15T18:59:12Z",
+    "position": {
+      "lon": "11.3557399",
+      "lat": "44.4976069"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Matemat",
+    "datetime": "2015-01-20T21:27:24Z",
+    "position": {
+      "lon": "11.3558957",
+      "lat": "44.4979532999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Musica",
+    "datetime": "2013-09-25T13:39:39Z",
+    "position": {
+      "lon": "11.3350615",
+      "lat": "44.5024143999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Patolog",
+    "datetime": "2013-03-10T13:56:50Z",
+    "position": {
+      "lon": "11.3557428",
+      "lat": "44.4968155999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Scienze",
+    "datetime": "2012-02-10T21:06:53Z",
+    "position": {
+      "lon": "11.3560239",
+      "lat": "44.4970629999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Scienze",
+    "datetime": "2013-10-16T16:43:47Z",
+    "position": {
+      "lon": "11.3537357",
+      "lat": "44.4957660999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Scienze",
+    "datetime": "2014-03-30T10:28:44Z",
+    "position": {
+      "lon": "11.3521483",
+      "lat": "44.4977209999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento di Scienze",
+    "datetime": "2015-08-07T14:35:13Z",
+    "position": {
+      "lon": "11.3545049",
+      "lat": "44.4960519999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Dipartimento Medicina e",
+    "datetime": "2013-10-16T16:43:47Z",
+    "position": {
+      "lon": "11.3552076",
+      "lat": "44.4967729"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna facoltà di economia",
+    "datetime": "2014-09-28T00:35:53Z",
+    "position": {
+      "lon": "11.3592052999999",
+      "lat": "44.5015368999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Facoltà di Farmacia -",
+    "datetime": "2013-03-10T13:59:48Z",
+    "position": {
+      "lon": "11.3587064",
+      "lat": "44.4988463999999"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna servizio disabili",
+    "datetime": "2014-05-01T12:10:50Z",
+    "position": {
+      "lon": "11.3583854",
+      "lat": "44.5017587"
+    }
+  },
+  {
+    "city": "BOLOGNA",
+    "region": "Emilia-Romagna",
+    "name": "Via Mario Fantin",
+    "datetime": "2012-07-14T11:46:32Z",
+    "position": {
+      "lon": "11.3282674",
+      "lat": "44.51332"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Università degli Studi di Ferrara - Sede di Arg",
+    "datetime": "2013-06-07T22:33:20Z",
+    "position": {
+      "lon": "11.8373659",
+      "lat": "44.6181843999999"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "CenTec",
+    "datetime": "2016-01-10T11:43:06Z",
+    "position": {
+      "lon": "11.2911933999999",
+      "lat": "44.7279366"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Dipartimento di Fisica e Scienze della Terra",
+    "datetime": "2012-10-10T10:27:49Z",
+    "position": {
+      "lon": "11.6214785",
+      "lat": "44.8419078"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Dipartimento di Matematica",
+    "datetime": "2014-07-06T20:11:45Z",
+    "position": {
+      "lon": "11.6299124",
+      "lat": "44.838616"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Dipartimento di Morfologia, Chirurgia, Medicina",
+    "datetime": "2012-10-10T10:35:07Z",
+    "position": {
+      "lon": "11.6333898999999",
+      "lat": "44.8379893999999"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Dipartimento di Scienze biomediche e Chirurgico",
+    "datetime": "2012-10-10T10:32:23Z",
+    "position": {
+      "lon": "11.6314635",
+      "lat": "44.8327399"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Dipartimento di Scienze chimiche e Farmaceutiche",
+    "datetime": "2012-10-10T10:35:06Z",
+    "position": {
+      "lon": "11.6322741",
+      "lat": "44.8378372999999"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Dipartimento di Scienze mediche",
+    "datetime": "2012-10-10T10:36:34Z",
+    "position": {
+      "lon": "11.6319093",
+      "lat": "44.8369926"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Dipartimento di Studi umanistici",
+    "datetime": "2012-10-10T10:37:59Z",
+    "position": {
+      "lon": "11.6211912",
+      "lat": "44.8323438999999"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Architettura",
+    "datetime": "2012-10-10T10:13:15Z",
+    "position": {
+      "lon": "11.6222365",
+      "lat": "44.8281934"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Economia",
+    "datetime": "2012-10-10T10:13:15Z",
+    "position": {
+      "lon": "11.6223043",
+      "lat": "44.8354357999999"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Farmacia",
+    "datetime": "2012-10-10T10:19:47Z",
+    "position": {
+      "lon": "11.6316811999999",
+      "lat": "44.8372694999999"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Giurisprudenza",
+    "datetime": "2012-10-10T10:13:15Z",
+    "position": {
+      "lon": "11.6221755",
+      "lat": "44.8449756999999"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Ingegneria",
+    "datetime": "2015-10-07T12:35:00Z",
+    "position": {
+      "lon": "11.5984003",
+      "lat": "44.8340883999999"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Lettere e Filosofia",
+    "datetime": "2014-02-15T21:25:55Z",
+    "position": {
+      "lon": "11.6276857",
+      "lat": "44.8323316"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Medicina e Chirurgia",
+    "datetime": "2012-10-10T10:19:47Z",
+    "position": {
+      "lon": "11.6324267999999",
+      "lat": "44.8366305999999"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Scienze Matematiche, Fisiche e Natur",
+    "datetime": "2012-10-10T10:22:56Z",
+    "position": {
+      "lon": "11.6219079999999",
+      "lat": "44.8421875"
+    }
+  },
+  {
+    "city": "FERRARA",
+    "region": "Emilia-Romagna",
+    "name": "Università degli Studi di Ferrara",
+    "datetime": "2014-02-15T21:47:55Z",
+    "position": {
+      "lon": "11.6263972",
+      "lat": "44.8333777"
+    }
+  },
+  {
+    "city": "RAVENNA",
+    "region": "Emilia-Romagna",
+    "name": "Università Degli Studi di Bologna",
+    "datetime": "2009-12-20T16:04:39Z",
+    "position": {
+      "lon": "12.2020485999999",
+      "lat": "44.4172206"
+    }
+  },
+  {
+    "city": "RAVENNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Agraria",
+    "datetime": "2009-11-01T11:15:05Z",
+    "position": {
+      "lon": "12.1969742",
+      "lat": "44.4353241999999"
+    }
+  },
+  {
+    "city": "RAVENNA",
+    "region": "Emilia-Romagna",
+    "name": "Università di Bologna - Scienze Ambientali",
+    "datetime": "2015-02-01T10:24:14Z",
+    "position": {
+      "lon": "12.1963203",
+      "lat": "44.434283"
+    }
+  },
+  {
+    "city": "FORLI'",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Architettura",
+    "datetime": "2010-08-02T21:37:09Z",
+    "position": {
+      "lon": "12.2417254999999",
+      "lat": "44.1453355"
+    }
+  },
+  {
+    "city": "FORLI'",
+    "region": "Emilia-Romagna",
+    "name": "Facoltà di Architettura",
+    "datetime": "2010-08-02T21:37:21Z",
+    "position": {
+      "lon": "12.2399214",
+      "lat": "44.1447451"
+    }
+  },
+  {
+    "city": "FORLI'",
+    "region": "Emilia-Romagna",
+    "name": "Ingegneria e Scienze Informatiche",
+    "datetime": "2015-05-05T18:45:30Z",
+    "position": {
+      "lon": "12.2429769",
+      "lat": "44.1398383"
+    }
+  },
+  {
+    "city": "FORLI'",
+    "region": "Emilia-Romagna",
+    "name": "",
+    "datetime": "2011-02-05T18:15:00Z",
+    "position": {
+      "lon": "12.063354",
+      "lat": "44.2139961"
+    }
+  },
+  {
+    "city": "FORLI'",
+    "region": "Emilia-Romagna",
+    "name": "",
+    "datetime": "2011-02-06T23:43:28Z",
+    "position": {
+      "lon": "12.0468676",
+      "lat": "44.2196507"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "università",
+    "datetime": "2013-07-10T19:17:43Z",
+    "position": {
+      "lon": "12.9080941",
+      "lat": "43.9211716"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Centro Integrato Servizi Didattici ed E-Learning",
+    "datetime": "2015-11-28T18:06:48Z",
+    "position": {
+      "lon": "12.6380221",
+      "lat": "43.7245542"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Centro Linguistico d'Ateneo",
+    "datetime": "2015-11-28T18:06:48Z",
+    "position": {
+      "lon": "12.637762",
+      "lat": "43.7255728"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Dipartimento Economia, Società, Politica",
+    "datetime": "2015-11-28T17:46:58Z",
+    "position": {
+      "lon": "12.6365011",
+      "lat": "43.7225891"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Dipartimento Giurisprudenza",
+    "datetime": "2015-11-28T17:46:59Z",
+    "position": {
+      "lon": "12.6360683999999",
+      "lat": "43.7218986999999"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Dipartimento Scienze Biomolecolari",
+    "datetime": "2015-11-28T17:46:59Z",
+    "position": {
+      "lon": "12.6368667",
+      "lat": "43.723227"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Dipartimento Scienze della Comunicazione e Disci",
+    "datetime": "2015-11-28T17:46:59Z",
+    "position": {
+      "lon": "12.6366383",
+      "lat": "43.7221029"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Dipartimento Scienze della Terra, della Vita e d",
+    "datetime": "2015-11-28T17:47:00Z",
+    "position": {
+      "lon": "12.6412627",
+      "lat": "43.7007151999999"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Dipartimento Scienze dell'Uomo",
+    "datetime": "2015-11-28T17:46:59Z",
+    "position": {
+      "lon": "12.6361159",
+      "lat": "43.7275124"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Dipartimento Scienze di Base e Fondamenti",
+    "datetime": "2015-11-28T17:47:00Z",
+    "position": {
+      "lon": "12.6365557",
+      "lat": "43.7262962"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Dipartimento Scienze Pure e Applicate",
+    "datetime": "2015-11-28T17:46:59Z",
+    "position": {
+      "lon": "12.6365712",
+      "lat": "43.7262863999999"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Dipartimento Studi Internazionali. Storia, Lingu",
+    "datetime": "2015-11-28T17:47:00Z",
+    "position": {
+      "lon": "12.6370663",
+      "lat": "43.7235042"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Dipartimento Studi Umanistici",
+    "datetime": "2015-11-28T17:47:00Z",
+    "position": {
+      "lon": "12.6361139",
+      "lat": "43.7275005999999"
+    }
+  },
+  {
+    "city": "PESARO E URBINO",
+    "region": "Marche",
+    "name": "Sede centrale Università degli Studi di Urbino",
+    "datetime": "2015-11-28T17:47:00Z",
+    "position": {
+      "lon": "12.6366992",
+      "lat": "43.7232299"
+    }
+  },
+  {
+    "city": "MACERATA",
+    "region": "Marche",
+    "name": "",
+    "datetime": "2009-04-07T11:01:53Z",
+    "position": {
+      "lon": "13.0689129",
+      "lat": "43.1357551999999"
+    }
+  },
+  {
+    "city": "MACERATA",
+    "region": "Marche",
+    "name": "Dipartimento di Lettere e Filosofia",
+    "datetime": "2013-06-06T17:08:56Z",
+    "position": {
+      "lon": "13.4490435",
+      "lat": "43.3009625999999"
+    }
+  },
+  {
+    "city": "MACERATA",
+    "region": "Marche",
+    "name": "Dipartimento di Scienze dell'educazione e della",
+    "datetime": "2013-11-16T23:59:47Z",
+    "position": {
+      "lon": "13.4735222",
+      "lat": "43.287322"
+    }
+  },
+  {
+    "city": "MACERATA",
+    "region": "Marche",
+    "name": "Residenza Universitaria Bartolo da Sassoferrato",
+    "datetime": "2013-11-19T00:11:10Z",
+    "position": {
+      "lon": "13.4539696",
+      "lat": "43.2966696"
+    }
+  },
+  {
+    "city": "MACERATA",
+    "region": "Marche",
+    "name": "Università - Facoltà Giurisprudenza - Aula mag",
+    "datetime": "2013-04-22T09:50:29Z",
+    "position": {
+      "lon": "13.4539988",
+      "lat": "43.3002127999999"
+    }
+  },
+  {
+    "city": "FIRENZE",
+    "region": "Toscana",
+    "name": "Urbanistica e Pianificazione",
+    "datetime": "2013-06-26T09:25:53Z",
+    "position": {
+      "lon": "10.9481594999999",
+      "lat": "43.718035"
+    }
+  },
+  {
+    "city": "FIRENZE",
+    "region": "Toscana",
+    "name": "Accademia Italiana",
+    "datetime": "2012-10-27T21:03:49Z",
+    "position": {
+      "lon": "11.2493373",
+      "lat": "43.7657625"
+    }
+  },
+  {
+    "city": "FIRENZE",
+    "region": "Toscana",
+    "name": "Florence Design Academy",
+    "datetime": "2013-03-15T12:34:01Z",
+    "position": {
+      "lon": "11.255589",
+      "lat": "43.7738209999999"
+    }
+  },
+  {
+    "city": "FIRENZE",
+    "region": "Toscana",
+    "name": "ISIA Firenze",
+    "datetime": "2014-05-26T11:54:23Z",
+    "position": {
+      "lon": "11.2603785999999",
+      "lat": "43.7755273"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Alma Artis Academy - Accademia di Belle Arti",
+    "datetime": "2015-08-13T19:27:22Z",
+    "position": {
+      "lon": "10.3964205",
+      "lat": "43.7174776"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Aula AM-1",
+    "datetime": "2015-06-23T09:06:56Z",
+    "position": {
+      "lon": "10.4072125",
+      "lat": "43.7200603"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Chimica farmaceutica",
+    "datetime": "2008-07-13T16:54:47Z",
+    "position": {
+      "lon": "10.388763",
+      "lat": "43.7165801"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Dipartimento di Fisica 'E. Fermi'",
+    "datetime": "2015-09-08T20:34:44Z",
+    "position": {
+      "lon": "10.4078976",
+      "lat": "43.7201299"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Dipartimento di Informatica",
+    "datetime": "2015-07-04T19:23:24Z",
+    "position": {
+      "lon": "10.4082249",
+      "lat": "43.7203779999999"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Dipartimento di Scienze Politiche",
+    "datetime": "2015-12-01T13:50:59Z",
+    "position": {
+      "lon": "10.3990809",
+      "lat": "43.7169638"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Facoltà di Economia",
+    "datetime": "2014-03-07T13:06:06Z",
+    "position": {
+      "lon": "10.4104268",
+      "lat": "43.7111658"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Facoltà di Lettere",
+    "datetime": "2009-01-30T11:29:37Z",
+    "position": {
+      "lon": "10.3970149",
+      "lat": "43.7176662999999"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Facoltà di Medicina",
+    "datetime": "2015-10-28T18:41:13Z",
+    "position": {
+      "lon": "10.3952788",
+      "lat": "43.7203537999999"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Scuola Superiore Sant'Anna",
+    "datetime": "2014-02-08T23:19:24Z",
+    "position": {
+      "lon": "10.4026444",
+      "lat": "43.7206078"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Segreterie studenti",
+    "datetime": "2015-07-04T19:25:36Z",
+    "position": {
+      "lon": "10.4089115",
+      "lat": "43.7202811"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "Università di Pisa - Rettorato",
+    "datetime": "2015-07-23T08:16:07Z",
+    "position": {
+      "lon": "10.3988628",
+      "lat": "43.7166462"
+    }
+  },
+  {
+    "city": "PISA",
+    "region": "Toscana",
+    "name": "PERCRO, Scuola superiore Sant'Anna",
+    "datetime": "2013-10-16T13:15:50Z",
+    "position": {
+      "lon": "10.4222952",
+      "lat": "43.7292355"
+    }
+  },
+  {
+    "city": "AREZZO",
+    "region": "Toscana",
+    "name": "Facoltà di Economia (Sede Arezzo)",
+    "datetime": "2010-05-12T21:45:54Z",
+    "position": {
+      "lon": "11.8765603",
+      "lat": "43.4652567999999"
+    }
+  },
+  {
+    "city": "AREZZO",
+    "region": "Toscana",
+    "name": "Facoltà di Ingegneria  (Sede Arezzo)",
+    "datetime": "2010-05-12T21:45:54Z",
+    "position": {
+      "lon": "11.8762649",
+      "lat": "43.4653205999999"
+    }
+  },
+  {
+    "city": "AREZZO",
+    "region": "Toscana",
+    "name": "Scuola infermieri",
+    "datetime": "2012-03-03T11:20:00Z",
+    "position": {
+      "lon": "11.5296337999999",
+      "lat": "43.5625095999999"
+    }
+  },
+  {
+    "city": "SIENA",
+    "region": "Toscana",
+    "name": "Facoltà di Lettere e Filosofia",
+    "datetime": "2012-06-22T00:44:39Z",
+    "position": {
+      "lon": "11.3383398",
+      "lat": "43.3167724999999"
+    }
+  },
+  {
+    "city": "SIENA",
+    "region": "Toscana",
+    "name": "Università per Stranieri di Siena",
+    "datetime": "2014-03-06T11:27:22Z",
+    "position": {
+      "lon": "11.3215102",
+      "lat": "43.3314122"
+    }
+  },
+  {
+    "city": "GROSSETO",
+    "region": "Toscana",
+    "name": "Universita di Siena a Grosseto",
+    "datetime": "2012-10-13T13:58:51Z",
+    "position": {
+      "lon": "11.1147578",
+      "lat": "42.7617781"
+    }
+  },
+  {
+    "city": "PERUGIA",
+    "region": "Umbria",
+    "name": "Facoltà di Economia Del Turismo",
+    "datetime": "2013-08-24T01:43:14Z",
+    "position": {
+      "lon": "12.5822083",
+      "lat": "43.0523054"
+    }
+  },
+  {
+    "city": "PERUGIA",
+    "region": "Umbria",
+    "name": "Istituto Teologico di Assisi",
+    "datetime": "2014-08-10T15:49:58Z",
+    "position": {
+      "lon": "12.6048072",
+      "lat": "43.0751786"
+    }
+  },
+  {
+    "city": "PERUGIA",
+    "region": "Umbria",
+    "name": "Facoltà di Ingegneria",
+    "datetime": "2011-06-01T14:49:17Z",
+    "position": {
+      "lon": "12.3553307",
+      "lat": "43.1189053"
+    }
+  },
+  {
+    "city": "PERUGIA",
+    "region": "Umbria",
+    "name": "Università per Stranieri di Perugia",
+    "datetime": "2014-01-06T14:55:45Z",
+    "position": {
+      "lon": "12.3895193",
+      "lat": "43.1148525999999"
+    }
+  },
+  {
+    "city": "VITERBO",
+    "region": "Lazio",
+    "name": "Università degli Studi della Tuscia",
+    "datetime": "2009-03-27T13:31:09Z",
+    "position": {
+      "lon": "12.1128475",
+      "lat": "42.4138646999999"
+    }
+  },
+  {
+    "city": "VITERBO",
+    "region": "Lazio",
+    "name": "Università degli Studi della Tuscia",
+    "datetime": "2010-06-19T17:55:20Z",
+    "position": {
+      "lon": "12.102221",
+      "lat": "42.4127975"
+    }
+  },
+  {
+    "city": "VITERBO",
+    "region": "Lazio",
+    "name": "Università degli Studi della Tuscia",
+    "datetime": "2010-11-20T11:32:40Z",
+    "position": {
+      "lon": "12.0927953",
+      "lat": "42.4272927999999"
+    }
+  },
+  {
+    "city": "RIETI",
+    "region": "Lazio",
+    "name": "Università degli Studi della Tuscia",
+    "datetime": "2013-11-15T12:46:14Z",
+    "position": {
+      "lon": "12.9538317",
+      "lat": "42.3837376"
+    }
+  },
+  {
+    "city": "RIETI",
+    "region": "Lazio",
+    "name": "Sabina Universitas",
+    "datetime": "2015-12-05T18:04:51Z",
+    "position": {
+      "lon": "12.8603276",
+      "lat": "42.4026861999999"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Centro Residenziale Studi e Ricerche",
+    "datetime": "2015-12-15T10:23:30Z",
+    "position": {
+      "lon": "11.9086368999999",
+      "lat": "42.1503832"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Botanica",
+    "datetime": "2011-04-29T12:10:38Z",
+    "position": {
+      "lon": "12.5175392999999",
+      "lat": "41.902777"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Dipartimento Scienze Statistiche",
+    "datetime": "2013-10-10T21:18:56Z",
+    "position": {
+      "lon": "12.515464",
+      "lat": "41.9040439999999"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Facoltà di Medicina",
+    "datetime": "2011-04-24T00:38:20Z",
+    "position": {
+      "lon": "12.6339132",
+      "lat": "41.8565637"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Fisiologia Generale",
+    "datetime": "2011-04-29T18:45:56Z",
+    "position": {
+      "lon": "12.5162884",
+      "lat": "41.9040614999999"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Genetica",
+    "datetime": "2011-04-29T12:10:38Z",
+    "position": {
+      "lon": "12.5165639",
+      "lat": "41.9026641"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Ortopedia",
+    "datetime": "2011-04-15T18:21:29Z",
+    "position": {
+      "lon": "12.5128097999999",
+      "lat": "41.9020652"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Pontificia Università della Santa Croce",
+    "datetime": "2014-04-19T19:20:54Z",
+    "position": {
+      "lon": "12.4734914",
+      "lat": "41.9006887999999"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Pontificio Istituto Biblico",
+    "datetime": "2014-06-27T12:11:42Z",
+    "position": {
+      "lon": "12.4836393999999",
+      "lat": "41.8988026999999"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "RomaTre - Facoltà di Scienze Della Formazione",
+    "datetime": "2011-11-25T01:28:40Z",
+    "position": {
+      "lon": "12.4792632",
+      "lat": "41.8636180999999"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Tor Vergata facoltà di Scienze",
+    "datetime": "2015-05-18T21:13:28Z",
+    "position": {
+      "lon": "12.6057963",
+      "lat": "41.8519773"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Università La Sapienza sede distaccata Architet",
+    "datetime": "2012-09-20T15:37:14Z",
+    "position": {
+      "lon": "12.4757374999999",
+      "lat": "41.9040213999999"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Università Sapienza di Roma - Facoltà di Infor",
+    "datetime": "2008-09-29T19:04:28Z",
+    "position": {
+      "lon": "12.4971175999999",
+      "lat": "41.9142198999999"
+    }
+  },
+  {
+    "city": "ROMA",
+    "region": "Lazio",
+    "name": "Università Sapienza - Distaccamento Facoltà di",
+    "datetime": "2015-09-26T08:40:06Z",
+    "position": {
+      "lon": "12.5176584",
+      "lat": "41.8991606"
+    }
+  },
+  {
+    "city": "CASERTA",
+    "region": "Campania",
+    "name": "Seconda Università di Napoli, Facoltà di Studi",
+    "datetime": "2011-12-05T21:47:12Z",
+    "position": {
+      "lon": "14.3170751",
+      "lat": "41.1010697999999"
+    }
+  },
+  {
+    "city": "NAPOLI",
+    "region": "Campania",
+    "name": "Università degli Studi di Napoli \"\"L'Orientale\"\"",
+    "datetime": "2015-05-05T21:25:16Z",
+    "position": {
+      "lon": "14.2602998",
+      "lat": "40.8452283"
+    }
+  },
+  {
+    "city": "NAPOLI",
+    "region": "Campania",
+    "name": "Università Giurisprudenza Napoli - Preparazioni",
+    "datetime": "2016-02-19T09:20:48Z",
+    "position": {
+      "lon": "14.4625825",
+      "lat": "40.7495806"
+    }
+  },
+  {
+    "city": "SALERNO",
+    "region": "Campania",
+    "name": "Università degli studi di Salerno",
+    "datetime": "2010-10-22T17:42:54Z",
+    "position": {
+      "lon": "14.7905251999999",
+      "lat": "40.7721832"
+    }
+  },
+  {
+    "city": "CHIETI",
+    "region": "Abruzzo",
+    "name": "Università degli Studi di Chieti 'G. D'Annunzio",
+    "datetime": "2014-12-02T22:03:30Z",
+    "position": {
+      "lon": "14.1510341",
+      "lat": "42.3677568"
+    }
+  },
+  {
+    "city": "FOGGIA",
+    "region": "Puglia",
+    "name": "Università degli Studi di Foggia - Facoltà di",
+    "datetime": "2011-12-06T16:41:33Z",
+    "position": {
+      "lon": "15.5200236",
+      "lat": "41.4514696"
+    }
+  },
+  {
+    "city": "BARI",
+    "region": "Puglia",
+    "name": "Accademia di Belle Arti di Bari",
+    "datetime": "2014-04-01T10:17:34Z",
+    "position": {
+      "lon": "16.8763706999999",
+      "lat": "41.1111308999999"
+    }
+  },
+  {
+    "city": "BARI",
+    "region": "Puglia",
+    "name": "biotechnology faculty",
+    "datetime": "2014-11-14T20:49:27Z",
+    "position": {
+      "lon": "16.8791659",
+      "lat": "41.1047713"
+    }
+  },
+  {
+    "city": "BARI",
+    "region": "Puglia",
+    "name": "Politecnico di Bari",
+    "datetime": "2010-08-08T15:48:51Z",
+    "position": {
+      "lon": "16.8832334999999",
+      "lat": "41.1113836999999"
+    }
+  },
+  {
+    "city": "MATERA",
+    "region": "Basilicata",
+    "name": "Università della Basilicata, Facoltà di Archit",
+    "datetime": "2013-10-27T07:21:22Z",
+    "position": {
+      "lon": "16.5974955",
+      "lat": "40.6711661"
+    }
+  },
+  {
+    "city": "COSENZA",
+    "region": "Calabria",
+    "name": "Aula P1",
+    "datetime": "2014-04-01T13:31:24Z",
+    "position": {
+      "lon": "16.2254815999999",
+      "lat": "39.3653215"
+    }
+  },
+  {
+    "city": "COSENZA",
+    "region": "Calabria",
+    "name": "Aula P2 Occupata",
+    "datetime": "2016-01-27T19:46:20Z",
+    "position": {
+      "lon": "16.2254551",
+      "lat": "39.3654478999999"
+    }
+  },
+  {
+    "city": "COSENZA",
+    "region": "Calabria",
+    "name": "Aula P3",
+    "datetime": "2014-04-01T13:31:24Z",
+    "position": {
+      "lon": "16.2253712",
+      "lat": "39.366008"
+    }
+  },
+  {
+    "city": "COSENZA",
+    "region": "Calabria",
+    "name": "Aula P4",
+    "datetime": "2014-04-01T13:31:24Z",
+    "position": {
+      "lon": "16.2253535",
+      "lat": "39.366131"
+    }
+  },
+  {
+    "city": "COSENZA",
+    "region": "Calabria",
+    "name": "LabInf2",
+    "datetime": "2014-04-01T14:57:40Z",
+    "position": {
+      "lon": "16.2257214999999",
+      "lat": "39.3653825999999"
+    }
+  },
+  {
+    "city": "PALERMO",
+    "region": "Sicilia",
+    "name": "Consorzio ARCA",
+    "datetime": "2013-09-17T20:52:53Z",
+    "position": {
+      "lon": "13.3444453",
+      "lat": "38.1005182"
+    }
+  },
+  {
+    "city": "MESSINA",
+    "region": "Sicilia",
+    "name": "Centro INGV Stromboli",
+    "datetime": "2015-03-29T14:21:07Z",
+    "position": {
+      "lon": "15.2406788",
+      "lat": "38.8007692999999"
+    }
+  },
+  {
+    "city": "SASSARI",
+    "region": "Sardegna",
+    "name": "Polo Umanistico dell'Università di Sassari",
+    "datetime": "2013-07-19T23:20:18Z",
+    "position": {
+      "lon": "8.5698554",
+      "lat": "40.7187642999999"
+    }
+  },
+  {
+    "city": "NUORO",
+    "region": "Sardegna",
+    "name": "Polo di Scienze Forestali - Università di Sassa",
+    "datetime": "2014-05-12T23:26:11Z",
+    "position": {
+      "lon": "9.3104899",
+      "lat": "40.3128187"
+    }
+  },
+  {
+    "city": "CAGLIARI",
+    "region": "Sardegna",
+    "name": "",
+    "datetime": "2015-03-16T18:34:37Z",
+    "position": {
+      "lon": "9.112202",
+      "lat": "39.2288384"
+    }
+  },
+  {
+    "city": "CAGLIARI",
+    "region": "Sardegna",
+    "name": "",
+    "datetime": "2015-03-16T18:34:37Z",
+    "position": {
+      "lon": "9.11198959999999",
+      "lat": "39.2289657"
+    }
+  },
+  {
+    "city": "CAGLIARI",
+    "region": "Sardegna",
+    "name": "",
+    "datetime": "2015-03-16T18:34:37Z",
+    "position": {
+      "lon": "9.11180519999999",
+      "lat": "39.2290929999999"
+    }
+  },
+  {
+    "city": "CAGLIARI",
+    "region": "Sardegna",
+    "name": "Centro Linguistico di Ateneo",
+    "datetime": "2011-06-21T16:52:41Z",
+    "position": {
+      "lon": "9.1137113",
+      "lat": "39.2275734999999"
+    }
+  },
+  {
+    "city": "CAGLIARI",
+    "region": "Sardegna",
+    "name": "Università di Cagliari (ex clinica Aresu)",
+    "datetime": "2014-02-18T07:55:44Z",
+    "position": {
+      "lon": "9.11476749999999",
+      "lat": "39.2213611"
+    }
+  },
+  {
+    "city": "PORDENONE",
+    "region": "Friuli-Venezia Giulia",
+    "name": "Consorzio universitario di Pordenone",
+    "datetime": "2012-10-28T15:42:57Z",
+    "position": {
+      "lon": "12.6806924999999",
+      "lat": "45.9525343999999"
+    }
+  },
+  {
+    "city": "PRATO",
+    "region": "Toscana",
+    "name": "PIN",
+    "datetime": "2015-12-19T13:40:53Z",
+    "position": {
+      "lon": "11.0988214",
+      "lat": "43.8852856999999"
+    }
+  },
+  {
+    "city": "PRATO",
+    "region": "Toscana",
+    "name": "PIN",
+    "datetime": "2015-12-19T13:40:53Z",
+    "position": {
+      "lon": "11.0988214",
+      "lat": "43.8852856999999"
+    }
+  },
+  {
+    "city": "MONZA E DELLA BRIANZA",
+    "region": "Lombardia",
+    "name": "",
+    "datetime": "2010-01-30T17:19:48Z",
+    "position": {
+      "lon": "9.221888",
+      "lat": "45.6769358999999"
+    }
+  },
+  {
+    "city": "FERMO",
+    "region": "Marche",
+    "name": "Università degli Studi di Macerata - Dipartimen",
+    "datetime": "2012-03-26T06:25:18Z",
+    "position": {
+      "lon": "13.7219271",
+      "lat": "43.1591159999999"
+    }
+  },
+  {
+    "city": "FERMO",
+    "region": "Marche",
+    "name": "Università Politecnica delle Marche - Facoltà",
+    "datetime": "2012-03-26T06:25:18Z",
+    "position": {
+      "lon": "13.7222437999999",
+      "lat": "43.1588695"
+    }
+  }
+]

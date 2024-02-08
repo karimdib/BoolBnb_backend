@@ -18,11 +18,31 @@
         @method('patch')
 
         <div class="mb-2">
-            <label for="name">{{__('Name')}}</label>
-            <input class="form-control" type="text" name="name" id="name" autocomplete="name" value="{{old('name', $user->name)}}" required autofocus>
-            @error('name')
+            <label for="first_name">{{__('First Name')}}</label>
+            <input class="form-control" type="text" name="first_name" id="first_name" autocomplete="first_name" value="{{old('first_name', $user->first_name)}}" required autofocus>
+            @error('first_name')
             <span class="invalid-feedback" role="alert">
-                <strong>{{ $errors->get('name')}}</strong>
+                <strong>{{ $errors->get('first_name')}}</strong>
+            </span>
+            @enderror
+        </div>
+
+        <div class="mb-2">
+            <label for="last_name">{{__('Last Name')}}</label>
+            <input class="form-control" type="text" name="last_name" id="last_name" autocomplete="last_name" value="{{old('last_name', $user->last_name)}}" required autofocus>
+            @error('last_name')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $errors->get('last_name')}}</strong>
+            </span>
+            @enderror
+        </div>
+
+        <div class="mb-2">
+            <label for="date_of_birth">{{__('Date of birth')}}</label>
+            <input class="form-control" type="date" name="date_of_birth" id="date_of_birth" autocomplete="date_of_birth" value="{{old('date_of_birth', $user->date_of_birth)}}" required autofocus>
+            @error('date_of_birth')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $errors->get('date_of_birth')}}</strong>
             </span>
             @enderror
         </div>

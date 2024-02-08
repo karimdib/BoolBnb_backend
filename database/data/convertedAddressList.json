@@ -1,0 +1,4245 @@
+[
+    {
+        "address": {
+            "streetNumber": "3",
+            "streetName": "Vicolo Muratori",
+            "municipality": "Moncalieri",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10024",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Vicolo Muratori 3, 10024 Moncalieri",
+            "localName": "Moncalieri"
+        },
+        "position": { "lat": 44.999603, "lon": 7.682464 }
+    },
+    {
+        "address": {
+            "streetNumber": "6",
+            "streetName": "Via dell'Accademia Albertina",
+            "municipality": "Torino",
+            "neighbourhood": "Centro",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via dell'Accademia Albertina 6, 10123 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.067518, "lon": 7.689713 }
+    },
+    {
+        "address": {
+            "streetNumber": "18/B",
+            "streetName": "Via Po",
+            "municipality": "Torino",
+            "neighbourhood": "Centro",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Po 18/B, 10123 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.068419, "lon": 7.689527 }
+    },
+    {
+        "address": {
+            "streetNumber": "13",
+            "streetName": "Via dell'Accademia Albertina",
+            "municipality": "Torino",
+            "neighbourhood": "Centro",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via dell'Accademia Albertina 13, 10123 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.065313, "lon": 7.688328 }
+    },
+    {
+        "address": {
+            "streetName": "Viale Virgilio",
+            "municipality": "Torino",
+            "neighbourhood": "San Salvario",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Virgilio, 10126 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.054847, "lon": 7.686736 }
+    },
+    {
+        "address": {
+            "streetNumber": "24",
+            "streetName": "Corso Duca degli Abruzzi",
+            "municipality": "Torino",
+            "neighbourhood": "La Crocetta",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10129",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Corso Duca degli Abruzzi 24, 10129 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.062459, "lon": 7.662344 }
+    },
+    {
+        "address": {
+            "streetNumber": "39",
+            "streetName": "Viale Pier Andrea Mattioli",
+            "municipality": "Torino",
+            "neighbourhood": "San Salvario",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10125",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Pier Andrea Mattioli 39, 10125 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.053922, "lon": 7.686994 }
+    },
+    {
+        "address": {
+            "streetNumber": "17/A",
+            "streetName": "Via Angelo Fortunato Formiggini",
+            "municipality": "Torino",
+            "neighbourhood": "Mirafiori Sud",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10135",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Angelo Fortunato Formiggini 17/A, 10135 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.017967, "lon": 7.641661 }
+    },
+    {
+        "address": {
+            "streetNumber": "230",
+            "streetName": "Via Nizza",
+            "municipality": "Torino",
+            "neighbourhood": "Molinette-Millefonti",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Nizza 230, 10126 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.034234, "lon": 7.667845 }
+    },
+    {
+        "address": {
+            "streetName": "Piazza Carlo Emanuele II",
+            "municipality": "Torino",
+            "neighbourhood": "Centro",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Carlo Emanuele II, 10123 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.065646, "lon": 7.688909 }
+    },
+    {
+        "address": {
+            "streetNumber": "1",
+            "streetName": "Via Pietro Giuria",
+            "municipality": "Torino",
+            "neighbourhood": "San Salvario",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10125",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Pietro Giuria 1, 10125 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.052104, "lon": 7.681416 }
+    },
+    {
+        "address": {
+            "streetNumber": "21 bis",
+            "streetName": "Via San Massimo",
+            "municipality": "Torino",
+            "neighbourhood": "Centro",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Massimo 21 bis, 10123 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.065105, "lon": 7.690046 }
+    },
+    {
+        "address": {
+            "streetName": "Via San Massimo & Piazza Camillo Benso Conte di Cavour",
+            "municipality": "Torino",
+            "neighbourhood": "Centro",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Massimo & Piazza Camillo Benso Conte di Cavour, 10123 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.063659, "lon": 7.688906 }
+    },
+    {
+        "address": {
+            "streetNumber": "6/BIS",
+            "streetName": "Via Fratelli Vasco",
+            "municipality": "Torino",
+            "neighbourhood": "Centro",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10124",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Fratelli Vasco 6/BIS, 10124 Torino",
+            "localName": "Torino"
+        },
+        "position": { "lat": 45.06918, "lon": 7.689312 }
+    },
+    {
+        "address": {
+            "streetNumber": "38",
+            "streetName": "Via San Bartolomeo",
+            "municipality": "Vinovo",
+            "countrySecondarySubdivision": "Torino",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "10048",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Bartolomeo 38, 10048 Vinovo",
+            "localName": "Vinovo"
+        },
+        "position": { "lat": 44.949161, "lon": 7.631948 }
+    },
+    {
+        "address": {
+            "streetName": "Area Fabrizio De Andr\u00e9",
+            "municipality": "Asti",
+            "countrySecondarySubdivision": "Asti",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "14100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Area Fabrizio De Andr\u00e9, 14100 Asti",
+            "localName": "Asti"
+        },
+        "position": { "lat": 44.903067, "lon": 8.210535 }
+    },
+    {
+        "address": {
+            "streetNumber": "1/A",
+            "streetName": "Via Giuseppe Di Vittorio",
+            "municipality": "Alessandria",
+            "neighbourhood": "Galimberti",
+            "countrySecondarySubdivision": "Alessandria",
+            "countrySubdivision": "Piemonte",
+            "countrySubdivisionName": "Piemonte",
+            "countrySubdivisionCode": "21",
+            "postalCode": "15121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giuseppe Di Vittorio 1/A, 15121 Alessandria",
+            "localName": "Alessandria"
+        },
+        "position": { "lat": 44.917035, "lon": 8.62574 }
+    },
+    {
+        "address": {
+            "streetNumber": "3",
+            "streetName": "Via Fratelli Artari",
+            "municipality": "Verr\u00e8s",
+            "countrySecondarySubdivision": "Aosta",
+            "countrySubdivision": "Valle d'Aosta",
+            "countrySubdivisionName": "Valle d'Aosta",
+            "countrySubdivisionCode": "23",
+            "postalCode": "11029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Fratelli Artari 3, 11029 Verr\u00e8s",
+            "localName": "Verr\u00e8s"
+        },
+        "position": { "lat": 45.664178, "lon": 7.69008 }
+    },
+    {
+        "address": {
+            "streetNumber": "2A",
+            "streetName": "Piazza di Santa Sabina",
+            "municipality": "Genova",
+            "neighbourhood": "Pr\u00e8",
+            "countrySecondarySubdivision": "Genova",
+            "countrySubdivision": "Liguria",
+            "countrySubdivisionName": "Liguria",
+            "countrySubdivisionCode": "42",
+            "postalCode": "16124",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza di Santa Sabina 2A, 16124 Genova",
+            "localName": "Genova"
+        },
+        "position": { "lat": 44.413321, "lon": 8.927745 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Via Rodi",
+            "municipality": "Genova",
+            "neighbourhood": "Albaro",
+            "countrySecondarySubdivision": "Genova",
+            "countrySubdivision": "Liguria",
+            "countrySubdivisionName": "Liguria",
+            "countrySubdivisionCode": "42",
+            "postalCode": "16145",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Rodi 5, 16145 Genova",
+            "localName": "Genova"
+        },
+        "position": { "lat": 44.400531, "lon": 8.963107 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Via Balbi",
+            "municipality": "Genova",
+            "neighbourhood": "Pr\u00e8",
+            "countrySecondarySubdivision": "Genova",
+            "countrySubdivision": "Liguria",
+            "countrySubdivisionName": "Liguria",
+            "countrySubdivisionCode": "42",
+            "postalCode": "16126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Balbi 5, 16126 Genova",
+            "localName": "Genova"
+        },
+        "position": { "lat": 44.414853, "lon": 8.926646 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Varese",
+            "neighbourhood": "San Carlo",
+            "countrySecondarySubdivision": "Varese",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "21100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "21100 Varese",
+            "localName": "Varese"
+        },
+        "position": { "lat": 45.796079, "lon": 8.851268 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Via Giuseppe Mazzini",
+            "municipality": "Varese",
+            "neighbourhood": "Varese Centro",
+            "countrySecondarySubdivision": "Varese",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "21100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giuseppe Mazzini 5, 21100 Varese",
+            "localName": "Varese"
+        },
+        "position": { "lat": 45.816259, "lon": 8.828675 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Venegono Inferiore",
+            "countrySecondarySubdivision": "Varese",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "21040",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "21040 Venegono Inferiore",
+            "localName": "Venegono Inferiore"
+        },
+        "position": { "lat": 45.734431, "lon": 8.907428 }
+    },
+    {
+        "address": {
+            "streetNumber": "7",
+            "streetName": "Via Palestro",
+            "municipality": "Como",
+            "countrySecondarySubdivision": "Como",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "22100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Palestro 7, 22100 Como",
+            "localName": "Como"
+        },
+        "position": { "lat": 45.801113, "lon": 9.092499 }
+    },
+    {
+        "address": {
+            "streetNumber": "28",
+            "streetName": "Via Brera",
+            "municipality": "Milano",
+            "neighbourhood": "Brera",
+            "countrySecondarySubdivision": "Milano",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "20121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Brera 28, 20121 Milano",
+            "localName": "Milano"
+        },
+        "position": { "lat": 45.471946, "lon": 9.187845 }
+    },
+    {
+        "address": {
+            "streetNumber": "4",
+            "streetName": "Via Giovanni Celoria",
+            "municipality": "Milano",
+            "neighbourhood": "Citt\u00e0 Studi",
+            "countrySecondarySubdivision": "Milano",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "20133",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giovanni Celoria 4, 20133 Milano",
+            "localName": "Milano"
+        },
+        "position": { "lat": 45.476753, "lon": 9.227703 }
+    },
+    {
+        "address": {
+            "streetNumber": "12",
+            "streetName": "Via Giovanni Celoria",
+            "municipality": "Milano",
+            "neighbourhood": "Citt\u00e0 Studi",
+            "countrySecondarySubdivision": "Milano",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "20133",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giovanni Celoria 12, 20133 Milano",
+            "localName": "Milano"
+        },
+        "position": { "lat": 45.476759, "lon": 9.229288 }
+    },
+    {
+        "address": {
+            "streetNumber": "10",
+            "streetName": "Viale dell'Innovazione",
+            "municipality": "Milano",
+            "neighbourhood": "Bicocca",
+            "countrySecondarySubdivision": "Milano",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "20126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale dell'Innovazione 10, 20126 Milano",
+            "localName": "Milano"
+        },
+        "position": { "lat": 45.511074, "lon": 9.211319 }
+    },
+    {
+        "address": {
+            "streetNumber": "1",
+            "streetName": "Piazza Sant'Alessandro",
+            "municipality": "Milano",
+            "neighbourhood": "Duomo",
+            "countrySecondarySubdivision": "Milano",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "20123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Sant'Alessandro 1, 20123 Milano",
+            "localName": "Milano"
+        },
+        "position": { "lat": 45.461212, "lon": 9.186559 }
+    },
+    {
+        "address": {
+            "streetNumber": "15",
+            "streetName": "Via Salvecchio",
+            "municipality": "Bergamo",
+            "neighbourhood": "Citt\u00e0 Alta",
+            "countrySecondarySubdivision": "Bergamo",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "24129",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Salvecchio 15, 24129 Bergamo",
+            "localName": "Bergamo"
+        },
+        "position": { "lat": 45.704486, "lon": 9.660673 }
+    },
+    {
+        "address": {
+            "streetNumber": "4",
+            "streetName": "Via della Fara",
+            "municipality": "Bergamo",
+            "neighbourhood": "Citt\u00e0 Alta",
+            "countrySecondarySubdivision": "Bergamo",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "24129",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via della Fara 4, 24129 Bergamo",
+            "localName": "Bergamo"
+        },
+        "position": { "lat": 45.705095, "lon": 9.671233 }
+    },
+    {
+        "address": {
+            "streetNumber": "17",
+            "streetName": "Contrada Santa Croce",
+            "municipality": "Brescia",
+            "neighbourhood": "Centro Storico Sud",
+            "countrySecondarySubdivision": "Brescia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "25122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Contrada Santa Croce 17, 25122 Brescia",
+            "localName": "Brescia"
+        },
+        "position": { "lat": 45.535169, "lon": 10.215031 }
+    },
+    {
+        "address": {
+            "streetNumber": "11",
+            "streetName": "Piazza Antoniotto Botta Adorno",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Antoniotto Botta Adorno 11, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.187539, "lon": 9.15012 }
+    },
+    {
+        "address": {
+            "streetNumber": "1",
+            "streetName": "Via Lazzaro Spallanzani",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Lazzaro Spallanzani 1, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.186227, "lon": 9.158403 }
+    },
+    {
+        "address": {
+            "streetNumber": "7",
+            "streetName": "Via San Felice al Monastero",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Felice al Monastero 7, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.187987, "lon": 9.152162 }
+    },
+    {
+        "address": {
+            "streetNumber": "6",
+            "streetName": "Piazza Antoniotto Botta Adorno",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Antoniotto Botta Adorno 6, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.188073, "lon": 9.151269 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Piazza del Lino",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza del Lino 2, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.184625, "lon": 9.156122 }
+    },
+    {
+        "address": {
+            "streetNumber": "50",
+            "streetName": "Corso Carlo Alberto",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Corso Carlo Alberto 50, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.187312, "lon": 9.157814 }
+    },
+    {
+        "address": {
+            "streetName": "Via Abbiategrasso",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardy",
+            "countrySubdivisionName": "Lombardy",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italy",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Abbiategrasso, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.202068, "lon": 9.133662 }
+    },
+    {
+        "address": {
+            "streetNumber": "4",
+            "streetName": "Piazza Leonardo da Vinci",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Leonardo da Vinci 4, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.186476, "lon": 9.157564 }
+    },
+    {
+        "address": {
+            "streetName": "Piazza Antoniotto Botta Adorno",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Antoniotto Botta Adorno, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.188652, "lon": 9.151028 }
+    },
+    {
+        "address": {
+            "streetName": "Via Maria Corti",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Maria Corti, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.186146, "lon": 9.157717 }
+    },
+    {
+        "address": {
+            "streetName": "Via Adolfo Ferrata",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Adolfo Ferrata, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.203056, "lon": 9.138143 }
+    },
+    {
+        "address": {
+            "streetNumber": "3",
+            "streetName": "Corso Carlo Alberto",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Corso Carlo Alberto 3, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.187553, "lon": 9.156955 }
+    },
+    {
+        "address": {
+            "streetNumber": "14",
+            "streetName": "Via Sant'Epifanio",
+            "municipality": "Pavia",
+            "countrySecondarySubdivision": "Pavia",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "27100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Sant'Epifanio 14, 27100 Pavia",
+            "localName": "Pavia"
+        },
+        "position": { "lat": 45.185332, "lon": 9.162942 }
+    },
+    {
+        "address": {
+            "streetNumber": "20",
+            "streetName": "Via Alberto Pitentino",
+            "municipality": "Mantua",
+            "countrySecondarySubdivision": "Mantua",
+            "countrySubdivision": "Lombardy",
+            "countrySubdivisionName": "Lombardy",
+            "countrySubdivisionCode": "25",
+            "postalCode": "46100",
+            "countryCode": "IT",
+            "country": "Italy",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Alberto Pitentino 20, 46100 Mantua",
+            "localName": "Mantua"
+        },
+        "position": { "lat": 45.160293, "lon": 10.787276 }
+    },
+    {
+        "address": {
+            "streetNumber": "7",
+            "streetName": "Via Dante",
+            "municipality": "Bolzano",
+            "neighbourhood": "Centro-Piani-Rencio",
+            "countrySecondarySubdivision": "Bolzano",
+            "countrySubdivision": "Trentino-Alto Adige",
+            "countrySubdivisionName": "Trentino-Alto Adige",
+            "countrySubdivisionCode": "32",
+            "postalCode": "39100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Dante 7, 39100 Bolzano",
+            "localName": "Bolzano"
+        },
+        "position": { "lat": 46.496451, "lon": 11.349657 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Garniga Terme",
+            "countrySecondarySubdivision": "Trento",
+            "countrySubdivision": "Trentino-Alto Adige",
+            "countrySubdivisionName": "Trentino-Alto Adige",
+            "countrySubdivisionCode": "32",
+            "postalCode": "38060",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "38060 Garniga Terme",
+            "localName": "Garniga Terme"
+        },
+        "position": { "lat": 46.014194, "lon": 11.054777 }
+    },
+    {
+        "address": {
+            "streetNumber": "14",
+            "streetName": "Via Calepina",
+            "municipality": "Trento",
+            "neighbourhood": "Centro Storico",
+            "countrySecondarySubdivision": "Trento",
+            "countrySubdivision": "Trentino-Alto Adige",
+            "countrySubdivisionName": "Trentino-Alto Adige",
+            "countrySubdivisionCode": "32",
+            "postalCode": "38122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Calepina 14, 38122 Trento",
+            "localName": "Trento"
+        },
+        "position": { "lat": 46.066816, "lon": 11.123061 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Via Carlo Montanari",
+            "municipality": "Verona",
+            "neighbourhood": "Cittadella",
+            "countrySecondarySubdivision": "Verona",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "37122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Carlo Montanari 5, 37122 Verona",
+            "localName": "Verona"
+        },
+        "position": { "lat": 45.434807, "lon": 10.992794 }
+    },
+    {
+        "address": {
+            "streetNumber": "9",
+            "streetName": "Via Carlo Montanari",
+            "municipality": "Verona",
+            "neighbourhood": "Cittadella",
+            "countrySecondarySubdivision": "Verona",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "37122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Carlo Montanari 9, 37122 Verona",
+            "localName": "Verona"
+        },
+        "position": { "lat": 45.434378, "lon": 10.992326 }
+    },
+    {
+        "address": {
+            "streetName": "Via Felice Casorati",
+            "municipality": "Verona",
+            "neighbourhood": "Borgo Venezia",
+            "countrySecondarySubdivision": "Verona",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "37131",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Felice Casorati, 37131 Verona",
+            "localName": "Verona"
+        },
+        "position": { "lat": 45.444927, "lon": 11.031485 }
+    },
+    {
+        "address": {
+            "streetName": "Via Sile",
+            "municipality": "Roncade",
+            "countrySecondarySubdivision": "Treviso",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "31056",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Sile, 31056 Roncade",
+            "localName": "Roncade"
+        },
+        "position": { "lat": 45.564609, "lon": 12.428009 }
+    },
+    {
+        "address": {
+            "streetNumber": "85",
+            "streetName": "Riviera San Pietro",
+            "municipalitySubdivision": "Oriago",
+            "municipality": "Mira",
+            "countrySecondarySubdivision": "Venezia",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "30034",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Riviera San Pietro 85, 30034 Mira",
+            "localName": "Mira"
+        },
+        "position": { "lat": 45.449809, "lon": 12.168773 }
+    },
+    {
+        "address": {
+            "streetNumber": "2035",
+            "streetName": "Ramo Grimani",
+            "municipalitySubdivision": "Venezia Sestiere San Polo",
+            "municipality": "Venezia",
+            "countrySecondarySubdivision": "Venezia",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "30125",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Ramo Grimani 2035, 30125 Venezia",
+            "localName": "Venezia"
+        },
+        "position": { "lat": 45.436404, "lon": 12.330049 }
+    },
+    {
+        "address": {
+            "streetNumber": "3334",
+            "streetName": "Calle Foscari",
+            "municipalitySubdivision": "Venezia Sestiere Dorsoduro",
+            "municipality": "Venezia",
+            "countrySecondarySubdivision": "Venezia",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "30123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Calle Foscari 3334, 30123 Venezia",
+            "localName": "Venezia"
+        },
+        "position": { "lat": 45.434563, "lon": 12.326812 }
+    },
+    {
+        "address": {
+            "streetNumber": "153A",
+            "streetName": "Via Torino",
+            "municipalitySubdivision": "Mestre",
+            "municipality": "Venezia Mestre",
+            "neighbourhood": "Mestre Via Torino",
+            "countrySecondarySubdivision": "Venezia",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "30172",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Torino 153A, 30172 Venezia Mestre",
+            "localName": "Venezia Mestre"
+        },
+        "position": { "lat": 45.479404, "lon": 12.255295 }
+    },
+    {
+        "address": {
+            "streetNumber": "9",
+            "streetName": "Via Accademia",
+            "municipality": "Padova",
+            "neighbourhood": "Piazze",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35139",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Accademia 9, 35139 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.407382, "lon": 11.87086 }
+    },
+    {
+        "address": {
+            "streetNumber": "10",
+            "streetName": "Via Santa Sofia",
+            "municipality": "Padova",
+            "neighbourhood": "Santo-Portello",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Santa Sofia 10, 35121 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.405067, "lon": 11.881377 }
+    },
+    {
+        "address": {
+            "streetNumber": "9",
+            "streetName": "Via Giuseppe Jappelli",
+            "municipality": "Padova",
+            "neighbourhood": "Santo-Portello",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giuseppe Jappelli 9, 35121 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.408291, "lon": 11.885009 }
+    },
+    {
+        "address": {
+            "streetName": "Via Martiri della Libert\u00e0",
+            "municipality": "Padova",
+            "neighbourhood": "Piazze",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35137",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Martiri della Libert\u00e0, 35137 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.410014, "lon": 11.875925 }
+    },
+    {
+        "address": {
+            "streetNumber": "18",
+            "streetName": "Via Venezia",
+            "municipality": "Padova",
+            "neighbourhood": "Stazione Ferroviaria",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35131",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Venezia 18, 35131 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.41092, "lon": 11.895364 }
+    },
+    {
+        "address": {
+            "streetNumber": "9",
+            "streetName": "Via del Padovanino",
+            "municipality": "Padova",
+            "neighbourhood": "Santo-Portello",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via del Padovanino 9, 35123 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.403684, "lon": 11.876808 }
+    },
+    {
+        "address": {
+            "streetNumber": "41",
+            "streetName": "Piazza Alcide De Gasperi",
+            "municipality": "Padova",
+            "neighbourhood": "Stazione Ferroviaria",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35131",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Alcide De Gasperi 41, 35131 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.415469, "lon": 11.878151 }
+    },
+    {
+        "address": {
+            "streetNumber": "243",
+            "streetName": "Via Cesare Battisti",
+            "municipality": "Padova",
+            "neighbourhood": "Santo-Portello",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Cesare Battisti 243, 35121 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.404346, "lon": 11.883803 }
+    },
+    {
+        "address": {
+            "streetNumber": "7",
+            "streetName": "Via del Seminario",
+            "municipality": "Padova",
+            "neighbourhood": "Prato della Valle",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via del Seminario 7, 35122 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.401717, "lon": 11.87263 }
+    },
+    {
+        "address": {
+            "streetNumber": "3",
+            "streetName": "Via Re di Puglia",
+            "municipality": "Padova",
+            "neighbourhood": "Fiera",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35131",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Re di Puglia 3, 35131 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.412505, "lon": 11.89364 }
+    },
+    {
+        "address": {
+            "streetNumber": "19",
+            "streetName": "Via Giovanni Prati",
+            "municipality": "Padova",
+            "neighbourhood": "Piazze",
+            "countrySecondarySubdivision": "Padova",
+            "countrySubdivision": "Veneto",
+            "countrySubdivisionName": "Veneto",
+            "countrySubdivisionCode": "34",
+            "postalCode": "35122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giovanni Prati 19, 35122 Padova",
+            "localName": "Padova"
+        },
+        "position": { "lat": 45.405392, "lon": 11.874835 }
+    },
+    {
+        "address": {
+            "streetNumber": "20",
+            "streetName": "Via Treppo",
+            "municipality": "Udine",
+            "countrySecondarySubdivision": "Udine",
+            "countrySubdivision": "Friuli-Venezia Giulia",
+            "countrySubdivisionName": "Friuli-Venezia Giulia",
+            "countrySubdivisionCode": "36",
+            "postalCode": "33100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Treppo 20, 33100 Udine",
+            "localName": "Udine"
+        },
+        "position": { "lat": 46.065151, "lon": 13.242061 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Via Giuseppe Mazzini",
+            "municipality": "Udine",
+            "countrySecondarySubdivision": "Udine",
+            "countrySubdivision": "Friuli-Venezia Giulia",
+            "countrySubdivisionName": "Friuli-Venezia Giulia",
+            "countrySubdivisionCode": "36",
+            "postalCode": "33100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giuseppe Mazzini 2, 33100 Udine",
+            "localName": "Udine"
+        },
+        "position": { "lat": 46.066234, "lon": 13.232586 }
+    },
+    {
+        "address": {
+            "streetNumber": "18",
+            "streetName": "Via Bartolomeo d'Alviano",
+            "municipality": "Gorizia",
+            "countrySecondarySubdivision": "Gorizia",
+            "countrySubdivision": "Friuli-Venezia Giulia",
+            "countrySubdivisionName": "Friuli-Venezia Giulia",
+            "countrySubdivisionCode": "36",
+            "postalCode": "34170",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Bartolomeo d'Alviano 18, 34170 Gorizia",
+            "localName": "Gorizia"
+        },
+        "position": { "lat": 45.939672, "lon": 13.630892 }
+    },
+    {
+        "address": {
+            "streetNumber": "5/E",
+            "streetName": "Via Armando Diaz",
+            "municipality": "Gorizia",
+            "countrySecondarySubdivision": "Gorizia",
+            "countrySubdivision": "Friuli-Venezia Giulia",
+            "countrySubdivisionName": "Friuli-Venezia Giulia",
+            "countrySubdivisionCode": "36",
+            "postalCode": "34170",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Armando Diaz 5/E, 34170 Gorizia",
+            "localName": "Gorizia"
+        },
+        "position": { "lat": 45.943516, "lon": 13.618454 }
+    },
+    {
+        "address": {
+            "streetNumber": "10",
+            "streetName": "Via Sant'Anastasio",
+            "municipality": "Trieste",
+            "neighbourhood": "Barriera Nuova",
+            "countrySecondarySubdivision": "Trieste",
+            "countrySubdivision": "Friuli-Venezia Giulia",
+            "countrySubdivisionName": "Friuli-Venezia Giulia",
+            "countrySubdivisionCode": "36",
+            "postalCode": "34134",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Sant'Anastasio 10, 34134 Trieste",
+            "localName": "Trieste"
+        },
+        "position": { "lat": 45.657123, "lon": 13.774786 }
+    },
+    {
+        "address": {
+            "streetNumber": "14",
+            "streetName": "Via Fabio Filzi",
+            "municipality": "Trieste",
+            "neighbourhood": "Borgo Teresiano",
+            "countrySecondarySubdivision": "Trieste",
+            "countrySubdivision": "Friuli-Venezia Giulia",
+            "countrySubdivisionName": "Friuli-Venezia Giulia",
+            "countrySubdivisionCode": "36",
+            "postalCode": "34132",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Fabio Filzi 14, 34132 Trieste",
+            "localName": "Trieste"
+        },
+        "position": { "lat": 45.654776, "lon": 13.774696 }
+    },
+    {
+        "address": {
+            "streetNumber": "49",
+            "streetName": "Via Giovanni Amendola",
+            "municipality": "Reggio nell'Emilia",
+            "neighbourhood": "San Maurizio",
+            "countrySecondarySubdivision": "Reggio nell'Emilia",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "42122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giovanni Amendola 49, 42122 Reggio nell'Emilia",
+            "localName": "Reggio nell'Emilia"
+        },
+        "position": { "lat": 44.685609, "lon": 10.666836 }
+    },
+    {
+        "address": {
+            "streetNumber": "145",
+            "streetName": "Via Emilia Centro",
+            "municipality": "Modena",
+            "neighbourhood": "Centro Storico",
+            "countrySecondarySubdivision": "Modena",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "41121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Emilia Centro 145, 41121 Modena",
+            "localName": "Modena"
+        },
+        "position": { "lat": 44.645058, "lon": 10.927826 }
+    },
+    {
+        "address": {
+            "streetNumber": "213",
+            "streetName": "Via Giuseppe Campi",
+            "municipality": "Modena",
+            "neighbourhood": "Policlinico-Universit\u00e0",
+            "countrySecondarySubdivision": "Modena",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "41125",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giuseppe Campi 213, 41125 Modena",
+            "localName": "Modena"
+        },
+        "position": { "lat": 44.63208, "lon": 10.943537 }
+    },
+    {
+        "address": {
+            "streetNumber": "4",
+            "streetName": "Viale del Risorgimento",
+            "municipality": "Bologna",
+            "neighbourhood": "Colli",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40136",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale del Risorgimento 4, 40136 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.487384, "lon": 11.328036 }
+    },
+    {
+        "address": {
+            "streetNumber": "54",
+            "streetName": "Via delle Belle Arti",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via delle Belle Arti 54, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.497825, "lon": 11.352961 }
+    },
+    {
+        "address": {
+            "streetNumber": "23/2",
+            "streetName": "Via de' Chiari",
+            "municipality": "Bologna",
+            "neighbourhood": "Galvani",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40124",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via de' Chiari 23/2, 40124 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.490058, "lon": 11.348537 }
+    },
+    {
+        "address": {
+            "streetNumber": "36",
+            "streetName": "Via Castiglione",
+            "municipality": "Bologna",
+            "neighbourhood": "Galvani",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40124",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Castiglione 36, 40124 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.489472, "lon": 11.347591 }
+    },
+    {
+        "address": {
+            "streetNumber": "9/2",
+            "streetName": "Via San Giacomo",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Giacomo 9/2, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.496346, "lon": 11.355522 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Viale Quirico Filopanti",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Quirico Filopanti 5, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.495663, "lon": 11.356604 }
+    },
+    {
+        "address": {
+            "streetNumber": "9",
+            "streetName": "Viale Quirico Filopanti",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Quirico Filopanti 9, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.495139, "lon": 11.356663 }
+    },
+    {
+        "address": {
+            "streetNumber": "36",
+            "streetName": "Via Castiglione",
+            "municipality": "Bologna",
+            "neighbourhood": "Galvani",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40124",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Castiglione 36, 40124 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.489472, "lon": 11.347591 }
+    },
+    {
+        "address": {
+            "streetNumber": "2/A",
+            "streetName": "Via dei Bersaglieri",
+            "municipality": "Bologna",
+            "neighbourhood": "Galvani",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40125",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via dei Bersaglieri 2/A, 40125 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.49103, "lon": 11.353429 }
+    },
+    {
+        "address": {
+            "streetNumber": "22",
+            "streetName": "Viale Quirico Filopanti",
+            "municipality": "Bologna",
+            "neighbourhood": "Cirenaica",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Quirico Filopanti 22, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.495109, "lon": 11.357605 }
+    },
+    {
+        "address": {
+            "streetNumber": "13",
+            "streetName": "Via San Giacomo",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Giacomo 13, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.496151, "lon": 11.356477 }
+    },
+    {
+        "address": {
+            "streetNumber": "11",
+            "streetName": "Via Belmeloro",
+            "municipality": "Bologna",
+            "neighbourhood": "Irnerio",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Belmeloro 11, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.494898, "lon": 11.355783 }
+    },
+    {
+        "address": {
+            "streetNumber": "11",
+            "streetName": "Viale Quirico Filopanti",
+            "municipality": "Bologna",
+            "neighbourhood": "Irnerio",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Quirico Filopanti 11, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.494547, "lon": 11.356757 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Viale del Risorgimento",
+            "municipality": "Bologna",
+            "neighbourhood": "Colli",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40136",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale del Risorgimento 2, 40136 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.487904, "lon": 11.32885 }
+    },
+    {
+        "address": {
+            "streetNumber": "7",
+            "streetName": "Viale Quirico Filopanti",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Quirico Filopanti 7, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.495412, "lon": 11.356644 }
+    },
+    {
+        "address": {
+            "streetNumber": "3",
+            "streetName": "Viale Quirico Filopanti",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Quirico Filopanti 3, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.497007, "lon": 11.356535 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Via del Piombo",
+            "municipality": "Bologna",
+            "neighbourhood": "Galvani",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40125",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via del Piombo 5, 40125 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.488285, "lon": 11.355584 }
+    },
+    {
+        "address": {
+            "streetNumber": "11",
+            "streetName": "Via San Giacomo",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Giacomo 11, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.496234, "lon": 11.355885 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Via Francesco Selmi",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Francesco Selmi 2, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.49625, "lon": 11.35397 }
+    },
+    {
+        "address": {
+            "streetName": "Via Camillo Ranzani",
+            "municipality": "Bologna",
+            "neighbourhood": "Cirenaica",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "countryCode": "IT",
+            "country": "Italy",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Camillo Ranzani, BOLOGNA",
+            "localName": "BOLOGNA"
+        },
+        "position": { "lat": 44.501335, "lon": 11.357122 }
+    },
+    {
+        "address": {
+            "streetNumber": "67",
+            "streetName": "Via Zamboni",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Zamboni 67, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.497753, "lon": 11.355755 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Piazza di Porta San Donato",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza di Porta San Donato 5, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.498023, "lon": 11.355821 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Piazzetta Pier Paolo Pasolini",
+            "municipality": "Bologna",
+            "neighbourhood": "Marconi",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazzetta Pier Paolo Pasolini 5, 40122 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.502311, "lon": 11.335162 }
+    },
+    {
+        "address": {
+            "streetNumber": "14",
+            "streetName": "Via San Giacomo",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Giacomo 14, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.496582, "lon": 11.355838 }
+    },
+    {
+        "address": {
+            "streetNumber": "7",
+            "streetName": "Mura Anteo Zamboni",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Mura Anteo Zamboni 7, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.497076, "lon": 11.35617 }
+    },
+    {
+        "address": {
+            "streetNumber": "6",
+            "streetName": "Via Belmeloro",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Belmeloro 6, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.495731, "lon": 11.353723 }
+    },
+    {
+        "address": {
+            "streetNumber": "41",
+            "streetName": "Via delle Belle Arti",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via delle Belle Arti 41, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.4977, "lon": 11.352153 }
+    },
+    {
+        "address": {
+            "streetNumber": "3",
+            "streetName": "Via Francesco Selmi",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Francesco Selmi 3, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.496159, "lon": 11.354301 }
+    },
+    {
+        "address": {
+            "streetNumber": "12",
+            "streetName": "Via San Giacomo",
+            "municipality": "Bologna",
+            "neighbourhood": "Zona Universitaria",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Giacomo 12, 40126 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.496802, "lon": 11.35516 }
+    },
+    {
+        "address": {
+            "streetNumber": "14/C",
+            "streetName": "Via Camillo Ranzani",
+            "municipality": "Bologna",
+            "neighbourhood": "Cirenaica",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40127",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Camillo Ranzani 14/C, 40127 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.501468, "lon": 11.359195 }
+    },
+    {
+        "address": {
+            "streetNumber": "19/2",
+            "streetName": "Via San Donato",
+            "municipality": "Bologna",
+            "neighbourhood": "Cirenaica",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40127",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Donato 19/2, 40127 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.498981, "lon": 11.358689 }
+    },
+    {
+        "address": {
+            "streetNumber": "8/7",
+            "streetName": "Via Camillo Ranzani",
+            "municipality": "Bologna",
+            "neighbourhood": "Cirenaica",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40127",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Camillo Ranzani 8/7, 40127 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.501799, "lon": 11.358436 }
+    },
+    {
+        "address": {
+            "streetNumber": "15",
+            "streetName": "Via Mario Fantin",
+            "municipality": "Bologna",
+            "neighbourhood": "Lame",
+            "countrySecondarySubdivision": "Bologna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "40131",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Mario Fantin 15, 40131 Bologna",
+            "localName": "Bologna"
+        },
+        "position": { "lat": 44.513356, "lon": 11.328122 }
+    },
+    {
+        "address": {
+            "streetNumber": "4",
+            "streetName": "Via Cappuccini",
+            "municipality": "Argenta",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44011",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Cappuccini 4, 44011 Argenta",
+            "localName": "Argenta"
+        },
+        "position": { "lat": 44.61805, "lon": 11.837296 }
+    },
+    {
+        "address": {
+            "streetNumber": "47",
+            "streetName": "Via Guercino",
+            "municipality": "Cento",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44042",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Guercino 47, 44042 Cento",
+            "localName": "Cento"
+        },
+        "position": { "lat": 44.727984, "lon": 11.291151 }
+    },
+    {
+        "address": {
+            "streetNumber": "32",
+            "streetName": "Corso Ercole I D'Este",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Corso Ercole I D'Este 32, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.842045, "lon": 11.621503 }
+    },
+    {
+        "address": {
+            "streetNumber": "30",
+            "streetName": "Via Nicol\u00f2 Macchiavelli",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Nicol\u00f2 Macchiavelli 30, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.838759, "lon": 11.630185 }
+    },
+    {
+        "address": {
+            "streetNumber": "46",
+            "streetName": "Via Luigi Borsari",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Luigi Borsari 46, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.83867, "lon": 11.63362 }
+    },
+    {
+        "address": {
+            "streetNumber": "203",
+            "streetName": "Corso della Giovecca",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Corso della Giovecca 203, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.832636, "lon": 11.631539 }
+    },
+    {
+        "address": {
+            "streetNumber": "70",
+            "streetName": "Via Mortara",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Mortara 70, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.83813, "lon": 11.631627 }
+    },
+    {
+        "address": {
+            "streetNumber": "62",
+            "streetName": "Via Fossato di Mortara",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Fossato di Mortara 62, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.837067, "lon": 11.631849 }
+    },
+    {
+        "address": {
+            "streetNumber": "18/a",
+            "streetName": "Via del Paradiso",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via del Paradiso 18/a, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.832411, "lon": 11.621192 }
+    },
+    {
+        "address": {
+            "streetNumber": "8",
+            "streetName": "Via Quartieri",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Quartieri 8, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.828224, "lon": 11.622177 }
+    },
+    {
+        "address": {
+            "streetNumber": "4 C",
+            "streetName": "Via Voltapaletto",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Voltapaletto 4 C, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.835417, "lon": 11.622263 }
+    },
+    {
+        "address": {
+            "streetNumber": "17/19",
+            "streetName": "Via Fossato di Mortara",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Fossato di Mortara 17/19, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.83729, "lon": 11.631564 }
+    },
+    {
+        "address": {
+            "streetNumber": "37",
+            "streetName": "Corso Ercole I D'Este",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Corso Ercole I D'Este 37, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.844758, "lon": 11.622367 }
+    },
+    {
+        "address": {
+            "streetNumber": "1",
+            "streetName": "Via Giuseppe Saragat",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giuseppe Saragat 1, 44122 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.834197, "lon": 11.598504 }
+    },
+    {
+        "address": {
+            "streetNumber": "38",
+            "streetName": "Via Girolamo Savonarola",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Girolamo Savonarola 38, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.8324, "lon": 11.627637 }
+    },
+    {
+        "address": {
+            "streetNumber": "66",
+            "streetName": "Via Fossato di Mortara",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Fossato di Mortara 66, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.836761, "lon": 11.63248 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Corso Porta Mare",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Corso Porta Mare 2, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.842211, "lon": 11.621832 }
+    },
+    {
+        "address": {
+            "streetName": "Via Girolamo Savonarola",
+            "municipality": "Ferrara",
+            "countrySecondarySubdivision": "Ferrara",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "44121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Girolamo Savonarola, 44121 Ferrara",
+            "localName": "Ferrara"
+        },
+        "position": { "lat": 44.833355, "lon": 11.62623 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Via Angelo Mariani",
+            "municipality": "Ravenna",
+            "countrySecondarySubdivision": "Ravenna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "48121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Angelo Mariani 5, 48121 Ravenna",
+            "localName": "Ravenna"
+        },
+        "position": { "lat": 44.417222, "lon": 12.201983 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Via dell'Agricoltura",
+            "municipality": "Ravenna",
+            "countrySecondarySubdivision": "Ravenna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "48123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via dell'Agricoltura 5, 48123 Ravenna",
+            "localName": "Ravenna"
+        },
+        "position": { "lat": 44.434581, "lon": 12.197868 }
+    },
+    {
+        "address": {
+            "streetNumber": "163",
+            "streetName": "Via Sant'Alberto",
+            "municipality": "Ravenna",
+            "countrySecondarySubdivision": "Ravenna",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "48123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Sant'Alberto 163, 48123 Ravenna",
+            "localName": "Ravenna"
+        },
+        "position": { "lat": 44.434577, "lon": 12.196798 }
+    },
+    {
+        "address": {
+            "streetNumber": "612",
+            "streetName": "Viale Europa",
+            "municipality": "Cesena",
+            "neighbourhood": "Centro Urbano",
+            "countrySecondarySubdivision": "Forl\u00ec-Cesena",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "47521",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Europa 612, 47521 Cesena",
+            "localName": "Cesena"
+        },
+        "position": { "lat": 44.145241, "lon": 12.241903 }
+    },
+    {
+        "address": {
+            "streetNumber": "26",
+            "streetName": "Via Werther Ricchi",
+            "municipality": "Cesena",
+            "neighbourhood": "Centro Urbano",
+            "countrySecondarySubdivision": "Forl\u00ec-Cesena",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "47522",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Werther Ricchi 26, 47522 Cesena",
+            "localName": "Cesena"
+        },
+        "position": { "lat": 44.144498, "lon": 12.239338 }
+    },
+    {
+        "address": {
+            "streetName": "Via Sacchi",
+            "municipality": "Cesena",
+            "neighbourhood": "Centro Urbano",
+            "countrySecondarySubdivision": "Forl\u00ec-Cesena",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "47521",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Sacchi, 47521 Cesena",
+            "localName": "Cesena"
+        },
+        "position": { "lat": 44.139792, "lon": 12.243255 }
+    },
+    {
+        "address": {
+            "streetNumber": "10",
+            "streetName": "Via Francesco Balilla Pratella",
+            "municipality": "Forl\u00ec",
+            "countrySecondarySubdivision": "Forl\u00ec-Cesena",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "47122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Francesco Balilla Pratella 10, 47122 Forl\u00ec",
+            "localName": "Forl\u00ec"
+        },
+        "position": { "lat": 44.214169, "lon": 12.063107 }
+    },
+    {
+        "address": {
+            "streetNumber": "155",
+            "streetName": "Corso della Repubblica",
+            "municipality": "Forl\u00ec",
+            "countrySecondarySubdivision": "Forl\u00ec-Cesena",
+            "countrySubdivision": "Emilia Romagna",
+            "countrySubdivisionName": "Emilia Romagna",
+            "countrySubdivisionCode": "45",
+            "postalCode": "47121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Corso della Repubblica 155, 47121 Forl\u00ec",
+            "localName": "Forl\u00ec"
+        },
+        "position": { "lat": 44.219608, "lon": 12.046839 }
+    },
+    {
+        "address": {
+            "streetNumber": "244",
+            "streetName": "Viale Trieste",
+            "municipality": "Pesaro",
+            "neighbourhood": "Mare-Porto",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Trieste 244, 61121 Pesaro",
+            "localName": "Pesaro"
+        },
+        "position": { "lat": 43.921094, "lon": 12.907857 }
+    },
+    {
+        "address": {
+            "streetNumber": "19",
+            "streetName": "Via Federico Veterani",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Federico Veterani 19, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.724641, "lon": 12.638028 }
+    },
+    {
+        "address": {
+            "streetNumber": "28",
+            "streetName": "Via Francesco Budassi",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Francesco Budassi 28, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.72562, "lon": 12.637757 }
+    },
+    {
+        "address": {
+            "streetNumber": "42",
+            "streetName": "Via Aurelio Saffi",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Aurelio Saffi 42, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.722576, "lon": 12.636473 }
+    },
+    {
+        "address": {
+            "streetNumber": "1",
+            "streetName": "Via Giacomo Matteotti",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giacomo Matteotti 1, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.721929, "lon": 12.636011 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Via Aurelio Saffi",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Aurelio Saffi 2, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.723273, "lon": 12.636884 }
+    },
+    {
+        "address": {
+            "streetNumber": "15",
+            "streetName": "Via Aurelio Saffi",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Aurelio Saffi 15, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.722141, "lon": 12.636627 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Via Ca' Le Suore",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Ca' Le Suore 2, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.700747, "lon": 12.641167 }
+    },
+    {
+        "address": {
+            "streetNumber": "17",
+            "streetName": "Via Donato Bramante",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Donato Bramante 17, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.727522, "lon": 12.636077 }
+    },
+    {
+        "address": {
+            "streetNumber": "12",
+            "streetName": "Piazza della Repubblica",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza della Repubblica 12, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.72639, "lon": 12.63653 }
+    },
+    {
+        "address": {
+            "streetNumber": "12",
+            "streetName": "Piazza della Repubblica",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza della Repubblica 12, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.72639, "lon": 12.63653 }
+    },
+    {
+        "address": {
+            "streetNumber": "7",
+            "streetName": "Piazza Rinascimento",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Rinascimento 7, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.723507, "lon": 12.637049 }
+    },
+    {
+        "address": {
+            "streetNumber": "17",
+            "streetName": "Via Donato Bramante",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Donato Bramante 17, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.727522, "lon": 12.636077 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Via Aurelio Saffi",
+            "municipality": "Urbino",
+            "countrySecondarySubdivision": "Pesaro e Urbino",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "61029",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Aurelio Saffi 2, 61029 Urbino",
+            "localName": "Urbino"
+        },
+        "position": { "lat": 43.723263, "lon": 12.636775 }
+    },
+    {
+        "address": {
+            "streetNumber": "17",
+            "streetName": "Piazza Camillo Benso Conte di Cavour",
+            "municipality": "Camerino",
+            "countrySecondarySubdivision": "Macerata",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "62032",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Camillo Benso Conte di Cavour 17, 62032 Camerino",
+            "localName": "Camerino"
+        },
+        "position": { "lat": 43.135784, "lon": 13.068611 }
+    },
+    {
+        "address": {
+            "streetNumber": "55",
+            "streetName": "Via Giuseppe Garibaldi",
+            "municipality": "Macerata",
+            "countrySecondarySubdivision": "Macerata",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "62100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giuseppe Garibaldi 55, 62100 Macerata",
+            "localName": "Macerata"
+        },
+        "position": { "lat": 43.30102, "lon": 13.448799 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Macerata",
+            "countrySecondarySubdivision": "Macerata",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "62100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "62100 Macerata",
+            "localName": "Macerata"
+        },
+        "position": { "lat": 43.28764, "lon": 13.473399 }
+    },
+    {
+        "address": {
+            "streetNumber": "12",
+            "streetName": "Viale San Giovanni Bosco",
+            "municipality": "Macerata",
+            "countrySecondarySubdivision": "Macerata",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "62100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale San Giovanni Bosco 12, 62100 Macerata",
+            "localName": "Macerata"
+        },
+        "position": { "lat": 43.296646, "lon": 13.454003 }
+    },
+    {
+        "address": {
+            "streetNumber": "16B",
+            "streetName": "Piazza della Libert\u00e0",
+            "municipality": "Macerata",
+            "countrySecondarySubdivision": "Macerata",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "62100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza della Libert\u00e0 16B, 62100 Macerata",
+            "localName": "Macerata"
+        },
+        "position": { "lat": 43.300249, "lon": 13.454008 }
+    },
+    {
+        "address": {
+            "streetNumber": "200",
+            "streetName": "Via Cosimo Ridolfi",
+            "municipality": "Empoli",
+            "countrySecondarySubdivision": "Firenze",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "50053",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Cosimo Ridolfi 200, 50053 Empoli",
+            "localName": "Empoli"
+        },
+        "position": { "lat": 43.718074, "lon": 10.947872 }
+    },
+    {
+        "address": {
+            "streetNumber": "11",
+            "streetName": "Piazza de' Pitti",
+            "municipality": "Firenze",
+            "neighbourhood": "Oltrarno-San Frediano",
+            "countrySecondarySubdivision": "Firenze",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "50125",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza de' Pitti 11, 50125 Firenze",
+            "localName": "Firenze"
+        },
+        "position": { "lat": 43.765749, "lon": 11.249328 }
+    },
+    {
+        "address": {
+            "streetNumber": "4/14r",
+            "streetName": "Via de' Martelli",
+            "municipality": "Firenze",
+            "neighbourhood": "Duomo-San Giovanni",
+            "countrySecondarySubdivision": "Firenze",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "50129",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via de' Martelli 4/14r, 50129 Firenze",
+            "localName": "Firenze"
+        },
+        "position": { "lat": 43.773887, "lon": 11.255654 }
+    },
+    {
+        "address": {
+            "streetNumber": "58",
+            "streetName": "Via degli Alfani",
+            "municipality": "Firenze",
+            "neighbourhood": "Duomo-San Giovanni",
+            "countrySecondarySubdivision": "Firenze",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "50121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via degli Alfani 58, 50121 Firenze",
+            "localName": "Firenze"
+        },
+        "position": { "lat": 43.775499, "lon": 11.260397 }
+    },
+    {
+        "address": {
+            "streetNumber": "25",
+            "streetName": "Via Santa Maria",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Santa Maria 25, 56126 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.71752, "lon": 10.39636 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Largo Bruno Pontecorvo",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56127",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Largo Bruno Pontecorvo 2, 56127 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.720072, "lon": 10.407164 }
+    },
+    {
+        "address": {
+            "streetNumber": "4",
+            "streetName": "Via Bonanno Pisano",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Bonanno Pisano 4, 56126 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.716397, "lon": 10.38859 }
+    },
+    {
+        "address": {
+            "streetName": "Largo Bruno Pontecorvo",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56127",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Largo Bruno Pontecorvo, 56127 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.72013, "lon": 10.407898 }
+    },
+    {
+        "address": {
+            "streetName": "Largo Bruno Pontecorvo",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56127",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Largo Bruno Pontecorvo, 56127 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.72013, "lon": 10.407898 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Via Filippo Serafini",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Filippo Serafini 5, 56126 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.716969, "lon": 10.399143 }
+    },
+    {
+        "address": {
+            "streetNumber": "10",
+            "streetName": "Via Cosimo Ridolfi",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56124",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Cosimo Ridolfi 10, 56124 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.711245, "lon": 10.410426 }
+    },
+    {
+        "address": {
+            "streetNumber": "10",
+            "streetName": "Via Collegio Ricci",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Collegio Ricci 10, 56126 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.717758, "lon": 10.397128 }
+    },
+    {
+        "address": {
+            "streetNumber": "5",
+            "streetName": "Via Roma",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Roma 5, 56126 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.720326, "lon": 10.395169 }
+    },
+    {
+        "address": {
+            "streetNumber": "24",
+            "streetName": "Via Giosu\u00e8 Carducci",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56127",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giosu\u00e8 Carducci 24, 56127 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.720605, "lon": 10.402309 }
+    },
+    {
+        "address": {
+            "streetName": "Largo Bruno Pontecorvo",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56127",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Largo Bruno Pontecorvo, 56127 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.72013, "lon": 10.407898 }
+    },
+    {
+        "address": {
+            "streetNumber": "43",
+            "streetName": "Lungarno Antonio Pacinotti",
+            "municipality": "Pisa",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "56126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Lungarno Antonio Pacinotti 43, 56126 Pisa",
+            "localName": "Pisa"
+        },
+        "position": { "lat": 43.716668, "lon": 10.398841 }
+    },
+    {
+        "address": {
+            "streetNumber": "6",
+            "streetName": "Via Luigi Alamanni",
+            "municipality": "San Giuliano Terme",
+            "countrySecondarySubdivision": "Pisa",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "55010",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Luigi Alamanni 6, 55010 San Giuliano Terme",
+            "localName": "San Giuliano Terme"
+        },
+        "position": { "lat": 43.729141, "lon": 10.422645 }
+    },
+    {
+        "address": {
+            "streetNumber": "3",
+            "streetName": "Via Porta Buia",
+            "municipality": "Arezzo",
+            "countrySecondarySubdivision": "Arezzo",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "52100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Porta Buia 3, 52100 Arezzo",
+            "localName": "Arezzo"
+        },
+        "position": { "lat": 43.465498, "lon": 11.876663 }
+    },
+    {
+        "address": {
+            "streetNumber": "48",
+            "streetName": "Via Porta Buia",
+            "municipality": "Arezzo",
+            "countrySecondarySubdivision": "Arezzo",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "52100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Porta Buia 48, 52100 Arezzo",
+            "localName": "Arezzo"
+        },
+        "position": { "lat": 43.465574, "lon": 11.876181 }
+    },
+    {
+        "address": {
+            "streetNumber": "7",
+            "streetName": "Via Vetri Vecchi",
+            "municipality": "San Giovanni Valdarno",
+            "countrySecondarySubdivision": "Arezzo",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "52027",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Vetri Vecchi 7, 52027 San Giovanni Valdarno",
+            "localName": "San Giovanni Valdarno"
+        },
+        "position": { "lat": 43.562353, "lon": 11.529691 }
+    },
+    {
+        "address": {
+            "streetNumber": "35",
+            "streetName": "Via Roma",
+            "municipality": "Siena",
+            "countrySecondarySubdivision": "Siena",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "53100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Roma 35, 53100 Siena",
+            "localName": "Siena"
+        },
+        "position": { "lat": 43.316715, "lon": 11.338297 }
+    },
+    {
+        "address": {
+            "streetNumber": "30",
+            "streetName": "Piazza Carlo Rosselli",
+            "municipality": "Siena",
+            "countrySecondarySubdivision": "Siena",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "53100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Carlo Rosselli 30, 53100 Siena",
+            "localName": "Siena"
+        },
+        "position": { "lat": 43.331463, "lon": 11.321348 }
+    },
+    {
+        "address": {
+            "streetNumber": "51",
+            "streetName": "Via Carlo Lorenzo Ginori",
+            "municipality": "Grosseto",
+            "countrySecondarySubdivision": "Grosseto",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "58100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Carlo Lorenzo Ginori 51, 58100 Grosseto",
+            "localName": "Grosseto"
+        },
+        "position": { "lat": 42.761843, "lon": 11.114722 }
+    },
+    {
+        "address": {
+            "streetName": "Via del Caminaccio & Via Cristoforo Cecci",
+            "municipality": "Assisi",
+            "countrySecondarySubdivision": "Perugia",
+            "countrySubdivision": "Umbria",
+            "countrySubdivisionName": "Umbria",
+            "countrySubdivisionCode": "55",
+            "postalCode": "06081",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via del Caminaccio & Via Cristoforo Cecci, 06081 Assisi",
+            "localName": "Assisi"
+        },
+        "position": { "lat": 43.052625, "lon": 12.582437 }
+    },
+    {
+        "address": {
+            "streetName": "Piazza Inferiore San Francesco",
+            "municipality": "Assisi",
+            "countrySecondarySubdivision": "Perugia",
+            "countrySubdivision": "Umbria",
+            "countrySubdivisionName": "Umbria",
+            "countrySubdivisionCode": "55",
+            "postalCode": "06081",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Inferiore San Francesco, 06081 Assisi",
+            "localName": "Assisi"
+        },
+        "position": { "lat": 43.075065, "lon": 12.604624 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Perugia",
+            "neighbourhood": "Santa Lucia",
+            "countrySecondarySubdivision": "Perugia",
+            "countrySubdivision": "Umbria",
+            "countrySubdivisionName": "Umbria",
+            "countrySubdivisionCode": "55",
+            "postalCode": "06125, 06131",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "06125, 06131 Perugia",
+            "localName": "Perugia"
+        },
+        "position": { "lat": 43.119532, "lon": 12.356022 }
+    },
+    {
+        "address": {
+            "streetNumber": "4",
+            "streetName": "Piazza Fortebraccio",
+            "municipality": "Perugia",
+            "neighbourhood": "Centro",
+            "countrySecondarySubdivision": "Perugia",
+            "countrySubdivision": "Umbria",
+            "countrySubdivisionName": "Umbria",
+            "countrySubdivisionCode": "55",
+            "postalCode": "06123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Fortebraccio 4, 06123 Perugia",
+            "localName": "Perugia"
+        },
+        "position": { "lat": 43.11489, "lon": 12.3896 }
+    },
+    {
+        "address": {
+            "streetName": "Via Valerio Tedeschi",
+            "municipality": "Viterbo",
+            "countrySecondarySubdivision": "Viterbo",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "01100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Valerio Tedeschi, 01100 Viterbo",
+            "localName": "Viterbo"
+        },
+        "position": { "lat": 42.4139, "lon": 12.1128 }
+    },
+    {
+        "address": {
+            "streetNumber": "32",
+            "streetName": "Via San Carlo",
+            "municipality": "Viterbo",
+            "countrySecondarySubdivision": "Viterbo",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "01100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Carlo 32, 01100 Viterbo",
+            "localName": "Viterbo"
+        },
+        "position": { "lat": 42.412831, "lon": 12.102227 }
+    },
+    {
+        "address": {
+            "streetNumber": "18A",
+            "streetName": "Via San Camillo De Lellis",
+            "municipality": "Viterbo",
+            "countrySecondarySubdivision": "Viterbo",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "01100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via San Camillo De Lellis 18A, 01100 Viterbo",
+            "localName": "Viterbo"
+        },
+        "position": { "lat": 42.427185, "lon": 12.092733 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Viale dell'Agricoltura",
+            "municipality": "Cittaducale",
+            "countrySecondarySubdivision": "Rieti",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "02015",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale dell'Agricoltura 2, 02015 Cittaducale",
+            "localName": "Cittaducale"
+        },
+        "position": { "lat": 42.383544, "lon": 12.954352 }
+    },
+    {
+        "address": {
+            "streetName": "Piazza Vittorio Emanuele II",
+            "municipality": "Rieti",
+            "countrySecondarySubdivision": "Rieti",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "02100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Vittorio Emanuele II, 02100 Rieti",
+            "localName": "Rieti"
+        },
+        "position": { "lat": 42.402686, "lon": 12.860298 }
+    },
+    {
+        "address": {
+            "municipalitySubdivision": "La Bianca",
+            "municipality": "Allumiere",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "La Bianca, Allumiere"
+        },
+        "position": { "lat": 42.148759, "lon": 11.907981 }
+    },
+    {
+        "address": {
+            "streetNumber": "334C",
+            "streetName": "Viale Regina Elena",
+            "municipality": "Roma",
+            "neighbourhood": "Universit\u00e0 Rione Castro Pretorio",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00161",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Regina Elena 334C, 00161 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.903556, "lon": 12.518143 }
+    },
+    {
+        "address": {
+            "municipality": "Roma",
+            "neighbourhood": "Universit\u00e0 Rione Castro Pretorio",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00185",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "00185 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.903741, "lon": 12.514502 }
+    },
+    {
+        "address": {
+            "streetNumber": "1",
+            "streetName": "Via Montpellier",
+            "municipality": "Roma",
+            "neighbourhood": "Giardinetti-Tor Vergata Zona Torrenova",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00133",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Montpellier 1, 00133 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.856358, "lon": 12.633036 }
+    },
+    {
+        "address": {
+            "streetNumber": "334",
+            "streetName": "Viale Regina Elena",
+            "municipality": "Roma",
+            "neighbourhood": "Universit\u00e0 Rione Castro Pretorio",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00161",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale Regina Elena 334, 00161 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.904276, "lon": 12.517232 }
+    },
+    {
+        "address": {
+            "municipality": "Roma",
+            "neighbourhood": "Universit\u00e0 Rione Castro Pretorio",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00185",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "00185 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.903063, "lon": 12.515598 }
+    },
+    {
+        "address": {
+            "streetNumber": "5G",
+            "streetName": "Piazzale Aldo Moro",
+            "municipality": "Roma",
+            "neighbourhood": "Universit\u00e0 Rione Castro Pretorio",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00185",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazzale Aldo Moro 5G, 00185 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.902122, "lon": 12.512451 }
+    },
+    {
+        "address": {
+            "streetNumber": "49",
+            "streetName": "Piazza di Sant'Apollinare",
+            "municipality": "Roma",
+            "neighbourhood": "Rione Ponte",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00186",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza di Sant'Apollinare 49, 00186 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.9007, "lon": 12.473427 }
+    },
+    {
+        "address": {
+            "streetNumber": "32",
+            "streetName": "Piazza della Pilotta",
+            "municipality": "Roma",
+            "neighbourhood": "Rione Trevi",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00187",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza della Pilotta 32, 00187 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.898833, "lon": 12.483717 }
+    },
+    {
+        "address": {
+            "streetNumber": "139",
+            "streetName": "Via Ostiense",
+            "municipality": "Roma",
+            "neighbourhood": "Ostiense",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00146",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Ostiense 139, 00146 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.863556, "lon": 12.47926 }
+    },
+    {
+        "address": {
+            "streetName": "Via della Ricerca Scientifica & Via del Fontanile di Carcaricola",
+            "municipality": "Roma",
+            "neighbourhood": "Giardinetti-Tor Vergata Zona Torrenova",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00133",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via della Ricerca Scientifica & Via del Fontanile di Carcaricola, 00133 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.851841, "lon": 12.605813 }
+    },
+    {
+        "address": {
+            "streetNumber": "9",
+            "streetName": "Piazza Borghese",
+            "municipality": "Roma",
+            "neighbourhood": "Rione Campo Marzio",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00186",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Borghese 9, 00186 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.904021, "lon": 12.475702 }
+    },
+    {
+        "address": {
+            "streetNumber": "115",
+            "streetName": "Via Salaria",
+            "municipality": "Roma",
+            "neighbourhood": "Salario Quartiere Trieste",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00198",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Salaria 115, 00198 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.914224, "lon": 12.497322 }
+    },
+    {
+        "address": {
+            "streetNumber": "122",
+            "streetName": "Via dei Volsci",
+            "municipality": "Roma",
+            "neighbourhood": "San Lorenzo",
+            "countrySecondarySubdivision": "Roma",
+            "countrySubdivision": "Lazio",
+            "countrySubdivisionName": "Lazio",
+            "countrySubdivisionCode": "62",
+            "postalCode": "00185",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via dei Volsci 122, 00185 Roma",
+            "localName": "Roma"
+        },
+        "position": { "lat": 41.899162, "lon": 12.51767 }
+    },
+    {
+        "address": {
+            "streetName": "Atrio Superiore Parrocchia",
+            "municipalitySubdivision": "Briano",
+            "municipality": "Caserta",
+            "countrySecondarySubdivision": "Caserta",
+            "countrySubdivision": "Campania",
+            "countrySubdivisionName": "Campania",
+            "countrySubdivisionCode": "72",
+            "postalCode": "81100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Atrio Superiore Parrocchia, 81100 Caserta",
+            "localName": "Caserta"
+        },
+        "position": { "lat": 41.101011, "lon": 14.316509 }
+    },
+    {
+        "address": {
+            "streetNumber": "16",
+            "streetName": "Vico Chianche alla Loggia",
+            "municipality": "Napoli",
+            "neighbourhood": "Borgo Orefici",
+            "countrySecondarySubdivision": "Napoli",
+            "countrySubdivision": "Campania",
+            "countrySubdivisionName": "Campania",
+            "countrySubdivisionCode": "72",
+            "postalCode": "80133",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Vico Chianche alla Loggia 16, 80133 Napoli",
+            "localName": "Napoli"
+        },
+        "position": { "lat": 40.845259, "lon": 14.26022 }
+    },
+    {
+        "address": {
+            "streetNumber": "171",
+            "streetName": "Via Roma",
+            "municipality": "Torre Annunziata",
+            "countrySecondarySubdivision": "Napoli",
+            "countrySubdivision": "Campania",
+            "countrySubdivisionName": "Campania",
+            "countrySubdivisionCode": "72",
+            "postalCode": "80058",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Roma 171, 80058 Torre Annunziata",
+            "localName": "Torre Annunziata"
+        },
+        "position": { "lat": 40.749558, "lon": 14.462557 }
+    },
+    {
+        "address": {
+            "streetName": "Piazza dell'Ingegneria",
+            "municipality": "Fisciano",
+            "countrySecondarySubdivision": "Salerno",
+            "countrySubdivision": "Campania",
+            "countrySubdivisionName": "Campania",
+            "countrySubdivisionCode": "72",
+            "postalCode": "84084",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza dell'Ingegneria, 84084 Fisciano",
+            "localName": "Fisciano"
+        },
+        "position": { "lat": 40.772412, "lon": 14.79061 }
+    },
+    {
+        "address": {
+            "streetNumber": "104",
+            "streetName": "Via dei Vestini",
+            "municipalitySubdivision": "Chieti Scalo",
+            "municipality": "Chieti",
+            "countrySecondarySubdivision": "Chieti",
+            "countrySubdivision": "Abruzzo",
+            "countrySubdivisionName": "Abruzzo",
+            "countrySubdivisionCode": "65",
+            "postalCode": "66100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via dei Vestini 104, 66100 Chieti",
+            "localName": "Chieti"
+        },
+        "position": { "lat": 42.368207, "lon": 14.151747 }
+    },
+    {
+        "address": {
+            "streetName": "Via Napoli",
+            "municipality": "Foggia",
+            "countrySecondarySubdivision": "Foggia",
+            "countrySubdivision": "Puglia",
+            "countrySubdivisionName": "Puglia",
+            "countrySubdivisionCode": "75",
+            "postalCode": "71122",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Napoli, 71122 Foggia",
+            "localName": "Foggia"
+        },
+        "position": { "lat": 41.451667, "lon": 15.519722 }
+    },
+    {
+        "address": {
+            "streetNumber": "185/C",
+            "streetName": "Via Re Giuseppe David",
+            "municipality": "Bari",
+            "neighbourhood": "Carrassi",
+            "countrySecondarySubdivision": "Bari",
+            "countrySubdivision": "Puglia",
+            "countrySubdivisionName": "Puglia",
+            "countrySubdivisionCode": "75",
+            "postalCode": "70125",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Re Giuseppe David 185/C, 70125 Bari",
+            "localName": "Bari"
+        },
+        "position": { "lat": 41.111143, "lon": 16.876389 }
+    },
+    {
+        "address": {
+            "streetName": "Via Giuseppe Fanelli",
+            "municipality": "Bari",
+            "neighbourhood": "San Pasquale",
+            "countrySecondarySubdivision": "Bari",
+            "countrySubdivision": "Puglia",
+            "countrySubdivisionName": "Puglia",
+            "countrySubdivisionCode": "75",
+            "postalCode": "70125",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giuseppe Fanelli, 70125 Bari",
+            "localName": "Bari"
+        },
+        "position": { "lat": 41.104607, "lon": 16.879004 }
+    },
+    {
+        "address": {
+            "streetNumber": "124/B",
+            "streetName": "Via Giovanni Amendola",
+            "municipality": "Bari",
+            "neighbourhood": "San Pasquale",
+            "countrySecondarySubdivision": "Bari",
+            "countrySubdivision": "Puglia",
+            "countrySubdivisionName": "Puglia",
+            "countrySubdivisionCode": "75",
+            "postalCode": "70126",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giovanni Amendola 124/B, 70126 Bari",
+            "localName": "Bari"
+        },
+        "position": { "lat": 41.11139, "lon": 16.883167 }
+    },
+    {
+        "address": {
+            "streetNumber": "37",
+            "streetName": "Via Rocco Lazazzera",
+            "municipality": "Matera",
+            "countrySecondarySubdivision": "Matera",
+            "countrySubdivision": "Basilicata",
+            "countrySubdivisionName": "Basilicata",
+            "countrySubdivisionCode": "77",
+            "postalCode": "75100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Rocco Lazazzera 37, 75100 Matera",
+            "localName": "Matera"
+        },
+        "position": { "lat": 40.670802, "lon": 16.597095 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Rende",
+            "countrySecondarySubdivision": "Cosenza",
+            "countrySubdivision": "Calabria",
+            "countrySubdivisionName": "Calabria",
+            "countrySubdivisionCode": "78",
+            "postalCode": "87036",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "87036 Rende",
+            "localName": "Rende"
+        },
+        "position": { "lat": 39.365585, "lon": 16.224873 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Rende",
+            "countrySecondarySubdivision": "Cosenza",
+            "countrySubdivision": "Calabria",
+            "countrySubdivisionName": "Calabria",
+            "countrySubdivisionCode": "78",
+            "postalCode": "87036",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "87036 Rende",
+            "localName": "Rende"
+        },
+        "position": { "lat": 39.365585, "lon": 16.224873 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Rende",
+            "countrySecondarySubdivision": "Cosenza",
+            "countrySubdivision": "Calabria",
+            "countrySubdivisionName": "Calabria",
+            "countrySubdivisionCode": "78",
+            "postalCode": "87036",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "87036 Rende",
+            "localName": "Rende"
+        },
+        "position": { "lat": 39.366121, "lon": 16.225994 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Rende",
+            "countrySecondarySubdivision": "Cosenza",
+            "countrySubdivision": "Calabria",
+            "countrySubdivisionName": "Calabria",
+            "countrySubdivisionCode": "78",
+            "postalCode": "87036",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "87036 Rende",
+            "localName": "Rende"
+        },
+        "position": { "lat": 39.366121, "lon": 16.225994 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Rende",
+            "countrySecondarySubdivision": "Cosenza",
+            "countrySubdivision": "Calabria",
+            "countrySubdivisionName": "Calabria",
+            "countrySubdivisionCode": "78",
+            "postalCode": "87036",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "87036 Rende",
+            "localName": "Rende"
+        },
+        "position": { "lat": 39.365585, "lon": 16.224873 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Palermo",
+            "neighbourhood": "Santa Rosalia",
+            "countrySecondarySubdivision": "Palermo",
+            "countrySubdivision": "Sicilia",
+            "countrySubdivisionName": "Sicilia",
+            "countrySubdivisionCode": "82",
+            "postalCode": "90128",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "90128 Palermo",
+            "localName": "Palermo"
+        },
+        "position": { "lat": 38.099604, "lon": 13.345414 }
+    },
+    {
+        "address": {
+            "streetName": "Via Marina",
+            "municipalitySubdivision": "Ficogrande",
+            "municipality": "Lipari",
+            "countrySecondarySubdivision": "Messina",
+            "countrySubdivision": "Sicilia",
+            "countrySubdivisionName": "Sicilia",
+            "countrySubdivisionCode": "82",
+            "postalCode": "98050",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Marina, 98050 Lipari",
+            "localName": "Lipari"
+        },
+        "position": { "lat": 38.800689, "lon": 15.240601 }
+    },
+    {
+        "address": {
+            "streetNumber": "6/A",
+            "streetName": "Piazza Conte di Moriana",
+            "municipality": "Sassari",
+            "countrySecondarySubdivision": "Sassari",
+            "countrySubdivision": "Sardegna",
+            "countrySubdivisionName": "Sardegna",
+            "countrySubdivisionCode": "88",
+            "postalCode": "07100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Piazza Conte di Moriana 6/A, 07100 Sassari",
+            "localName": "Sassari"
+        },
+        "position": { "lat": 40.718563, "lon": 8.56999 }
+    },
+    {
+        "address": {
+            "streetNumber": "19",
+            "streetName": "Via Cristoforo Colombo",
+            "municipality": "Nuoro",
+            "countrySecondarySubdivision": "Nuoro",
+            "countrySubdivision": "Sardegna",
+            "countrySubdivisionName": "Sardegna",
+            "countrySubdivisionCode": "88",
+            "postalCode": "08100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Cristoforo Colombo 19, 08100 Nuoro",
+            "localName": "Nuoro"
+        },
+        "position": { "lat": 40.313022, "lon": 9.310075 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Cagliari",
+            "countrySecondarySubdivision": "Cagliari",
+            "countrySubdivision": "Sardegna",
+            "countrySubdivisionName": "Sardegna",
+            "countrySubdivisionCode": "88",
+            "postalCode": "09121, 09127",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "09121, 09127 Cagliari",
+            "localName": "Cagliari"
+        },
+        "position": { "lat": 39.228547, "lon": 9.111773 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Cagliari",
+            "countrySecondarySubdivision": "Cagliari",
+            "countrySubdivision": "Sardegna",
+            "countrySubdivisionName": "Sardegna",
+            "countrySubdivisionCode": "88",
+            "postalCode": "09121, 09127",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "09121, 09127 Cagliari",
+            "localName": "Cagliari"
+        },
+        "position": { "lat": 39.228547, "lon": 9.111773 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Cagliari",
+            "countrySecondarySubdivision": "Cagliari",
+            "countrySubdivision": "Sardegna",
+            "countrySubdivisionName": "Sardegna",
+            "countrySubdivisionCode": "88",
+            "postalCode": "09121",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "09121 Cagliari",
+            "localName": "Cagliari"
+        },
+        "position": { "lat": 39.229415, "lon": 9.111682 }
+    },
+    {
+        "address": {
+            "streetName": "Viale San Vincenzo",
+            "municipality": "Cagliari",
+            "countrySecondarySubdivision": "Cagliari",
+            "countrySubdivision": "Sardegna",
+            "countrySubdivisionName": "Sardegna",
+            "countrySubdivisionCode": "88",
+            "postalCode": "09123",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Viale San Vincenzo, 09123 Cagliari",
+            "localName": "Cagliari"
+        },
+        "position": { "lat": 39.227525, "lon": 9.113307 }
+    },
+    {
+        "address": {
+            "streetNumber": "5B",
+            "streetName": "Via Giovanni Tommaso Porcell",
+            "municipality": "Cagliari",
+            "countrySecondarySubdivision": "Cagliari",
+            "countrySubdivision": "Sardegna",
+            "countrySubdivisionName": "Sardegna",
+            "countrySubdivisionCode": "88",
+            "postalCode": "09124",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Giovanni Tommaso Porcell 5B, 09124 Cagliari",
+            "localName": "Cagliari"
+        },
+        "position": { "lat": 39.221837, "lon": 9.114449 }
+    },
+    {
+        "address": {
+            "streetName": "",
+            "municipality": "Pordenone",
+            "countrySecondarySubdivision": "Pordenone",
+            "countrySubdivision": "Friuli-Venezia Giulia",
+            "countrySubdivisionName": "Friuli-Venezia Giulia",
+            "countrySubdivisionCode": "36",
+            "postalCode": "33170",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "33170 Pordenone",
+            "localName": "Pordenone"
+        },
+        "position": { "lat": 45.951954, "lon": 12.680238 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Via Jean-Louis Protche",
+            "municipality": "Prato",
+            "neighbourhood": "Cavour-Bologna",
+            "countrySecondarySubdivision": "Prato",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "59100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Jean-Louis Protche 2, 59100 Prato",
+            "localName": "Prato"
+        },
+        "position": { "lat": 43.885637, "lon": 11.098719 }
+    },
+    {
+        "address": {
+            "streetNumber": "2",
+            "streetName": "Via Jean-Louis Protche",
+            "municipality": "Prato",
+            "neighbourhood": "Cavour-Bologna",
+            "countrySecondarySubdivision": "Prato",
+            "countrySubdivision": "Toscana",
+            "countrySubdivisionName": "Toscana",
+            "countrySubdivisionCode": "52",
+            "postalCode": "59100",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Jean-Louis Protche 2, 59100 Prato",
+            "localName": "Prato"
+        },
+        "position": { "lat": 43.885637, "lon": 11.098719 }
+    },
+    {
+        "address": {
+            "streetNumber": "15",
+            "streetName": "Via Petrarca",
+            "municipality": "Verano Brianza",
+            "countrySecondarySubdivision": "Monza e Brianza",
+            "countrySubdivision": "Lombardia",
+            "countrySubdivisionName": "Lombardia",
+            "countrySubdivisionCode": "25",
+            "postalCode": "20843",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Petrarca 15, 20843 Verano Brianza",
+            "localName": "Verano Brianza"
+        },
+        "position": { "lat": 45.676923, "lon": 9.221323 }
+    },
+    {
+        "address": {
+            "streetNumber": "39",
+            "streetName": "Via Brunforte",
+            "municipality": "Fermo",
+            "countrySecondarySubdivision": "Fermo",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "63900",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Brunforte 39, 63900 Fermo",
+            "localName": "Fermo"
+        },
+        "position": { "lat": 43.159184, "lon": 13.72203 }
+    },
+    {
+        "address": {
+            "streetNumber": "46",
+            "streetName": "Via Brunforte",
+            "municipality": "Fermo",
+            "countrySecondarySubdivision": "Fermo",
+            "countrySubdivision": "Marche",
+            "countrySubdivisionName": "Marche",
+            "countrySubdivisionCode": "57",
+            "postalCode": "63900",
+            "countryCode": "IT",
+            "country": "Italia",
+            "countryCodeISO3": "ITA",
+            "freeformAddress": "Via Brunforte 46, 63900 Fermo",
+            "localName": "Fermo"
+        },
+        "position": { "lat": 43.158865, "lon": 13.722261 }
+    }
+]
