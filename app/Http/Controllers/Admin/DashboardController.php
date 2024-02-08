@@ -20,8 +20,6 @@ class DashboardController extends Controller
 
         $apartment_orders = [];
 
-        // dd($user_apartments);
-
         if ($current_user == '1') {
             $apartments = Apartment::limit(5)->get();
         } else {

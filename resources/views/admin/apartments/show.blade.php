@@ -48,22 +48,24 @@
                 <div class="mb-3">
                     <input type="hidden" name="apartment_id" value="{{ $apartment->id }}">
                     <label for="cardholder-name" class="form-label">Nome del Titolare della Carta</label>
-                    <input type="text" class="form-control" id="cardholder-name" name="cardholder_name" required
+                    <input type="text" class="form-control" id="cardholder-name" name="cardholder_name"
                         placeholder="Nome e Cognome">
+                    <div class="red"></div>
                 </div>
                 <div class="mb-3">
                     <label for="cardholder-name" class="form-label">Numero della Carta</label>
-                    <input type="number" class="form-control" id="cardholder-name" name="cc-card" required
+                    <input type="number" class="form-control" id="number-card" name="cc-card"
                         placeholder="xxxx-xxxx-xxxx-xxxx">
+                    <div class="red"></div>
                 </div>
                 <div class="form-floating mb-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
-                        name="pay_method">
-                        <option value="1" name="1">Gold</option>
-                        <option value="2" name="2">Diamond</option>
-                        <option value="3" name="3">Platinum</option>
+                    <select class="form-select" id="promo" aria-label="Floating label select example" name="pay_method">
+                        <option value="1" name="1">Gold <span class="amount">-- &euro;2.99</span></option>
+                        <option value="2" name="2">Diamond <span class="amount">-- &euro;5.99</span></option>
+                        <option value="3" name="3">Platinum <span class="amount">-- &euro;9.99</span></option>
                     </select>
                     <label for="floatingSelect">Scegli la Promozione</label>
+                    <div class="red"></div>
                 </div>
                 <input type="hidden" id="promotion" name="promotion_hidden">
                 <input type="hidden" id="nonce" name="payment_method_nonce">
@@ -80,6 +82,23 @@
                 <button class="btn btn-danger w-100" id="deletion" type="submit" name="{{ $apartment }}">Delete</button>
             </form>
         </div>
+        <style>
+            .red {
+                color: red;
+            }
+
+            .border-red {
+                border-color: red;
+            }
+
+            .amount {
+                color: grey !important;
+                font-size: 7px !important;
+            }
+        </style>
+        @push('scripts')
+        <script src="{{asset('./js/payament.js')}}"></script>
+        @endpush
     </div>
 </div>
 @endsection
