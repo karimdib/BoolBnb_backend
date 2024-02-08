@@ -6,45 +6,60 @@ const dateOfBirth = document.getElementById('date_of_birth');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const passwordConfirm = document.getElementById('password-confirm');
-let isValid;
+let isFirstNameValid;
+let isLastNameValid;
+let isDateOfBirthValid;
+let isEmailValid;
+let isPasswordValid;
 
 
-form.addEventListener('submit',function (event){
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-    isStringEmpty(firstName,'first name');
+    isStringEmpty(firstName, 'first name');
     capitalizeFirstLetter(firstName);
-    console.log('name',isValid);
+    console.log('first name', isFirstNameValid);
 
-    isStringEmpty(lastName,'last name');
+    isStringEmpty(lastName, 'last name');
     capitalizeFirstLetter(lastName);
-    console.log('last name',isValid);
+    console.log('last name', isLastNameValid);
 
-    validateDate(dateOfBirth,'date of birth')
-    console.log('data',isValid);
+    validateDate(dateOfBirth, 'date of birth')
+    console.log('date of birth', isDateOfBirthValid);
 
-    validateEmail(email,'email');
-    console.log('email',isValid);
+    validateEmail(email, 'email');
+    console.log('email', isEmailValid);
 
-    validatePassword(password,'password');
-    console.log('pw',isValid);
+    validatePassword(password, 'password');
+    console.log('password', isPasswordValid);
 
-    console.log(isValid);
-    if (!isValid) {
-        console.log(isValid);
+    if (isFirstNameValid
+        && isLastNameValid
+        && isDateOfBirthValid
+        && isEmailValid
+        && isPasswordValid) {
+        console.log('passed');
         event.preventDefault();
+    } else {
+        console.log('not passed');
     }
 })
 
-
-
-const isStringEmpty = (inputElement,fieldName) => {
+const isStringEmpty = (inputElement, fieldName) => {
     if (inputElement.value.trim() === '') {
         isValid = false;
+
         inputElement.nextElementSibling.innerText = `The ${fieldName} field cannot be empty.`;
         inputElement.nextElementSibling.classList.add('is-invalid');
         inputElement.classList.add('is-invalid');
     } else {
         isValid = true;
+        
+        if(inputElement ===firstName) {
+            isFirstNameValid = true;
+        } else if (inputElement == lastName)
+            isLastNameValid = true;
+
         if (inputElement.nextElementSibling.classList.contains('is-invalid')) {
             inputElement.nextElementSibling.innerText = '';
             inputElement.nextElementSibling.classList.remove('is-invalid');
@@ -53,41 +68,45 @@ const isStringEmpty = (inputElement,fieldName) => {
     }
 }
 
-const validatePassword = (inputElement,fieldName) => {
-    isStringEmpty(password,'password');
-    isStringEmpty(passwordConfirm,'password confirm');
-    // Definisci un'espressione regolare per ogni requisito
-    const lowercaseRegex = /[a-z]/;
-    const uppercaseRegex = /[A-Z]/;
-    const numberRegex = /[0-9]/;
-    const symbolRegex = /[$&+,:;=?@#|'<>.^*()%!-]/;
+const validatePassword = (inputElement, fieldName) => {
+    isStringEmpty(password, 'password');
+    // isStringEmpty(passwordConfirm,'password confirm');
+    if (isValid) {
+        // Definisci un'espressione regolare per ogni requisito
+        const lowercaseRegex = /[a-z]/;
+        const uppercaseRegex = /[A-Z]/;
+        const numberRegex = /[0-9]/;
+        const symbolRegex = /[$&+,:;=?@#|'<>.^*()%!-]/;
 
-    // Verifica se la password soddisfa tutti i requisiti
-    const isLowercase = lowercaseRegex.test(inputElement.value);
-    const isUppercase = uppercaseRegex.test(inputElement.value);
-    const hasNumber = numberRegex.test(inputElement.value);
-    const hasSymbol = symbolRegex.test(inputElement.value);
+        // Verifica se la password soddisfa tutti i requisiti
+        const isLowercase = lowercaseRegex.test(inputElement.value);
+        const isUppercase = uppercaseRegex.test(inputElement.value);
+        const hasNumber = numberRegex.test(inputElement.value);
+        const hasSymbol = symbolRegex.test(inputElement.value);
 
-    // Verifica se tutti i requisiti sono soddisfatti
-    if (!(isLowercase 
-        && isUppercase 
-        && hasNumber 
-        && hasSymbol)) {
-        isValid = false;
-        inputElement.nextElementSibling.innerText = `Insert at least one uppercase,lowercase,number,symbol`;
-        inputElement.nextElementSibling.classList.add('is-invalid');
-        inputElement.classList.add('is-invalid')
-    } else if (inputElement.value.length < 8) {
-        isValid = false;
-        inputElement.nextElementSibling.innerText = `The ${fieldName} must be at least 8 characters long.`;
-        inputElement.nextElementSibling.classList.add('is-invalid');
-        inputElement.classList.add('is-invalid')
-    } else {
-        if (passwordConfirm.value !== password.value || passwordConfirm.value.trim() === '') {
-            isValid = false;
-            passwordConfirm.nextElementSibling.innerText = `The passwords do not match.`;
-            passwordConfirm.nextElementSibling.classList.add('is-invalid');
-            passwordConfirm.classList.add('is-invalid');
+        // Verifica se tutti i requisiti sono soddisfatti
+        if (!(isLowercase
+            && isUppercase
+            && hasNumber
+            && hasSymbol)) {
+            isPasswordValid = false;
+            inputElement.nextElementSibling.innerText = `Insert at least one uppercase,lowercase,number,symbol`;
+            inputElement.nextElementSibling.classList.add('is-invalid');
+            inputElement.classList.add('is-invalid')
+        } else if (inputElement.value.length < 8) {
+            isPasswordValid = false;
+            inputElement.nextElementSibling.innerText = `The ${fieldName} must be at least 8 characters long.`;
+            inputElement.nextElementSibling.classList.add('is-invalid');
+            inputElement.classList.add('is-invalid')
+        } else {
+            if (passwordConfirm.value !== password.value || passwordConfirm.value.trim() === '') {
+                isPasswordValid = false;
+                passwordConfirm.nextElementSibling.innerText = `The passwords do not match.`;
+                passwordConfirm.nextElementSibling.classList.add('is-invalid');
+                passwordConfirm.classList.add('is-invalid');
+            } else {
+                isPasswordValid = true;
+            }
         }
     }
 }
@@ -97,27 +116,43 @@ function capitalizeFirstLetter(inputElement) {
 }
 
 
-const validateDate = (inputElement,fieldName) => {
+const validateDate = (inputElement, fieldName) => {
     const today = new Date();
     const year = today.getFullYear();
     const month = String(today.getMonth() + 1).padStart(2, '0');
     const day = String(today.getDate()).padStart(2, '0');
     const formattedDateToday = `${year}-${month}-${day}`;
-    if (inputElement.value > formattedDateToday || isStringEmpty(dateOfBirth,'date of birth')) {
-        isValid = false;
-        inputElement.nextElementSibling.innerText = `The ${fieldName} cannot be in the future!`;
-        inputElement.classList.add('is-invalid');
+
+    isStringEmpty(dateOfBirth, 'date of birth')
+    if (isValid) {
+        isDateOfBirthValid = true;
+        if (inputElement.value > formattedDateToday) {
+            isDateOfBirthValid = false;
+            inputElement.nextElementSibling.innerText = `The ${fieldName} cannot be in the future!`;
+            inputElement.nextElementSibling.classList.add('is-invalid');
+            inputElement.classList.add('is-invalid');
+        }
+        
+    } else {
+        isEmailValid = false;
     }
 }
 
-const validateEmail = (inputElement,fieldName) => {
-    isStringEmpty(email,'email');
-    // Espressione regolare per la validazione dell'email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(inputElement.value)) {
-        isValid = false;
-        inputElement.nextElementSibling.innerText = `Invalid email format`;
-        inputElement.nextElementSibling.classList.add('is-invalid');
-        inputElement.classList.add('is-invalid');
+
+const validateEmail = (inputElement, fieldName) => {
+    isStringEmpty(email, 'email');
+    if (isValid) {
+        // Espressione regolare per la validazione dell'email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(inputElement.value)) {
+            isEmailValid = false;
+            inputElement.nextElementSibling.innerText = `Invalid email format`;
+            inputElement.nextElementSibling.classList.add('is-invalid');
+            inputElement.classList.add('is-invalid');
+        } else {
+            isEmailValid = true;
+        }
+    } else {
+        isEmailValid = false;
     }
 }
