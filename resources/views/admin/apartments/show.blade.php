@@ -70,10 +70,14 @@
                     method="POST" id="deletionForm">
                     @csrf
                     @method('DELETE')
-                    <button class="btn btn-danger w-100" id="deletion" type="submit"
+                    <button class="btn btn-danger w-100 modal-trigger" name="{{ $apartment->name }}" address="{{ $apartment->address }}" id="deletion" type="submit"
                         name="{{ $apartment }}">Delete</button>
                 </form>
             </div>
         </div>
     </div>
+    <x-delete-modal />
+    @push('scripts')
+        <script src="{{ asset('js/deleteModal.js') }}"></script>
+    @endpush
 @endsection
