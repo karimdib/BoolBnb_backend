@@ -16,11 +16,11 @@ let isPasswordValid;
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    isStringEmpty(firstName, 'first name');
+    validateName(firstName);
     capitalizeFirstLetter(firstName);
     console.log('first name', isFirstNameValid);
 
-    isStringEmpty(lastName, 'last name');
+    validateLastName(lastName);
     capitalizeFirstLetter(lastName);
     console.log('last name', isLastNameValid);
 
@@ -55,7 +55,7 @@ const isStringEmpty = (inputElement, fieldName) => {
     } else {
         isValid = true;
         
-        if(inputElement ===firstName) {
+        if(inputElement == firstName) {
             isFirstNameValid = true;
         } else if (inputElement == lastName)
             isLastNameValid = true;
@@ -65,6 +65,54 @@ const isStringEmpty = (inputElement, fieldName) => {
             inputElement.nextElementSibling.classList.remove('is-invalid');
             inputElement.classList.remove('is-invalid');
         }
+    }
+}
+
+const validateName = (inputElement) => {
+    if (inputElement.value.trim() === '') {
+        isFirstNameValid = false;
+
+        inputElement.nextElementSibling.innerText = `The first name field cannot be empty.`;
+        inputElement.nextElementSibling.classList.add('is-invalid');
+        inputElement.classList.add('is-invalid');
+
+    } else if (inputElement.value.length > 20) {
+        isFirstNameValid = false;
+        inputElement.nextElementSibling.innerText = 'Name too long!';
+        inputElement.nextElementSibling.classList.add('is-invalid');
+        inputElement.classList.add('is-invalid');
+
+    } else if (!(/^[a-zA-Z]+$/.test(inputElement.value))) {
+        isFirstNameValid = false;
+        inputElement.nextElementSibling.innerText = 'Invalid characters! Only letters allowed';
+        inputElement.nextElementSibling.classList.add('is-invalid');
+        inputElement.classList.add('is-invalid');
+
+    } else {
+        isFirstNameValid = true;
+    }
+}
+
+const validateLastName = (inputElement) => {
+    if (inputElement.value.trim() === '') {
+        isLastNameValid = false;
+
+        inputElement.nextElementSibling.innerText = `The last name field cannot be empty.`;
+        inputElement.nextElementSibling.classList.add('is-invalid');
+        inputElement.classList.add('is-invalid');
+
+    } else if (inputElement.value.length > 20) {
+        isLastNameValid = false;
+        inputElement.nextElementSibling.innerText = 'Name too long!';
+        inputElement.nextElementSibling.classList.add('is-invalid');
+        inputElement.classList.add('is-invalid');
+    } else if (!(/^[a-zA-Z]+$/.test(inputElement.value))) {
+        isLastNameValid = false;
+        inputElement.nextElementSibling.innerText = 'Invalid characters! Only letters allowed';
+        inputElement.nextElementSibling.classList.add('is-invalid');
+        inputElement.classList.add('is-invalid');
+    } else {
+        isLastNameValid = true;
     }
 }
 
@@ -138,6 +186,9 @@ const validateDate = (inputElement, fieldName) => {
 
         if (!dateFormatRegex.test(dateOfBirth.value)) {
             isDateOfBirthValid = false;
+            inputElement.nextElementSibling.innerText = `Invalid date format`;
+            inputElement.nextElementSibling.classList.add('is-invalid');
+            inputElement.classList.add('is-invalid');
         }
 
     } else {
