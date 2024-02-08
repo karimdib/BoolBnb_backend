@@ -223,7 +223,7 @@ class ApartmentController extends Controller
     {
         // Validazione id utente tramite policy
 
-        $response = Gate::inspect('update', $apartment);
+        $response = Gate::inspect('delete', $apartment);
 
         if ($response->allowed()) {
 
