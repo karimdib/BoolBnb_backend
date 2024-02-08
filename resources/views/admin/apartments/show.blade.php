@@ -45,14 +45,14 @@
         <div class="card-body">
             <form action="{{ route('admin.processPayment',$apartment) }}" method="POST" id="payment-form">
                 @csrf
-                <div class="mb-3">
+                <div class="mb-3" id="card-name-father">
                     <input type="hidden" name="apartment_id" value="{{ $apartment->id }}">
                     <label for="cardholder-name" class="form-label">Nome del Titolare della Carta</label>
                     <input type="text" class="form-control" id="cardholder-name" name="cardholder_name"
                         placeholder="Nome e Cognome">
                     <div class="red"></div>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3" id="card-number-father">
                     <label for="cardholder-name" class="form-label">Numero della Carta</label>
                     <input type="number" class="form-control" id="number-card" name="cc-card"
                         placeholder="xxxx-xxxx-xxxx-xxxx">
@@ -85,9 +85,6 @@
         <style>
             .red {
                 color: red;
-            }
-
-            .border-red {
                 border-color: red;
             }
 
@@ -97,7 +94,7 @@
             }
         </style>
         @push('scripts')
-        <script src="{{asset('./js/payament.js')}}"></script>
+        <script src="{{asset('./js/payment.js')}}"></script>
         @endpush
     </div>
 </div>
