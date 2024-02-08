@@ -221,29 +221,38 @@ class ApartmentController extends Controller
      */
     public function destroy(Apartment $apartment)
     {
-        if ($apartment->cover_image) {
-            if (str_contains($apartment->cover_image, 'cover_images')) {
-                Storage::delete($apartment->cover_image);
-            } else {
-                Storage::delete('cover_images/' . $apartment->cover_image);
-            }
-        }
+        // Validazione id utente tramite policy
 
-        $images = Image::where('apartment_id', $apartment->id)->get();
-        if ($images) {
-            foreach ($images as $image) {
-                if (str_contains($image->link, 'images')) {
-                    Storage::delete($image->link);
+        $response = Gate::inspect('update', $apartment);
+
+        if ($response->allowed()) {
+
+            if ($apartment->cover_image) {
+                if (str_contains($apartment->cover_image, 'cover_images')) {
+                    Storage::delete($apartment->cover_image);
                 } else {
-                    Storage::delete('images/' . $image->link);
+                    Storage::delete('cover_images/' . $apartment->cover_image);
                 }
-                Image::destroy($images);
             }
+
+            $images = Image::where('apartment_id', $apartment->id)->get();
+            if ($images) {
+                foreach ($images as $image) {
+                    if (str_contains($image->link, 'images')) {
+                        Storage::delete($image->link);
+                    } else {
+                        Storage::delete('images/' . $image->link);
+                    }
+                    Image::destroy($images);
+                }
+            }
+
+            $apartment->services()->sync([]);
+
+            $apartment->delete();
+            return redirect()->route('admin.apartments.index');
+        } else {
+            abort(403);
         }
-
-        $apartment->services()->sync([]);
-
-        $apartment->delete();
-        return redirect()->route('admin.apartments.index');
     }
 }
