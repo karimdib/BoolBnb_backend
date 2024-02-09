@@ -8,7 +8,7 @@
                     <div class="card-header">{{ __('Register') }}</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('register') }}">
+                        <form id="form" method="POST" action="{{ route('register') }}">
                             @csrf
 
                             <div class="mb-4 row">
@@ -18,7 +18,8 @@
                                 <div class="col-md-6">
                                     <input id="first_name" type="text"
                                         class="form-control @error('first_name') is-invalid @enderror" name="first_name"
-                                        value="{{ old('first_name') }}" required autocomplete="first_name" autofocus>
+                                        value="{{ old('first_name') }}"  autocomplete="first_name" autofocus>
+                                        <div class="danger-text"></div>
 
                                     @error('first_name')
                                         <span class="invalid-feedback" role="alert">
@@ -35,7 +36,8 @@
                                 <div class="col-md-6">
                                     <input id="last_name" type="text"
                                         class="form-control @error('last_name') is-invalid @enderror" name="last_name"
-                                        value="{{ old('last_name') }}" required autocomplete="last_name" autofocus>
+                                        value="{{ old('last_name') }}"  autocomplete="last_name" autofocus>
+                                        <div class="danger-text"></div>
 
                                     @error('last_name')
                                         <span class="invalid-feedback" role="alert">
@@ -53,8 +55,9 @@
                                     <input id="date_of_birth" type="date"
                                         class="form-control @error('date_of_birth') is-invalid @enderror"
                                         name="date_of_birth" max={{date("Y-m-d")}} min={{date("Y-m-d",mktime(0, 0, 0, date("n"), date("j"), date("Y") - 100))}}
-                                        value="{{ old('date_of_birth') }}" required
+                                        value="{{ old('date_of_birth') }}" 
                                         autocomplete="date_of_birth">
+                                        <div class="danger-text"></div>
 
                                     @error('date_of_birth')
                                         <span class="invalid-feedback" role="alert">
@@ -71,7 +74,8 @@
                                 <div class="col-md-6">
                                     <input id="email" type="email"
                                         class="form-control @error('email') is-invalid @enderror" name="email"
-                                        value="{{ old('email') }}" required autocomplete="email">
+                                        value="{{ old('email') }}"  autocomplete="email">
+                                        <div class="danger-text"></div>
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -88,7 +92,8 @@
                                 <div class="col-md-6">
                                     <input id="password" type="password"
                                         class="form-control @error('password') is-invalid @enderror" name="password"
-                                        required autocomplete="new-password">
+                                         autocomplete="new-password">
+                                         <div class="danger-text"></div>
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -104,7 +109,8 @@
 
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control"
-                                        name="password_confirmation" required autocomplete="new-password">
+                                        name="password_confirmation"  autocomplete="new-password">
+                                        <div class="danger-text"></div>
                                 </div>
                             </div>
 
@@ -116,9 +122,20 @@
                                 </div>
                             </div>
                         </form>
+                        @push('scripts')
+                            <script src="{{ asset('js/userValidation.js') }}"></script>
+                        @endpush
                     </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+
+<style>
+    .is-invalid {
+        border-color: red;
+        color: red;
+        font-size: 14px;
+    }
+</style>

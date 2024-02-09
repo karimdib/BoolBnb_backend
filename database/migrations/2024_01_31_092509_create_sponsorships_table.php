@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('duration');
             $table->decimal('cost', 5, 2);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
