@@ -29,7 +29,7 @@ class ApartmentSeeder extends Seeder
             $new_apartment->name = $faker->sentence(3);
             $new_apartment->slug = Str::slug($new_apartment->name);
             $new_apartment->description = $faker->text();
-            $new_apartment->visible = $faker->optional($weight = 0.8, $default = null)->boolean();
+            $new_apartment->visible = $faker->optional($weight = 0.8, $default = 0)->boolean();
             $new_apartment->slug = Str::slug($new_apartment->description);
             $new_apartment->user_id = User::all()->random()->id;
 
@@ -51,6 +51,7 @@ class ApartmentSeeder extends Seeder
 
             // Get address, latitude and longitude from json
             $new_apartment->address = $apartment->address->freeformAddress;
+            $new_apartment->region = $apartment->address->countrySubdivision;
             $new_apartment->country = $apartment->address->country;
             $new_apartment->latitude = $apartment->position->lat;
             $new_apartment->longitude = $apartment->position->lon;
