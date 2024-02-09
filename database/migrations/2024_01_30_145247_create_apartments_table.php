@@ -22,6 +22,7 @@ return new class extends Migration
             $table->unsignedInteger('bathrooms')->nullable();
             $table->unsignedInteger('square_meters')->nullable();
             $table->string('address')->nullable();
+            $table->string('region')->nullable();
             $table->string('country')->nullable();
             $table->decimal('latitude', 9, 6)->nullable();
             $table->decimal('longitude', 9, 6)->nullable();
@@ -38,13 +39,12 @@ return new class extends Migration
     {
         //QUESTA FUNZIONE FUNZIONA SOLO CON IL ROLLBACK, CON IL MIGRATE:FRESH NO
         // Otteniamo il percorso della cartella
-        $cover_images_path = 'storage\app\public\cover_images';       
+        $cover_images_path = 'storage\app\public\cover_images';
         // Ottieni l'elenco di tutti i file nella cartella
         $files = File::allFiles($cover_images_path);
         // Elimina ciascun file all'interno della cartella
         File::delete($files);
 
         Schema::dropIfExists('apartments');
-
-        }
+    }
 };

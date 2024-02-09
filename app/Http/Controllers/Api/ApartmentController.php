@@ -4,16 +4,19 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Apartment;
+use App\Models\Service;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Database\Eloquent\Builder;
 
 class ApartmentController extends Controller
 {
     public function index()
     {
-        $results = Apartment::with('user', 'services')->get();
+        $services = Service::all();
+        $apartments = Apartment::with('user', 'services')->inRandomOrder()->limit(10)->get();
 
         return response()->json([
-            'results' => $results,
+            'results' => ['apartments' => $apartments, 'services' => $services],
             'success' => true
         ]);
     }
@@ -46,26 +49,46 @@ class ApartmentController extends Controller
 
     public function filter()
     {
-        $data = request();
+        // Get the request data
+        $query = request();
 
-        $results = Apartment::with('user', 'services')
-            ->select("*")
+        // Get all services
+        $services = Service::all();
+
+        // Get the selected services from the request
+        $servicesChecked = request()->services;
+
+
+        // Initialize the apartments query with eager loading of user and services
+        $apartments = Apartment::with('user', 'services');
+
+        // Add select and distance calculation for sorting
+        $apartments->select("*")
             ->selectRaw(
                 'ROUND(ST_DISTANCE_SPHERE(POINT(longitude, latitude), POINT(?, ?)) / 1000, 2) AS distance',
-                [$data->longitude, $data->latitude]
+                [$query->longitude, $query->latitude]
             )
-            ->havingRaw('distance <= ' . $data->search_radius)
+            ->havingRaw('distance <= ' . $query->search_radius)
             ->where([
-                ['rooms', '>=', $data->rooms],
-                ['beds', '>=', $data->beds],
-                ['bathrooms', '>=', $data->bathrooms],
-                ['square_meters', '>=', $data->square_meters],
+                ['rooms', '>=', $query->rooms],
+                ['beds', '>=', $query->beds],
+                ['bathrooms', '>=', $query->bathrooms],
                 ['visible', 1],
-            ])->orderBy('distance')
-            ->get();
+            ]);
 
+        // Loop through selected services and filter apartments accordingly
+        foreach ($servicesChecked as $service) {
+            $apartments->whereHas('services', function (Builder $query) use ($service) {
+                $query->where("name", $service);
+            });
+        }
+
+        // Get the filtered apartments, ordered by distance
+        $filteredApartments = $apartments->orderBy('distance')->get();
+
+        // Return JSON response with filtered apartments and all services
         return response()->json([
-            'results' => $results,
+            'results' => ['apartments' => $filteredApartments, 'services' => $services],
             'success' => true
         ]);
     }
