@@ -8,7 +8,7 @@
             enctype="multipart/form-data">
             @csrf
 
-            <div class="mb-3">
+            <div class="mb-3z">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control @error('name') is-invalid @enderror" id="name"
                     placeholder="Luxury apartment in San Pietro" name="name" value="{{ old('name') }}">
@@ -56,7 +56,7 @@
 
             <div class="form-group mb-3">
                 <p>Choose apartment services:</p>
-                <div class="d-flex flex-wrap gap-4  ">
+                <div class="d-flex flex-wrap gap-4" id="service-section">
                     @foreach ($services as $service)
                     <div class="form-check ">
                         <input name="services[]"
