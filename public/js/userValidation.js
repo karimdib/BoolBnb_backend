@@ -14,7 +14,6 @@ let isPasswordValid;
 
 
 form.addEventListener('submit', function (event) {
-    event.preventDefault();
 
     validateName(firstName);
     capitalizeFirstLetter(firstName);
@@ -39,9 +38,9 @@ form.addEventListener('submit', function (event) {
         && isEmailValid
         && isPasswordValid) {
         console.log('passed');
-        event.preventDefault();
     } else {
         console.log('not passed');
+        event.preventDefault();
     }
 })
 
@@ -90,6 +89,11 @@ const validateName = (inputElement) => {
 
     } else {
         isFirstNameValid = true;
+        if (inputElement.nextElementSibling.classList.contains('is-invalid')) {
+            inputElement.nextElementSibling.innerText = '';
+            inputElement.nextElementSibling.classList.remove('is-invalid');
+            inputElement.classList.remove('is-invalid');
+        }
     }
 }
 
@@ -113,6 +117,11 @@ const validateLastName = (inputElement) => {
         inputElement.classList.add('is-invalid');
     } else {
         isLastNameValid = true;
+        if (inputElement.nextElementSibling.classList.contains('is-invalid')) {
+            inputElement.nextElementSibling.innerText = '';
+            inputElement.nextElementSibling.classList.remove('is-invalid');
+            inputElement.classList.remove('is-invalid');
+        }
     }
 }
 
