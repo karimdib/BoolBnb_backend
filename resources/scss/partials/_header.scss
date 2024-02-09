@@ -1,0 +1,13 @@
+@import '/resources/scss/partials/_variables.scss';
+
+.nav-item {
+    a {
+        color: black;
+        display: block;
+        padding: 20px 50px;
+        transition: 200ms all;
+        &:hover {
+            background-color: $primary-hover;
+        }
+    }
+  }
