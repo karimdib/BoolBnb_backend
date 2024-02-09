@@ -51,6 +51,7 @@ class ApartmentSeeder extends Seeder
 
             // Get address, latitude and longitude from json
             $new_apartment->address = $apartment->address->freeformAddress;
+            $new_apartment->region = $apartment->address->countrySubdivision;
             $new_apartment->country = $apartment->address->country;
             $new_apartment->latitude = $apartment->position->lat;
             $new_apartment->longitude = $apartment->position->lon;
