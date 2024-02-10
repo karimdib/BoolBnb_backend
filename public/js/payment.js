@@ -11,6 +11,16 @@ form.addEventListener('submit', function (event) {
         cardholderName.classList.add('red')
         finishCheckout = false;
     }
+    const onlyLettersAndSpacesRegex = /^[A-Za-z\s]+$/;
+
+    if (!onlyLettersAndSpacesRegex.test(cardholderName.value.trim())) {
+        cardholderName.nextElementSibling.innerText = 'The name field can only contain letters and spaces';
+        cardholderName.classList.add('red');
+        finishCheckout = false;
+    } else {
+        cardholderName.nextElementSibling.innerText = '';
+        cardholderName.classList.remove('red');
+    }
 
     if (numberCard.value.trim() === '') {
         numberCard.nextElementSibling.innerText = 'the number card field cannot be empty';
@@ -18,6 +28,12 @@ form.addEventListener('submit', function (event) {
         finishCheckout = false;
     }
 
+    const cardRegex = /^(4\d{15}|5[1-5]\d{14})$/; // Visa or Mastercard
+    if (!cardRegex.test(numberCard.value.replace(/\s/g, ''))) {
+        numberCard.nextElementSibling.innerText = 'Invalid Visa or Mastercard number';
+        numberCard.classList.add('red');
+        finishCheckout = false;
+    }
 
     if (!finishCheckout) {
         event.preventDefault();

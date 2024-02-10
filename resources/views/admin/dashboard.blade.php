@@ -57,6 +57,7 @@
                 <th>Sponsorship End</th>
                 <th>Address</th>
                 <th>Name</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>
@@ -73,6 +74,13 @@
                 @elseif( $order->sponsorship_id === 3)
                 <td>Platinum</td>
                 @endif
+                <td>
+                    @if ($date_now <= $order->date_end)
+                        <p class="active">active</p>
+                        @elseif($date_now >= $order->date_end)
+                        <p class="inactive">inactive</p>
+                        @endif
+                </td>
             </tr>
             @empty
             <tr>

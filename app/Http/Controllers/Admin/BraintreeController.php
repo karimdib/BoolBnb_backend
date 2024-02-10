@@ -58,6 +58,7 @@ class BraintreeController extends Controller
         if ($result->success) {
             $apartmentId = $request->input('apartment_id');
             $sponsorshipId = Sponsorship::where('cost', $amount)->value('id');
+            $cc_card = $request->input('cc-card');
 
             $date_start = now();
             if ($sponsorshipId === 1) {
@@ -73,7 +74,7 @@ class BraintreeController extends Controller
                 'date_start' => $date_start,
                 'date_end' => $date_end,
             ]);
-            return 'Il pagamento è avvenuto con successo' . $new_order;
+            return view('admin.braintree', compact('result', 'cc_card'));
         } else {
             return "Errore durante il pagamento: " . $result->message;
         }

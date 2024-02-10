@@ -128,7 +128,7 @@
                 </div>
                 <div class="mb-3" id="card-number-father">
                     <label for="cardholder-name" class="form-label">Numero della Carta</label>
-                    <input type="number" class="form-control" id="number-card" name="cc-card"
+                    <input type="text" class="form-control" id="number-card" name="cc-card"
                         placeholder="xxxx-xxxx-xxxx-xxxx">
                     <div class="red"></div>
                 </div>

@@ -39,7 +39,8 @@ class DashboardController extends Controller
                 }
             }
         }
+        $date_now = now();
 
-        return view('admin.dashboard', compact('apartments', 'apartment_orders'));
+        return view('admin.dashboard', compact('apartments', 'apartment_orders', 'date_now'));
     }
 }
