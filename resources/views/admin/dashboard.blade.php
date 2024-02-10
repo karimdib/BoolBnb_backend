@@ -80,6 +80,7 @@
                         @elseif($date_now >= $order->date_end)
                         <p class="inactive">inactive</p>
                         @endif
+
                 </td>
             </tr>
             @empty
