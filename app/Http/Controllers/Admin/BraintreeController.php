@@ -55,8 +55,13 @@ class BraintreeController extends Controller
                 'submitForSettlement' => true,
             ],
         ]);
-        if ($result->success) {
-            $apartmentId = $request->input('apartment_id');
+        $apartmentId = $request->input('apartment_id');
+
+        $activeSponsorship = Order::where('apartment_id', $apartmentId)->where('date_end', '>', now())->exists();
+        if ($activeSponsorship === true) {
+            return 'non puoi sponsorizzare un appartamemto che ha già una sponsorizzazione attiva';
+        } elseif ($result->success) {
+
             $sponsorshipId = Sponsorship::where('cost', $amount)->value('id');
             $cc_card = $request->input('cc-card');
 

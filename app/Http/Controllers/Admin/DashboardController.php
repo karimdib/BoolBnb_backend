@@ -16,7 +16,8 @@ class DashboardController extends Controller
         $current_user = Auth::id();
         $user = User::find($current_user);
 
-        $user_apartments = $user->apartments()->with('orders')->get();
+        $user_apartments = $user->apartments()->with('orders')->orderBy('id', 'ASC')->get();
+
 
         $apartment_orders = [];
 
@@ -28,7 +29,6 @@ class DashboardController extends Controller
             foreach ($user_apartments as $user_apartment) {
 
                 $current_apartment_id = $user_apartment['id'];
-
                 // dd($user_apartment->orders);
                 if ($user_apartment->orders) {
                     foreach ($user_apartment->orders as $order) {
