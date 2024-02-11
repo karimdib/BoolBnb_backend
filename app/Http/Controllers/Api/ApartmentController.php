@@ -89,7 +89,7 @@ class ApartmentController extends Controller
 
         // Get the filtered apartments, ordered by distance
         $filteredApartments = $apartments->orderBy('distance')->get();
-        File::put('../database/data/RESULTS_TEST.json', json_encode($filteredApartments));
+        File::put('../database/data/search_results.json', json_encode($filteredApartments));
 
         // Return JSON response with filtered apartments and all services
         return response()->json([
@@ -101,7 +101,7 @@ class ApartmentController extends Controller
     public function results()
     {
         return response()->json([
-            'results' => json_decode(File::get('../database/data/RESULTS_TEST.json')),
+            'results' => json_decode(File::get('../database/data/search_results.json')),
             'success' => true
         ]);
     }
