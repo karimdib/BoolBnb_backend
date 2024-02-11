@@ -134,7 +134,7 @@
                                 value="e">
                         </span>
                         <input type="text" class="form-control" id="number-card" name="cc-card"
-                            placeholder="xxxx-xxxx-xxxx-xxxx" max="16">
+                            placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19">
                     </div>
                     <div id="error-card" class="red"></div>
                 </div>

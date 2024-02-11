@@ -33,7 +33,7 @@ form.addEventListener('submit', function (event) {
         finishCheckout = false;
     }
 
-    const cardRegex = /^(4\d{15}|5[1-5]\d{14})$/; // Visa or Mastercard
+    const cardRegex = /^(4\d{15}|5[1-9]\d{14})$/; // Visa or Mastercard
     if (!cardRegex.test(numberCard.value.replace(/\s/g, ''))) {
         errorCard.innerText = 'Invalid Visa or Mastercard number';
         numberCard.classList.add('red');
@@ -56,11 +56,20 @@ form.addEventListener('submit', function (event) {
         cardholderName.nextElementSibling.innerText = '';
     });
 })
-
 numberCard.addEventListener('input', function () {
-    // Ottieni il primo carattere del numero della carta
-    const firstDigit = numberCard.value.trim().charAt(0);
+    let cardNumber = numberCard.value.replace(/[^\d]/g, '');
+    let formattedNumber = '';
 
+    for (let i = 0; i < cardNumber.length; i++) {
+        if (i > 0 && i % 4 === 0) {
+            formattedNumber += ' ';
+        }
+        formattedNumber += cardNumber[i];
+    }
+
+    numberCard.value = formattedNumber;
+    console.log(numberCard.value.length);
+    const firstDigit = numberCard.value.trim().charAt(0);
     // Cambia l'immagine in base al primo carattere del numero della carta
     if (firstDigit === '4') {
         image.src = '/images/visa-logo.png';
@@ -70,3 +79,4 @@ numberCard.addEventListener('input', function () {
         image.src = defaultImageSrc;
     }
 });
+
