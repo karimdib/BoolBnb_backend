@@ -7,38 +7,38 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="title">Processo pagamento</h5>
+                    <h5 class="title">Payment Process</h5>
                 </div>
                 <div class="card-body" id="card-body">
                     <div id="success-payment" style="display: none">
-                        <h3 class="payment-title">Il pagamento è avvenuto con successo <span>&check;</span></h3>
+                        <h3 class="payment-title">The payment was successful <span>&check;</span></h3>
                     </div>
                     <div id="loader-overlay" class="loader-overlay">
                         <div class="loader"></div>
-                        <div class="loading-text">Ci stiamo collegando con la tua banca</div>
+                        <div class="loading-text">We are connecting with your bank</div>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <div class="d-flex gap-2  mt-3">
-                                <div class="name-number-para">Nome Titolare:</div>
+                                <div class="name-number-para">Owner Name:</div>
                                 <div>{{$result->transaction->customer['firstName']}}</div>
                             </div>
                         </li>
                         <li class="list-group-item">
                             <div class="d-flex gap-2 mt-3">
-                                <div class="name-number-para">Numero della carta:</div>
+                                <div class="name-number-para">Card Number:</div>
                                 <div>{{$cc_card}}</div>
                             </div>
                         </li>
                         <li class="list-group-item">
                             <div class="d-flex gap-2 mt-3">
-                                <div class="name-number-para">N°ordine</div>
+                                <div class="name-number-para">N°order</div>
                                 <div>{{$result->transaction->id}}</div>
                             </div>
                         </li>
                         <li class="list-group-item">
                             <a href="{{route('admin.dashboard')}}">
-                                <button type="button" class="btn btn-primary mt-3">Vedi il tuo ordine</button>
+                                <button type="button" class="btn btn-primary mt-3">See your order</button>
                             </a>
                         </li>
                     </ul>
@@ -60,14 +60,14 @@
             loaderOverlay.style.display = 'none';
 
 
-            const loadingMessages = ["Ci stiamo collegando con la tua banca", "Stiamo processando il tuo pagamento"];
+            const loadingMessages = ["We are connecting with your bank", "We are processing your payment"];
 
 
             function showLoadingMessages() {
-                loadingMessages.forEach(function(message, index) {
+                loadingMessages.forEach(function(message) {
                     setTimeout(function() {
-                        loadingText.textContent = message;
-                    }, index * 1000); 
+                        loadingText.innerText = message;
+                    }, 1000); 
                 });
             }
 
@@ -80,7 +80,6 @@
             setTimeout(function() {
                 loaderOverlay.style.display = 'none';
                 successPayment.style.display = 'block';
-
             }, 3000);
         } else {
             console.error("Elementi non trovati correttamente.");

@@ -121,13 +121,13 @@
                 @csrf
                 <div class="mb-3" id="card-name-father">
                     <input type="hidden" name="apartment_id" value="{{ $apartment->id }}">
-                    <label for="cardholder-name" class="form-label">Nome del Titolare della Carta</label>
+                    <label for="cardholder-name" class="form-label">Cardholder's Name</label>
                     <input type="text" class="form-control" id="cardholder-name" name="cardholder_name"
                         placeholder="Nome e Cognome">
                     <div class="red"></div>
                 </div>
                 <div class="mb-3" id="card-number-father">
-                    <label for="cardholder-name" class="form-label">Numero della Carta</label>
+                    <label for="cardholder-name" class="form-label">Card Number</label>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text credit-card" id="addon-wrapping">
                             <img class="creditcard width-card" id="image-credit" src="/images/creditcard.png" alt=""
@@ -149,7 +149,7 @@
                 </div>
                 <input type="hidden" id="promotion" name="promotion_hidden">
                 <input type="hidden" id="nonce" name="payment_method_nonce">
-                <button type="submit" class="btn btn-primary mb-5" id="submit-button">Effettua Pagamento</button>
+                <button type="submit" class="btn btn-primary mb-5" id="submit-button">Make Payment</button>
             </form>
         </div>
         <div class="d-flex justify-content-center gap-4">
