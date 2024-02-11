@@ -16,7 +16,7 @@ class DashboardController extends Controller
         $current_user = Auth::id();
         $user = User::find($current_user);
 
-        $user_apartments = $user->apartments()->with('orders')->orderBy('id', 'ASC')->get();
+        $user_apartments = $user->apartments()->with('orders')->orderBy('id', 'DESC')->get();
 
 
         $apartment_orders = [];

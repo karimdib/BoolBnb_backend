@@ -128,9 +128,15 @@
                 </div>
                 <div class="mb-3" id="card-number-father">
                     <label for="cardholder-name" class="form-label">Numero della Carta</label>
-                    <input type="text" class="form-control" id="number-card" name="cc-card"
-                        placeholder="xxxx-xxxx-xxxx-xxxx" max="16">
-                    <div class="red"></div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text credit-card" id="addon-wrapping">
+                            <img class="creditcard width-card" id="image-credit" src="/images/creditcard.png" alt=""
+                                value="e">
+                        </span>
+                        <input type="text" class="form-control" id="number-card" name="cc-card"
+                            placeholder="xxxx-xxxx-xxxx-xxxx" max="16">
+                    </div>
+                    <div id="error-card" class="red"></div>
                 </div>
                 <div class="form-floating mb-3">
                     <select class="form-select" id="promo" aria-label="Floating label select example" name="pay_method">
@@ -165,6 +171,10 @@
             .amount {
                 color: grey !important;
                 font-size: 7px !important;
+            }
+
+            .creditcard {
+                width: 30px;
             }
         </style>
         @push('scripts')

@@ -27,7 +27,6 @@
                         <li class="list-group-item">
                             <div class="d-flex gap-2 mt-3">
                                 <div class="name-number-para">Numero della carta:</div>
-
                                 <div>{{$cc_card}}</div>
                             </div>
                         </li>
