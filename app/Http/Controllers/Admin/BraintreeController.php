@@ -59,7 +59,7 @@ class BraintreeController extends Controller
 
         $activeSponsorship = Order::where('apartment_id', $apartmentId)->where('date_end', '>', now())->exists();
         if ($activeSponsorship === true) {
-            return 'non puoi sponsorizzare un appartamemto che ha già una sponsorizzazione attiva';
+            return view('admin.errorbraintree');
         } elseif ($result->success) {
 
             $sponsorshipId = Sponsorship::where('cost', $amount)->value('id');
