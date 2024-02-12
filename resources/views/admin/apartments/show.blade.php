@@ -76,13 +76,73 @@
                     method="POST" id="deletionForm">
                     @csrf
                     @method('DELETE')
-                    <button class="btn btn-danger w-100 modal-trigger" name="{{ $apartment->name }}" address="{{ $apartment->address }}" id="deletion" type="submit"
+                    <button class="btn btn-danger w-100 modal-trigger" name="{{ $apartment->name }}"
+                        address="{{ $apartment->address }}" id="deletion" type="submit"
                         name="{{ $apartment }}">Delete</button>
+                </form>
+            </div>
+
+            <h4 class="display-5 m-4 text-center">Sponsorship</h4>
+            <div class="card-body">
+                <form action="{{ route('admin.processPayment', $apartment) }}" method="POST" id="payment-form">
+                    @csrf
+                    <div class="mb-3" id="card-name-father">
+                        <input type="hidden" name="apartment_id" value="{{ $apartment->id }}">
+                        <label for="cardholder-name" class="form-label">Cardholder's Name</label>
+                        <input type="text" class="form-control" id="cardholder-name" name="cardholder_name"
+                            placeholder="Nome e Cognome">
+                        <div class="red"></div>
+                    </div>
+                    <div class="mb-3" id="card-number-father">
+                        <label for="cardholder-name" class="form-label">Card Number</label>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text credit-card" id="addon-wrapping">
+                                <img class="creditcard width-card" id="image-credit" src="/images/creditcard.png"
+                                    alt="" value="e">
+                            </span>
+                            <input type="text" class="form-control" id="number-card" name="cc-card"
+                                placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19">
+                        </div>
+                        <div id="error-card" class="red"></div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="promo" aria-label="Floating label select example"
+                            name="pay_method">
+                            <option value="1" name="1">Gold <span class="amount">-- &euro;2.99</span></option>
+                            <option value="2" name="2">Diamond <span class="amount">-- &euro;5.99</span>
+                            </option>
+                            <option value="3" name="3">Platinum <span class="amount">-- &euro;9.99</span>
+                            </option>
+                        </select>
+                        <label for="floatingSelect">Scegli la Promozione</label>
+                        <div class="red"></div>
+                    </div>
+                    <input type="hidden" id="promotion" name="promotion_hidden">
+                    <input type="hidden" id="nonce" name="payment_method_nonce">
+                    <button type="submit" class="btn btn-primary mb-5" id="submit-button">Make Payment</button>
                 </form>
             </div>
         </div>
     </div>
     <x-delete-modal />
+    <style>
+        .red {
+            color: red;
+            border-color: red;
+        }
+
+        .amount {
+            color: grey !important;
+            font-size: 7px !important;
+        }
+
+        .creditcard {
+            width: 30px;
+        }
+    </style>
+    @push('scripts')
+        <script src="{{ asset('./js/payment.js') }}"></script>
+    @endpush
     @push('scripts')
         <script src="{{ asset('js/deleteModal.js') }}"></script>
     @endpush

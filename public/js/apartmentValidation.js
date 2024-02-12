@@ -52,7 +52,7 @@ form.addEventListener('submit', function (event) {
     const validateNumber = (inputElement, fieldName) => {
         const value = parseFloat(inputElement.value);
         if (isNaN(value) || value <= 0 || inputElement.value.includes(',')) {
-            inputElement.parentNode.classList.add('is-invalid');
+            inputElement.classList.add('is-invalid');
             inputElement.nextElementSibling.innerText = `The ${fieldName} field must be an integer greater than 0 and without comma.`;
             isValid = false;
         } else {
@@ -66,47 +66,44 @@ form.addEventListener('submit', function (event) {
     validateNumber(squareMeters, 'square metres');
 
     if (rooms.value > 30) {
-        rooms.parentNode.classList.add('is-invalid');
         rooms.classList.add('is-invalid');
         rooms.nextElementSibling.innerText = 'the maximum number of rooms is 30.';
         isValid = false;
     }
     if (bathrooms.value > 7) {
-        bathrooms.parentNode.classList.add('is-invalid');
         bathrooms.classList.add('is-invalid');
         bathrooms.nextElementSibling.innerText = 'the maximum number of bathrooms is 7.';
         isValid = false;
     }
     if (beds.value > 15) {
-        beds.parentNode.classList.add('is-invalid');
         beds.classList.add('is-invalid');
         beds.nextElementSibling.innerText = 'the maximum number of beds is 15.';
         isValid = false;
     }
     if (squareMeters.value > 700) {
-        squareMeters.parentNode.classList.add('is-invalid');
         squareMeters.classList.add('is-invalid');
         squareMeters.nextElementSibling.innerText = 'the maximum number of square meters is 700.';
         isValid = false;
     }
+    //condizxioni rooms su beds e bathrooms 
 
-    if (rooms.value < beds.value) {
-        beds.parentNode.classList.add('is-invalid');
+    if (parseInt(rooms.value) <= parseInt(beds.value)) {
         beds.classList.add('is-invalid');
-        beds.nextElementSibling.innerText = 'the number of beds must be less than the number of rooms'
+        beds.nextElementSibling.innerText = 'the number of beds must be less than the number of rooms';
+        isValid = false;
     }
-    if (rooms.value < bathrooms.value) {
-        bathrooms.parentNode.classList.add('is-invalid');
+    if (parseInt(rooms.value) <= parseInt(bathrooms.value)) {
         bathrooms.classList.add('is-invalid');
         bathrooms.nextElementSibling.innerText = 'the number of bathrooms must be less than the number of rooms'
+        isValid = false;
     }
 
     if (nameTitle.value.trim() === '') {
-        nameTitle.parentNode.classList.add('is-invalid');
         nameTitle.nextElementSibling.innerText = 'The name field cannot be empty.';
+        nameTitle.classList.add('is-invalid');
         isValid = false;
     } else if (nameTitle.value.trim().length > 70) {
-        nameTitle.parentNode.classList.add('is-invalid');
+        nameTitle.classList.add('is-invalid');
         nameTitle.nextElementSibling.innerText = 'The number of characters must be less than 70.';
         isValid = false;
     }
@@ -115,11 +112,11 @@ form.addEventListener('submit', function (event) {
     }
 
     if (description.value.trim() === '') {
-        description.parentNode.classList.add('is-invalid');
+        description.classList.add('is-invalid');
         description.nextElementSibling.innerText = 'The description field cannot be empty.';
         isValid = false;
     } else if (description.value.trim().length > 150) {
-        description.parentNode.classList.add('is-invalid');
+        description.classList.add('is-invalid');
         description.nextElementSibling.innerText = 'The number of characters must be less than 150.';
         isValid = false;
     }
@@ -134,41 +131,35 @@ form.addEventListener('submit', function (event) {
 // rimozixone della classe is-invalid 
 nameTitle.addEventListener('input', function () {
     nameTitle.classList.remove('is-invalid');
-    nameTitle.parentNode.classList.remove('is-invalid');
     nameTitle.nextElementSibling.innerText = '';
 });
 
 description.addEventListener('input', function () {
     description.classList.remove('is-invalid');
-    description.parentNode.classList.remove('is-invalid');
     description.nextElementSibling.innerText = '';
 
 });
 
 rooms.addEventListener('input', function () {
     rooms.classList.remove('is-invalid');
-    rooms.parentNode.classList.remove('is-invalid');
     rooms.nextElementSibling.innerText = '';
 
 });
 
 beds.addEventListener('input', function () {
     beds.classList.remove('is-invalid');
-    beds.parentNode.classList.remove('is-invalid');
     beds.nextElementSibling.innerText = '';
 
 });
 
 bathrooms.addEventListener('input', function () {
     bathrooms.classList.remove('is-invalid');
-    bathrooms.parentNode.classList.remove('is-invalid');
     bathrooms.nextElementSibling.innerText = '';
 
 });
 
 squareMeters.addEventListener('input', function () {
     squareMeters.classList.remove('is-invalid');
-    squareMeters.parentNode.classList.remove('is-invalid');
     squareMeters.nextElementSibling.innerText = '';
 });
 

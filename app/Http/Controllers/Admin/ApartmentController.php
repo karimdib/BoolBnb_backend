@@ -55,7 +55,7 @@ class ApartmentController extends Controller
             'beds' => 'required|numeric|gt:0',
             'bathrooms' => 'required|numeric|gt:0',
             'square_meters' => 'required|numeric|gt:0',
-            'address' => 'required|max:255|same:a_searched_address',
+            'address' => 'required|max:255',
             'cover_image' => 'file|max:2048|extensions:jpg,png',
             'visible' => 'required|boolean',
             'services' => 'required|min:1'
@@ -65,7 +65,7 @@ class ApartmentController extends Controller
 
         // Chiamata all'API di Tomtom e inserimento country,latitude e longitude in data
 
-        $query = $data['address'];
+        $query = str_replace("/", " ", $data['address']);
         $base_url = "https://api.tomtom.com/search/2/search/";
         $api_key = "?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c";
         $responseFormat = ".json";
@@ -80,7 +80,8 @@ class ApartmentController extends Controller
 
         if ($request->hasFile('cover_image')) {
             $path = Storage::put('cover_images', $request->cover_image);
-            $data['cover_image'] = $path;
+            $file_name = Str::after($path, "cover_images/");
+            $data['cover_image'] = $file_name;
         }
 
         $data['user_id'] = Auth::id();
@@ -98,7 +99,7 @@ class ApartmentController extends Controller
             foreach ($images as $image) {
 
                 $link = Storage::put('images', $image);
-                $current_image['link'] = $link;
+                $current_image['link'] = Str::after($link, "images/");
                 $current_image['apartment_id'] = $new_apartment->id;
                 $new_image = Image::create($current_image);
             }
@@ -173,7 +174,8 @@ class ApartmentController extends Controller
 
             if ($request->hasFile('cover_image')) {
                 $path = Storage::put('cover_images', $request->cover_image);
-                $data['cover_image'] = $path;
+                $file_name = Str::after($path, "cover_images/");
+                $data['cover_image'] = $file_name;
 
                 if ($apartment->cover_image) {
                     Storage::delete($apartment->cover_image);
@@ -189,7 +191,7 @@ class ApartmentController extends Controller
                 $images = $request->images;
                 foreach ($images as $image) {
                     $link = Storage::put('images', $image);
-                    $current_image['link'] = $link;
+                    $current_image['link'] = Str::after($link, "images/");
                     $current_image['apartment_id'] = $apartment->id;
                     $new_image = Image::create($current_image);
                 }

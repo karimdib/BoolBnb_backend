@@ -16,11 +16,10 @@ class DashboardController extends Controller
         $current_user = Auth::id();
         $user = User::find($current_user);
 
-        $user_apartments = $user->apartments()->with('orders')->get();
+        $user_apartments = $user->apartments()->with('orders')->orderBy('id', 'DESC')->get();
+
 
         $apartment_orders = [];
-
-        // dd($user_apartments);
 
         if ($current_user == '1') {
             $apartments = Apartment::limit(5)->get();
@@ -30,7 +29,6 @@ class DashboardController extends Controller
             foreach ($user_apartments as $user_apartment) {
 
                 $current_apartment_id = $user_apartment['id'];
-
                 // dd($user_apartment->orders);
                 if ($user_apartment->orders) {
                     foreach ($user_apartment->orders as $order) {
@@ -42,6 +40,8 @@ class DashboardController extends Controller
             }
         }
 
-        return view('admin.dashboard', compact('apartments', 'apartment_orders'));
+        $date_now = now();
+
+        return view('admin.dashboard', compact('apartments', 'apartment_orders', 'date_now'));
     }
 }

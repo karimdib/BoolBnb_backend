@@ -4,16 +4,19 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Apartment;
+use App\Models\Image;
 use App\Models\Service;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Facades\File;
+
 
 class ApartmentController extends Controller
 {
     public function index()
     {
         $services = Service::all();
-        $apartments = Apartment::with('user', 'services')->inRandomOrder()->limit(10)->get();
+        $apartments = Apartment::with('user', 'services', 'images')->inRandomOrder()->limit(10)->get();
 
         return response()->json([
             'results' => ['apartments' => $apartments, 'services' => $services],
@@ -52,15 +55,16 @@ class ApartmentController extends Controller
         // Get the request data
         $query = request();
 
-        // Get all services
+        // Get all services and images
         $services = Service::all();
+        $images = Image::all();
 
         // Get the selected services from the request
         $servicesChecked = request()->services;
 
 
         // Initialize the apartments query with eager loading of user and services
-        $apartments = Apartment::with('user', 'services');
+        $apartments = Apartment::with('user', 'services', 'images');
 
         // Add select and distance calculation for sorting
         $apartments->select("*")
@@ -85,10 +89,19 @@ class ApartmentController extends Controller
 
         // Get the filtered apartments, ordered by distance
         $filteredApartments = $apartments->orderBy('distance')->get();
+        File::put('../database/data/search_results.json', json_encode($filteredApartments));
 
         // Return JSON response with filtered apartments and all services
         return response()->json([
             'results' => ['apartments' => $filteredApartments, 'services' => $services],
+            'success' => true
+        ]);
+    }
+
+    public function results()
+    {
+        return response()->json([
+            'results' => json_decode(File::get('../database/data/search_results.json')),
             'success' => true
         ]);
     }
