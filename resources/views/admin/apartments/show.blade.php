@@ -83,7 +83,7 @@
             </div>
 
             <h4 class="display-5 m-4 text-center">Sponsorship</h4>
-            <div class="card-body">
+            <div class="container card py-3 my-3 shadow">
                 <form action="{{ route('admin.processPayment', $apartment) }}" method="POST" id="payment-form">
                     @csrf
                     <div class="mb-3" id="card-name-father">

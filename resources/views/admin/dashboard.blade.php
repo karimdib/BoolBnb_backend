@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="container card py-3 my-3">
+    <section class="container card py-3 my-3 shadow">
         <div class="d-flex justify-content-between">
             <h1 class="card-title">Your Apartments</h1>
             <a href="{{ route('admin.apartments.index') }}" class="btn btn-primary align-self-center">View All</a>
@@ -44,7 +44,7 @@
             @endforelse
         </table>
     </section>
-    <section class="container card py-3 mb-3">
+    <section class="container card py-3 mb-3 shadow">
         <div class="d-flex justify-content-between">
             <h1 class="card-title">Your Sponsorships</h1>
             {{-- creare una rotta per lo storico degli ordini --}}
@@ -93,7 +93,7 @@
         </table>
     </section>
 
-    <section class="container card py-3 mb-3">
+    <section class="container card py-3 mb-3 shadow">
         <div class="d-flex justify-content-between">
             <h1 class="card-title">Statistics</h1>
             {{-- creare una rotta per le statistiche --}}

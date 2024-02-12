@@ -17,6 +17,19 @@
   background-color: $primary;
   color: $black;
   border-color: $primary;
+  &:hover {
+    background-color: $primary-hover !important;
+}
+}
+
+.btn-outline-primary {
+  border-color: $primary;
+  background-color: $primary;
+  color: $black;
+  &:hover {
+    border-color: $primary !important;
+    background-color: $primary-hover !important;
+}
 }
 
 .active {
