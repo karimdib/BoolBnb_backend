@@ -26,7 +26,7 @@
 
         <nav class="navbar navbar-expand-md shadow-sm">
             <div class="container">
-                
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
@@ -59,7 +59,6 @@
                                 <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
                                 <a class="dropdown-item" href="{{ route('admin.apartments.index') }}">{{
                                     __('Apartments') }}</a>
-                                <a class="dropdown-item" href="{{ route('admin.token') }}">{{ __('Payment') }}</a>
                                 <a class="dropdown-item" href="{{ url('profile') }}">{{ __('Profile') }}</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
