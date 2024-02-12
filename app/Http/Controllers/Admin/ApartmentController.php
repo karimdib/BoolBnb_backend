@@ -55,7 +55,7 @@ class ApartmentController extends Controller
             'beds' => 'required|numeric|gt:0',
             'bathrooms' => 'required|numeric|gt:0',
             'square_meters' => 'required|numeric|gt:0',
-            'address' => 'required|max:255|same:a_searched_address',
+            'address' => 'required|max:255',
             'cover_image' => 'file|max:2048|extensions:jpg,png',
             'visible' => 'required|boolean',
             'services' => 'required|min:1'
@@ -65,7 +65,7 @@ class ApartmentController extends Controller
 
         // Chiamata all'API di Tomtom e inserimento country,latitude e longitude in data
 
-        $query = $data['address'];
+        $query = str_replace("/", " ", $data['address']);
         $base_url = "https://api.tomtom.com/search/2/search/";
         $api_key = "?key=qD5AjlcGdPMFjUKdDAYqT7xYi3yIRo3c";
         $responseFormat = ".json";
