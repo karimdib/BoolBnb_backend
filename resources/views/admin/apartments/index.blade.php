@@ -11,8 +11,6 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>User ID</th>
-                            <th>Apartment ID</th>
                             <th>Name</th>
                             <th>Address</th>
                             <th></th>
@@ -22,10 +20,6 @@
                     <tbody>
                         @forelse ($apartments as $apartment)
                             <tr>
-                                {{-- database fields --}}
-                                <td>{{ $apartment->user_id }} </td>
-                                <td>{{ $apartment->id }} </td>
-
                                 <td>
                                     <a href="{{ route('admin.apartments.show', $apartment) }}">
                                         {{ $apartment->name }}

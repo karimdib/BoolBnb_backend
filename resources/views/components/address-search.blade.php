@@ -4,7 +4,7 @@
         <div class="d-flex gap-3">
             <input class="form-control @error('address') red @enderror" type="search" name="address" id="address-search"
                 value="{{ old('address') }}" placeholder="Search address and select match">
-            <button class="btn btn-primary" id="search-button">Search</button>
+            <button class="btn btn-outline-primary" id="search-button">Search</button>
         </div>
         <div class="is-invalid" value="">@error('address') The address field is required @enderror</div>
     </div>

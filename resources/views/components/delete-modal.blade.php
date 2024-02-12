@@ -9,7 +9,7 @@
           <p>Address: <span id="apartment-address"></span></p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-primary close-modal" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-danger" id="confirm-delete">Delete</button>
         </div>
       </div>

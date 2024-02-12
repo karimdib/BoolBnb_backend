@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container mt-4">
         @if ($apartment->cover_image)
             <figure class="d-flex justify-content-center">
                 @if (str_contains($apartment->cover_image, 'cover_images'))
@@ -70,20 +70,20 @@
                 @endforeach
             </ul>
             <div class="d-flex justify-content-center gap-4">
-                <a class="btn btn-outline-secondary flex-grow-1 shadow"
+                <a class="btn btn-outline-primary flex-grow-1 shadow"
                     href="{{ route('admin.apartments.edit', $apartment) }}">Edit</a>
                 <form class="flex-grow-1 shadow" action="{{ route('admin.apartments.destroy', $apartment) }}"
                     method="POST" id="deletionForm">
                     @csrf
                     @method('DELETE')
-                    <button class="btn btn-danger w-100 modal-trigger" name="{{ $apartment->name }}"
+                    <button class="btn btn-outline-danger w-100 modal-trigger" name="{{ $apartment->name }}"
                         address="{{ $apartment->address }}" id="deletion" type="submit"
                         name="{{ $apartment }}">Delete</button>
                 </form>
             </div>
 
             <h4 class="display-5 m-4 text-center">Sponsorship</h4>
-            <div class="card-body">
+            <div class="container card py-3 my-3 shadow">
                 <form action="{{ route('admin.processPayment', $apartment) }}" method="POST" id="payment-form">
                     @csrf
                     <div class="mb-3" id="card-name-father">
