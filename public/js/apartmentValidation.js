@@ -85,14 +85,17 @@ form.addEventListener('submit', function (event) {
         squareMeters.nextElementSibling.innerText = 'the maximum number of square meters is 700.';
         isValid = false;
     }
+    //condizxioni rooms su beds e bathrooms 
 
-    if (rooms.value < beds.value) {
+    if (parseInt(rooms.value) <= parseInt(beds.value)) {
         beds.classList.add('is-invalid');
-        beds.nextElementSibling.innerText = 'the number of beds must be less than the number of rooms'
+        beds.nextElementSibling.innerText = 'the number of beds must be less than the number of rooms';
+        isValid = false;
     }
-    if (rooms.value < bathrooms.value) {
+    if (parseInt(rooms.value) <= parseInt(bathrooms.value)) {
         bathrooms.classList.add('is-invalid');
         bathrooms.nextElementSibling.innerText = 'the number of bathrooms must be less than the number of rooms'
+        isValid = false;
     }
 
     if (nameTitle.value.trim() === '') {
