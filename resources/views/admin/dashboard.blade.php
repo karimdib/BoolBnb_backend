@@ -69,8 +69,8 @@
                     @elseif($date_now >= $order->date_end)
                     <td class="inactive">Inactive</td>
                     @endif
-                    <td>{{ $order->date_start }} </td>
-                    <td>{{ $order->date_end }} </td>
+                    <td id="data-start">{{ $order->date_start }} </td>
+                    <td id="data-end">{{ $order->date_end }} </td>
             </tr>
             @empty
             <tr>
@@ -112,4 +112,7 @@
         @endforelse --}}
     </table>
 </section>
+@push('scripts')
+<script src="{{ asset('./js/formatDataSponsor.js') }}"></script>
+@endpush
 @endsection
