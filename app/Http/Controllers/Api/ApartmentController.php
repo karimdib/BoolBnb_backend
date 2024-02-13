@@ -17,16 +17,15 @@ class ApartmentController extends Controller
     {
         $services = Service::all();
         $apartments = Apartment::with('user', 'services', 'images', 'orders')
-            ->leftJoin('orders', 'apartments.id', '=', 'orders.apartment_id')
-            ->select('apartments.*')
-            ->selectRaw('ISNULL(orders.id) as sponsored')
-            ->where('visible', 1)
-            ->orderBy("sponsored")
-            ->get();
+            // ->leftJoin('orders', 'apartments.id', '=', 'orders.apartment_id')
+            // ->select('apartments.*')
+            // ->selectRaw('ISNULL(orders.id) as sponsored')
+            // ->where('visible', 1)
+            // ->orderBy("sponsored")
+            ->has('orders')
+            ->inRandomOrder()
+            ->limit(10)->get();
 
-        // foreach ($apartments as $apartment) {
-        //     # code...
-        // }
 
         return response()->json([
             'results' => ['apartments' => $apartments, 'services' => $services],
