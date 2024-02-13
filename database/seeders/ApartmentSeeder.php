@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\Apartment;
+use App\Models\Service;
+use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
@@ -14,6 +16,8 @@ class ApartmentSeeder extends Seeder
      */
     public function run(Faker $faker): void
     {
+        $users = User::all();
+        $userIds = $users->pluck('id');
         for ($i = 0; $i < 50; $i++) {
 
             $new_apartment = new Apartment();
@@ -34,11 +38,14 @@ class ApartmentSeeder extends Seeder
                 $new_apartment->square_meters = $faker->numberBetween(121, 200);
             }
 
-            $new_apartment->address = $faker->address();
+            // $new_apartment->address = $faker->address();
             $new_apartment->visible = $faker->boolean();
             $new_apartment->cover_image = $faker->imageUrl(360, 360, true);
+            $new_apartment->user_id = $faker->randomElement($userIds);
 
             $new_apartment->save();
+
+            $new_apartment->services()->attach(Service::all()->random(3));
         }
     }
 }
