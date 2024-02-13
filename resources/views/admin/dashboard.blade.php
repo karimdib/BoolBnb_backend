@@ -69,8 +69,8 @@
                     @elseif($date_now >= $order->date_end)
                     <td class="inactive">Inactive</td>
                     @endif
-                    <td id="data-start">{{ $order->date_start }} </td>
-                    <td id="data-end">{{ $order->date_end }} </td>
+                    <td class="data-start">{{ $order->date_start }} </td>
+                    <td class="data-end">{{ $order->date_end }} </td>
             </tr>
             @empty
             <tr>
@@ -83,6 +83,7 @@
         </tbody>
         @endforelse
     </table>
+
 </section>
 
 <section class="container card py-3 mb-3 shadow">
