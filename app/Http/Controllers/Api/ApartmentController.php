@@ -16,7 +16,9 @@ class ApartmentController extends Controller
     public function index()
     {
         $services = Service::all();
-        $apartments = Apartment::with('user', 'services', 'images', 'orders')->inRandomOrder()->get();
+        $apartments = Apartment::with('user', 'services', 'images', 'orders')
+            ->inRandomOrder()
+            ->get();
 
         return response()->json([
             'results' => ['apartments' => $apartments, 'services' => $services],
@@ -63,7 +65,7 @@ class ApartmentController extends Controller
 
 
         // Initialize the apartments query with eager loading of user and services
-        $apartments = Apartment::with('user', 'services', 'images');
+        $apartments = Apartment::with('user', 'services', 'images', 'orders');
 
         // Add select and distance calculation for sorting
         $apartments->select("*")
