@@ -100,7 +100,7 @@ class ApartmentController extends Controller
         // Get the filtered apartments, ordered by distance
         $filteredApartments = $apartments->orderBy('sponsored')->orderBy("distance")->get();
 
-        $results[] = ['apartments' => $filteredApartments, 'query' => $query->searchQuery];
+        $results = ['apartments' => $filteredApartments, 'query' => $query->all()];
 
         File::put('../database/data/search_results.json', json_encode($results));
 
