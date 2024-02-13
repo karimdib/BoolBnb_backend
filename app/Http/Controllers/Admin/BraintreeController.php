@@ -8,6 +8,7 @@ use App\Models\Order;
 use App\Models\Sponsorship;
 use Braintree\Gateway;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class BraintreeController extends Controller
 {
@@ -59,21 +60,34 @@ class BraintreeController extends Controller
 
         $apartmentId = $request->input('apartment_id');
 
-        $activeSponsorship = Order::where('apartment_id', $apartmentId)->where('date_end', '>', now())->exists();
-        if ($activeSponsorship === true) {
-            return view('admin.errorbraintree', compact('cc_card', 'result'));
+        $sponsorshipId = Sponsorship::where('cost', $amount)->value('id');
+
+        $date_start = now();
+        if ($sponsorshipId === 1) {
+            $date_end = now()->addDay();
+        } elseif ($sponsorshipId === 2) {
+            $date_end = now()->addDay(2);
+        } else {
+            $date_end = now()->addDay(6);
+        }
+        $activeSponsorship = Order::where('apartment_id', $apartmentId)->where('date_end', '>', now())->first();
+        if ($activeSponsorship) {
+            $date_end = Carbon::parse($activeSponsorship->date_end);
+            if ($sponsorshipId === 1) {
+                $new_date_end = $date_end->addDay();
+            } elseif ($sponsorshipId === 2) {
+                $new_date_end = $date_end->addDay(2);
+            } else {
+                $new_date_end = $date_end->addDay(6);
+            }
+
+            $activeSponsorship->update([
+                'date_end' => $new_date_end
+            ]);
+
+            return view('admin.addDayBraintree', compact('cc_card', 'result'));
         } elseif ($result->success) {
 
-            $sponsorshipId = Sponsorship::where('cost', $amount)->value('id');
-
-            $date_start = now();
-            if ($sponsorshipId === 1) {
-                $date_end = now()->addDay();
-            } elseif ($sponsorshipId === 2) {
-                $date_end = now()->addDay(2);
-            } else {
-                $date_end = now()->addDay(6);
-            }
             $new_order = Order::create([
                 'sponsorship_id' => $sponsorshipId,
                 'apartment_id' => $apartmentId,
