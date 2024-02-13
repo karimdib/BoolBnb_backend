@@ -17,8 +17,16 @@ class ApartmentController extends Controller
     {
         $services = Service::all();
         $apartments = Apartment::with('user', 'services', 'images', 'orders')
-            ->inRandomOrder()
+            ->leftJoin('orders', 'apartments.id', '=', 'orders.apartment_id')
+            ->select('apartments.*')
+            ->selectRaw('ISNULL(orders.id) as sponsored')
+            ->where('visible', 1)
+            ->orderBy("sponsored")
             ->get();
+
+        // foreach ($apartments as $apartment) {
+        //     # code...
+        // }
 
         return response()->json([
             'results' => ['apartments' => $apartments, 'services' => $services],
@@ -68,7 +76,9 @@ class ApartmentController extends Controller
         $apartments = Apartment::with('user', 'services', 'images', 'orders');
 
         // Add select and distance calculation for sorting
-        $apartments->select("*")
+        $apartments->leftJoin('orders', 'apartments.id', '=', 'orders.apartment_id')
+            ->select('apartments.*')
+            ->selectRaw('ISNULL(orders.id) as sponsored')
             ->selectRaw(
                 'ROUND(ST_DISTANCE_SPHERE(POINT(longitude, latitude), POINT(?, ?)) / 1000, 2) AS distance',
                 [$query->longitude, $query->latitude]
@@ -89,7 +99,7 @@ class ApartmentController extends Controller
         }
 
         // Get the filtered apartments, ordered by distance
-        $filteredApartments = $apartments->orderBy('distance')->get();
+        $filteredApartments = $apartments->orderBy('sponsored')->orderBy("distance")->get();
         File::put('../database/data/search_results.json', json_encode($filteredApartments));
 
         // Return JSON response with filtered apartments and all services

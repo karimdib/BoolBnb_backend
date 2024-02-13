@@ -16,11 +16,14 @@ class OrderSeeder extends Seeder
      */
     public function run(Faker $faker): void
     {
-        for ($i = 0; $i < 10; $i++) {
-            $sponsors = Sponsorship::all();
-            $sponsorIds = $sponsors->pluck('id');
-            $apartments = Apartment::all();
-            $apartmentIds = $apartments->pluck('id');
+        $sponsors = Sponsorship::all();
+        $sponsorIds = $sponsors->pluck('id');
+
+        $activeApartments = Apartment::where('visible', 1)->get();
+        $apartmentIds = $activeApartments->pluck('id');
+
+
+        for ($i = 0; $i < 23; $i++) {
             $new_order = new Order();
             $new_order->apartment_id = $faker->randomElement($apartmentIds);
             $new_order->sponsorship_id = $faker->randomElement($sponsorIds);
