@@ -123,6 +123,13 @@
         </div>
     </div>
 </div>
+
+    @foreach ($visits as $visit)
+    <ul> 
+        <li>{{$visit->ip_address}}</li>
+        <li>{{$visit->date}}</li>
+    </ul>    
+    @endforeach
 <x-graph />
 <x-delete-modal />
 <style>
