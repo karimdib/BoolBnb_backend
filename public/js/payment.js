@@ -6,6 +6,11 @@ const form = document.getElementById('payment-form');
 const image = document.getElementById('image-credit');
 const errorCard = document.getElementById('error-card');
 const defaultImageSrc = image.src;
+const data = document.getElementById('data');
+const cvv = document.getElementById('cvv');
+console.log(cvv);
+console.log(data);
+
 console.log(image);
 
 form.addEventListener('submit', function (event) {
@@ -15,6 +20,35 @@ form.addEventListener('submit', function (event) {
         cardholderName.nextElementSibling.innerText = 'the name field cannot be empty';
         cardholderName.classList.add('red')
         finishCheckout = false;
+    }
+    if (data.value.trim() === '') {
+        data.nextElementSibling.innerText = 'invalid';
+        data.classList.add('red')
+        finishCheckout = false;
+    }
+    let month = parseInt(data.value.substring(0, 2));
+    let year = parseInt(data.value.substring(3));
+
+    if (month < 1 || month > 12 || year < 24) {
+        data.nextElementSibling.innerHTML = 'Invalid date';
+        data.classList.add('red');
+        finishCheckout = false;
+    } else {
+        data.nextElementSibling.innerHTML = '';
+        data.classList.remove('red');
+    }
+
+    if (cvv.value.trim() === '') {
+        cvv.nextElementSibling.innerText = 'invalid';
+        cvv.classList.add('red')
+        finishCheckout = false;
+    } else if (!/^\d{3}$/.test(cvv.value)) {
+        cvv.nextElementSibling.innerText = 'Only number';
+        cvv.classList.add('red');
+        finishCheckout = false;
+    } else {
+        cvv.nextElementSibling.innerText = '';
+        cvv.classList.remove('red');
     }
     const onlyLettersAndSpacesRegex = /^[A-Za-z\s]+$/;
 
@@ -55,6 +89,31 @@ form.addEventListener('submit', function (event) {
         cardholderName.classList.remove('red');
         cardholderName.nextElementSibling.innerText = '';
     });
+
+
+
+    data.addEventListener('input', function () {
+        let dataNumber = data.value.replace(/[^\d]/g, '');
+        let formattedNumber = '';
+        for (let i = 0; i < dataNumber.length; i++) {
+            if (i === 2) {
+                formattedNumber += '/';
+            }
+            formattedNumber += dataNumber[i];
+        }
+        data.value = formattedNumber;
+
+
+        data.classList.remove('red');
+        data.nextElementSibling.innerHTML = '';
+    });
+
+
+
+    cvv.addEventListener('input', function () {
+        cvv.classList.remove('red');
+        cvv.nextElementSibling.innerText = '';
+    })
 })
 numberCard.addEventListener('input', function () {
     let cardNumber = numberCard.value.replace(/[^\d]/g, '');
@@ -79,4 +138,19 @@ numberCard.addEventListener('input', function () {
         image.src = defaultImageSrc;
     }
 });
+
+data.addEventListener('input', function () {
+    let dataNumber = data.value.replace(/[^\d]/g, '');
+    let formattedNumber = '';
+    for (let i = 0; i < dataNumber.length; i++) {
+        if (i === 2) {
+            formattedNumber += '/';
+        }
+        formattedNumber += dataNumber[i];
+    }
+    data.value = formattedNumber;
+
+
+});
+
 
