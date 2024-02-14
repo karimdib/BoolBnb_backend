@@ -1,29 +1,50 @@
+const date = new Date();
+const todayDate = getDayMonthString(date);
+const backOneDate = getDayMonthString(date);
+const backTwoDate = getDayMonthString(date);
+const backThreeDate = getDayMonthString(date);
+const backFourDate = getDayMonthString(date);
+const backFiveDate = getDayMonthString(date);
+const backSixDate = getDayMonthString(date);
 
-(async function() {
-    const data = [
-      { year: 2010, count: 10 },
-      { year: 2011, count: 20 },
-      { year: 2012, count: 15 },
-      { year: 2013, count: 25 },
-      { year: 2014, count: 22 },
-      { year: 2015, count: 30 },
-      { year: 2016, count: 28 },
-    ];
-  
-    new Chart(
-      document.getElementById('visits'),
-      {
-        type: 'bar',
-        data: {
-          labels: data.map(row => row.year),
-          datasets: [
-            {
-              label: 'Acquisitions by year',
-              data: data.map(row => row.count)
-            }
-          ]
-        }
+
+
+visitsJS.forEach(visit => {
+  // console.log(visit);
+});
+
+(async function () {
+  const data = [
+    { day: backSixDate, count: 10 },
+    { day: backFiveDate, count: 20 },
+    { day: backFourDate, count: 15 },
+    { day: backThreeDate, count: 30 },
+    { day: backTwoDate, count: 5 },
+    { day: backOneDate, count: 12 },
+    { day: todayDate, count: 23 },
+  ];
+
+  new Chart(
+    document.getElementById('visits'),
+    {
+      type: 'bar',
+      data: {
+        labels: data.map(row => row.day),
+        datasets: [
+          {
+            label: 'Visualizations per day',
+            data: data.map(row => row.count)
+          }
+        ]
       }
-    );
-  })();
-   
+    }
+  );
+})();
+
+function getDayMonthString(date) {
+  date.setDate(date.getDate() - 1);
+  let day = date.getDate();
+  let month = date.getMonth() + 1;
+  let fullDate = `${day}/${month}`;
+  return fullDate;
+}
