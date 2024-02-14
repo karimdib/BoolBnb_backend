@@ -11,7 +11,7 @@
     ];
   
     new Chart(
-      document.getElementById('acquisitions'),
+      document.getElementById('visits'),
       {
         type: 'bar',
         data: {
