@@ -137,6 +137,17 @@
         </div>
     </div>
 </div>
+
+<div class="container">
+    <canvas id="visits"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script> const visitsJS = @php echo json_encode($visits); @endphp </script>
+@push('scripts')
+    <script type="module" src="{{ asset('/js/visitsGraph.js') }}"></script>
+@endpush
+
 <x-delete-modal />
 <style>
     .red {
@@ -161,10 +172,10 @@
         width: 70px
     }
 </style>
-@push('scripts')
+{{-- @push('scripts')
 <script src="{{ asset('./js/payment.js') }}"></script>
 @endpush
 @push('scripts')
 <script src="{{ asset('js/deleteModal.js') }}"></script>
-@endpush
+@endpush --}}
 @endsection
