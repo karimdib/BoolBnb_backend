@@ -123,6 +123,7 @@
         </div>
     </div>
 </div>
+<x-graph />
 <x-delete-modal />
 <style>
     .red {
@@ -139,10 +140,10 @@
         width: 30px;
     }
 </style>
-@push('scripts')
+{{-- @push('scripts')
 <script src="{{ asset('./js/payment.js') }}"></script>
 @endpush
 @push('scripts')
 <script src="{{ asset('js/deleteModal.js') }}"></script>
-@endpush
+@endpush --}}
 @endsection
