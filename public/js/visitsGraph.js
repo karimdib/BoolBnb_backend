@@ -1,11 +1,11 @@
 const date = new Date();
 const todayDate = getDayMonthString(date);
-const backOneDate = getDayMonthString(date);
-const backTwoDate = getDayMonthString(date);
-const backThreeDate = getDayMonthString(date);
-const backFourDate = getDayMonthString(date);
-const backFiveDate = getDayMonthString(date);
-const backSixDate = getDayMonthString(date);
+const backOneDate = getPreviousDayMonthString(date);
+const backTwoDate = getPreviousDayMonthString(date);
+const backThreeDate = getPreviousDayMonthString(date);
+const backFourDate = getPreviousDayMonthString(date);
+const backFiveDate = getPreviousDayMonthString(date);
+const backSixDate = getPreviousDayMonthString(date);
 
 
 
@@ -15,13 +15,13 @@ visitsJS.forEach(visit => {
 
 (async function () {
   const data = [
-    { day: backSixDate, count: 10 },
-    { day: backFiveDate, count: 20 },
-    { day: backFourDate, count: 15 },
-    { day: backThreeDate, count: 30 },
-    { day: backTwoDate, count: 5 },
-    { day: backOneDate, count: 12 },
-    { day: todayDate, count: 23 },
+    { day: backSixDate, count: visitCounter(backSixDate) },
+    { day: backFiveDate, count: visitCounter(backFiveDate) },
+    { day: backFourDate, count: visitCounter(backFourDate) },
+    { day: backThreeDate, count: visitCounter(backThreeDate) },
+    { day: backTwoDate, count: visitCounter(backTwoDate) },
+    { day: backOneDate, count: visitCounter(backOneDate) },
+    { day: todayDate, count: visitCounter(todayDate) },
   ];
 
   new Chart(
@@ -41,10 +41,32 @@ visitsJS.forEach(visit => {
   );
 })();
 
-function getDayMonthString(date) {
+function getPreviousDayMonthString(date) {
   date.setDate(date.getDate() - 1);
   let day = date.getDate();
   let month = date.getMonth() + 1;
   let fullDate = `${day}/${month}`;
   return fullDate;
+}
+
+function getDayMonthString(date) {
+  let day = date.getDate();
+  let month = date.getMonth() + 1;
+  let fullDate = `${day}/${month}`;
+  return fullDate;
+}
+
+function visitCounter(currentDay) {
+  let count = 0;
+  visitsJS.forEach(visit => {
+    const currentDateObj = new Date(visit.date);
+    const day = currentDateObj.getDate();
+    const month = currentDateObj.getMonth() + 1;
+    let currentDate = `${day}/${month}`;
+    console.log(currentDate,currentDay);
+    if (currentDate == currentDay) {
+      count++
+    }
+  })
+  return count;
 }
