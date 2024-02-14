@@ -116,6 +116,20 @@
                     </div>
                     <div id="error-card" class="red"></div>
                 </div>
+                <div class="mb-3 d-flex gap-4">
+                    <div>
+                        <label for="" class="form-label">Data</label>
+                        <input type="text" id="data" class="form-control" placeholder="01/22" maxlength="5">
+                        <div class="red"></div>
+                    </div>
+                    <div>
+
+                        <label for="" class="form-label">CVV</label>
+                        <input type="text" name="" id="cvv" class="form-control" placeholder="xxx" maxlength="3">
+                        <div class="red"></div>
+
+                    </div>
+                </div>
                 <input type="hidden" id="promotion" name="promotion_hidden">
                 <input type="hidden" id="nonce" name="payment_method_nonce">
                 <button type="submit" class="btn btn-primary mb-5" id="submit-button">Make Payment</button>
@@ -137,6 +151,14 @@
 
     .creditcard {
         width: 30px;
+    }
+
+    #data {
+        width: 70px;
+    }
+
+    #cvv {
+        width: 70px
     }
 </style>
 @push('scripts')
