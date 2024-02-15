@@ -142,13 +142,13 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const visitsJS = @php echo json_encode($visits); @endphp
-    </script>
-    @push('scripts')
-        <script type="module" src="{{ asset('/js/visitsGraph.js') }}"></script>
-    @endpush
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const visitsJS = @php echo json_encode($visits); @endphp 
+</script>
+@push('scripts')
+<script type="module" src="{{ asset('/js/visitsGraph.js') }}"></script>
+@endpush
 
     <x-delete-modal />
     <style>
@@ -169,6 +169,14 @@
         .creditcard {
             width: 30px;
         }
+        
+    #data {
+        width: 70px;
+    }
+
+    #cvv {
+        width: 70px
+    }
 
         .font-size-small {
             font-size: 16px;
