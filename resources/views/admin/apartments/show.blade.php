@@ -92,7 +92,7 @@
 
                             <div class="mb-3" id="card-number-father">
                                 <label for="cardholder-name" class="form-label">Card Number</label>
-                                <div class="input-group flex-nowrap">
+                                <div class="input-group flex-nowrap mb-3">
                                     <span class="input-group-text credit-card" id="addon-wrapping">
                                         <img class="creditcard width-card" id="image-credit" src="/images/creditcard.png"
                                             alt="" value="e">
@@ -100,12 +100,25 @@
                                     <input type="text" class="form-control" id="number-card" name="cc-card"
                                         placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19">
                                 </div>
-                                <div id="error-card" class="red"></div>
+                                <div class="mb-3 d-flex gap-4">
+                                    <div>
+                                        <label for="" class="form-label mb-1">Data</label>
+                                        <input type="text" id="data" class="form-control" placeholder="01/22"
+                                            maxlength="5">
+                                        <div class="red"></div>
+                                    </div>
+                                    <div>
+                                        <label for="" class="form-label mb-1">CVV</label>
+                                        <input type="text" name="" id="cvv" class="form-control"
+                                            placeholder="xxx" maxlength="3">
+                                        <div class="red"></div>
+                                    </div>
+                                </div>
+                            <div id="error-card" class="red"></div>
                             </div>
                             <input type="hidden" id="promotion" name="promotion_hidden">
                             <input type="hidden" id="nonce" name="payment_method_nonce">
-                            <button type="submit" class="btn btn-primary mb-2 font-size-small" id="submit-button">Make
-                                Payment</button>
+                            <button type="submit" class="btn btn-primary mb-2 font-size-small" id="submit-button">Make Payment</button>
                         </form>
                     </div>
                 </section>
@@ -115,9 +128,9 @@
         <div class="">
             <ul class="mb-4 row">
                 @foreach ($images as $image)
-                        <li class="d-flex col-4 p-2">
-                            <img class="w-100" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
-                        </li>
+                    <li class="d-flex col-4 p-2">
+                        <img class="w-100" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
+                    </li>
                 @endforeach
             </ul>
         </div>
@@ -142,13 +155,13 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const visitsJS = @php echo json_encode($visits); @endphp 
-</script>
-@push('scripts')
-<script type="module" src="{{ asset('/js/visitsGraph.js') }}"></script>
-@endpush
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const visitsJS = @php echo json_encode($visits); @endphp
+    </script>
+    @push('scripts')
+        <script type="module" src="{{ asset('/js/visitsGraph.js') }}"></script>
+    @endpush
 
     <x-delete-modal />
     <style>
@@ -169,14 +182,14 @@
         .creditcard {
             width: 30px;
         }
-        
-    #data {
-        width: 70px;
-    }
 
-    #cvv {
-        width: 70px
-    }
+        #data {
+            width: 70px;
+        }
+
+        #cvv {
+            width: 70px
+        }
 
         .font-size-small {
             font-size: 16px;
