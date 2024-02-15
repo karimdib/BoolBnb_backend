@@ -67,8 +67,8 @@
                             @csrf
                             <label class="form-label" for="floatingSelect">Choose promotion</label>
                             <div class="form-floating mb-3">
-                                <select class="form-select" id="promo" aria-label="Floating label select example"
-                                    name="pay_method font-size-small">
+                                <select class="form-select font-size-small" id="promo" aria-label="Floating label select example"
+                                    name="pay_method">
                                     <option class="font-size-small ps-2" value="1" name="1"> Gold
                                         <span class="amount">-- &euro;2.99</span>
                                     </option>
@@ -162,6 +162,12 @@
     @push('scripts')
         <script type="module" src="{{ asset('/js/visitsGraph.js') }}"></script>
     @endpush
+    @push('scripts')
+    <script src="{{ asset('./js/payment.js') }}"></script>
+    @endpush
+    @push('scripts')
+    <script src="{{ asset('js/deleteModal.js') }}"></script>
+    @endpush
 
     <x-delete-modal />
     <style>
@@ -208,10 +214,4 @@
             height: 40px !important;
         }
     </style>
-    @push('scripts')
-        <script src="{{ asset('./js/payment.js') }}"></script>
-    @endpush
-    @push('scripts')
-        <script src="{{ asset('js/deleteModal.js') }}"></script>
-    @endpush
 @endsection
