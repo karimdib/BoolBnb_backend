@@ -113,33 +113,6 @@
 
 </section>
 
-<section class="container card py-3 mb-3 shadow">
-    <div class="d-flex justify-content-between">
-        <h1 class="card-title">Statistics</h1>
-        {{-- creare una rotta per le statistiche --}}
-        <a href="" class="btn btn-outline-primary align-self-center">View All</a>
-    </div>
-    <table>
-        <thead>
-            <tr></tr>
-        </thead>
-        <tbody>
-            {{-- @forelse ($orders as $order)
-            <tr>
-
-            </tr>
-            @empty
-            <tr>
-                <td colspan="5">
-                    <p class="fs-4 text-center p-4 opacity-75">
-                        No Sponsorships
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-        @endforelse --}}
-    </table>
-</section>
 @push('scripts')
 <script src="{{ asset('./js/formatDataSponsor.js') }}"></script>
 @endpush
