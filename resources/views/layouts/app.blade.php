@@ -83,7 +83,7 @@
         <footer class="ff">
             <div class="container">
                 <div class="row  justify-content-between flex-wrap  flex-md-nowrap">
-                    <div class="col-md-4 col-6">
+                    <div class="col-6">
                         <ul>
                             <a href="#">
                                 <li>Chi Siamo</li>
@@ -99,7 +99,7 @@
                             </a>
                         </ul>
                     </div>
-                    <div class="col-md-4 col-6">
+                    <div class=" col-6">
                         <ul>
                             <a href="#">
                                 <li>Termini di utilizzo</li>
@@ -112,35 +112,6 @@
                             </a>
                             <a href="#">
                                 <li>Domande Frequenti</li>
-                            </a>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-12  text-center icon-col ">
-                        <ul>
-                            <a href="#">
-                                <li class="icon">Seguici su:</li>
-                            </a>
-                        </ul>
-                        <ul class="d-flex gap-3  justify-content-center justify-content-md-between p-0">
-                            <a href="#">
-                                <li class="icon">
-                                    <font-awesome-icon :icon="['fab', 'facebook']" />
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li class="icon">
-                                    <font-awesome-icon :icon="['fab', 'instagram']" />
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li class="icon">
-                                    <font-awesome-icon :icon="['fab', 'github']" />
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li class="icon">
-                                    <font-awesome-icon :icon="['fab', 'telegram']" />
-                                </li>
                             </a>
                         </ul>
                     </div>
