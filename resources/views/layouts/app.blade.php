@@ -24,7 +24,7 @@
     <div id="app">
 
 
-        <nav class="navbar navbar-expand-md shadow-sm">
+        <nav class="navbar navbar-expand shadow-sm mb-3">
             <div class="container">
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
