@@ -32,13 +32,20 @@ const backSixDate = getPreviousDayMonthString(date);
             label: 'Visualizations per day',
             data: data.map(row => row.count),
             backgroundColor: '#77d4b8',
-            display: false
+            display: false,
           }
         ]
       },
       options: {
         maintainAspectRatio: false,
-        aspectRatio: 1
+        aspectRatio: 1,
+        scales: {
+          y: {
+            ticks: {
+              maxTicksLimit: 6
+            }
+          }
+        }
       }
     }
   );
