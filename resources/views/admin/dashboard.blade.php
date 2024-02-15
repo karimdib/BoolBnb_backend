@@ -1,6 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
+<section class="container card py-3 mb-3">
+    <div class="d-flex justify-content-between">
+        <h1 class="card-title">Messages</h1>
+        {{-- creare una rotta per le statistiche --}}
+        <a href="{{ route('admin.messages.index')}}" class="btn btn-primary align-self-center">View All</a>
+    </div>
+    {{-- <table>
+        <thead>
+            <tr></tr>
+        </thead>
+        <tbody>
+            @forelse ($messages as $message)
+        <tr>
+
+        </tr>
+        @empty
+        <tr>
+            <td colspan="5">
+                <p class="fs-4 text-center p-4 opacity-75">
+                    No Messages
+                </p>
+            </td>
+        </tr>
+    </tbody>
+    @endforelse --}}
+    </table>
+</section>
     <section class="container card py-3 my-3">
         <div class="d-flex justify-content-between">
             <h1 class="card-title">Your Apartments</h1>
