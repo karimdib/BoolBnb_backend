@@ -1,6 +1,8 @@
 <?php
 
+
 use App\Http\Controllers\Api\ApartmentController;
+use App\Http\Controllers\Api\MessageController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +26,4 @@ Route::get('/apartments/results', [ApartmentController::class, 'results']);
 Route::get('/apartments/{apartment:slug}', [ApartmentController::class, 'show']);
 Route::post('/apartments/search', [ApartmentController::class, 'fuzzySearch']);
 Route::post('/apartments', [ApartmentController::class, 'filter']);
+Route::post('/apartments/messages', [MessageController::class, 'store']);
