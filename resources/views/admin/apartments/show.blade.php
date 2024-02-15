@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container mt-3">
         <h1 class="text-center">{{ $apartment->name }}</h1>
     </div>
     <div class="container mt-4">
@@ -22,45 +22,43 @@
             <div class="col-6">
                 <div class="my-3">
                     <ul class="list-group shadow mb-4 text-capitalize">
-                        <li class="list-group-item p-2 "><span class="fw-bold">Rooms: </span>{{ $apartment->rooms }}
+                        <li class="list-group-item p-3 "><span class="fw-bold">Rooms: </span>{{ $apartment->rooms }}
                         </li>
-                        <li class="list-group-item p-2 "><span class="fw-bold">Beds: </span>{{ $apartment->beds }}
+                        <li class="list-group-item p-3 "><span class="fw-bold">Beds: </span>{{ $apartment->beds }}
                         </li>
-                        <li class="list-group-item p-2 "><span class="fw-bold">Bathrooms:
+                        <li class="list-group-item p-3 "><span class="fw-bold">Bathrooms:
                             </span>{{ $apartment->bathrooms }}</li>
-                        <li class="list-group-item p-2 "><span class="fw-bold">Square meters:
-                            </span>{{ $apartment->square_meters }}
+                        <li class="list-group-item p-3 ">
+                            <span class="fw-bold">Size:</span>
+                            <span>{{ $apartment->square_meters }}sqm</span>
                         </li>
-                        <li class="list-group-item p-2 ">
+                        <li class="list-group-item p-3 ">
                             <span class="fw-bold">Address:</span>
                             {{ $apartment->address }}, {{ $apartment->country }}
                         </li>
-                        <li class="list-group-item p-2 ">
+                        <li class="list-group-item p-3">
+                            <span class="fw-bold">Services:
+                                @forelse ($apartment->services as $service)
+                                    <span class="badge rounded-pill text-bg-primary">{{ $service->name }}</span>
+                                @empty
+                                    <span class="list-group-item p-2">Your apartment has no services!</span>
+                                @endforelse
+                        </li>
+                        <li class="list-group-item p-3 ">
                             <span class="fw-bold">Visible: </span>
                             @if ($apartment->visible)
-                                <span>Yes</span>
+                                <span class="green">Yes</span>
                             @else
-                                <span>No</span>
+                                <span class="red">No</span>
                             @endif
                         </li>
-                    </ul>
-                </div>
-
-                <div class="my-3">
-                    <h4 class="text-center">Services</h4>
-                    <ul class="list-group shadow mb-4">
-                        @forelse ($apartment->services as $service)
-                            <li class="list-group-item p-2 ">{{ $service->name }}</li>
-                        @empty
-                            <li class="list-group-item p-2">Your apartment has no services!</li>
-                        @endforelse
                     </ul>
                 </div>
             </div>
 
             <div class="col-6">
                 <section>
-                        <canvas id="visits"></canvas>
+                    <canvas id="visits"></canvas>
                 </section>
 
                 <section>
@@ -71,13 +69,13 @@
                             <div class="form-floating mb-3">
                                 <select class="form-select" id="promo" aria-label="Floating label select example"
                                     name="pay_method font-size-small">
-                                    <option class="font-size-small ps-2" value="1" name="1"> Gold 
+                                    <option class="font-size-small ps-2" value="1" name="1"> Gold
                                         <span class="amount">-- &euro;2.99</span>
                                     </option>
-                                    <option class="font-size-small" value="2" name="2">Diamond 
+                                    <option class="font-size-small" value="2" name="2">Diamond
                                         <span class="amount">-- &euro;5.99</span>
                                     </option>
-                                    <option class="font-size-small" value="3" name="3">Platinum 
+                                    <option class="font-size-small" value="3" name="3">Platinum
                                         <span class="amount">-- &euro;9.99</span>
                                     </option>
                                 </select>
@@ -106,7 +104,8 @@
                             </div>
                             <input type="hidden" id="promotion" name="promotion_hidden">
                             <input type="hidden" id="nonce" name="payment_method_nonce">
-                            <button type="submit" class="btn btn-primary mb-2 font-size-small" id="submit-button">Make Payment</button>
+                            <button type="submit" class="btn btn-primary mb-2 font-size-small" id="submit-button">Make
+                                Payment</button>
                         </form>
                     </div>
                 </section>
@@ -114,17 +113,11 @@
         </div>
 
         <div class="">
-            <ul class="shadow mb-4 row">
+            <ul class="mb-4 row">
                 @foreach ($images as $image)
-                    @if (str_contains($image, 'image'))
-                        <li class="d-flex col-4 p-2">
-                            <img class="w-100" src="{{ asset('storage') . '/' . $image->link }}" alt="">
-                        </li>
-                    @else
                         <li class="d-flex col-4 p-2">
                             <img class="w-100" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
                         </li>
-                    @endif
                 @endforeach
             </ul>
         </div>
@@ -164,6 +157,10 @@
             border-color: red;
         }
 
+        .green {
+            color: green;
+        }
+
         .amount {
             color: grey !important;
             font-size: 7px !important;
@@ -189,12 +186,11 @@
             min-height: 0 !important;
             height: 40px !important;
         }
-
     </style>
     @push('scripts')
-<script src="{{ asset('./js/payment.js') }}"></script>
-@endpush
-@push('scripts')
-<script src="{{ asset('js/deleteModal.js') }}"></script>
-@endpush
+        <script src="{{ asset('./js/payment.js') }}"></script>
+    @endpush
+    @push('scripts')
+        <script src="{{ asset('js/deleteModal.js') }}"></script>
+    @endpush
 @endsection

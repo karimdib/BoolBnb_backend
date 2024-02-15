@@ -66,7 +66,6 @@ function visitCounter(currentDay) {
     const day = currentDateObj.getDate();
     const month = currentDateObj.getMonth() + 1;
     let currentDate = `${day}/${month}`;
-    console.log(currentDate,currentDay);
     if (currentDate == currentDay) {
       count++
     }

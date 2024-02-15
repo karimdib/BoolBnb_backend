@@ -32,6 +32,11 @@
 }
 }
 
+.text-bg-primary {
+  background-color: $primary !important;
+  color: $black !important;
+}
+
 .active {
   display: block;
   color: green;
