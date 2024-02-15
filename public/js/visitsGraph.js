@@ -1,3 +1,5 @@
+// import '../../resources/scss/partials/_variables.scss';
+
 const date = new Date();
 const todayDate = getDayMonthString(date);
 const backOneDate = getPreviousDayMonthString(date);
@@ -7,11 +9,6 @@ const backFourDate = getPreviousDayMonthString(date);
 const backFiveDate = getPreviousDayMonthString(date);
 const backSixDate = getPreviousDayMonthString(date);
 
-
-
-visitsJS.forEach(visit => {
-  // console.log(visit);
-});
 
 (async function () {
   const data = [
@@ -33,9 +30,15 @@ visitsJS.forEach(visit => {
         datasets: [
           {
             label: 'Visualizations per day',
-            data: data.map(row => row.count)
+            data: data.map(row => row.count),
+            backgroundColor: '#77d4b8',
+            display: false
           }
         ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        aspectRatio: 1
       }
     }
   );
