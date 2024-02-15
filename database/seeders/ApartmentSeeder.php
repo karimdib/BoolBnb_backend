@@ -5,11 +5,9 @@ namespace Database\Seeders;
 use App\Models\Apartment;
 use App\Models\Service;
 use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 
 class ApartmentSeeder extends Seeder
@@ -29,7 +27,7 @@ class ApartmentSeeder extends Seeder
             $new_apartment->name = $faker->sentence(3);
             $new_apartment->slug = Str::slug($new_apartment->name);
             $new_apartment->description = $faker->text();
-            $new_apartment->visible = $faker->optional($weight = 0.8, $default = 0)->boolean();
+            $new_apartment->visible = $faker->boolean(80);
             $new_apartment->slug = Str::slug($new_apartment->description);
             $new_apartment->user_id = User::all()->random()->id;
 
