@@ -3,6 +3,7 @@
 @import '/resources/scss/partials/_variables.scss';
 @import '/resources/scss/partials/payment';
 @import '/resources/scss/partials/_dashboard.scss';
+@import '/resources/scss/partials/_footer.scss';
 
 
 ::-webkit-scrollbar {
@@ -43,4 +44,13 @@
 .inactive {
   display: block;
   color: red;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  list-style: none;
 }
