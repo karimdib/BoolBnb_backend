@@ -1,37 +1,3 @@
-.ff {
-    border-top: 1px solid $primary;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: white;
-    font-size: 13px;
-    font-weight: 600;
-
-
-    ul {
-        padding-left: 0px;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-
-        .row {
-            flex-wrap: nowrap;
-
-            a>li {
-                padding: 10px;
-
-                &:hover {
-                    box-shadow: inset 0px 0px 5px rgba(30, 233, 149, 0.836);
-
-                }
-            }
-
-            .icon {
-                font-size: 16px;
-            }
-        }
-    }
-
-
+.footer {
+    padding: 50px;
 }
