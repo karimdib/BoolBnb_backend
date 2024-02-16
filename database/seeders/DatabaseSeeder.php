@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             ApartmentSeeder::class,
             OrderSeeder::class,
             ImageSeeder::class,
-  MessageSeeder::class        
+            MessageSeeder::class        
         ]);
     }
 }
