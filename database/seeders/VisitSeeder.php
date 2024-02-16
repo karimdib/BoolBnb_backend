@@ -21,8 +21,8 @@ class VisitSeeder extends Seeder
         foreach ($apartments as $apartment) {
             //Genero 20 visite per ogni appartamento nell'ultimo mese
             for ($i=0; $i < 20; $i++) { 
-                // Genero una data casuale tra oggi e una settimana fa
-                $startDate = strtotime('-1 week');
+                // Genero una data casuale tra oggi e un anno fa
+                $startDate = strtotime('-1 year');
                 $endDate = time();
                 $randomTimestamp = rand($startDate, $endDate);
                 // Formatto la data nel formato YY-MM-DD hh:mm:ss
