@@ -83,42 +83,10 @@
             @yield('content')
             @stack('scripts')
         </main>
-        <footer class="ff">
+        <footer class="footer">
             <div class="container">
-                <div class="row  justify-content-between flex-wrap  flex-md-nowrap">
-                    <div class="col-6">
-                        <ul>
-                            <a href="#">
-                                <li>Chi Siamo</li>
-                            </a>
-                            <a href="#">
-                                <li>Contatti</li>
-                            </a>
-                            <a href="#">
-                                <li>Pubblica il tuo annuncio</li>
-                            </a>
-                            <a href="#">
-                                <li>Lavora con noi</li>
-                            </a>
-                        </ul>
-                    </div>
-                    <div class=" col-6">
-                        <ul>
-                            <a href="#">
-                                <li>Termini di utilizzo</li>
-                            </a>
-                            <a href="#">
-                                <li>Normativa sulla privacy e sui cookie</li>
-                            </a>
-                            <a href="#">
-                                <li>Appartamenti vicino a me </li>
-                            </a>
-                            <a href="#">
-                                <li>Domande Frequenti</li>
-                            </a>
-                        </ul>
-                    </div>
-
+                <div class="text-center p-2">
+                    <h5 class="title-footer">Boolbnb Team-1 Boolean</h5>
                 </div>
             </div>
         </footer>
