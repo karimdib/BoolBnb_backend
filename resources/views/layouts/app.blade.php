@@ -115,9 +115,7 @@
                             </a>
                         </ul>
                     </div>
-                    <!-- <div class="col-12">
-                  <img class="city-image" src="/public/cityy.png" alt="">
-                </div> -->
+
                 </div>
             </div>
         </footer>
