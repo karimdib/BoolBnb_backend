@@ -70,7 +70,7 @@
                             </button>
                           </h2>
                           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body z-3 position-absolute">
                                 <div class="container card py-2 my-3 shadow font-size-small">
                                     <form action="{{ route('admin.processPayment', $apartment) }}" method="POST" id="payment-form">
                                         @csrf
@@ -211,10 +211,6 @@
 
         .font-size-small {
             font-size: 16px;
-        }
-
-        .form-select {
-            width: 50%;
         }
 
         .form-control,
