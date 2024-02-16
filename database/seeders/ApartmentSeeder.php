@@ -58,7 +58,7 @@ class ApartmentSeeder extends Seeder
             $new_apartment->save();
 
             // Attach 3 random services
-            $new_apartment->services()->attach(Service::all()->random(3));
+            $new_apartment->services()->attach(Service::all()->random(5));
         }
     }
 }

@@ -16,10 +16,11 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             ServiceSeeder::class,
             SponsorshipSeeder::class,
-            VisitSeeder::class,
             ApartmentSeeder::class,
+            VisitSeeder::class,
             OrderSeeder::class,
-            ImageSeeder::class
+            ImageSeeder::class,
+            MessageSeeder::class,
         ]);
     }
 }

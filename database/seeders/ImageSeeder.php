@@ -19,12 +19,13 @@ class ImageSeeder extends Seeder
         $apartment_ids = $apartments->pluck('id');
 
         foreach ($apartment_ids as $apartment_id) {
-            
-            $new_image = new Image();
-            $new_image->apartment_id = $faker->randomElement($apartment_ids);
-            $new_image->link = $faker->file('public\storage\apartment_images','public\storage\images',false);
-            $new_image->save();            
-        }
 
+            for ($i = 0; $i < 3; $i++) {
+                $new_image = new Image();
+                $new_image->apartment_id = $faker->randomElement($apartment_ids);
+                $new_image->link = $faker->file('public\storage\apartment_images', 'public\storage\images', false);
+                $new_image->save();
+            }
+        }
     }
 }

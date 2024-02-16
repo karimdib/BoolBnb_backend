@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Apartment;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Message;
 use App\Http\Requests\StoreMessageRequest;
 use App\Http\Requests\UpdateMessageRequest;
@@ -14,7 +16,34 @@ class MessageController extends Controller
      */
     public function index()
     {
-        //
+        $current_user = Auth::id();
+        $messages = [];
+
+        // Se l'utente è l'amministratore, recupera tutti i messaggi
+        if ($current_user == '1') {
+
+            $messages = Message::all();
+            $apartments = Apartment::all();
+            $apartment_ids = $apartments->pluck('id')->toArray();
+            $messages = Message::whereIn('apartment_id', $apartment_ids)->orderBy('created_at', 'DESC')->get();
+            $message_ids = $messages->pluck('apartment_id')->toArray();
+            $apartments_with_messages = Apartment::whereIn('id', $message_ids)->get();
+        } else {
+            // Altrimenti, recupera solo i messaggi associati agli appartamenti dell'utente
+            $apartments = Apartment::where('user_id', $current_user)->get();
+            $apartment_ids = $apartments->pluck('id')->toArray();
+
+
+
+            $messages = Message::whereIn('apartment_id', $apartment_ids)->orderBy('created_at', 'DESC')->get();
+
+
+            $message_ids = $messages->pluck('apartment_id')->toArray();
+
+            $apartments_with_messages = Apartment::whereIn('id', $message_ids)->get();
+        }
+
+        return view('admin.messages', compact('messages', 'apartments_with_messages'));
     }
 
     /**

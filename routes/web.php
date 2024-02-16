@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AddressSearchController;
 use App\Http\Controllers\Admin\BraintreeController;
 use App\Http\Controllers\Admin\ApartmentController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +29,7 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     Route::resource('apartments', ApartmentController::class);
     Route::get('payment', [BraintreeController::class, 'showCheckout'])->name('token');
     Route::post('payment', [BraintreeController::class, 'processPayment'])->name('processPayment');
+    Route::get('messages' , [MessageController::class, 'index'])->name('messages.index');
 });
 
 Route::middleware('auth')->group(function () {
