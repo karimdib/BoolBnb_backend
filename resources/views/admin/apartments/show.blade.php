@@ -19,7 +19,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                 <div class="my-3">
                     <ul class="list-group shadow mb-4 text-capitalize">
                         <li class="list-group-item p-3 "><span class="fw-bold">Rooms: </span>{{ $apartment->rooms }}
@@ -56,95 +56,95 @@
                 </div>
             </div>
 
-            <div class="col-6">
-                <section>
+            <div class="col-12 col-lg-6">
+                <section class="chart-container card shadow my-3 p-3">
                     <canvas id="visits"></canvas>
-                </section>
-
-                <section>
-                    <div class="accordion accordion-flush">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                              Buy new promotion for your apartment!
-                            </button>
-                          </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body z-3 position-absolute">
-                                <div class="container card py-2 my-3 shadow font-size-small">
-                                    <form action="{{ route('admin.processPayment', $apartment) }}" method="POST" id="payment-form">
-                                        @csrf
-                                        <label class="form-label" for="floatingSelect">Choose promotion</label>
-                                        <div class="form-floating mb-3">
-                                            <select class="form-select font-size-small" id="promo" aria-label="Floating label select example"
-                                                name="pay_method">
-                                                <option class="font-size-small ps-2" value="1" name="1"> Gold
-                                                    <span class="amount">-- &euro;2.99</span>
-                                                </option>
-                                                <option class="font-size-small" value="2" name="2">Diamond
-                                                    <span class="amount">-- &euro;5.99</span>
-                                                </option>
-                                                <option class="font-size-small" value="3" name="3">Platinum
-                                                    <span class="amount">-- &euro;9.99</span>
-                                                </option>
-                                            </select>
-                                            <div class="red"></div>
-                                        </div>
-            
-                                        <div class="mb-3" id="card-name-father">
-                                            <input type="hidden" name="apartment_id" value="{{ $apartment->id }}">
-                                            <label for="cardholder-name" class="form-label">Cardholder's Name</label>
-                                            <input type="text" class="form-control" id="cardholder-name" name="cardholder_name"
-                                                placeholder="Kevin Smith">
-                                            <div class="red"></div>
-                                        </div>
-            
-                                        <div class="mb-3" id="card-number-father">
-                                            <label for="cardholder-name" class="form-label">Card Number</label>
-                                            <div class="input-group flex-nowrap mb-3">
-                                                <span class="input-group-text credit-card" id="addon-wrapping">
-                                                    <img class="creditcard width-card" id="image-credit" src="/images/creditcard.png"
-                                                        alt="" value="e">
-                                                </span>
-                                                <input type="text" class="form-control" id="number-card" name="cc-card"
-                                                    placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19">
-                                            </div>
-                                            <div class="mb-3 d-flex gap-4">
-                                                <div>
-                                                    <label for="" class="form-label mb-1">Data</label>
-                                                    <input type="text" id="data" class="form-control" placeholder="01/22"
-                                                        maxlength="5">
-                                                    <div class="red"></div>
-                                                </div>
-                                                <div>
-                                                    <label for="" class="form-label mb-1">CVV</label>
-                                                    <input type="text" name="" id="cvv" class="form-control"
-                                                        placeholder="xxx" maxlength="3">
-                                                    <div class="red"></div>
-                                                </div>
-                                            </div>
-                                        <div id="error-card" class="red"></div>
-                                        </div>
-                                        <input type="hidden" id="promotion" name="promotion_hidden">
-                                        <input type="hidden" id="nonce" name="payment_method_nonce">
-                                        <button type="submit" class="btn btn-primary mb-2 font-size-small" id="submit-button">Make Payment</button>
-                                    </form>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
                 </section>
             </div>
         </div>
 
+        <section class="card shadow">
+            <div class="accordion accordion-flush">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <h5>Buy new promotion for your apartment!</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body z-3 position-absolute">
+                        <div class="container card py-2 my-3 shadow font-size-small">
+                            <form action="{{ route('admin.processPayment', $apartment) }}" method="POST" id="payment-form">
+                                @csrf
+                                <label class="form-label" for="floatingSelect">Choose promotion</label>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select font-size-small" id="promo" aria-label="Floating label select example"
+                                        name="pay_method">
+                                        <option class="font-size-small ps-2" value="1" name="1"> Gold
+                                            <span class="amount">-- &euro;2.99</span>
+                                        </option>
+                                        <option class="font-size-small" value="2" name="2">Diamond
+                                            <span class="amount">-- &euro;5.99</span>
+                                        </option>
+                                        <option class="font-size-small" value="3" name="3">Platinum
+                                            <span class="amount">-- &euro;9.99</span>
+                                        </option>
+                                    </select>
+                                    <div class="red"></div>
+                                </div>
+    
+                                <div class="mb-3" id="card-name-father">
+                                    <input type="hidden" name="apartment_id" value="{{ $apartment->id }}">
+                                    <label for="cardholder-name" class="form-label">Cardholder's Name</label>
+                                    <input type="text" class="form-control" id="cardholder-name" name="cardholder_name"
+                                        placeholder="Kevin Smith">
+                                    <div class="red"></div>
+                                </div>
+    
+                                <div class="mb-3" id="card-number-father">
+                                    <label for="cardholder-name" class="form-label">Card Number</label>
+                                    <div class="input-group flex-nowrap mb-3">
+                                        <span class="input-group-text credit-card" id="addon-wrapping">
+                                            <img class="creditcard width-card" id="image-credit" src="/images/creditcard.png"
+                                                alt="" value="e">
+                                        </span>
+                                        <input type="text" class="form-control" id="number-card" name="cc-card"
+                                            placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19">
+                                    </div>
+                                    <div class="mb-3 d-flex gap-4">
+                                        <div>
+                                            <label for="" class="form-label mb-1">Data</label>
+                                            <input type="text" id="data" class="form-control" placeholder="01/22"
+                                                maxlength="5">
+                                            <div class="red"></div>
+                                        </div>
+                                        <div>
+                                            <label for="" class="form-label mb-1">CVV</label>
+                                            <input type="text" name="" id="cvv" class="form-control"
+                                                placeholder="xxx" maxlength="3">
+                                            <div class="red"></div>
+                                        </div>
+                                    </div>
+                                <div id="error-card" class="red"></div>
+                                </div>
+                                <input type="hidden" id="promotion" name="promotion_hidden">
+                                <input type="hidden" id="nonce" name="payment_method_nonce">
+                                <button type="submit" class="btn btn-primary mb-2 font-size-small" id="submit-button">Make Payment</button>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+        </section>
+
         <div class="">
-            <ul class="mb-4 row">
+            <div class="mb-4 row">
                 @foreach ($images as $image)
-                    <li class="d-flex col-4 p-2">
+                    <figure class="d-flex justify-content-center col-lg-4 col-12 mt-4">
                         <img class="w-100" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
-                    </li>
+                    </figure>
                 @endforeach
-            </ul>
+            </div>
         </div>
 
 
@@ -221,5 +221,27 @@
             min-height: 0 !important;
             height: 40px !important;
         }
+
+
+
+        .graph-container {
+            height: 100%;
+        }
+
+        .accordion-body {
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            .chart-container {
+            height: 560px;
+            }       
+        }
+
+        @media (min-width: 1200px) {
+            .chart-container {
+            height: 500px;
+            }     
+        } 
     </style>
 @endsection
