@@ -19,7 +19,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                 <div class="my-3">
                     <ul class="list-group shadow mb-4 text-capitalize">
                         <li class="list-group-item p-3 "><span class="fw-bold">Rooms: </span>{{ $apartment->rooms }}
@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                 <section class="chart-container card shadow my-3 p-3">
                     <canvas id="visits"></canvas>
                 </section>
@@ -138,13 +138,13 @@
         </section>
 
         <div class="">
-            <ul class="mb-4 row">
+            <div class="mb-4 row">
                 @foreach ($images as $image)
-                    <li class="d-flex col-4 p-2">
+                    <figure class="d-flex justify-content-center col-lg-4 col-12 mt-4">
                         <img class="w-100" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
-                    </li>
+                    </figure>
                 @endforeach
-            </ul>
+            </div>
         </div>
 
 
@@ -222,16 +222,26 @@
             height: 40px !important;
         }
 
-        .chart-container {
-            height: 500px;
-        }
+
 
         .graph-container {
-            height: 500px;
+            height: 100%;
         }
 
         .accordion-body {
             width: 100%;
         }
+
+        @media (min-width: 992px) {
+            .chart-container {
+            height: 560px;
+            }       
+        }
+
+        @media (min-width: 1200px) {
+            .chart-container {
+            height: 500px;
+            }     
+        } 
     </style>
 @endsection
