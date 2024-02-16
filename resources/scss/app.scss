@@ -41,6 +41,20 @@
   color: $black !important;
 }
 
+.accordion-button:focus {
+  border-color: $primary !important;
+}
+
+.accordion-button:not(.collapsed) {
+ background-color: $primary;
+}
+
+.accordion {
+  --bs-accordion-active-color: none;
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
 .active {
   display: block;
   color: green;
