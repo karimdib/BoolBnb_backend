@@ -24,7 +24,7 @@ class ApartmentController extends Controller
             // ->orderBy("sponsored")
             ->has('orders')
             ->inRandomOrder()
-            ->limit(10)->get();
+            ->limit(12)->get();
 
 
         return response()->json([
