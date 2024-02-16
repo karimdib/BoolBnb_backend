@@ -85,11 +85,10 @@
             @yield('content')
             @stack('scripts')
         </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="text-center p-2">
-                    <h5 class="title-footer">Boolbnb Team-1 Boolean</h5>
-                </div>
+        <footer>
+            <div class="text-center">
+                <p class="title-footer pt-2 mb-0">Made by Team 1 - Boolean class 106</p>
+                <p class="body-footer ">Emanuele Venditti - Gabriel D'Amico - Karim Dib - Nicola Tabai - Valerio Carbone</p>
             </div>
         </footer>
     </div>

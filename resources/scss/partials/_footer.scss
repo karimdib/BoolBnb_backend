@@ -1,6 +1,10 @@
-.footer {
-    border-top: 2px solid #38b981;
-    padding: 50px;
-    margin-top: 50px;
+footer {
+    background-color: $background-nav;
+    height: 70px;
+}
 
+.title-footer,.body-footer {
+    font-style: italic;
+    color: white;
+    font-size: 14px;
 }
