@@ -59,3 +59,16 @@ a {
 ul {
   list-style: none;
 }
+
+.page-link {
+  color: $primary !important;
+
+
+
+}
+
+.active>.page-link {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  color: $black !important;
+}
