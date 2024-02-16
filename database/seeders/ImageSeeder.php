@@ -22,7 +22,7 @@ class ImageSeeder extends Seeder
 
             for ($i = 0; $i < 3; $i++) {
                 $new_image = new Image();
-                $new_image->apartment_id = $faker->randomElement($apartment_ids);
+                $new_image->apartment_id = $apartment_id;
                 $new_image->link = $faker->file('public\storage\apartment_images', 'public\storage\images', false);
                 $new_image->save();
             }
