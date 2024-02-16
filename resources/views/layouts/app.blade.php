@@ -32,7 +32,9 @@
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             {{-- <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a> --}}
-                            <a class="nav-link" href="http://localhost:5174/">boolbnb</a>
+                            <a class="nav-link" href="http://localhost:5174/">
+                                <img class="logo" src="../../../../images/BoolBnb.png" alt="">
+                            </a>
                         </li>
                     </ul>
 
