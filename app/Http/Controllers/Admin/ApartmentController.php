@@ -124,7 +124,7 @@ class ApartmentController extends Controller
             $images = Image::where('apartment_id', $apartment->id)->get();
             $visits = Visit::where('apartment_id', $apartment->id)->get();
             $messages = Message::where('apartment_id', $apartment->id)->orderBy('created_at', 'DESC')->get();
-            @dump($messages);
+
             return view('admin.apartments.show', compact('apartment', 'images', 'visits', 'messages'));
         } else {
             abort(403);
