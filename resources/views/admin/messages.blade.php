@@ -2,39 +2,59 @@
 @section('content')
     <div class="container">
         <div class="m-3">
-            <h1 class="display-5 mb-4 text-center">Apartments with Messages</h1>
+            <h1 class="display-5 mb-4 text-center">Messages</h1>
             <div class="card p-4 shadow">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Apartment ID</th>
-                            <th>Name</th>
-                            <th>Address</th>
-                            <th></th>
+                            <th>Apartment</th>
+                            <th>Subject</th>
+                            <th>Sender</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
+                        {{-- @dump($messages)
+                        @dump($apartments_with_messages) --}}
                         @forelse ($apartments_with_messages as $apartment)
-                            <tr>
-                                {{-- database fields --}}
-                                <td>{{ $apartment->id }} </td>
-
-                                <td>
-                                    <a href="{{ route('admin.apartments.show', $apartment) }}">
-                                        {{ $apartment->name }}
-                                    </a>
-                                </td>
-
-                                <td>{{ $apartment->address }} </td>
-
-                                <td>
-                                    <button class="btn btn-sm btn-outline-primary modal-trigger" id="show-messages"
-                                    name="{{ $apartment->name }}" address="{{ $apartment->address }}" apartmentId=" {{$apartment->id}}"messages="{{ $messages }}" >
-                                        Show messages
-                                    </button>
-                                </td>
-                            </tr>
+                            @foreach ($messages as $message)
+                                @if ($apartment->id === $message->apartment_id)
+                                <tr>
+                                    <td>
+                                        <a href="{{ route('admin.apartments.show', $apartment) }}">
+                                            {{$apartment->name}}
+                                        </a>                        
+                                    </td>
+                                    <td>
+                                        {{ $message->subject }}
+                                    </td>
+    
+                                    <td>{{ $message->sender }} </td>
+    
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary modal-trigger" id="show-messages"
+                                        name="{{ $apartment->name }}" address="{{ $apartment->address }}" apartmentId=" {{$apartment->id}}"messages="{{ $messages }}" >
+                                            Show
+                                        </button>
+                                    </td>
+                                </tr>
+                                <div class="modal" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                
+                                            </div>
+                                            <div class="modal-body">
+                                                
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endif
+                            @endforeach                           
                         @empty
                             <tr>
                                 <td colspan="5">
@@ -43,13 +63,29 @@
                                     </p>
                                 </td>
                             </tr>
+                        @endforelse
                     </tbody>
-                    @endforelse
                 </table>
             </div>
-            <x-messages-modal />
+            {{-- <x-messages-modal /> --}}
         </div>
     </div>
+        
+        <style>
+            .modal-body {
+                overflow-x: auto;
+            }
+            .message-cell {
+                max-width: 100px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                cursor: pointer;
+            }
+            .message-cell:hover {
+                text-decoration: aquamarine; 
+            }
+        </style>
     @push('scripts')
         <script src="{{ asset('js/messagesModal.js') }}"></script>
     @endpush

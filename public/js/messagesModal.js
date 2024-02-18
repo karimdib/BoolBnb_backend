@@ -28,7 +28,7 @@ for (var i = 0; i < modalTriggers.length; i++) {
         const apartmentId = this.getAttribute('apartmentid');
 
         const messages = JSON.parse(this.getAttribute('messages'));
-        // console.log(messages);
+        console.log(messages);
 
         const currentMessages = messages.filter(message => {
             return apartmentId == message.apartment_id
