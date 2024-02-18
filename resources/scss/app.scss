@@ -5,6 +5,9 @@
 @import '/resources/scss/partials/_dashboard.scss';
 @import '/resources/scss/partials/_footer.scss';
 
+.logo {
+  max-width: 150px;
+}
 
 ::-webkit-scrollbar {
   width: 10px;

@@ -32,7 +32,9 @@
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             {{-- <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a> --}}
-                            <a class="nav-link" href="http://localhost:5174/">boolbnb</a>
+                            <a class="nav-link" href="http://localhost:5174/">
+                                <img class="logo" src="../../../../images/BoolBnb.png" alt="">
+                            </a>
                         </li>
                     </ul>
 
@@ -40,85 +42,69 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                        @if (Route::has('register'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        </li>
+                        @endif
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->first_name . ' ' . Auth::user()->last_name }}
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->first_name . ' ' . Auth::user()->last_name }}
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
+                                <a class="dropdown-item" href="{{ route('admin.apartments.index') }}">{{
+                                    __('Apartments') }}</a>
+                                <a class="dropdown-item" href="{{ route('admin.messages.index') }}">{{ __('Messages')
+                                    }}</a>
+                                <a class="dropdown-item" href="{{ url('profile') }}">{{ __('Profile') }}</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
-                                    <a class="dropdown-item"
-                                        href="{{ route('admin.apartments.index') }}">{{ __('Apartments') }}</a>
-                                    <a class="dropdown-item"
-                                        href="{{ route('admin.messages.index') }}">{{ __('Messages') }}</a>
-                                    <a class="dropdown-item" href="{{ url('profile') }}">{{ __('Profile') }}</a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
                         @endguest
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <main class="">
+        <main class="main">
             @yield('content')
             @stack('scripts')
         </main>
-        <footer class="ff">
+        <footer class="footer">
             <div class="container">
-                <div class="row  justify-content-between flex-wrap  flex-md-nowrap">
-                    <div class="col-6">
-                        <ul>
-                            <a href="#">
-                                <li>Chi Siamo</li>
-                            </a>
-                            <a href="#">
-                                <li>Contatti</li>
-                            </a>
-                            <a href="#">
-                                <li>Pubblica il tuo annuncio</li>
-                            </a>
-                            <a href="#">
-                                <li>Lavora con noi</li>
-                            </a>
-                        </ul>
+                <div class="text-center p-2 mb-0">
+                    <p class="title-footer mb-1">BoolBnb made by Team 1, Boolean class 106 :</p>
+                    <div class=" list-creator mt-0 d-flex justify-content-between">
+                        <a href="https://github.com/aSwanting" target="_blank" class="name-creator">
+                            <div>Gabriel D'Amico</div>
+                        </a>
+                        <a href="https://github.com/ValerioCarbone" target="_blank" class="name-creator">
+                            <div>Valerio Carbone</div>
+                        </a>
+                        <a href="https://github.com/EmanueleVenditti95" target="_blank" class="name-creator">
+                            <div>Emanuele Venditti</div>
+                        </a>
+                        <a href="https://github.com/w3bd3v3lop3rNico" target="_blank" class="name-creator">
+                            <div>Nicola Tabai</div>
+                        </a>
+                        <a href="https://github.com/karimdib" target="_blank" class="name-creator">
+                            <div>Karim Dib</div>
+                        </a>
                     </div>
-                    <div class=" col-6">
-                        <ul>
-                            <a href="#">
-                                <li>Termini di utilizzo</li>
-                            </a>
-                            <a href="#">
-                                <li>Normativa sulla privacy e sui cookie</li>
-                            </a>
-                            <a href="#">
-                                <li>Appartamenti vicino a me </li>
-                            </a>
-                            <a href="#">
-                                <li>Domande Frequenti</li>
-                            </a>
-                        </ul>
-                    </div>
-
                 </div>
             </div>
         </footer>
