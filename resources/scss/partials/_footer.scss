@@ -1,32 +1,32 @@
-.footer {
-    min-height: 175px;
-    background-color: #38b981;
-    padding: 25px;
-    margin-top: 50px;
+.main {
+    min-height: calc(100vh - 231px);
 }
 
-
-
-.made-by {
-    font-weight: bold;
+.footer {
+    min-height: 75px;
+    background-color: #38b981;
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 14px;
 }
 
 .status {
     padding: 0px 10px;
 }
 
-.footer:hover {
+.footer {
     .list-creator {
-        display: block !important;
         display: flex !important;
-
-        .name-creator {
-            font-weight: bold;
-        }
     }
 
     .name-creator:hover {
         color: white;
     }
 
+}
+
+@media (min-width: 768px) {
+    .footer {
+        font-size : 18px;
+    }
 }
