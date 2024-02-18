@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Apartment;
 use App\Models\Image;
 use App\Models\Visit;
+use App\Models\Message;
 use App\Http\Requests\StoreApartmentRequest;
 use App\Http\Requests\UpdateApartmentRequest;
 use App\Http\Controllers\Controller;
@@ -122,8 +123,9 @@ class ApartmentController extends Controller
 
             $images = Image::where('apartment_id', $apartment->id)->get();
             $visits = Visit::where('apartment_id', $apartment->id)->get();
-
-            return view('admin.apartments.show', compact('apartment', 'images','visits'));
+            $messages = Message::where('apartment_id', $apartment->id)->orderBy('created_at', 'DESC')->get();
+            @dump($messages);
+            return view('admin.apartments.show', compact('apartment', 'images', 'visits', 'messages'));
         } else {
             abort(403);
         }

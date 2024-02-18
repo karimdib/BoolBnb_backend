@@ -140,6 +140,95 @@
                 </div>
         </section>
 
+        <section>
+            <h3 class=" my-4 text-center">Messages</h3>
+            <div class="card p-4 shadow">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Sender</th>
+                                <th>Subject</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse ($messages as $message)
+                                <tr>
+                                    <td class="message-date">
+                                        {{ $message->created_at }}
+                                    </td>
+                                    <td>
+                                        {{ $message->sender }}
+                                    </td>
+
+                                    <td>{{ $message->subject }} </td>
+
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary modal-trigger" id="show-messages"
+                                            message="{{ $message }}" apartment="{{ $apartment }}">
+                                            Show
+                                        </button>
+                                    </td>
+                                </tr>
+                                <div class="modal" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <ul>
+                                                    <li>
+                                                        <span class="fw-bold">Sender : </span>
+                                                        <span id="message-sender"></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="fw-bold">Date : </span>
+                                                        <span id="message-date"></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="fw-bold message-email">Email : </span>
+                                                        <span id="message-email"></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="fw-bold message-subject">Subject : </span>
+                                                        <span id="message-subject"></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="fw-bold message-apartment">Apartment :
+                                                        </span>
+                                                        <a href="{{ route('admin.apartments.show', $apartment) }}">
+                                                            <span id="message-apartment"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p id="message-content">{{ $message->content }}</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary close-modal"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            @empty
+                                <tr>
+                                    <td colspan="5">
+                                        <p class="fs-4 text-center p-4 opacity-75">
+                                            No Messages...
+                                        </p>
+                                    </td>
+                                </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
         <div class="">
             <div class="mb-4 row">
                 @foreach ($images as $image)
@@ -182,6 +271,10 @@
     @endpush
     @push('scripts')
         <script src="{{ asset('js/deleteModal.js') }}"></script>
+    @endpush
+    @push('scripts')
+        <script src="{{ asset('js/messagesModal.js') }}"></script>
+        <script src="{{ asset('js/messagesDateFormat.js') }}"></script>
     @endpush
 
     <x-delete-modal />
@@ -235,13 +328,39 @@
             width: 100%;
         }
 
+        .modal-body {
+            overflow-x: auto;
+        }
+
+        .message-cell {
+            max-width: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            cursor: pointer;
+        }
+
+        .message-cell:hover {
+            text-decoration: aquamarine;
+        }
+
+        .apartment-cell {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .apartment-cell {
+                display: table-cell;
+            }
+        }
+
         @media (min-width: 992px) {
             .chart-container {
-                height: 424px;
+                height: 420px;
             }
 
             .apt-info {
-                height: 424px;
+                height: 420px;
             }
         }
 
