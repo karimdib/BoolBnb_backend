@@ -56,7 +56,9 @@
                                                         </li>
                                                         <li>
                                                             <span class="fw-bold message-apartment">Apartment : </span>
-                                                            <span id="message-apartment"></span>
+                                                            <a href="{{ route('admin.apartments.show', $apartment) }}">
+                                                                <span id="message-apartment"></span>
+                                                            </a>    
                                                         </li>
                                                     </ul>
                                                 </div>
