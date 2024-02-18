@@ -32,8 +32,7 @@
                                     <td>{{ $message->sender }} </td>
     
                                     <td>
-                                        <button class="btn btn-sm btn-outline-primary modal-trigger" id="show-messages"
-                                        name="{{ $apartment->name }}" address="{{ $apartment->address }}" apartmentId=" {{$apartment->id}}"messages="{{ $messages }}" >
+                                        <button class="btn btn-sm btn-outline-primary modal-trigger" id="show-messages" message=" {{$message}}"  >
                                             Show
                                         </button>
                                     </td>
@@ -43,14 +42,22 @@
                                       <div class="modal-content">
                                             <div class="modal-header">
                                                 <ul>
-                                                    <li><span class="fw-bold">Sender : </span>{{$message->sender}}</li>
-                                                    <li><span class="fw-bold">Email : </span>{{$message->email}}</li>
-                                                    <li><span class="fw-bold">Subject : </span>{{$message->subject}}</li>
-                                                    {{-- <li><span class="fw-bold">Apartment : </span>{{$apartment->name}}</li> --}}
+                                                    <li>
+                                                        <span class="fw-bold">Sender : </span>
+                                                        <span id="message-sender"></span>    
+                                                    </li>
+                                                    <li>
+                                                        <span class="fw-bold message-email">Email : </span>
+                                                        <span id="message-email"></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="fw-bold message-subject">Subject : </span>
+                                                        <span id="message-subject"></span>
+                                                    </li>
                                                 </ul>
                                             </div>
                                             <div class="modal-body">
-                                                <p>{{$message->content}}</p>
+                                                <p id="message-content">{{$message->content}}</p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Close</button>
