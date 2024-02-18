@@ -17,11 +17,13 @@ for (var i = 0; i < modalTriggers.length; i++) {
         modal.classList.add('d-block');
 
         const message = JSON.parse(this.getAttribute('message'));
+        const apartment = JSON.parse(this.getAttribute('apartment'));
 
         document.getElementById('message-sender').innerHTML = message.sender;
         document.getElementById('message-email').innerHTML = message.email;
         document.getElementById('message-subject').innerHTML = message.subject;
         document.getElementById('message-content').innerHTML = message.content;
+        document.getElementById('message-apartment').innerHTML = apartment.name;
 
 
         const messageTableCells = document.getElementsByClassName('message-cell');
