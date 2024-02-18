@@ -79,27 +79,26 @@
             
             <section class="container card py-3 my-3 shadow">
                 <div class="mb-3">
-                    <label for="cover_image" class="form-label">Cover Image</label>
+                    <label for="cover_image" class="form-label">Upload new cover Image</label>
                     <input class="form-control" type="file" id="cover_image" name="cover_image">
                 </div>
+
                 <div class="form-group mb-3">
-                    <p>Delete old images:</p>
-                    <div class="d-flex flex-wrap gap-4 ">
-                        @foreach ($images as $image)
-                        <div class="form-check">
-                            <input name="old_images[]" class="form-check-input" type="checkbox" value="{{ $image }}"
-                                id="old_image-{{ $image->id }}">
-                            <label class="form-check-label" for="old_image-{{ $image }}">
-                                @if (str_contains($image,'image'))
-                                <img class="w-25" src="{{ asset('storage') . '/' . $image->link }}" alt="">
-                                @else
-                                <img class="w-25" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
-                                @endif
-                            </label>
+                    <p>Select images to delete:</p>
+                    <div class="container flex-wrap gap-4 ">
+                        <div class="row">
+                            @foreach ($images as $image)
+                            <div class="form-check col-12 col-lg-4">
+                                <input name="old_images[]" class="form-check-input" type="checkbox" value="{{ $image }}" id="old_image-{{ $image->id }}">                           
+                                <label class="form-check-label" for="old_image-{{ $image }}">
+                                    <img class="optional-images" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
+                                </label>
+                            </div>
+                                @endforeach
                         </div>
-                        @endforeach
                     </div>
                 </div>
+
                 <div class="mb-3">
                     <label for="images" class="form-label">Add more images</label>
                     <input class="form-control" type="file" id="images" name="images[]" multiple>
@@ -143,6 +142,15 @@
     .is-invalid {
         border-color: red;
         color: red;
+    }
+    .optional-images {
+        max-width: 100%;
+    }
+
+    @media (min-width: 768px) { 
+    .optional-images {
+        /* max-width: 100%; */
+    }
     }
 </style>
 
