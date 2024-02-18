@@ -14,8 +14,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {{-- @dump($messages)
-                        @dump($apartments_with_messages) --}}
+                        @dump($messages)
+                        {{-- @dump($apartments_with_messages) --}}
                         @forelse ($apartments_with_messages as $apartment)
                             @foreach ($messages as $message)
                                 @if ($apartment->id === $message->apartment_id)
@@ -42,10 +42,15 @@
                                     <div class="modal-dialog modal-dialog-centered">
                                       <div class="modal-content">
                                             <div class="modal-header">
-                                                
+                                                <ul>
+                                                    <li><span class="fw-bold">Sender : </span>{{$message->sender}}</li>
+                                                    <li><span class="fw-bold">Email : </span>{{$message->email}}</li>
+                                                    <li><span class="fw-bold">Subject : </span>{{$message->subject}}</li>
+                                                    {{-- <li><span class="fw-bold">Apartment : </span>{{$apartment->name}}</li> --}}
+                                                </ul>
                                             </div>
                                             <div class="modal-body">
-                                                
+                                                <p>{{$message->content}}</p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Close</button>
