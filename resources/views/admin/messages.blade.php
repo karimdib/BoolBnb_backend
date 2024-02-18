@@ -14,7 +14,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @dump($messages)
+                        {{-- @dump($messages) --}}
                         {{-- @dump($apartments_with_messages) --}}
                         @forelse ($apartments_with_messages as $apartment)
                             @foreach ($messages as $message)
