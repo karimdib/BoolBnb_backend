@@ -1,14 +1,9 @@
 
-
 const modalTriggers = document.getElementsByClassName('modal-trigger');
 
 const modal = document.querySelector('.modal');
 
 const modalCloseBtns = document.getElementsByClassName('close-modal');
-
-const apartmentTitle = document.getElementById('apartment-name');
-
-const apartmentAddress = document.getElementById('apartment-address');
 
 const messagesContainer = document.getElementById('messages-container');
 
@@ -19,21 +14,17 @@ for (var i = 0; i < modalTriggers.length; i++) {
 
     modalTriggers[i].addEventListener('click', function() {
         
-        
-        // console.log('click', this);
         modal.classList.add('d-block');
-        apartmentTitle.innerHTML = this.name;
 
-        apartmentAddress.innerHTML = this.getAttribute('address');
-        const apartmentId = this.getAttribute('apartmentid');
+        const message = JSON.parse(this.getAttribute('message'));
+        const apartment = JSON.parse(this.getAttribute('apartment'));
 
-        const messages = JSON.parse(this.getAttribute('messages'));
-        // console.log(messages);
+        document.getElementById('message-sender').innerHTML = message.sender;
+        document.getElementById('message-email').innerHTML = message.email;
+        document.getElementById('message-subject').innerHTML = message.subject;
+        document.getElementById('message-content').innerHTML = message.content;
+        document.getElementById('message-apartment').innerHTML = apartment.name;
 
-        const currentMessages = messages.filter(message => {
-            return apartmentId == message.apartment_id
-        })
-        iterateMessages(currentMessages);
 
         const messageTableCells = document.getElementsByClassName('message-cell');
         const senderTableCells = document.getElementsByClassName('sender-cell');
@@ -49,17 +40,17 @@ for (var i = 0; i < modalCloseBtns.length; i++) {
         
         // console.log('click to close');
         modal.classList.remove('d-block');
-        while(messagesContainer.firstChild) {
-            messagesContainer.removeChild(messagesContainer.firstChild)
-        }
+        // while(messagesContainer.firstChild) {
+        //     messagesContainer.removeChild(messagesContainer.firstChild)
+        // }
     });
 };
 window.addEventListener('click', function(event) {
     if(event.target == modal) {
         modal.classList.remove('d-block');
-        while(messagesContainer.firstChild) {
-            messagesContainer.removeChild(messagesContainer.firstChild)
-        }
+        // while(messagesContainer.firstChild) {
+        //     messagesContainer.removeChild(messagesContainer.firstChild)
+        // }
     }
 });
 

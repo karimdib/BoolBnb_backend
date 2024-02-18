@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="container">
-        <div class="m-3">
             <h1 class="display-5 mb-4 text-center">Apartment List</h1>
             <a class="btn btn-outline-primary mb-4 w-100 shadow" href="{{ route('admin.apartments.create') }}">
                 Create Apartment
@@ -80,7 +79,6 @@
                 {{ $apartments->links('pagination::bootstrap-5') }}
             </div>
             <x-delete-modal />
-        </div>
     </div>
     @push('scripts')
         <script src="{{ asset('js/deleteModal.js') }}"></script>
