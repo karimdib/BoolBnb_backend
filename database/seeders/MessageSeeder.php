@@ -20,7 +20,7 @@ class MessageSeeder extends Seeder
         for ($i = 0; $i < 100; $i++) {
             $new_message = new Message();
             $new_message->apartment_id = $faker->randomElement($apartmentIds);
-            $new_message->subject = $faker->word();
+            $new_message->subject = $faker->sentence(2);
             $new_message->content = $faker->text();
             $new_message->sender = $faker->name();
             $new_message->email = $faker->email();
