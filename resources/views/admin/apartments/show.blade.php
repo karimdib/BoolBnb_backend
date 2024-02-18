@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="my-3">
-                    <ul class="list-group shadow mb-4 text-capitalize">
+                    <ul class="list-group apt-info shadow mb-4 text-capitalize">
                         <li class="list-group-item p-3 "><span class="fw-bold">Rooms: </span>{{ $apartment->rooms }}
                         </li>
                         <li class="list-group-item p-3 "><span class="fw-bold">Beds: </span>{{ $apartment->beds }}
@@ -239,10 +239,18 @@
             .chart-container {
                 height: 424px;
             }
+
+            .apt-info {
+                height: 424px;
+            }
         }
 
         @media (min-width: 1200px) {
             .chart-container {
+                height: 400px;
+            }
+
+            .apt-info {
                 height: 400px;
             }
         }
