@@ -96,12 +96,12 @@
         border-top-width: 0 !important;
     }
     .large-button {
-        visibility: hidden;
+        display: none;
        }
 
     @media (min-width: 768px) { 
        .large-button {
-        visibility: visible;
+        display: table-cell;
        }
        .mobile-button {
           display: none;
