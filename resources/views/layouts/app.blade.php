@@ -52,9 +52,10 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle user-logo-a" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->first_name . ' ' . Auth::user()->last_name }}
+                                    <span class="user-name">{{ Auth::user()->first_name . ' ' . Auth::user()->last_name }}</span>
+                                    <i class="fa-solid fa-user user-logo"></i>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -84,6 +85,7 @@
         <main class="main">
             @yield('content')
             @stack('scripts')
+            <script src="https://kit.fontawesome.com/051fa5e347.js" crossorigin="anonymous"></script>
         </main>
         <footer class="footer">
             <div class="container">

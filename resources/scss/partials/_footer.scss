@@ -4,9 +4,11 @@
 
 .footer {
     min-height: 75px;
-    background-color: #38b981;
+    background-color: white;
+    border-top: 2px solid #38b981;
     margin-top: 50px;
     font-style: italic;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -20,7 +22,7 @@
     }
 
     .name-creator:hover {
-        color: white;
+        color: $primary-hover;
     }
 
 }

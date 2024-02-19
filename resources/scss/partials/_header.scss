@@ -16,3 +16,29 @@
   .navbar {
     background-color: $background-nav;
   }
+
+  .user-name {
+    display: none;
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    left: -100px;
+  }
+
+  .user-logo-a {
+    color: white !important;
+  }
+
+  @media (min-width: 768px) {
+    .user-logo:before {
+      display:none;
+    }
+
+    .dropdown-menu[data-bs-popper] {
+      left: 50px;
+    }
+
+    .user-name {
+      display: inline;
+    }
+  }
