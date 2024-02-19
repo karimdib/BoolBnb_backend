@@ -64,6 +64,7 @@
                 @elseif($order->sponsorship_id === 3)
                 <td>Platinum</td>
                 @endif --}}
+                {{-- <div>ciao</div> --}}
                 @if ($date_now <= $order->date_end)
                     <td class="active status">Active</td>
                     @elseif($date_now >= $order->date_end)
