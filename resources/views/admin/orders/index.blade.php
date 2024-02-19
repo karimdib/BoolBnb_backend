@@ -30,9 +30,9 @@
                 <td>Platinum</td>
                 @endif
                 @if ($date_now <= $order->date_end)
-                    <td class="active status index-status">Active</td>
+                    <td class="active status" id="index-status-active">Active</td>
                     @elseif($date_now >= $order->date_end)
-                    <td class="inactive status index-status">Inactive</td>
+                    <td class="inactive status" id="index-status-inactive">Inactive</td>
                     @endif
                     <td class="data-start">{{ $order->date_start }} </td>
                     <td class="data-end">{{ $order->date_end }} </td>
@@ -59,7 +59,21 @@
     }
 
     @media screen and (min-width:769px) {
-        .index-status {
+        #index-status-active {
+            margin-top: 0px !important;
+        }
+
+        #index-status-inactive {
+            margin-top: 0px !important;
+        }
+    }
+
+    @media screen and (max-width:488px) {
+        #index-status-active {
+            margin-top: 0px !important;
+        }
+
+        #index-status-inactive {
             margin-top: 0px !important;
         }
     }
