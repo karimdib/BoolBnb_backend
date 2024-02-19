@@ -1,21 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mt-3">
-    <h1 class="text-center">{{ $apartment->name }}</h1>
-</div>
-<div class="container mt-4">
-    @if ($apartment->cover_image)
-    <figure class="d-flex justify-content-center">
-        @if (str_contains($apartment->cover_image, 'cover_images'))
-        <img class="w-50" src="{{ asset('storage/' . $apartment->cover_image) }}">
-        @else
-        <img class="w-50" src="{{ asset('storage/cover_images/' . $apartment->cover_image) }}">
+    <div class="container mt-3">
+        <h1 class="text-center">{{ $apartment->name }}</h1>
+    </div>
+    <div class="container mt-4">
+        @if ($apartment->cover_image)
+            <figure class="d-flex justify-content-center">
+                @if (str_contains($apartment->cover_image, 'cover_images'))
+                    <img class="cover-image" src="{{ asset('storage/' . $apartment->cover_image) }}">
+                @else
+                    <img class="cover-image" src="{{ asset('storage/cover_images/' . $apartment->cover_image) }}">
+                @endif
+            </figure>
         @endif
-    </figure>
-    @endif
-    <h3>{{ $apartment->description }}</h3>
-</div>
+        <h3>{{ $apartment->description }}</h3>
+    </div>
 
 <div class="container">
     <div class="row">
@@ -222,15 +222,15 @@
         </div>
     </section>
 
-    <div class="">
-        <div class="mb-4 row">
-            @foreach ($images as $image)
-            <figure class="d-flex justify-content-center col-lg-4 col-12 mt-4">
-                <img class="w-100" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
-            </figure>
-            @endforeach
+        <div class="">
+            <div class="mb-4 row">
+                @foreach ($images as $image)
+                    <figure class="d-flex justify-content-center col-lg-4 col-12 mt-4">
+                        <img class="images" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
+                    </figure>
+                @endforeach
+            </div>
         </div>
-    </div>
 
 
     <div class="d-flex justify-content-center gap-4">
@@ -336,21 +336,35 @@
         text-decoration: aquamarine;
     }
 
-    .apartment-cell {
-        display: none;
-    }
-
-    @media (min-width: 768px) {
         .apartment-cell {
-            display: table-cell;
+            display: none;
         }
+
+        .images,
+        .cover-image {
+        max-width: 100%;
+        aspect-ratio: 14/9;
     }
 
-    @media (min-width: 992px) {
-        .chart-container {
-            height: 424px;
+        @media (min-width: 576px) {
+
+         }
+    
+        @media (min-width: 768px) {
+            .apartment-cell {
+                display: table-cell;
+            }
         }
-    }
+
+        @media (min-width: 992px) {
+            .chart-container {
+                height: 424px;
+            }
+
+            .cover-image {
+                max-width: 50%;
+            }
+        }
 
     @media (min-width: 1200px) {
         .chart-container {
