@@ -87,16 +87,16 @@ form.addEventListener('submit', function (event) {
     }
     //condizxioni rooms su beds e bathrooms 
 
-    if (parseInt(rooms.value) <= parseInt(beds.value)) {
-        beds.classList.add('is-invalid');
-        beds.nextElementSibling.innerText = 'the number of beds must be less than the number of rooms';
-        isValid = false;
-    }
-    if (parseInt(rooms.value) <= parseInt(bathrooms.value)) {
-        bathrooms.classList.add('is-invalid');
-        bathrooms.nextElementSibling.innerText = 'the number of bathrooms must be less than the number of rooms'
-        isValid = false;
-    }
+    // if (parseInt(rooms.value) <= parseInt(beds.value)) {
+    //     beds.classList.add('is-invalid');
+    //     beds.nextElementSibling.innerText = 'the number of beds must be less than the number of rooms';
+    //     isValid = false;
+    // }
+    // if (parseInt(rooms.value) <= parseInt(bathrooms.value)) {
+    //     bathrooms.classList.add('is-invalid');
+    //     bathrooms.nextElementSibling.innerText = 'the number of bathrooms must be less than the number of rooms'
+    //     isValid = false;
+    // }
 
     if (nameTitle.value.trim() === '') {
         nameTitle.nextElementSibling.innerText = 'The name field cannot be empty.';
