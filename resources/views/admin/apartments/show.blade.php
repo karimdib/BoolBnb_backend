@@ -8,9 +8,9 @@
         @if ($apartment->cover_image)
             <figure class="d-flex justify-content-center">
                 @if (str_contains($apartment->cover_image, 'cover_images'))
-                    <img class="w-50" src="{{ asset('storage/' . $apartment->cover_image) }}">
+                    <img class="cover-image" src="{{ asset('storage/' . $apartment->cover_image) }}">
                 @else
-                    <img class="w-50" src="{{ asset('storage/cover_images/' . $apartment->cover_image) }}">
+                    <img class="cover-image" src="{{ asset('storage/cover_images/' . $apartment->cover_image) }}">
                 @endif
             </figure>
         @endif
@@ -226,7 +226,7 @@
             <div class="mb-4 row">
                 @foreach ($images as $image)
                     <figure class="d-flex justify-content-center col-lg-4 col-12 mt-4">
-                        <img class="w-100" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
+                        <img class="images" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
                     </figure>
                 @endforeach
             </div>
@@ -341,6 +341,16 @@
             display: none;
         }
 
+        .images,
+        .cover-image {
+        max-width: 100%;
+        aspect-ratio: 14/9;
+    }
+
+        @media (min-width: 576px) {
+
+         }
+    
         @media (min-width: 768px) {
             .apartment-cell {
                 display: table-cell;
@@ -350,6 +360,10 @@
         @media (min-width: 992px) {
             .chart-container {
                 height: 424px;
+            }
+
+            .cover-image {
+                max-width: 50%;
             }
         }
 
