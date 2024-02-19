@@ -22,6 +22,7 @@ return new class extends Migration
             $table->unsignedInteger('bathrooms')->nullable();
             $table->unsignedInteger('square_meters')->nullable();
             $table->string('address')->nullable();
+            $table->string('city')->nullable();
             $table->string('region')->nullable();
             $table->string('country')->nullable();
             $table->decimal('latitude', 9, 6)->nullable();

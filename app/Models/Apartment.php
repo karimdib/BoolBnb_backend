@@ -25,7 +25,8 @@ class Apartment extends Model
         'cover_image',
         'visible',
         'user_id',
-        'region'
+        'region',
+        'city'
     ];
     public function messages()
     {
