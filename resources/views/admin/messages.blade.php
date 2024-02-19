@@ -2,13 +2,13 @@
 @section('content')
     <div class="container">
         <h1 class="display-5 mb-4 text-center">Messages</h1>
-        <div class="card p-4 shadow">
+        <div class="card shadow">
             <div class="table-responsive">
                 <table class="table">
                     <thead>
                         <tr>
                             <th class="apartment-cell">Apartment</th>
-                            <th>Date</th>
+                            <th class="date-cell-lg">Date</th>
                             <th>Sender</th>
                             <th>Subject</th>
                             <th></th>
@@ -26,20 +26,27 @@
                                                 {{ $apartment->name }}
                                             </a>
                                         </td>
-                                        <td class="message-date">
+                                        <td class="date-cell-lg">
                                             {{ $message->created_at }}
                                         </td>
-                                        <td>
+                                        <td class="sender-cell">
                                             {{ $message->sender }}
                                         </td>
 
-                                        <td>{{ $message->subject }} </td>
+                                        <td class="sender-cell">
+                                            {{ $message->subject }}
+                                        </td>
 
-                                        <td>
+                                        <td class="sender-cell">
                                             <button class="btn btn-sm btn-outline-primary modal-trigger" id="show-messages"
                                                 message="{{ $message }}" apartment="{{ $apartment }}">
                                                 Show
                                             </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="date-cell-sm" colspan="3">
+                                            {{ $message->created_at }}
                                         </td>
                                     </tr>
                                     <div class="modal" tabindex="-1">
@@ -98,7 +105,7 @@
         </div>
     </div>
 
-    <style>
+    <style lang="scss" scoped>
         .modal-body {
             overflow-x: auto;
         }
@@ -115,18 +122,30 @@
             text-decoration: aquamarine;
         }
 
-        .apartment-cell {
+        .apartment-cell,
+        .date-cell-lg {
             display: none;
         }
 
+        .sender-cell {
+            border-bottom-width: 0 !important;
+        }
         @media (min-width: 768px) {
-            .apartment-cell {
+            .apartment-cell,
+            .date-cell-lg {
                 display: table-cell;
             }
+            .date-cell-sm {
+                display: none;
+            }
+
+            .sender-cell {
+                border-bottom-width: var(--bs-border-width) !important;
+        }
         }
     </style>
     @push('scripts')
         <script src="{{ asset('js/messagesModal.js') }}"></script>
-        <script src="{{ asset('js/messagesDateFormat.js') }}"></script>
+        {{-- <script src="{{ asset('js/messagesDateFormat.js') }}"></script> --}}
     @endpush
 @endsection

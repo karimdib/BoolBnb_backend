@@ -6,7 +6,7 @@
         <a class="btn btn-outline-primary mb-4 w-100 shadow" href="{{ route('admin.apartments.create') }}">
             Create Apartment
         </a>
-        <div class="card p-4 shadow">
+        <div class="card shadow">
             <div class="table-responsive">
                 <table class="table">
                     <thead>

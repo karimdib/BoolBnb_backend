@@ -24,6 +24,7 @@ for (var i = 0; i < modalTriggers.length; i++) {
         document.getElementById('message-subject').innerHTML = message.subject;
         document.getElementById('message-content').innerHTML = message.content;
         document.getElementById('message-apartment').innerHTML = apartment.name;
+        document.getElementById('message-date').innerHTML = dateFormatter(message.created_at) ;
 
 
         const messageTableCells = document.getElementsByClassName('message-cell');
@@ -34,6 +35,8 @@ for (var i = 0; i < modalTriggers.length; i++) {
     
     
 };
+
+
 
 for (var i = 0; i < modalCloseBtns.length; i++) {
     modalCloseBtns[i].addEventListener('click', function() {
@@ -53,6 +56,22 @@ window.addEventListener('click', function(event) {
         // }
     }
 });
+
+
+function dateFormatter(dataString) {
+    const data = new Date(dataString);
+    const anno = data.getFullYear();
+    const mese = padZero(data.getMonth() + 1);
+    const giorno = padZero(data.getDate());
+    const ore = padZero(data.getHours());
+    const minuti = padZero(data.getMinutes());
+    const secondi = padZero(data.getSeconds());
+    return `${anno}-${mese}-${giorno} ${ore}:${minuti}:${secondi}`;
+}
+
+function padZero(numero) {
+    return numero < 10 ? '0' + numero : numero;
+}
 
 function iterateMessages(array) {
     array.forEach(message => {
