@@ -52,9 +52,11 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle user-logo-a" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    <span class="user-name">{{ Auth::user()->first_name . ' ' . Auth::user()->last_name }}</span>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle user-logo-a" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    v-pre>
+                                    <span
+                                        class="user-name">{{ Auth::user()->first_name . ' ' . Auth::user()->last_name }}</span>
                                     <i class="fa-solid fa-user user-logo"></i>
                                 </a>
 
@@ -62,6 +64,8 @@
                                     <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
                                     <a class="dropdown-item"
                                         href="{{ route('admin.apartments.index') }}">{{ __('Apartments') }}</a>
+                                    <a class="dropdown-item"
+                                        href="{{ route('admin.orders.index') }}">{{ __('Sponsorship') }}</a>
                                     <a class="dropdown-item"
                                         href="{{ route('admin.messages.index') }}">{{ __('Messages') }}</a>
                                     <a class="dropdown-item" href="{{ url('profile') }}">{{ __('Profile') }}</a>

@@ -27,7 +27,7 @@
                                             </a>
                                         </td>
                                         <td class="date-cell-lg">
-                                            {{ $message->created_at }}
+                                            <span class="message-date">{{ $message->created_at }}</span>
                                         </td>
                                         <td class="sender-cell">
                                             {{ $message->sender }}
@@ -46,7 +46,7 @@
                                     </tr>
                                     <tr>
                                         <td class="date-cell-sm" colspan="3">
-                                            {{ $message->created_at }}
+                                            <span class="message-date">{{ $message->created_at }}</span>
                                         </td>
                                     </tr>
                                     <div class="modal" tabindex="-1">
@@ -130,22 +130,25 @@
         .sender-cell {
             border-bottom-width: 0 !important;
         }
+
         @media (min-width: 768px) {
+
             .apartment-cell,
             .date-cell-lg {
                 display: table-cell;
             }
+
             .date-cell-sm {
                 display: none;
             }
 
             .sender-cell {
                 border-bottom-width: var(--bs-border-width) !important;
-        }
+            }
         }
     </style>
     @push('scripts')
         <script src="{{ asset('js/messagesModal.js') }}"></script>
-        {{-- <script src="{{ asset('js/messagesDateFormat.js') }}"></script> --}}
+        <script src="{{ asset('js/messagesDateFormat.js') }}"></script>
     @endpush
 @endsection
