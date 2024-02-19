@@ -25,6 +25,7 @@ class Apartment extends Model
         'cover_image',
         'visible',
         'user_id',
+        'region'
     ];
     public function messages()
     {
@@ -52,15 +53,11 @@ class Apartment extends Model
     }
     public static function booted()
     {
-        Apartment::deleting(function($apartment) {
+        Apartment::deleting(function ($apartment) {
             $apartment->images()->delete();
             $apartment->visits()->delete();
             $apartment->orders()->delete();
             $apartment->messages()->delete();
-
-            
         });
-
-
     }
 }
