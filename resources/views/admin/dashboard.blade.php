@@ -6,10 +6,10 @@
             <h1 class="card-title flex-grow-1">Your Apartments</h1>
             <div class="d-flex buttons">
 
-                <a href="{{ route('admin.apartments.create') }}" class="btn btn-outline-primary align-self-center">
+                <a href="{{ route('admin.apartments.create') }}" class="dash-btn btn btn-outline-primary align-self-center">
                     <i class="fa-solid fa-plus"></i>
                 </a>
-                <a href="{{ route('admin.apartments.index') }}" class="btn btn-outline-primary align-self-center ms-3">View
+                <a href="{{ route('admin.apartments.index') }}" class="dash-btn btn btn-outline-primary align-self-center ms-3">View
                     All</a>
             </div>
         </div>
@@ -47,7 +47,7 @@
         <div class="d-flex justify-content-between">
             <h1 class="card-title">Your Sponsorships</h1>
             {{-- creare una rotta per lo storico degli ordini --}}
-            <a href="{{ route('admin.orders.index') }}" class="btn btn-outline-primary align-self-center">View All</a>
+            <a href="{{ route('admin.orders.index') }}" class="dash-btn btn btn-outline-primary align-self-center">View All</a>
         </div>
         <table>
             <thead>

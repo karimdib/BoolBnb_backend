@@ -83,13 +83,20 @@ ul {
 
 .page-link {
   color: $primary !important;
-
-
-
 }
 
 .active>.page-link {
   background-color: $primary !important;
   border-color: $primary !important;
   color: $black !important;
+}
+
+.dash-btn {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .dash-btn {
+    font-size: 18px;
+  }
 }
