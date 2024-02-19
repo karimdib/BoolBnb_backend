@@ -78,6 +78,7 @@ class ApartmentController extends Controller
         $data["latitude"] = $results[0]['position']['lat'];
         $data["longitude"] = $results[0]['position']['lon'];
         $data["region"] = $results[0]['address']['countrySubdivision'];
+        $data["city"] = $results[0]['address']['municipality'];
 
         $data["slug"] = Str::slug($data["description"]);
 

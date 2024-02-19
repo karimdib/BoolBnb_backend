@@ -3,8 +3,13 @@
 @section('content')
     <section class="container card py-3 my-3 shadow">
         <div class="d-flex justify-content-between">
-            <h1 class="card-title">Your Apartments</h1>
-            <a href="{{ route('admin.apartments.index') }}" class="btn btn-outline-primary align-self-center">View All</a>
+            <h1 class="card-title flex-grow-1">Your Apartments</h1>
+            <div class="d-flex buttons">
+                <a href="{{ route('admin.apartments.create') }}" class="btn btn-outline-primary align-self-center">Add an
+                    appartment</a>
+                <a href="{{ route('admin.apartments.index') }}" class="btn btn-outline-primary align-self-center ms-3">View
+                    All</a>
+            </div>
         </div>
         <table class="table">
             <thead>
@@ -57,18 +62,18 @@
                     <tr>
                         {{-- database fields --}}
                         <td>{{ $order->apartment->address }}</td>
-                            @if ($order->sponsorship_id === 1)
-                                <td>Gold</td>
-                            @elseif($order->sponsorship_id === 2)
-                                <td>Diamond</td>
-                            @elseif($order->sponsorship_id === 3)
-                                <td>Platinum</td>
-                            @endif
-                            @if ($date_now <= $order->date_end)
-                                <td class="active status">Active</td>
-                            @elseif($date_now >= $order->date_end)
-                                <td class="inactive status">Inactive</td>
-                            @endif
+                        @if ($order->sponsorship_id === 1)
+                            <td>Gold</td>
+                        @elseif($order->sponsorship_id === 2)
+                            <td>Diamond</td>
+                        @elseif($order->sponsorship_id === 3)
+                            <td>Platinum</td>
+                        @endif
+                        @if ($date_now <= $order->date_end)
+                            <td class="active status">Active</td>
+                        @elseif($date_now >= $order->date_end)
+                            <td class="inactive status">Inactive</td>
+                        @endif
                         <td class="data-start">{{ $order->date_start }} </td>
                         <td class="data-end">{{ $order->date_end }} </td>
                     </tr>
@@ -90,3 +95,28 @@
         <script src="{{ asset('./js/formatDataSponsor.js') }}"></script>
     @endpush
 @endsection
+<style>
+    .buttons {
+        flex-direction: column;
+        row-gap: 10px
+    }
+
+    @media (min-width: 576px) {
+        .buttons {
+            flex-direction: row;
+
+        }
+    }
+
+
+    @media (min-width: 768px) {}
+
+
+    @media (min-width: 992px) {}
+
+
+    @media (min-width: 1200px) {}
+
+
+    @media (min-width: 1400px) {}
+</style>
