@@ -122,6 +122,8 @@
             </section>    
     
                 <button class="btn btn-outline-primary" type="submit">Edit</button>
+
+            </form>
                 <form action="{{ route('admin.apartments.destroy', $apartment) }}" method="POST"
                     id="deletionForm">
                     @csrf
@@ -130,7 +132,6 @@
                     name="{{ $apartment->name }}" address="{{ $apartment->address }}">Delete</button>
                 </form>
             
-        </form>
         <x-delete-modal />
         @push('scripts')
         <script src="{{asset('./js/apartmentValidation.js')}}"></script>
