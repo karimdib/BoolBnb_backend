@@ -6,6 +6,8 @@ use App\Http\Controllers\Admin\ApartmentController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\ProfileController;
+use App\Http\Controllers\Admin\OrderController;
+use App\Models\Sponsorship;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,6 +32,7 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     Route::get('payment', [BraintreeController::class, 'showCheckout'])->name('token');
     Route::post('payment', [BraintreeController::class, 'processPayment'])->name('processPayment');
     Route::get('messages' , [MessageController::class, 'index'])->name('messages.index');
+    Route::get('orders' , [OrderController::class, 'index'])->name('orders.index');
 });
 
 Route::middleware('auth')->group(function () {

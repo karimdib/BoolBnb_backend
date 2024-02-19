@@ -179,26 +179,19 @@
                                                 <ul>
                                                     <li>
                                                         <span class="fw-bold">Sender : </span>
-                                                        <span id="message-sender"></span>
+                                                        <span id="message-sender">{{ $message->sender }}</span>
                                                     </li>
                                                     <li>
                                                         <span class="fw-bold">Date : </span>
-                                                        <span id="message-date"></span>
+                                                        <span id="message-sender">{{ $message->created_at }}</span>
                                                     </li>
                                                     <li>
                                                         <span class="fw-bold message-email">Email : </span>
-                                                        <span id="message-email"></span>
+                                                        <span id="message-email">{{ $message->email }}</span>
                                                     </li>
                                                     <li>
                                                         <span class="fw-bold message-subject">Subject : </span>
-                                                        <span id="message-subject"></span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="fw-bold message-apartment">Apartment :
-                                                        </span>
-                                                        <a href="{{ route('admin.apartments.show', $apartment) }}">
-                                                            <span id="message-apartment"></span>
-                                                        </a>
+                                                        <span id="message-subject">{{ $message->subject }}</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -356,21 +349,17 @@
 
         @media (min-width: 992px) {
             .chart-container {
-                height: 420px;
-            }
-
-            .apt-info {
-                height: 420px;
+                height: 424px;
             }
         }
 
         @media (min-width: 1200px) {
             .chart-container {
-                height: 400px;
+                height: 398px;
             }
 
             .apt-info {
-                height: 400px;
+                height: 398px;
             }
         }
     </style>
