@@ -60,12 +60,12 @@
 
 .active {
   display: block;
-  color: green;
+  color: green !important;
 }
 
 .inactive {
   display: block;
-  color: red;
+  color: red !important;
 }
 
 a {
