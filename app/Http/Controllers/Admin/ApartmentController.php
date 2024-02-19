@@ -127,7 +127,7 @@ class ApartmentController extends Controller
 
             return view('admin.apartments.show', compact('apartment', 'images', 'visits', 'messages'));
         } else {
-            abort(403);
+            return view('admin.403');
         }
     }
 
@@ -147,7 +147,7 @@ class ApartmentController extends Controller
 
             return view('admin.apartments.edit', compact('apartment', 'services', 'images'));
         } else {
-            abort(403);
+            return view('admin.403');
         }
     }
 
@@ -218,7 +218,7 @@ class ApartmentController extends Controller
 
             return redirect()->route('admin.apartments.show', $apartment);
         } else {
-            abort(403);
+            return view('admin.403');
         }
     }
 
@@ -258,7 +258,7 @@ class ApartmentController extends Controller
             $apartment->delete();
             return redirect()->route('admin.apartments.index');
         } else {
-            abort(403);
+            return view('admin.403');
         }
     }
 }
