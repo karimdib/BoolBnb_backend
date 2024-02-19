@@ -91,7 +91,7 @@
                             <div class="form-check col-12 col-lg-4">
                                 <input name="old_images[]" class="form-check-input" type="checkbox" value="{{ $image }}" id="old_image-{{ $image->id }}">                           
                                 <label class="form-check-label" for="old_image-{{ $image }}">
-                                    <img class="optional-images" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
+                                    <img class="images" src="{{ asset('storage/images') . '/' . $image->link }}" alt="">
                                 </label>
                             </div>
                                 @endforeach
@@ -119,10 +119,9 @@
                     </div>
                     <div class="is-invalid"></div>
                 </div>
-            </section>    
-    
-                <button class="btn btn-outline-primary" type="submit">Edit</button>
-
+            </section> 
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-primary px-4" type="submit">Edit</button>
             </form>
                 <form action="{{ route('admin.apartments.destroy', $apartment) }}" method="POST"
                     id="deletionForm">
@@ -131,6 +130,8 @@
                     <button class="btn btn-outline-danger modal-trigger" id="deletion" type="submit"
                     name="{{ $apartment->name }}" address="{{ $apartment->address }}">Delete</button>
                 </form>
+            </div>      
+                
             
         <x-delete-modal />
         @push('scripts')
@@ -144,8 +145,9 @@
         border-color: red;
         color: red;
     }
-    .optional-images {
+    .images {
         max-width: 100%;
+        aspect-ratio: 14/9;
     }
 
     @media (min-width: 768px) { 

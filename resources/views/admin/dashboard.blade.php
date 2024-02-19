@@ -50,8 +50,8 @@
         <table>
             <thead>
                 <tr>
-                    <th>Address</th>
-                    <th>Name</th>
+                    <th class="address">Address</th>
+                    {{-- <th>Name</th> --}}
                     <th class="status">Status</th>
                     <th class="start">Sponsorship Start</th>
                     <th class="end">Sponsorship End</th>
@@ -62,13 +62,13 @@
                     <tr>
                         {{-- database fields --}}
                         <td>{{ $order->apartment->address }}</td>
-                        @if ($order->sponsorship_id === 1)
-                            <td>Gold</td>
-                        @elseif($order->sponsorship_id === 2)
-                            <td>Diamond</td>
-                        @elseif($order->sponsorship_id === 3)
-                            <td>Platinum</td>
-                        @endif
+                        {{-- @if ($order->sponsorship_id === 1)
+                <td>Gold</td>
+                @elseif($order->sponsorship_id === 2)
+                <td>Diamond</td>
+                @elseif($order->sponsorship_id === 3)
+                <td>Platinum</td>
+                @endif --}}
                         @if ($date_now <= $order->date_end)
                             <td class="active status">Active</td>
                         @elseif($date_now >= $order->date_end)
@@ -95,28 +95,3 @@
         <script src="{{ asset('./js/formatDataSponsor.js') }}"></script>
     @endpush
 @endsection
-<style>
-    .buttons {
-        flex-direction: column;
-        row-gap: 10px
-    }
-
-    @media (min-width: 576px) {
-        .buttons {
-            flex-direction: row;
-
-        }
-    }
-
-
-    @media (min-width: 768px) {}
-
-
-    @media (min-width: 992px) {}
-
-
-    @media (min-width: 1200px) {}
-
-
-    @media (min-width: 1400px) {}
-</style>
