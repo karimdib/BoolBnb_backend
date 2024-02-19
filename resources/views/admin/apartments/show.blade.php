@@ -211,7 +211,7 @@
                                 <tr>
                                     <td colspan="5">
                                         <p class="fs-4 text-center p-4 opacity-75">
-                                            No Messages...
+                                            No Messages
                                         </p>
                                     </td>
                                 </tr>
