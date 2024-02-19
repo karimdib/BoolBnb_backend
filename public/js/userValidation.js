@@ -53,8 +53,8 @@ const isStringEmpty = (inputElement, fieldName) => {
         inputElement.classList.add('is-invalid');
     } else {
         isValid = true;
-        
-        if(inputElement == firstName) {
+
+        if (inputElement == firstName) {
             isFirstNameValid = true;
         } else if (inputElement == lastName)
             isLastNameValid = true;
@@ -147,7 +147,7 @@ const validatePassword = (inputElement, fieldName) => {
             && hasNumber
             && hasSymbol)) {
             isPasswordValid = false;
-            inputElement.nextElementSibling.innerText = `Insert at least one uppercase,lowercase,number,symbol`;
+            inputElement.nextElementSibling.innerText = `Insert at least one uppercase, lowercase, number, symbol`;
             inputElement.nextElementSibling.classList.add('is-invalid');
             inputElement.classList.add('is-invalid')
         } else if (inputElement.value.length < 8) {
