@@ -37,7 +37,7 @@
                             </div>
                         </li>
                         <li class="list-group-item">
-                            <a href="{{route('admin.dashboard')}}">
+                            <a href="{{route('admin.orders.index')}}">
                                 <button type="button" class="btn btn-primary mt-3">See your order</button>
                             </a>
                         </li>

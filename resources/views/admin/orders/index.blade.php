@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-between">
         <h1 class="card-title">All your sponsorships</h1>
     </div>
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Address</th>
@@ -18,8 +18,10 @@
         <tbody>
             @forelse ($apartment_orders as $order)
                 <tr>
-                    {{-- database fields --}}
-                    <td>{{ $order->apartment->address }}</td>
+                    <td>
+                        <a href="{{ route('admin.apartments.show', $order->apartment_id) }}">
+                        {{ $order->apartment->address }}</a>
+                    </td>
                     @if ($order->sponsorship_id === 1)
                         <td>Gold</td>
                     @elseif($order->sponsorship_id === 2)
@@ -49,3 +51,7 @@
 
 </section>
 @endsection
+
+<style lang="scss" scoped>
+
+</style>
