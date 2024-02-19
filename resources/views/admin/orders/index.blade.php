@@ -8,8 +8,8 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Address</th>
-                <th>Name</th>
+                <th class="address">Address</th>
+                {{-- <th>Name</th> --}}
                 <th class="status">Status</th>
                 <th class="start">Sponsorship Start</th>
                 <th class="end">Sponsorship End</th>
@@ -22,13 +22,13 @@
                     <a href="{{ route('admin.apartments.show', $order->apartment_id) }}">
                         {{ $order->apartment->address }}</a>
                 </td>
-                @if ($order->sponsorship_id === 1)
+                {{-- @if ($order->sponsorship_id === 1)
                 <td>Gold</td>
                 @elseif($order->sponsorship_id === 2)
                 <td>Diamond</td>
                 @elseif($order->sponsorship_id === 3)
                 <td>Platinum</td>
-                @endif
+                @endif --}}
                 @if ($date_now <= $order->date_end)
                     <td class="active status" id="index-status-active">Active</td>
                     @elseif($date_now >= $order->date_end)
@@ -50,6 +50,9 @@
     </table>
 
 </section>
+@push('scripts')
+<script src="{{ asset('./js/formatDataSponsor.js') }}"></script>
+@endpush
 @endsection
 
 <style lang="scss" scoped>
@@ -75,6 +78,12 @@
 
         #index-status-inactive {
             margin-top: 0px !important;
+        }
+
+        .address,
+        .end,
+        .status {
+            font-size: 13px !important;
         }
     }
 </style>
