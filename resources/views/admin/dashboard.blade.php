@@ -88,6 +88,26 @@
             </tbody>
             @endforelse
         </table>
+        {{-- <div>ciao</div> --}}
+        @if ($date_now <= $order->date_end)
+            <td class="active status">Active</td>
+        @elseif($date_now >= $order->date_end)
+            <td class="inactive status">Inactive</td>
+        @endif
+        <td class="data-start">{{ $order->date_start }} </td>
+        <td class="data-end">{{ $order->date_end }} </td>
+        </tr>
+    @empty
+        <tr>
+            <td colspan="5">
+                <p class="fs-4 text-center p-4 opacity-75">
+                    No Sponsorships
+                </p>
+            </td>
+        </tr>
+        </tbody>
+        @endforelse
+        </table>
 
     </section>
 
