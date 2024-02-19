@@ -57,18 +57,18 @@
                     <tr>
                         {{-- database fields --}}
                         <td>{{ $order->apartment->address }}</td>
-                        @if ($order->sponsorship_id === 1)
-                            <td>Gold</td>
-                        @elseif($order->sponsorship_id === 2)
-                            <td>Diamond</td>
-                        @elseif($order->sponsorship_id === 3)
-                            <td>Platinum</td>
-                        @endif
-                        @if ($date_now <= $order->date_end)
-                            <td class="active status">Active</td>
-                        @elseif($date_now >= $order->date_end)
-                            <td class="inactive status">Inactive</td>
-                        @endif
+                            @if ($order->sponsorship_id === 1)
+                                <td>Gold</td>
+                            @elseif($order->sponsorship_id === 2)
+                                <td>Diamond</td>
+                            @elseif($order->sponsorship_id === 3)
+                                <td>Platinum</td>
+                            @endif
+                            @if ($date_now <= $order->date_end)
+                                <td class="active status">Active</td>
+                            @elseif($date_now >= $order->date_end)
+                                <td class="inactive status">Inactive</td>
+                            @endif
                         <td class="data-start">{{ $order->date_start }} </td>
                         <td class="data-end">{{ $order->date_end }} </td>
                     </tr>
