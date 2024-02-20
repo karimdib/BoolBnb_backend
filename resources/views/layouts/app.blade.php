@@ -120,6 +120,10 @@
 
 </html>
 <style>
+    .logo {
+        width: 120px;
+    }
+
     .dropdown-item {}
 
     .nav-item a {
@@ -143,7 +147,11 @@
     }
 
 
-    @media (min-width: 768px) {}
+    @media (min-width: 768px) {
+        .logo {
+            width: 160px;
+        }
+    }
 
 
     @media (min-width: 992px) {
