@@ -63,10 +63,10 @@ function dateFormatter(dataString) {
     const anno = data.getFullYear();
     const mese = padZero(data.getMonth() + 1);
     const giorno = padZero(data.getDate());
-    const ore = padZero(data.getHours());
+    const ore = padZero(data.getHours()-1);
     const minuti = padZero(data.getMinutes());
     const secondi = padZero(data.getSeconds());
-    return `${anno}-${mese}-${giorno} ${ore}:${minuti}:${secondi}`;
+    return `${anno}-${mese}-${giorno} ${ore}:${minuti}`;
 }
 
 function padZero(numero) {
