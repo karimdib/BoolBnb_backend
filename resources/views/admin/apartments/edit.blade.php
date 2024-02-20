@@ -19,7 +19,7 @@
                 <div class="mb-3">
                     <label for="description" class="form-label">Description</label>
                     <input type="text" class="form-control  @error('description') is-invalid @enderror" id="description"
-                        name="description" value="{{ old('description', $apartment->name) }}">
+                        name="description" value="{{ old('description', $apartment->description) }}">
                     <div class="is-invalid" value="">@error('description') The description field is required @enderror</div>
                 </div>
                 <div class="mb-3">
