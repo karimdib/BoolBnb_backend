@@ -1,1 +1,30 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+@import '/resources/scss/partials/_header.scss';
+@import '/resources/scss/partials/_variables.scss';
+@import '/resources/scss/partials/payment';
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary;
+}
+
+
+.btn-primary {
+  background-color: $primary;
+  color: $black;
+  border-color: $primary;
+}
+
+.active {
+  display: block;
+  color: green;
+}
+
+.inactive {
+  display: block;
+  color: red;
+}
