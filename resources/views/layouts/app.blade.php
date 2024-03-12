@@ -121,7 +121,7 @@
 </html>
 <style>
     .logo {
-        width: 120px;
+        width: 100px;
     }
 
     .dropdown-item {}
